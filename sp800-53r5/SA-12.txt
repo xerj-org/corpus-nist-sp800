@@ -1,0 +1,49 @@
+id: sa-12
+title: Supply Chain Protection
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+========================================================================
+Enhancement SA-12(1) (sa-12.1) - Acquisition Strategies / Tools / Methods
+
+========================================================================
+Enhancement SA-12(2) (sa-12.2) - Supplier Reviews
+
+========================================================================
+Enhancement SA-12(3) (sa-12.3) - Trusted Shipping and Warehousing
+
+========================================================================
+Enhancement SA-12(4) (sa-12.4) - Diversity of Suppliers
+
+========================================================================
+Enhancement SA-12(5) (sa-12.5) - Limitation of Harm
+
+========================================================================
+Enhancement SA-12(6) (sa-12.6) - Minimizing Procurement Time
+
+========================================================================
+Enhancement SA-12(7) (sa-12.7) - Assessments Prior to Selection / Acceptance / Update
+
+========================================================================
+Enhancement SA-12(8) (sa-12.8) - Use of All-source Intelligence
+
+========================================================================
+Enhancement SA-12(9) (sa-12.9) - Operations Security
+
+========================================================================
+Enhancement SA-12(10) (sa-12.10) - Validate as Genuine and Not Altered
+
+========================================================================
+Enhancement SA-12(11) (sa-12.11) - Penetration Testing / Analysis of Elements, Processes, and Actors
+
+========================================================================
+Enhancement SA-12(12) (sa-12.12) - Inter-organizational Agreements
+
+========================================================================
+Enhancement SA-12(13) (sa-12.13) - Critical Information System Components
+
+========================================================================
+Enhancement SA-12(14) (sa-12.14) - Identity and Traceability
+
+========================================================================
+Enhancement SA-12(15) (sa-12.15) - Processes to Address Weaknesses or Deficiencies

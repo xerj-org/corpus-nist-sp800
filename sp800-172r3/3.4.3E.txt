@@ -1,0 +1,39 @@
+id: SP_800_172_3_0_0_03.04.03E
+title: Automated Maintenance of System Component Inventory
+family: Configuration Management (SP_800_172_3_0_0_3.4)
+class: security_requirement
+
+Statement:
+Maintain the currency, completeness, accuracy, and availability of the inventory of system components using [organization-defined automated mechanisms]. 
+
+Guidance:
+The system component inventory includes system-specific information required for component accountability and to provide support to identify, control, monitor, and verify configuration items based on the authoritative source. The information necessary for the accountability of system components includes the system name, hardware and software component owners, hardware inventory specifications, software license information, software version numbers, and—for networked components—the machine names and network addresses. Inventory specifications include the manufacturer, supplier information, component type, date of receipt, cost, model, serial number, and physical location. System component inventory information can include historic versioning of the information that can be used to track changes in the inventory and its ownership over the lifecycle of the system component inventory. Organizations also use automated mechanisms to implement and maintain authoritative (i.e., up-to-date, complete, accurate, and available) baseline configurations for systems that include hardware and software inventory tools, configuration management tools, and network management tools. Tools can be used to track version numbers on operating systems, applications, types of software installed, and current patch levels. This requirement enhances SP 800-171 requirement 03.04.10.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.04.03E_prm_1 | label: "organization-defined automated mechanisms"
+- A.03.04.03E.ODP.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the currency of the system component inventory are defined.
+- A.03.04.03E.ODP.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the completeness of the system component inventory are defined.
+- A.03.04.03E.ODP.03 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the accuracy of the system component inventory are defined.
+- A.03.04.03E.ODP.04 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the availability of the system component inventory are defined.
+
+References:
+- CM-08(02)

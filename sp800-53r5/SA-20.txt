@@ -1,0 +1,17 @@
+id: sa-20
+title: Customized Development of Critical Components
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+Statement:
+Reimplement or custom develop the following critical system components: [critical system].
+
+Guidance:
+Organizations determine that certain system components likely cannot be trusted due to specific threats to and vulnerabilities in those components for which there are no viable security controls to adequately mitigate risk. Reimplementation or custom development of such components may satisfy requirements for higher assurance and is carried out by initiating changes to system components (including hardware, software, and firmware) such that the standard attacks by adversaries are less likely to succeed. In situations where no alternative sourcing is available and organizations choose not to reimplement or custom develop critical system components, additional controls can be employed. Controls include enhanced auditing, restrictions on source code and system utility access, and protection from deletion of system and application files.
+
+Parameters:
+- sa-20_odp | label: "critical system"
+  guideline: critical system components to be reimplemented or custom-developed are defined;
+
+References:
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.

@@ -1,0 +1,49 @@
+id: ma-2
+title: Controlled Maintenance
+family: Maintenance (ma)
+class: SP800-53
+
+Statement:
+  a. Schedule, document, and review records of maintenance, repair, and replacement on system components in accordance with manufacturer or vendor specifications and/or organizational requirements;
+  b. Approve and monitor all maintenance activities, whether performed on site or remotely and whether the system or system components are serviced on site or removed to another location;
+  c. Require that [personnel or roles] explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance, repair, or replacement;
+  d. Sanitize equipment to remove the following information from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement: [information];
+  e. Check all potentially impacted controls to verify that the controls are still functioning properly following maintenance, repair, or replacement actions; and
+  f. Include the following information in organizational maintenance records: [information].
+
+Guidance:
+Controlling system maintenance addresses the information security aspects of the system maintenance program and applies to all types of maintenance to system components conducted by local or nonlocal entities. Maintenance includes peripherals such as scanners, copiers, and printers. Information necessary for creating effective maintenance records includes the date and time of maintenance, a description of the maintenance performed, names of the individuals or group performing the maintenance, name of the escort, and system components or equipment that are removed or replaced. Organizations consider supply chain-related risks associated with replacement components for systems.
+
+Parameters:
+- ma-02_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles required to explicitly approve the removal of the system or system components from organizational facilities for off-site maintenance or repairs is/are defined;
+- ma-02_odp.02 | label: "information"
+  guideline: information to be removed from associated media prior to removal from organizational facilities for off-site maintenance, repair, or replacement is defined;
+- ma-02_odp.03 | label: "information"
+  guideline: information to be included in organizational maintenance records is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Dempsey KL, Paulsen C (2015) Risk Management for Replication Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8023.
+
+========================================================================
+Enhancement MA-2(1) (ma-2.1) - Record Content
+
+========================================================================
+Enhancement MA-2(2) (ma-2.2) - Automated Maintenance Activities
+
+Statement:
+  (a) Schedule, conduct, and document maintenance, repair, and replacement actions for the system using [organization-defined automated mechanisms] ; and
+  (b) Produce up-to date, accurate, and complete records of all maintenance, repair, and replacement actions requested, scheduled, in process, and completed.
+
+Guidance:
+The use of automated mechanisms to manage and control system maintenance programs and activities helps to ensure the generation of timely, accurate, complete, and consistent maintenance records.
+
+Parameters:
+- ma-2.2_prm_1 | label: "organization-defined automated mechanisms"
+- ma-02.02_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to schedule maintenance, repair, and replacement actions for the system are defined;
+- ma-02.02_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to conduct maintenance, repair, and replacement actions for the system are defined;
+- ma-02.02_odp.03 | label: "automated mechanisms"
+  guideline: automated mechanisms used to document maintenance, repair, and replacement actions for the system are defined;

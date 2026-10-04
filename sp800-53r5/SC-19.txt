@@ -1,0 +1,7 @@
+id: sc-19
+title: Voice Over Internet Protocol
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Technology-specific; addressed as any other technology or protocol.

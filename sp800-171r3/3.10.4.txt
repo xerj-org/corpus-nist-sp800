@@ -1,0 +1,4 @@
+id: SP_800_171_03.10.04
+title: 03.10.04
+family: Physical Protection (SP_800_171_03.10)
+class: requirement

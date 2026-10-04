@@ -1,0 +1,30 @@
+id: SP_800_172_3_0_0_03.13.13E
+title: Port and Input/Output Device Access
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+ [connection ports or input/output devices] disable or remove [Selection (one): Physically; Logically] on the following systems or system components: [systems or system components]. 
+
+Guidance:
+Connection ports include Universal Serial Bus (USB), Thunderbolt, and Firewire (IEEE 1394). Input/output (I/O) devices include optical drives (e.g., compact disc and digital versatile disc drives), printers, and network attached storage devices. Disabling or removing such connection ports and I/O devices helps prevent the exfiltration of information from systems and the introduction of malicious code from those ports or devices. Physically disabling or removing ports and/or devices is the stronger action. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes contain)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.13.13E.ODP.01 | label: "connection ports or input/output devices"
+  guideline: connection ports or input/output devices to be disabled or removed are defined.
+- A.03.13.13E.ODP.02 | label: "SELECTED PARAMETER VALUE" | selection (one): Physically; Logically
+- A.03.13.13E.ODP.03 | label: "systems or system components"
+  guideline: systems or system components with connection ports or input/output devices to be disabled or removed are defined.
+
+References:
+- SC-41

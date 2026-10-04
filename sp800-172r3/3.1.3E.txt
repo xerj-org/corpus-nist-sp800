@@ -1,0 +1,7 @@
+id: SP_800_172_3_0_0_03.01.03E
+title: 03.01.03E
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+References:
+- SP_800_171_3_0_0

@@ -1,0 +1,49 @@
+id: ac-12
+title: Session Termination
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+Automatically terminate a user session after [conditions or trigger events].
+
+Guidance:
+Session termination addresses the termination of user-initiated logical sessions (in contrast to [SC-10](#sc-10) , which addresses the termination of network connections associated with communications sessions (i.e., network disconnect)). A logical session (for local, network, and remote access) is initiated whenever a user (or process acting on behalf of a user) accesses an organizational system. Such user sessions can be terminated without terminating network sessions. Session termination ends all processes associated with a user’s logical session except for those processes that are specifically created by the user (i.e., session owner) to continue after the session is terminated. Conditions or trigger events that require automatic termination of the session include organization-defined periods of user inactivity, targeted responses to certain types of incidents, or time-of-day restrictions on system use.
+
+Parameters:
+- ac-12_odp | label: "conditions or trigger events"
+  guideline: conditions or trigger events requiring session disconnect are defined;
+
+========================================================================
+Enhancement AC-12(1) (ac-12.1) - User-initiated Logouts
+
+Statement:
+Provide a logout capability for user-initiated communications sessions whenever authentication is used to gain access to [information resources].
+
+Guidance:
+Information resources to which users gain access via authentication include local workstations, databases, and password-protected websites or web-based services.
+
+Parameters:
+- ac-12.01_odp | label: "information resources"
+  guideline: information resources for which a logout capability for user-initiated communications sessions is required are defined;
+
+========================================================================
+Enhancement AC-12(2) (ac-12.2) - Termination Message
+
+Statement:
+Display an explicit logout message to users indicating the termination of authenticated communications sessions.
+
+Guidance:
+Logout messages for web access can be displayed after authenticated sessions have been terminated. However, for certain types of sessions, including file transfer protocol (FTP) sessions, systems typically send logout messages as final messages prior to terminating sessions.
+
+========================================================================
+Enhancement AC-12(3) (ac-12.3) - Timeout Warning Message
+
+Statement:
+Display an explicit message to users indicating that the session will end in [time].
+
+Guidance:
+To increase usability, notify users of pending session termination and prompt users to continue the session. The pending session termination time period is based on the parameters defined in the [AC-12](#ac-12) base control.
+
+Parameters:
+- ac-12.03_odp | label: "time"
+  guideline: time until the end of session for display to users is defined;

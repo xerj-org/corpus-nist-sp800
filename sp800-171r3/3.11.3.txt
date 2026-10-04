@@ -1,0 +1,4 @@
+id: SP_800_171_03.11.03
+title: 03.11.03
+family: Risk Assessment (SP_800_171_03.11)
+class: requirement

@@ -1,0 +1,106 @@
+id: sa-10
+title: Developer Configuration Management
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+Statement:
+Require the developer of the system, system component, or system service to:
+  a. Perform configuration management during system, component, or service [Selection (one-or-more): design; development; implementation; operation; disposal];
+  b. Document, manage, and control the integrity of changes to [configuration items];
+  c. Implement only organization-approved changes to the system, component, or service;
+  d. Document approved changes to the system, component, or service and the potential security and privacy impacts of such changes; and
+  e. Track security flaws and flaw resolution within the system, component, or service and report findings to [personnel].
+
+Guidance:
+Organizations consider the quality and completeness of configuration management activities conducted by developers as direct evidence of applying effective security controls. Controls include protecting the master copies of material used to generate security-relevant portions of the system hardware, software, and firmware from unauthorized modification or destruction. Maintaining the integrity of changes to the system, system component, or system service requires strict configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes.
+
+The configuration items that are placed under configuration management include the formal model; the functional, high-level, and low-level design specifications; other design data; implementation documentation; source code and hardware schematics; the current running version of the object code; tools for comparing new versions of security-relevant hardware descriptions and source code with previous versions; and test fixtures and documentation. Depending on the mission and business needs of organizations and the nature of the contractual relationships in place, developers may provide configuration management support during the operations and maintenance stage of the system development life cycle.
+
+Parameters:
+- sa-10_odp.01 | selection (one-or-more): design; development; implementation; operation; disposal
+- sa-10_odp.02 | label: "configuration items"
+  guideline: configuration items under configuration management are defined;
+- sa-10_odp.03 | label: "personnel"
+  guideline: personnel to whom security flaws and flaw resolutions within the system, component, or service are reported is/are defined;
+
+References:
+- National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.
+- National Institute of Standards and Technology (2015) Secure Hash Standard (SHS). (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 180-4.
+- National Institute of Standards and Technology (2015) SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 202.
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.
+
+========================================================================
+Enhancement SA-10(1) (sa-10.1) - Software and Firmware Integrity Verification
+
+Statement:
+Require the developer of the system, system component, or system service to enable integrity verification of software and firmware components.
+
+Guidance:
+Software and firmware integrity verification allows organizations to detect unauthorized changes to software and firmware components using developer-provided tools, techniques, and mechanisms. The integrity checking mechanisms can also address counterfeiting of software and firmware components. Organizations verify the integrity of software and firmware components, for example, through secure one-way hashes provided by developers. Delivered software and firmware components also include any updates to such components.
+
+========================================================================
+Enhancement SA-10(2) (sa-10.2) - Alternative Configuration Management Processes
+
+Statement:
+Provide an alternate configuration management process using organizational personnel in the absence of a dedicated developer configuration management team.
+
+Guidance:
+Alternate configuration management processes may be required when organizations use commercial off-the-shelf information technology products. Alternate configuration management processes include organizational personnel who review and approve proposed changes to systems, system components, and system services and conduct security and privacy impact analyses prior to the implementation of changes to systems, components, or services.
+
+========================================================================
+Enhancement SA-10(3) (sa-10.3) - Hardware Integrity Verification
+
+Statement:
+Require the developer of the system, system component, or system service to enable integrity verification of hardware components.
+
+Guidance:
+Hardware integrity verification allows organizations to detect unauthorized changes to hardware components using developer-provided tools, techniques, methods, and mechanisms. Organizations may verify the integrity of hardware components with hard-to-copy labels, verifiable serial numbers provided by developers, and by requiring the use of anti-tamper technologies. Delivered hardware components also include hardware and firmware updates to such components.
+
+========================================================================
+Enhancement SA-10(4) (sa-10.4) - Trusted Generation
+
+Statement:
+Require the developer of the system, system component, or system service to employ tools for comparing newly generated versions of security-relevant hardware descriptions, source code, and object code with previous versions.
+
+Guidance:
+The trusted generation of descriptions, source code, and object code addresses authorized changes to hardware, software, and firmware components between versions during development. The focus is on the efficacy of the configuration management process by the developer to ensure that newly generated versions of security-relevant hardware descriptions, source code, and object code continue to enforce the security policy for the system, system component, or system service. In contrast, [SA-10(1)](#sa-10.1) and [SA-10(3)](#sa-10.3) allow organizations to detect unauthorized changes to hardware, software, and firmware components using tools, techniques, or mechanisms provided by developers.
+
+========================================================================
+Enhancement SA-10(5) (sa-10.5) - Mapping Integrity for Version Control
+
+Statement:
+Require the developer of the system, system component, or system service to maintain the integrity of the mapping between the master build data describing the current version of security-relevant hardware, software, and firmware and the on-site master copy of the data for the current version.
+
+Guidance:
+Mapping integrity for version control addresses changes to hardware, software, and firmware components during both initial development and system development life cycle updates. Maintaining the integrity between the master copies of security-relevant hardware, software, and firmware (including designs, hardware drawings, source code) and the equivalent data in master copies in operational environments is essential to ensuring the availability of organizational systems that support critical mission and business functions.
+
+========================================================================
+Enhancement SA-10(6) (sa-10.6) - Trusted Distribution
+
+Statement:
+Require the developer of the system, system component, or system service to execute procedures for ensuring that security-relevant hardware, software, and firmware updates distributed to the organization are exactly as specified by the master copies.
+
+Guidance:
+The trusted distribution of security-relevant hardware, software, and firmware updates help to ensure that the updates are correct representations of the master copies maintained by the developer and have not been tampered with during distribution.
+
+========================================================================
+Enhancement SA-10(7) (sa-10.7) - Security and Privacy Representatives
+
+Statement:
+Require [organization-defined security and privacy representatives] to be included in the [organization-defined configuration change management and control process].
+
+Guidance:
+Information security and privacy representatives can include system security officers, senior agency information security officers, senior agency officials for privacy, and system privacy officers. Representation by personnel with information security and privacy expertise is important because changes to system configurations can have unintended side effects, some of which may be security- or privacy-relevant. Detecting such changes early in the process can help avoid unintended, negative consequences that could ultimately affect the security and privacy posture of systems. The configuration change management and control process in this control enhancement refers to the change management and control process defined by organizations in [SA-10b](#sa-10_smt.b).
+
+Parameters:
+- sa-10.7_prm_1 | label: "organization-defined security and privacy representatives"
+- sa-10.7_prm_2 | label: "organization-defined configuration change management and control process"
+- sa-10.07_odp.01 | label: "security representatives"
+  guideline: security representatives to be included in the configuration change management and control process are defined;
+- sa-10.07_odp.02 | label: "privacy representatives"
+  guideline: privacy representatives to be included in the configuration change management and control process are defined;
+- sa-10.07_odp.03 | label: "configuration change management and control processes"
+  guideline: configuration change management and control processes in which security representatives are required to be included are defined;
+- sa-10.07_odp.04 | label: "configuration change management and control processes"
+  guideline: configuration change management and control processes in which privacy representatives are required to be included are defined;

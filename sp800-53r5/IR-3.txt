@@ -1,0 +1,55 @@
+id: ir-3
+title: Incident Response Testing
+family: Incident Response (ir)
+class: SP800-53
+
+Statement:
+Test the effectiveness of the incident response capability for the system [frequency] using the following tests: [tests].
+
+Guidance:
+Organizations test incident response capabilities to determine their effectiveness and identify potential weaknesses or deficiencies. Incident response testing includes the use of checklists, walk-through or tabletop exercises, and simulations (parallel or full interrupt). Incident response testing can include a determination of the effects on organizational operations and assets and individuals due to incident response. The use of qualitative and quantitative data aids in determining the effectiveness of incident response processes.
+
+Parameters:
+- ir-03_odp.01 | label: "frequency"
+  guideline: frequency at which to test the effectiveness of the incident response capability for the system is defined;
+- ir-03_odp.02 | label: "tests"
+  guideline: tests used to test the effectiveness of the incident response capability for the system are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Grance T, Nolan T, Burke K, Dudley R, White G, Good T (2006) Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-84.
+- Scarfone KA, Souppaya MP, Cody A, Orebaugh AD (2008) Technical Guide to Information Security Testing and Assessment. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-115.
+
+========================================================================
+Enhancement IR-3(1) (ir-3.1) - Automated Testing
+
+Statement:
+Test the incident response capability using [automated mechanisms].
+
+Guidance:
+Organizations use automated mechanisms to more thoroughly and effectively test incident response capabilities. This can be accomplished by providing more complete coverage of incident response issues, selecting realistic test scenarios and environments, and stressing the response capability.
+
+Parameters:
+- ir-03.01_odp | label: "automated mechanisms"
+  guideline: automated mechanisms used to test the incident response capability are defined;
+
+========================================================================
+Enhancement IR-3(2) (ir-3.2) - Coordination with Related Plans
+
+Statement:
+Coordinate incident response testing with organizational elements responsible for related plans.
+
+Guidance:
+Organizational plans related to incident response testing include business continuity plans, disaster recovery plans, continuity of operations plans, contingency plans, crisis communications plans, critical infrastructure plans, and occupant emergency plans.
+
+========================================================================
+Enhancement IR-3(3) (ir-3.3) - Continuous Improvement
+
+Statement:
+Use qualitative and quantitative data from testing to:
+  (a) Determine the effectiveness of incident response processes;
+  (b) Continuously improve incident response processes; and
+  (c) Provide incident response measures and metrics that are accurate, consistent, and in a reproducible format.
+
+Guidance:
+To help incident response activities function as intended, organizations may use metrics and evaluation criteria to assess incident response programs as part of an effort to continually improve response performance. These efforts facilitate improvement in incident response efficacy and lessen the impact of incidents.

@@ -1,0 +1,37 @@
+id: SP_800_172_3_0_0_03.02.01E
+title: Advanced Literacy and Awareness Training
+family: Awareness and Training (SP_800_172_3_0_0_3.2)
+class: security_requirement
+
+Statement:
+  ES-03.02.01E-a Provide security literacy training to system users:
+    ES-03.02.01E-a-1 On the advanced persistent threat,
+    ES-03.02.01E-a-2 On recognizing suspicious communications and anomalous behavior in systems using [indicators of malicious code], and 
+    ES-03.02.01E-a-3 On the cyber threat environment.
+  ES-03.02.01E-b Update security literacy training content [frequency] and following [events]. 
+
+Guidance:
+An effective way to detect APTs, address the cyber threat environment, and preclude successful attacks is to provide specific literacy training for individuals. Threat literacy training includes educating individuals on the various ways that APTs can infiltrate the organization (e.g., through websites, emails, pop-ups, articles, and social engineering) and describes techniques for recognizing suspicious emails, the use of removable systems in non-secure settings, and the potential targeting of individuals at home. Personnel are also trained on what constitutes suspicious communications and how to respond to such communications. Training personnel on how to recognize anomalous behaviors in systems can provide organizations with early warning of the presence of malicious code. Recognizing anomalous behavior in systems can supplement the malicious code detection and protection tools and systems used by organizations. Since threats continue to change over time, threat literacy training is dynamic. Moreover, threat literacy training is not performed in isolation from the system operations that support organizational missions and business functions. This requirement enhances SP 800-171 requirement 03.02.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.02.01E.ODP.01 | label: "indicators of malicious code"
+  guideline: indicators of malicious code are defined.
+- A.03.02.01E.ODP.02 | label: "frequency"
+  guideline: the frequency at which to update security literacy training content is defined.
+- A.03.02.01E.ODP.03 | label: "events"
+  guideline: events which cause security literacy training content to be updated are defined.
+
+References:
+- AT-02(04)
+- AT-02(05)
+- AT-02(06)

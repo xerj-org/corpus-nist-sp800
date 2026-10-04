@@ -1,0 +1,20 @@
+id: cm-14
+title: Signed Components
+family: Configuration Management (cm)
+class: SP800-53
+
+Statement:
+Prevent the installation of [organization-defined software and firmware components] without verification that the component has been digitally signed using a certificate that is recognized and approved by the organization.
+
+Guidance:
+Software and firmware components prevented from installation unless signed with recognized and approved certificates include software and firmware version updates, patches, service packs, device drivers, and basic input/output system updates. Organizations can identify applicable software and firmware components by type, by specific items, or a combination of both. Digital signatures and organizational verification of such signatures is a method of code authentication.
+
+Parameters:
+- cm-14_prm_1 | label: "organization-defined software and firmware components"
+- cm-14_odp.01 | label: "software components"
+  guideline: software components requiring verification of a digitally signed certificate before installation are defined;
+- cm-14_odp.02 | label: "firmware components"
+  guideline: firmware components requiring verification of a digitally signed certificate before installation are defined;
+
+References:
+- Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.

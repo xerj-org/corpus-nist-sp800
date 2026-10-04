@@ -1,0 +1,28 @@
+id: SP_800_172_3_0_0_03.12.03E
+title: Risk Monitoring
+family: Security Assessment and Monitoring (SP_800_172_3_0_0_3.12)
+class: security_requirement
+
+Statement:
+Ensure risk monitoring is an integral part of the continuous monitoring strategy that includes effectiveness monitoring, compliance monitoring, change monitoring.
+
+Guidance:
+Risk monitoring is guided and informed by the established organizational risk tolerance. Effectiveness monitoring determines the ongoing effectiveness of the implemented risk response measures. Compliance monitoring verifies that required risk response measures are implemented. It also verifies that security requirements are satisfied. Change monitoring identifies changes to organizational systems and environments of operation that may affect security risk. This requirement enhances SP 800-171 requirement 03.12.03.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+References:
+- CA-07(04)

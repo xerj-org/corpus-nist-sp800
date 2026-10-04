@@ -1,0 +1,13 @@
+id: RS.RP
+title: Response Planning
+family: RESPOND (RS)
+class: category
+family-overview: Actions regarding a detected cybersecurity incident are taken
+
+Statement:
+
+========================================================================
+Child control RS.RP-01 - RS.RP-01
+
+Statement:
+Response plan is executed during or after an incident

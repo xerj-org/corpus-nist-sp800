@@ -1,0 +1,84 @@
+id: cp-4
+title: Contingency Plan Testing
+family: Contingency Planning (cp)
+class: SP800-53
+
+Statement:
+  a. Test the contingency plan for the system [frequency] using the following tests to determine the effectiveness of the plan and the readiness to execute the plan: [organization-defined tests].
+  b. Review the contingency plan test results; and
+  c. Initiate corrective actions, if needed.
+
+Guidance:
+Methods for testing contingency plans to determine the effectiveness of the plans and identify potential weaknesses include checklists, walk-through and tabletop exercises, simulations (parallel or full interrupt), and comprehensive exercises. Organizations conduct testing based on the requirements in contingency plans and include a determination of the effects on organizational operations, assets, and individuals due to contingency operations. Organizations have flexibility and discretion in the breadth, depth, and timelines of corrective actions.
+
+Parameters:
+- cp-4_prm_2 | label: "organization-defined tests"
+- cp-04_odp.01 | label: "frequency"
+  guideline: frequency of testing the contingency plan for the system is defined;
+- cp-04_odp.02 | label: "tests"
+  guideline: tests for determining the effectiveness of the contingency plan are defined;
+- cp-04_odp.03 | label: "tests"
+  guideline: tests for determining readiness to execute the contingency plan are defined;
+
+References:
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
+- Swanson MA, Bowen P, Phillips AW, Gallup D, Lynes D (2010) Contingency Planning Guide for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-34, Rev. 1, Includes updates as of November 11, 2010.
+- Grance T, Nolan T, Burke K, Dudley R, White G, Good T (2006) Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-84.
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.
+
+========================================================================
+Enhancement CP-4(1) (cp-4.1) - Coordinate with Related Plans
+
+Statement:
+Coordinate contingency plan testing with organizational elements responsible for related plans.
+
+Guidance:
+Plans related to contingency planning for organizational systems include Business Continuity Plans, Disaster Recovery Plans, Continuity of Operations Plans, Crisis Communications Plans, Critical Infrastructure Plans, Cyber Incident Response Plans, and Occupant Emergency Plans. Coordination of contingency plan testing does not require organizations to create organizational elements to handle related plans or to align such elements with specific plans. However, it does require that if such organizational elements are responsible for related plans, organizations coordinate with those elements.
+
+========================================================================
+Enhancement CP-4(2) (cp-4.2) - Alternate Processing Site
+
+Statement:
+Test the contingency plan at the alternate processing site:
+  (a) To familiarize contingency personnel with the facility and available resources; and
+  (b) To evaluate the capabilities of the alternate processing site to support contingency operations.
+
+Guidance:
+Conditions at the alternate processing site may be significantly different than the conditions at the primary site. Having the opportunity to visit the alternate site and experience the actual capabilities available at the site can provide valuable information on potential vulnerabilities that could affect essential organizational mission and business functions. The on-site visit can also provide an opportunity to refine the contingency plan to address the vulnerabilities discovered during testing.
+
+========================================================================
+Enhancement CP-4(3) (cp-4.3) - Automated Testing
+
+Statement:
+Test the contingency plan using [automated mechanisms].
+
+Guidance:
+Automated mechanisms facilitate thorough and effective testing of contingency plans by providing more complete coverage of contingency issues, selecting more realistic test scenarios and environments, and effectively stressing the system and supported mission and business functions.
+
+Parameters:
+- cp-04.03_odp | label: "automated mechanisms"
+  guideline: automated mechanisms for contingency plan testing are defined;
+
+========================================================================
+Enhancement CP-4(4) (cp-4.4) - Full Recovery and Reconstitution
+
+Statement:
+Include a full recovery and reconstitution of the system to a known state as part of contingency plan testing.
+
+Guidance:
+Recovery is executing contingency plan activities to restore organizational mission and business functions. Reconstitution takes place following recovery and includes activities for returning systems to fully operational states. Organizations establish a known state for systems that includes system state information for hardware, software programs, and data. Preserving system state information facilitates system restart and return to the operational mode of organizations with less disruption of mission and business processes.
+
+========================================================================
+Enhancement CP-4(5) (cp-4.5) - Self-challenge
+
+Statement:
+Employ [mechanisms] to [system or system component] to disrupt and adversely affect the system or system component.
+
+Guidance:
+Often, the best method of assessing system resilience is to disrupt the system in some manner. The mechanisms used by the organization could disrupt system functions or system services in many ways, including terminating or disabling critical system components, changing the configuration of system components, degrading critical functionality (e.g., restricting network bandwidth), or altering privileges. Automated, on-going, and simulated cyber-attacks and service disruptions can reveal unexpected functional dependencies and help the organization determine its ability to ensure resilience in the face of an actual cyber-attack.
+
+Parameters:
+- cp-04.05_odp.01 | label: "mechanisms"
+  guideline: mechanisms employed to disrupt and adversely affect the system or system component are defined;
+- cp-04.05_odp.02 | label: "system or system component"
+  guideline: system or system component on which to apply disruption mechanisms are defined;

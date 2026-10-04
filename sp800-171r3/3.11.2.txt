@@ -1,0 +1,31 @@
+id: SP_800_171_03.11.02
+title: Vulnerability Monitoring and Scanning
+family: Risk Assessment (SP_800_171_03.11)
+class: requirement
+
+Statement:
+  SR-03.11.02.a Monitor and scan the system for vulnerabilities [frequency] and when new vulnerabilities affecting the system are identified.
+  SR-03.11.02.b Remediate system vulnerabilities within [response times].
+  SR-03.11.02.c Update system vulnerabilities to be scanned [frequency] and when new vulnerabilities are identified and reported.
+
+Guidance:
+Organizations determine the required vulnerability scanning for system components and ensure that potential sources of vulnerabilities (e.g., networked printers, scanners, and copiers) are not overlooked. Vulnerability analyses for custom software may require additional approaches, such as static analysis, dynamic analysis, or binary analysis. Organizations can use these approaches in source code reviews and tools (e.g., static analysis tools, web-based application scanners, binary analyzers). Vulnerability scanning includes scanning for patch levels; scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and scanning for improperly configured or incorrectly operating flow control mechanisms. To facilitate interoperability, organizations consider using scanning tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention. Sources for vulnerability information also include the Common Weakness Enumeration (CWE) listing, the National Vulnerability Database (NVD), and the Common Vulnerability Scoring System (CVSS).
+
+Parameters:
+- A.03.11.02.ODP.01 | label: "frequency"
+  guideline: the frequency at which the system is monitored for vulnerabilities is defined.
+- A.03.11.02.ODP.02 | label: "frequency"
+  guideline: the frequency at which the system is scanned for vulnerabilities is defined.
+- A.03.11.02.ODP.03 | label: "response times"
+  guideline: response times to remediate system vulnerabilities are defined.
+- A.03.11.02.ODP.04 | label: "frequency"
+  guideline: the frequency at which to update system vulnerabilities to be scanned is defined.
+
+References:
+- RA-05
+- RA-05(02)
+- Scarfone KA, Souppaya MP, Cody A, Orebaugh AD (2008) Technical Guide to Information Security Testing and Assessment. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-115.
+- Waltermire DA, Quinn SD, Booth H, III, Scarfone KA, Prisaca D (2018) The Technical Specification for the Security Content Automation Protocol (SCAP): SCAP Version 1.3. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-126, Rev. 3.
+- Souppaya MP, Scarfone KA (2022) Guide to Enterprise Patch Management Planning: Preventive Maintenance for Technology. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-40, Rev. 4.
+- Joint Task Force Transformation Initiative (2022) Assessing Security and Privacy Controls in Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD),
+- Quinn SD, Souppaya MP, Cook MR, Scarfone KA (2018) National Checklist Program for IT Products: Guidelines for Checklist Users and Developers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-70, Rev. 4.

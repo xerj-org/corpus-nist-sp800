@@ -1,0 +1,158 @@
+id: ID.RA
+title: Risk Assessment
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+The cybersecurity risk to the organization, assets, and individuals is understood by the organization
+
+========================================================================
+Child control ID.RA-01 - ID.RA-01
+
+Statement:
+Vulnerabilities in assets are identified, validated, and recorded
+
+Example:
+Use vulnerability management technologies to identify unpatched and misconfigured software
+
+Example:
+Assess network and system architectures for design and implementation weaknesses that affect cybersecurity
+
+Example:
+Review, analyze, or test organization-developed software to identify design, coding, and default configuration vulnerabilities
+
+Example:
+Assess facilities that house critical computing assets for physical vulnerabilities and resilience issues
+
+Example:
+Monitor sources of cyber threat intelligence for information on new vulnerabilities in products and services
+
+Example:
+Review processes and procedures for weaknesses that could be exploited to affect cybersecurity
+
+========================================================================
+Child control ID.RA-02 - ID.RA-02
+
+Statement:
+Cyber threat intelligence is received from information sharing forums and sources
+
+Example:
+Configure cybersecurity tools and technologies with detection or response capabilities to securely ingest cyber threat intelligence feeds
+
+Example:
+Receive and review advisories from reputable third parties on current threat actors and their tactics, techniques, and procedures (TTPs)
+
+Example:
+Monitor sources of cyber threat intelligence for information on the types of vulnerabilities that emerging technologies may have
+
+========================================================================
+Child control ID.RA-03 - ID.RA-03
+
+Statement:
+Internal and external threats to the organization are identified and recorded
+
+Example:
+Use cyber threat intelligence to maintain awareness of the types of threat actors likely to target the organization and the TTPs they are likely to use
+
+Example:
+Perform threat hunting to look for signs of threat actors within the environment
+
+Example:
+Implement processes for identifying internal threat actors
+
+========================================================================
+Child control ID.RA-04 - ID.RA-04
+
+Statement:
+Potential impacts and likelihoods of threats exploiting vulnerabilities are identified and recorded
+
+Example:
+Business leaders and cybersecurity risk management practitioners work together to estimate the likelihood and impact of risk scenarios and record them in risk registers
+
+Example:
+Enumerate the potential business impacts of unauthorized access to the organization's communications, systems, and data processed in or by those systems
+
+Example:
+Account for the potential impacts of cascading failures for systems of systems
+
+========================================================================
+Child control ID.RA-05 - ID.RA-05
+
+Statement:
+Threats, vulnerabilities, likelihoods, and impacts are used to understand inherent risk and inform risk response prioritization
+
+Example:
+Develop threat models to better understand risks to the data and identify appropriate risk responses
+
+Example:
+Prioritize cybersecurity resource allocations and investments based on estimated likelihoods and impacts
+
+========================================================================
+Child control ID.RA-06 - ID.RA-06
+
+Statement:
+Risk responses are chosen, prioritized, planned, tracked, and communicated
+
+Example:
+Apply the vulnerability management plan's criteria for deciding whether to accept, transfer, mitigate, or avoid risk
+
+Example:
+Apply the vulnerability management plan's criteria for selecting compensating controls to mitigate risk
+
+Example:
+Track the progress of risk response implementation (e.g., plan of action and milestones (POA&M), risk register, risk detail report)
+
+Example:
+Use risk assessment findings to inform risk response decisions and actions
+
+Example:
+Communicate planned risk responses to affected stakeholders in priority order
+
+========================================================================
+Child control ID.RA-07 - ID.RA-07
+
+Statement:
+Changes and exceptions are managed, assessed for risk impact, recorded, and tracked
+
+Example:
+Implement and follow procedures for the formal documentation, review, testing, and approval of proposed changes and requested exceptions
+
+Example:
+Document the possible risks of making or not making each proposed change, and provide guidance on rolling back changes
+
+Example:
+Document the risks related to each requested exception and the plan for responding to those risks
+
+Example:
+Periodically review risks that were accepted based upon planned future actions or milestones
+
+========================================================================
+Child control ID.RA-08 - ID.RA-08
+
+Statement:
+Processes for receiving, analyzing, and responding to vulnerability disclosures are established
+
+Example:
+Conduct vulnerability information sharing between the organization and its suppliers following the rules and protocols defined in contracts
+
+Example:
+Assign responsibilities and verify the execution of procedures for processing, analyzing the impact of, and responding to cybersecurity threat, vulnerability, or incident disclosures by suppliers, customers, partners, and government cybersecurity organizations
+
+========================================================================
+Child control ID.RA-09 - ID.RA-09
+
+Statement:
+The authenticity and integrity of hardware and software are assessed prior to acquisition and use
+
+Example:
+Assess the authenticity and cybersecurity of critical technology products and services prior to acquisition and use
+
+========================================================================
+Child control ID.RA-10 - ID.RA-10
+
+Statement:
+Critical suppliers are assessed prior to acquisition
+
+Example:
+Conduct supplier risk assessments against business and applicable cybersecurity requirements, including the supply chain

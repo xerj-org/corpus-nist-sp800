@@ -1,0 +1,113 @@
+id: GV.RM
+title: Risk Management Strategy
+family: GOVERN (GV)
+class: category
+family-overview: The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored
+
+Statement:
+The organization's priorities, constraints, risk tolerance and appetite statements, and assumptions are established, communicated, and used to support operational risk decisions
+
+========================================================================
+Child control GV.RM-01 - GV.RM-01
+
+Statement:
+Risk management objectives are established and agreed to by organizational stakeholders
+
+Example:
+Update near-term and long-term cybersecurity risk management objectives as part of annual strategic planning and when major changes occur
+
+Example:
+Establish measurable objectives for cybersecurity risk management (e.g., manage the quality of user training, ensure adequate risk protection for industrial control systems)
+
+Example:
+Senior leaders agree about cybersecurity objectives and use them for measuring and managing risk and performance
+
+========================================================================
+Child control GV.RM-02 - GV.RM-02
+
+Statement:
+Risk appetite and risk tolerance statements are established, communicated, and maintained
+
+Example:
+Determine and communicate risk appetite statements that convey expectations about the appropriate level of risk for the organization
+
+Example:
+Translate risk appetite statements into specific, measurable, and broadly understandable risk tolerance statements
+
+Example:
+Refine organizational objectives and risk appetite periodically based on known risk exposure and residual risk
+
+========================================================================
+Child control GV.RM-03 - GV.RM-03
+
+Statement:
+Cybersecurity risk management activities and outcomes are included in enterprise risk management processes
+
+Example:
+Aggregate and manage cybersecurity risks alongside other enterprise risks (e.g., compliance, financial, operational, regulatory, reputational, safety)
+
+Example:
+Include cybersecurity risk managers in enterprise risk management planning
+
+Example:
+Establish criteria for escalating cybersecurity risks within enterprise risk management
+
+========================================================================
+Child control GV.RM-04 - GV.RM-04
+
+Statement:
+Strategic direction that describes appropriate risk response options is established and communicated
+
+Example:
+Specify criteria for accepting and avoiding cybersecurity risk for various classifications of data
+
+Example:
+Determine whether to purchase cybersecurity insurance
+
+Example:
+Document conditions under which shared responsibility models are acceptable (e.g., outsourcing certain cybersecurity functions, having a third party perform financial transactions on behalf of the organization, using public cloud-based services)
+
+========================================================================
+Child control GV.RM-05 - GV.RM-05
+
+Statement:
+Lines of communication across the organization are established for cybersecurity risks, including risks from suppliers and other third parties
+
+Example:
+Determine how to update senior executives, directors, and management on the organization's cybersecurity posture at agreed-upon intervals
+
+Example:
+Identify how all departments across the organization - such as management, operations, internal auditors, legal, acquisition, physical security, and HR - will communicate with each other about cybersecurity risks
+
+========================================================================
+Child control GV.RM-06 - GV.RM-06
+
+Statement:
+A standardized method for calculating, documenting, categorizing, and prioritizing cybersecurity risks is established and communicated
+
+Example:
+Establish criteria for using a quantitative approach to cybersecurity risk analysis, and specify probability and exposure formulas
+
+Example:
+Create and use templates (e.g., a risk register) to document cybersecurity risk information (e.g., risk description, exposure, treatment, and ownership)
+
+Example:
+Establish criteria for risk prioritization at the appropriate levels within the enterprise
+
+Example:
+Use a consistent list of risk categories to support integrating, aggregating, and comparing cybersecurity risks
+
+========================================================================
+Child control GV.RM-07 - GV.RM-07
+
+Statement:
+Strategic opportunities (i.e., positive risks) are characterized and are included in organizational cybersecurity risk discussions
+
+Example:
+Define and communicate guidance and methods for identifying opportunities and including them in risk discussions (e.g., strengths, weaknesses, opportunities, and threats (SWOT) analysis)
+
+Example:
+Identify stretch goals and document them
+
+Example:
+Calculate, document, and prioritize positive risks alongside negative risks

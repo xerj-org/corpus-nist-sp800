@@ -1,0 +1,17 @@
+id: SP_800_171_03.07.05
+title: Nonlocal Maintenance
+family: Maintenance (SP_800_171_03.07)
+class: requirement
+
+Statement:
+  SR-03.07.05.a Approve and monitor nonlocal maintenance and diagnostic activities.
+  SR-03.07.05.b Implement multi-factor authentication and replay resistance in the establishment of nonlocal maintenance and diagnostic sessions.
+  SR-03.07.05.c Terminate session and network connections when nonlocal maintenance is completed.
+
+Guidance:
+Nonlocal maintenance and diagnostic activities are conducted by individuals who communicate through an external or internal network. Local maintenance and diagnostic activities are carried out by individuals who are physically present at the location of the system and not communicating across a network connection. Authentication techniques used to establish nonlocal maintenance and diagnostic sessions reflect the requirements in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.05.01) 03.05.01.
+
+References:
+- MA-04
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.
+- Kissel RL, Regenscheid AR, Scholl MA, Stine KM (2014) Guidelines for Media Sanitization. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-88, Rev.

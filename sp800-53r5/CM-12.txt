@@ -1,0 +1,36 @@
+id: cm-12
+title: Information Location
+family: Configuration Management (cm)
+class: SP800-53
+
+Statement:
+  a. Identify and document the location of [information] and the specific system components on which the information is processed and stored;
+  b. Identify and document the users who have access to the system and system components where the information is processed and stored; and
+  c. Document changes to the location (i.e., system or system components) where the information is processed and stored.
+
+Guidance:
+Information location addresses the need to understand where information is being processed and stored. Information location includes identifying where specific information types and information reside in system components and how information is being processed so that information flow can be understood and adequate protection and policy management provided for such information and system components. The security category of the information is also a factor in determining the controls necessary to protect the information and the system component where the information resides (see [FIPS 199](#628d22a1-6a11-4784-bc59-5cd9497b5445) ). The location of the information and system components is also a factor in the architecture and design of the system (see [SA-4](#sa-4), [SA-8](#sa-8), [SA-17](#sa-17)).
+
+Parameters:
+- cm-12_odp | label: "information"
+  guideline: information for which the location is to be identified and documented is defined;
+
+References:
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
+- Stine KM, Kissel RL, Barker WC, Fahlsing J, Gulick J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 1, Rev. 1.
+- Stine KM, Kissel RL, Barker WC, Lee A, Fahlsing J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories: Appendices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 2, Rev. 1.
+
+========================================================================
+Enhancement CM-12(1) (cm-12.1) - Automated Tools to Support Information Location
+
+Statement:
+Use automated tools to identify [information by information type] on [system components] to ensure controls are in place to protect organizational information and individual privacy.
+
+Guidance:
+The use of automated tools helps to increase the effectiveness and efficiency of the information location capability implemented within the system. Automation also helps organizations manage the data produced during information location activities and share such information across the organization. The output of automated information location tools can be used to guide and inform system architecture and design decisions.
+
+Parameters:
+- cm-12.01_odp.01 | label: "information by information type"
+  guideline: information to be protected is defined by information type;
+- cm-12.01_odp.02 | label: "system components"
+  guideline: system components where the information is located are defined;

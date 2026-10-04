@@ -1,0 +1,33 @@
+id: SP_800_172_3_0_0_03.14.05E
+title: Non-Persistent Information
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+  ES-03.14.05E-a  [Selection (one): Refresh {{ insert: param, A.03.14.05E.ODP.02 }} {{ insert: param, A.03.14.05E.ODP.03 }} ; Generate {{ insert: param, A.03.14.05E.ODP.04 }} on demand ]. 
+  ES-03.14.05E-b Delete information when no longer needed.
+
+Guidance:
+Retaining information longer than is required makes that information a potential target for advanced adversaries searching for high value assets to compromise through unauthorized disclosure, unauthorized modification, or exfiltration. For system-related information, unnecessary retention provides adversaries with information that can assist in their reconnaissance and lateral movement through the system. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.14.05E.ODP.01 | label: "SELECTED PARAMETER VALUE" | selection (one): Refresh {{ insert: param, A.03.14.05E.ODP.02 }} {{ insert: param, A.03.14.05E.ODP.03 }} ; Generate {{ insert: param, A.03.14.05E.ODP.04 }} on demand 
+- A.03.14.05E.ODP.02 | label: "information"
+  guideline: the information to be refreshed is defined (if selected).
+- A.03.14.05E.ODP.03 | label: "frequency"
+  guideline: the frequency at which to refresh information is defined (if selected).
+- A.03.14.05E.ODP.04 | label: "information"
+  guideline: the information to be generated on demand is defined (if selected).
+
+References:
+- SI-14(02)

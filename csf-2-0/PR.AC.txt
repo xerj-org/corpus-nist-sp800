@@ -1,0 +1,49 @@
+id: PR.AC
+title: Identity Management, Authentication and Access Control
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+
+========================================================================
+Child control PR.AC-01 - PR.AC-01
+
+Statement:
+Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes
+
+========================================================================
+Child control PR.AC-02 - PR.AC-02
+
+Statement:
+Physical access to assets is managed and protected
+
+========================================================================
+Child control PR.AC-03 - PR.AC-03
+
+Statement:
+Remote access is managed
+
+========================================================================
+Child control PR.AC-04 - PR.AC-04
+
+Statement:
+Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties
+
+========================================================================
+Child control PR.AC-05 - PR.AC-05
+
+Statement:
+Network integrity is protected (e.g., network segregation, network segmentation)
+
+========================================================================
+Child control PR.AC-06 - PR.AC-06
+
+Statement:
+Identities are proofed and bound to credentials and asserted in interactions
+
+========================================================================
+Child control PR.AC-07 - PR.AC-07
+
+Statement:
+Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction (e.g., individuals’ security and privacy risks and other organizational risks)

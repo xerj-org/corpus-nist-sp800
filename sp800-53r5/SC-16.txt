@@ -1,0 +1,51 @@
+id: sc-16
+title: Transmission of Security and Privacy Attributes
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Associate [organization-defined security and privacy attributes] with information exchanged between systems and between system components.
+
+Guidance:
+Security and privacy attributes can be explicitly or implicitly associated with the information contained in organizational systems or system components. Attributes are abstractions that represent the basic properties or characteristics of an entity with respect to protecting information or the management of personally identifiable information. Attributes are typically associated with internal data structures, including records, buffers, and files within the system. Security and privacy attributes are used to implement access control and information flow control policies; reflect special dissemination, management, or distribution instructions, including permitted uses of personally identifiable information; or support other aspects of the information security and privacy policies. Privacy attributes may be used independently or in conjunction with security attributes.
+
+Parameters:
+- sc-16_prm_1 | label: "organization-defined security and privacy attributes"
+- sc-16_odp.01 | label: "security attributes"
+  guideline: security attributes to be associated with information exchanged are defined;
+- sc-16_odp.02 | label: "privacy attributes"
+  guideline: privacy attributes to be associated with information exchanged are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+
+========================================================================
+Enhancement SC-16(1) (sc-16.1) - Integrity Verification
+
+Statement:
+Verify the integrity of transmitted security and privacy attributes.
+
+Guidance:
+Part of verifying the integrity of transmitted information is ensuring that security and privacy attributes that are associated with such information have not been modified in an unauthorized manner. Unauthorized modification of security or privacy attributes can result in a loss of integrity for transmitted information.
+
+========================================================================
+Enhancement SC-16(2) (sc-16.2) - Anti-spoofing Mechanisms
+
+Statement:
+Implement anti-spoofing mechanisms to prevent adversaries from falsifying the security attributes indicating the successful application of the security process.
+
+Guidance:
+Some attack vectors operate by altering the security attributes of an information system to intentionally and maliciously implement an insufficient level of security within the system. The alteration of attributes leads organizations to believe that a greater number of security functions are in place and operational than have actually been implemented.
+
+========================================================================
+Enhancement SC-16(3) (sc-16.3) - Cryptographic Binding
+
+Statement:
+Implement [mechanisms or techniques] to bind security and privacy attributes to transmitted information.
+
+Guidance:
+Cryptographic mechanisms and techniques can provide strong security and privacy attribute binding to transmitted information to help ensure the integrity of such information.
+
+Parameters:
+- sc-16.03_odp | label: "mechanisms or techniques"
+  guideline: mechanisms or techniques to bind security and privacy attributes to transmitted information are defined;

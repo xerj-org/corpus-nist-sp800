@@ -1,0 +1,27 @@
+id: SP_800_172_3_0_0_03.14.14E
+title: Memory Protection
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Implement the following safeguards to protect the system memory from unauthorized code execution: [safeguards]. 
+
+Guidance:
+Some adversaries launch attacks with the intent of executing code in non-executable regions of memory or in memory locations that are prohibited. The safeguards used to protect memory include data execution prevention and address space layout randomization (ASLR). Data execution prevention safeguards can be hardware- or software-enforced with hardware enforcement providing the greater strength of mechanism. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.14.14E.ODP.01 | label: "safeguards"
+  guideline: safeguards to be implemented to protect the system memory from unauthorized code execution are defined.
+
+References:
+- SI-16

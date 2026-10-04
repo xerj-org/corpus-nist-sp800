@@ -1,0 +1,79 @@
+id: PR.IP
+title: Information Protection Processes and Procedures
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+
+========================================================================
+Child control PR.IP-01 - PR.IP-01
+
+Statement:
+A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality)
+
+========================================================================
+Child control PR.IP-02 - PR.IP-02
+
+Statement:
+A System Development Life Cycle to manage systems is implemented
+
+========================================================================
+Child control PR.IP-03 - PR.IP-03
+
+Statement:
+Configuration change control processes are in place
+
+========================================================================
+Child control PR.IP-04 - PR.IP-04
+
+Statement:
+Backups of information are conducted, maintained, and tested
+
+========================================================================
+Child control PR.IP-05 - PR.IP-05
+
+Statement:
+Policy and regulations regarding the physical operating environment for organizational assets are met
+
+========================================================================
+Child control PR.IP-06 - PR.IP-06
+
+Statement:
+Data is destroyed according to policy
+
+========================================================================
+Child control PR.IP-07 - PR.IP-07
+
+Statement:
+Protection processes are improved
+
+========================================================================
+Child control PR.IP-08 - PR.IP-08
+
+Statement:
+Effectiveness of protection technologies is shared
+
+========================================================================
+Child control PR.IP-09 - PR.IP-09
+
+Statement:
+Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed
+
+========================================================================
+Child control PR.IP-10 - PR.IP-10
+
+Statement:
+Response and recovery plans are tested
+
+========================================================================
+Child control PR.IP-11 - PR.IP-11
+
+Statement:
+Cybersecurity is included in human resources practices (e.g., deprovisioning, personnel screening)
+
+========================================================================
+Child control PR.IP-12 - PR.IP-12
+
+Statement:
+A vulnerability management plan is developed and implemented

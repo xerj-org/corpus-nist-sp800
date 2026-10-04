@@ -1,0 +1,19 @@
+id: SP_800_171_03.01.06
+title: Least Privilege – Privileged Accounts
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.06.a Restrict privileged accounts on the system to [personnel or roles]..
+  SR-03.01.06.b Require that users (or roles) with privileged accounts use non-privileged accounts when accessing non-security functions or non-security information.
+
+Guidance:
+Privileged accounts refer to accounts that are granted elevated privileges to access resources (including security functions or security-relevant information) that are otherwise restricted for non-privileged accounts. These accounts are typically described as system administrator or super user accounts. For example, a privileged account is often required in order to perform privileged functions such as executing commands that could modify system behavior. Restricting privileged accounts to specific personnel or roles ensures that only those authorized users can access and manipulate security functions or security-relevant information. Requiring the use of non-privileged accounts when such access is not needed can limit unauthorized access to and manipulation of security functions or security-relevant information.
+
+Parameters:
+- A.03.01.06.ODP.01 | label: "personnel or roles"
+  guideline: personnel or roles to which privileged accounts on the system are to be restricted are defined.
+
+References:
+- AC-06(02)
+- AC-06(05)

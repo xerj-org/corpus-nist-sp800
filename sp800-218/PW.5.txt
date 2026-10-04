@@ -1,0 +1,54 @@
+id: PW.5
+title: Create Source Code by Adhering to Secure Coding Practices
+family: Produce Well-Secured Software (PW)
+class: practice
+family-overview: Organizations should produce well-secured software with minimal security vulnerabilities in its releases.
+
+Statement:
+Decrease the number of security vulnerabilities in the software, and reduce costs by minimizing vulnerabilities introduced during source code creation that meet or exceed organization-defined vulnerability severity criteria.
+
+========================================================================
+Child control PW.5.1 - PW.5.1
+
+Statement:
+Follow all secure coding practices that are appropriate to the development languages and environment to meet the organization’s requirements.
+
+Example:
+Validate all inputs, and validate and properly encode all outputs.
+
+Example:
+Avoid using unsafe functions and calls.
+
+Example:
+Detect errors, and handle them gracefully.
+
+Example:
+Provide logging and tracing capabilities.
+
+Example:
+Use development environments with automated features that encourage or require the use of secure coding practices with just-in-time training-in-place.
+
+Example:
+Follow procedures for manually ensuring compliance with secure coding practices when automated methods are insufficient or unavailable.
+
+Example:
+Use tools (e.g., linters, formatters) to standardize the style and formatting of the source code.
+
+Example:
+Check for other vulnerabilities that are common to the development languages and environment.
+
+Example:
+Have the developer review their own human-readable code to complement (not replace) code review performed by other people or tools. See PW.7.
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Migues S, Erlikhman E, Ewers J, Nassery K (2021) BSIMM12 2021 Foundations Report.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- Hong Fong EK, Wheeler D, Henninger A (2016) State-of-the-Art Resources (SOAR) for Software Vulnerability Detection, Test, and Evaluation 2016. (Institute for Defense Analyses [IDA], Alexandria, VA), IDA Paper P-8005.
+- International Electrotechnical Commission (IEC), Security for industrial automation and control systems – Part 4-1: Secure product development lifecycle requirements, IEC 62443-4-1, 2018.
+- International Organization for Standardization (ISO)/International Electrotechnical Commission (IEC), Information technology – Security techniques – Application security – Part 1: Overview and concepts, ISO/IEC 27034-1:2011, 2011.
+- Microsoft (2021) Security Development Lifecycle.
+- Open Web Application Security Project (2021) OWASP Application Security Verification Standard 4.0.3.
+- Open Web Application Security Project (2021) OWASP Mobile Application Security Verification Standard, Version 1.4.2.
+- Software Assurance Forum for Excellence in Code (2018) Fundamental Practices for Secure Software Development: Essential Elements of a Secure Development Lifecycle Program, Third Edition.
+- "Newhouse W, Keith S, Scribner B, Witte G (2017) National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181."

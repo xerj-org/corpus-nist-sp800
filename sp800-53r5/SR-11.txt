@@ -1,0 +1,60 @@
+id: sr-11
+title: Component Authenticity
+family: Supply Chain Risk Management (sr)
+class: SP800-53
+
+Statement:
+  a. Develop and implement anti-counterfeit policy and procedures that include the means to detect and prevent counterfeit components from entering the system; and
+  b. Report counterfeit system components to [Selection (one-or-more): source of counterfeit component; {{ insert: param, sr-11_odp.02 }} ; {{ insert: param, sr-11_odp.03 }} ].
+
+Guidance:
+Sources of counterfeit components include manufacturers, developers, vendors, and contractors. Anti-counterfeiting policies and procedures support tamper resistance and provide a level of protection against the introduction of malicious code. External reporting organizations include CISA.
+
+Parameters:
+- sr-11_odp.01 | selection (one-or-more): source of counterfeit component; {{ insert: param, sr-11_odp.02 }} ; {{ insert: param, sr-11_odp.03 }} 
+- sr-11_odp.02 | label: "external reporting organizations"
+  guideline: external reporting organizations to whom counterfeit system components are to be reported is/are defined (if selected);
+- sr-11_odp.03 | label: "personnel or roles"
+  guideline: personnel or roles to whom counterfeit system components are to be reported is/are defined (if selected);
+
+References:
+- International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, *Information technology — Open Trusted Technology Provider™ Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations* , February 2018.
+
+========================================================================
+Enhancement SR-11(1) (sr-11.1) - Anti-counterfeit Training
+
+Statement:
+Train [personnel or roles] to detect counterfeit system components (including hardware, software, and firmware).
+
+Guidance:
+None.
+
+Parameters:
+- sr-11.01_odp | label: "personnel or roles"
+  guideline: personnel or roles requiring training to detect counterfeit system components (including hardware, software, and firmware) is/are defined;
+
+========================================================================
+Enhancement SR-11(2) (sr-11.2) - Configuration Control for Component Service and Repair
+
+Statement:
+Maintain configuration control over the following system components awaiting service or repair and serviced or repaired components awaiting return to service: [system components].
+
+Guidance:
+None.
+
+Parameters:
+- sr-11.02_odp | label: "system components"
+  guideline: system components requiring configuration control are defined;
+
+========================================================================
+Enhancement SR-11(3) (sr-11.3) - Anti-counterfeit Scanning
+
+Statement:
+Scan for counterfeit system components [frequency].
+
+Guidance:
+The type of component determines the type of scanning to be conducted (e.g., web application scanning if the component is a web application).
+
+Parameters:
+- sr-11.03_odp | label: "frequency"
+  guideline: the frequency at which to scan for counterfeit system components is defined;

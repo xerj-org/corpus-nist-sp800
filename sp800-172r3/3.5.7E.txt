@@ -1,0 +1,29 @@
+id: SP_800_172_3_0_0_03.05.07E
+title: Identity Providers and Authorization Servers
+family: Identification and Authentication (SP_800_172_3_0_0_3.5)
+class: security_requirement
+
+Statement:
+Employ identity providers and authorization servers to manage user, device, and non-person entity identities, attributes, and access rights that support authentication and authorization decisions in accordance with [policy] using [mechanisms]. 
+
+Guidance:
+Identity providers (both internal and external to the organization) manage user, device, and non-person entity authenticators and issue statements (often called identity assertions) that attest to the identities of other systems or system components. Authorization servers create and issue access tokens to identified and authenticated users and devices that can be used to gain access to organizational systems or information resources. For example, single sign-on (SSO) provides identity provider and authorization server functions. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.05.07E.ODP.01 | label: "policy"
+  guideline: an identification and authentication policy is defined.
+- A.03.05.07E.ODP.02 | label: "mechanisms"
+  guideline: mechanisms supporting authentication and authorization decisions are defined.
+
+References:
+- IA-13

@@ -1,0 +1,13 @@
+id: SP_800_171_03.01.09
+title: System Use Notification
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+Display a system use notification message with privacy and security notices consistent with applicable CUI rules before granting access to the system.
+
+Guidance:
+System use notifications can be implemented using messages or warning banners. The messages or warning banners are displayed before individuals log in to a system that processes, stores, or transmits CUI. System use notifications are used for access via logon interfaces with human users and are not required when human interfaces do not exist. Organizations consider whether a secondary use notification is needed to access applications or other system resources after the initial network logon. Posters or other printed materials may be used in lieu of an automated system message. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.15.03) 03.15.03.
+
+References:
+- AC-08

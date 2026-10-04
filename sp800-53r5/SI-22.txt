@@ -1,0 +1,22 @@
+id: si-22
+title: Information Diversity
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+  a. Identify the following alternative sources of information for [essential functions and services]: [alternative information sources] ; and
+  b. Use an alternative information source for the execution of essential functions or services on [systems or system components] when the primary source of information is corrupted or unavailable.
+
+Guidance:
+Actions taken by a system service or a function are often driven by the information it receives. Corruption, fabrication, modification, or deletion of that information could impact the ability of the service function to properly carry out its intended actions. By having multiple sources of input, the service or function can continue operation if one source is corrupted or no longer available. It is possible that the alternative sources of information may be less precise or less accurate than the primary source of information. But having such sub-optimal information sources may still provide a sufficient level of quality that the essential service or function can be carried out, even in a degraded or debilitated manner.
+
+Parameters:
+- si-22_odp.01 | label: "alternative information sources"
+  guideline: alternative information sources for essential functions and services are defined;
+- si-22_odp.02 | label: "essential functions and services"
+  guideline: essential functions and services that require alternative sources of information are defined;
+- si-22_odp.03 | label: "systems or system components"
+  guideline: systems or system components that require an alternative information source for the execution of essential functions or services are defined;
+
+References:
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.

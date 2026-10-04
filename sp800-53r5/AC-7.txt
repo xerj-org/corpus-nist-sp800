@@ -1,0 +1,79 @@
+id: ac-7
+title: Unsuccessful Logon Attempts
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+  a. Enforce a limit of [number] consecutive invalid logon attempts by a user during a [time period] ; and
+  b. Automatically [Selection (one-or-more): lock the account or node for {{ insert: param, ac-07_odp.04 }} ; lock the account or node until released by an administrator; delay next logon prompt per {{ insert: param, ac-07_odp.05 }} ; notify system administrator; take other {{ insert: param, ac-07_odp.06 }} ] when the maximum number of unsuccessful attempts is exceeded.
+
+Guidance:
+The need to limit unsuccessful logon attempts and take subsequent action when the maximum number of attempts is exceeded applies regardless of whether the logon occurs via a local or network connection. Due to the potential for denial of service, automatic lockouts initiated by systems are usually temporary and automatically release after a predetermined, organization-defined time period. If a delay algorithm is selected, organizations may employ different algorithms for different components of the system based on the capabilities of those components. Responses to unsuccessful logon attempts may be implemented at the operating system and the application levels. Organization-defined actions that may be taken when the number of allowed consecutive invalid logon attempts is exceeded include prompting the user to answer a secret question in addition to the username and password, invoking a lockdown mode with limited user capabilities (instead of full lockout), allowing users to only logon from specified Internet Protocol (IP) addresses, requiring a CAPTCHA to prevent automated attacks, or applying user profiles such as location, time of day, IP address, device, or Media Access Control (MAC) address. If automatic system lockout or execution of a delay algorithm is not implemented in support of the availability objective, organizations consider a combination of other actions to help prevent brute force attacks. In addition to the above, organizations can prompt users to respond to a secret question before the number of allowed unsuccessful logon attempts is exceeded. Automatically unlocking an account after a specified period of time is generally not permitted. However, exceptions may be required based on operational mission or need.
+
+Parameters:
+- ac-07_odp.01 | label: "number"
+  guideline: the number of consecutive invalid logon attempts by a user allowed during a time period is defined;
+- ac-07_odp.02 | label: "time period"
+  guideline: the time period to which the number of consecutive invalid logon attempts by a user is limited is defined;
+- ac-07_odp.03 | selection (one-or-more): lock the account or node for {{ insert: param, ac-07_odp.04 }} ; lock the account or node until released by an administrator; delay next logon prompt per {{ insert: param, ac-07_odp.05 }} ; notify system administrator; take other {{ insert: param, ac-07_odp.06 }} 
+- ac-07_odp.04 | label: "time period"
+  guideline: time period for an account or node to be locked is defined (if selected);
+- ac-07_odp.05 | label: "delay algorithm"
+  guideline: delay algorithm for the next logon prompt is defined (if selected);
+- ac-07_odp.06 | label: "action"
+  guideline: other action to be taken when the maximum number of unsuccessful attempts is exceeded is defined (if selected);
+
+References:
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.
+- Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.
+
+========================================================================
+Enhancement AC-7(1) (ac-7.1) - Automatic Account Lock
+
+========================================================================
+Enhancement AC-7(2) (ac-7.2) - Purge or Wipe Mobile Device
+
+Statement:
+Purge or wipe information from [mobile devices] based on [purging or wiping requirements and techniques] after [number] consecutive, unsuccessful device logon attempts.
+
+Guidance:
+A mobile device is a computing device that has a small form factor such that it can be carried by a single individual; is designed to operate without a physical connection; possesses local, non-removable or removable data storage; and includes a self-contained power source. Purging or wiping the device applies only to mobile devices for which the organization-defined number of unsuccessful logons occurs. The logon is to the mobile device, not to any one account on the device. Successful logons to accounts on mobile devices reset the unsuccessful logon count to zero. Purging or wiping may be unnecessary if the information on the device is protected with sufficiently strong encryption mechanisms.
+
+Parameters:
+- ac-07.02_odp.01 | label: "mobile devices"
+  guideline: mobile devices to be purged or wiped of information are defined;
+- ac-07.02_odp.02 | label: "purging or wiping requirements and techniques"
+  guideline: purging and wiping requirements and techniques to be used when mobile devices are purged or wiped of information are defined;
+- ac-07.02_odp.03 | label: "number"
+  guideline: the number of consecutive, unsuccessful logon attempts before the information is purged or wiped from mobile devices is defined;
+
+========================================================================
+Enhancement AC-7(3) (ac-7.3) - Biometric Attempt Limiting
+
+Statement:
+Limit the number of unsuccessful biometric logon attempts to [number].
+
+Guidance:
+Biometrics are probabilistic in nature. The ability to successfully authenticate can be impacted by many factors, including matching performance and presentation attack detection mechanisms. Organizations select the appropriate number of attempts for users based on organizationally-defined factors.
+
+Parameters:
+- ac-07.03_odp | label: "number"
+  guideline: the number of unsuccessful biometric logon attempts is defined;
+
+========================================================================
+Enhancement AC-7(4) (ac-7.4) - Use of Alternate Authentication Factor
+
+Statement:
+  (a) Allow the use of [authentication factors] that are different from the primary authentication factors after the number of organization-defined consecutive invalid logon attempts have been exceeded; and
+  (b) Enforce a limit of [number] consecutive invalid logon attempts through use of the alternative factors by a user during a [time period].
+
+Guidance:
+The use of alternate authentication factors supports the objective of availability and allows a user who has inadvertently been locked out to use additional authentication factors to bypass the lockout.
+
+Parameters:
+- ac-07.04_odp.01 | label: "authentication factors"
+  guideline: authentication factors allowed to be used that are different from the primary authentication factors are defined;
+- ac-07.04_odp.02 | label: "number"
+  guideline: the number of consecutive, invalid logon attempts through the use of alternative factors for which to enforce a limit by a user is defined;
+- ac-07.04_odp.03 | label: "time period"
+  guideline: time period during which a user can attempt logons through alternative factors is defined;

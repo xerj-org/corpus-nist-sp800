@@ -1,0 +1,32 @@
+id: SP_800_172_3_0_0_03.13.04E
+title: Isolation of System Components
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Employ boundary protection mechanisms to isolate [system components]. 
+
+Guidance:
+Organizations can isolate system components that perform different mission or business functions. Isolating system components with boundary protection mechanisms provides the capability for increased protection of individual system components and to more effectively control information flows between those components. The degree of isolation varies depending on the mechanisms selected. Boundary protection mechanisms include routers, gateways, and firewalls that separate system components into physically separate networks or subnetworks; cross-domain devices that separate subnetworks; virtualization techniques; and the encryption of information flows among system components using distinct encryption keys. This requirement enhances SP 800-171 requirement 03.13.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.13.04E.ODP.01 | label: "system components"
+  guideline: system components to be isolated by boundary protection mechanisms are defined.
+
+References:
+- SC-07(21)

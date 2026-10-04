@@ -1,0 +1,57 @@
+id: sc-23
+title: Session Authenticity
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Protect the authenticity of communications sessions.
+
+Guidance:
+Protecting session authenticity addresses communications protection at the session level, not at the packet level. Such protection establishes grounds for confidence at both ends of communications sessions in the ongoing identities of other parties and the validity of transmitted information. Authenticity protection includes protecting against "man-in-the-middle" attacks, session hijacking, and the insertion of false information into sessions.
+
+References:
+- McKay KA, Cooper DA (2019) Guidelines for the Selection, Configuration, and Use of Transport Layer Security (TLS) Implementations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-52, Rev. 2.
+- Barker EB, Dang QH, Frankel SE, Scarfone KA, Wouters P (2020) Guide to IPsec VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-77, Rev. 1.
+- Singhal A, Winograd T, Scarfone KA (2007) Guide to Secure Web Services. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-95.
+- Frankel SE, Hoffman P, Orebaugh AD, Park R (2008) Guide to SSL VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-113.
+
+========================================================================
+Enhancement SC-23(1) (sc-23.1) - Invalidate Session Identifiers at Logout
+
+Statement:
+Invalidate session identifiers upon user logout or other session termination.
+
+Guidance:
+Invalidating session identifiers at logout curtails the ability of adversaries to capture and continue to employ previously valid session IDs.
+
+========================================================================
+Enhancement SC-23(2) (sc-23.2) - User-initiated Logouts and Message Displays
+
+========================================================================
+Enhancement SC-23(3) (sc-23.3) - Unique System-generated Session Identifiers
+
+Statement:
+Generate a unique session identifier for each session with [randomness requirements] and recognize only session identifiers that are system-generated.
+
+Guidance:
+Generating unique session identifiers curtails the ability of adversaries to reuse previously valid session IDs. Employing the concept of randomness in the generation of unique session identifiers protects against brute-force attacks to determine future session identifiers.
+
+Parameters:
+- sc-23.03_odp | label: "randomness requirements"
+  guideline: randomness requirements for generating a unique session identifier for each session are defined;
+
+========================================================================
+Enhancement SC-23(4) (sc-23.4) - Unique Session Identifiers with Randomization
+
+========================================================================
+Enhancement SC-23(5) (sc-23.5) - Allowed Certificate Authorities
+
+Statement:
+Only allow the use of [certificated authorities] for verification of the establishment of protected sessions.
+
+Guidance:
+Reliance on certificate authorities for the establishment of secure sessions includes the use of Transport Layer Security (TLS) certificates. These certificates, after verification by their respective certificate authorities, facilitate the establishment of protected sessions between web clients and web servers.
+
+Parameters:
+- sc-23.05_odp | label: "certificated authorities"
+  guideline: certificate authorities to be allowed for verification of the establishment of protected sessions are defined;

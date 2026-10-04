@@ -1,0 +1,19 @@
+id: ra-6
+title: Technical Surveillance Countermeasures Survey
+family: Risk Assessment (ra)
+class: SP800-53
+
+Statement:
+Employ a technical surveillance countermeasures survey at [locations] [Selection (one-or-more): {{ insert: param, ra-06_odp.03 }} ; when {{ insert: param, ra-06_odp.04 }} ].
+
+Guidance:
+A technical surveillance countermeasures survey is a service provided by qualified personnel to detect the presence of technical surveillance devices and hazards and to identify technical security weaknesses that could be used in the conduct of a technical penetration of the surveyed facility. Technical surveillance countermeasures surveys also provide evaluations of the technical security posture of organizations and facilities and include visual, electronic, and physical examinations of surveyed facilities, internally and externally. The surveys also provide useful input for risk assessments and information regarding organizational exposure to potential adversaries.
+
+Parameters:
+- ra-06_odp.01 | label: "locations"
+  guideline: locations to employ technical surveillance countermeasure surveys are defined;
+- ra-06_odp.02 | selection (one-or-more): {{ insert: param, ra-06_odp.03 }} ; when {{ insert: param, ra-06_odp.04 }} 
+- ra-06_odp.03 | label: "frequency"
+  guideline: the frequency at which to employ technical surveillance countermeasure surveys is defined (if selected);
+- ra-06_odp.04 | label: "events or indicators"
+  guideline: events or indicators which, if they occur, trigger a technical surveillance countermeasures survey are defined (if selected);

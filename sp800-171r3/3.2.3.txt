@@ -1,0 +1,4 @@
+id: SP_800_171_03.02.03
+title: 03.02.03
+family: Awareness and Training (SP_800_171_03.02)
+class: requirement

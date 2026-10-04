@@ -1,0 +1,80 @@
+id: si-13
+title: Predictable Failure Prevention
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+  a. Determine mean time to failure (MTTF) for the following system components in specific environments of operation: [system components] ; and
+  b. Provide substitute system components and a means to exchange active and standby components in accordance with the following criteria: [mean time to failure (MTTF) substitution criteria].
+
+Guidance:
+While MTTF is primarily a reliability issue, predictable failure prevention is intended to address potential failures of system components that provide security capabilities. Failure rates reflect installation-specific consideration rather than the industry-average. Organizations define the criteria for the substitution of system components based on the MTTF value with consideration for the potential harm from component failures. The transfer of responsibilities between active and standby components does not compromise safety, operational readiness, or security capabilities. The preservation of system state variables is also critical to help ensure a successful transfer process. Standby components remain available at all times except for maintenance issues or recovery failures in progress.
+
+Parameters:
+- si-13_odp.01 | label: "system components"
+  guideline: system components for which mean time to failure (MTTF) should be determined are defined;
+- si-13_odp.02 | label: "mean time to failure (MTTF) substitution criteria"
+  guideline: mean time to failure (MTTF) substitution criteria to be used as a means to exchange active and standby components are defined;
+
+========================================================================
+Enhancement SI-13(1) (si-13.1) - Transferring Component Responsibilities
+
+Statement:
+Take system components out of service by transferring component responsibilities to substitute components no later than [fraction or percentage] of mean time to failure.
+
+Guidance:
+Transferring primary system component responsibilities to other substitute components prior to primary component failure is important to reduce the risk of degraded or debilitated mission or business functions. Making such transfers based on a percentage of mean time to failure allows organizations to be proactive based on their risk tolerance. However, the premature replacement of system components can result in the increased cost of system operations.
+
+Parameters:
+- si-13.01_odp | label: "fraction or percentage"
+  guideline: the fraction or percentage of mean time to failure within which to transfer the responsibilities of a system component to a substitute component is defined;
+
+========================================================================
+Enhancement SI-13(2) (si-13.2) - Time Limit on Process Execution Without Supervision
+
+========================================================================
+Enhancement SI-13(3) (si-13.3) - Manual Transfer Between Components
+
+Statement:
+Manually initiate transfers between active and standby system components when the use of the active component reaches [percentage] of the mean time to failure.
+
+Guidance:
+For example, if the MTTF for a system component is 100 days and the MTTF percentage defined by the organization is 90 percent, the manual transfer would occur after 90 days.
+
+Parameters:
+- si-13.03_odp | label: "percentage"
+  guideline: the percentage of the mean time to failure for transfers to be manually initiated is defined;
+
+========================================================================
+Enhancement SI-13(4) (si-13.4) - Standby Component Installation and Notification
+
+Statement:
+If system component failures are detected:
+  (a) Ensure that the standby components are successfully and transparently installed within [time period] ; and
+  (b) [Selection (one-or-more): activate {{ insert: param, si-13.04_odp.03 }} ; automatically shut down the system; {{ insert: param, si-13.04_odp.04 }} ].
+
+Guidance:
+Automatic or manual transfer of components from standby to active mode can occur upon the detection of component failures.
+
+Parameters:
+- si-13.04_odp.01 | label: "time period"
+  guideline: time period for standby components to be installed is defined;
+- si-13.04_odp.02 | selection (one-or-more): activate {{ insert: param, si-13.04_odp.03 }} ; automatically shut down the system; {{ insert: param, si-13.04_odp.04 }} 
+- si-13.04_odp.03 | label: "alarm"
+  guideline: alarm to be activated when system component failures are detected is defined (if selected);
+- si-13.04_odp.04 | label: "action"
+  guideline: action to be taken when system component failures are detected is defined (if selected);
+
+========================================================================
+Enhancement SI-13(5) (si-13.5) - Failover Capability
+
+Statement:
+Provide [Selection (): real-time; near real-time] [failover capability] for the system.
+
+Guidance:
+Failover refers to the automatic switchover to an alternate system upon the failure of the primary system. Failover capability includes incorporating mirrored system operations at alternate processing sites or periodic data mirroring at regular intervals defined by the recovery time periods of organizations.
+
+Parameters:
+- si-13.05_odp.01 | selection (): real-time; near real-time
+- si-13.05_odp.02 | label: "failover capability"
+  guideline: a failover capability for the system has been defined;

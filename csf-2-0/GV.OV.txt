@@ -1,0 +1,50 @@
+id: GV.OV
+title: Oversight
+family: GOVERN (GV)
+class: category
+family-overview: The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored
+
+Statement:
+Results of organization-wide cybersecurity risk management activities and performance are used to inform, improve, and adjust the risk management strategy
+
+========================================================================
+Child control GV.OV-01 - GV.OV-01
+
+Statement:
+Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction
+
+Example:
+Measure how well the risk management strategy and risk results have helped leaders make decisions and achieve organizational objectives
+
+Example:
+Examine whether cybersecurity risk strategies that impede operations or innovation should be adjusted
+
+========================================================================
+Child control GV.OV-02 - GV.OV-02
+
+Statement:
+The cybersecurity risk management strategy is reviewed and adjusted to ensure coverage of organizational requirements and risks
+
+Example:
+Review audit findings to confirm whether the existing cybersecurity strategy has ensured compliance with internal and external requirements
+
+Example:
+Review the performance oversight of those in cybersecurity-related roles to determine whether policy changes are necessary
+
+Example:
+Review strategy in light of cybersecurity incidents
+
+========================================================================
+Child control GV.OV-03 - GV.OV-03
+
+Statement:
+Organizational cybersecurity risk management performance is evaluated and reviewed for adjustments needed
+
+Example:
+Review key performance indicators (KPIs) to ensure that organization-wide policies and procedures achieve objectives
+
+Example:
+Review key risk indicators (KRIs) to identify risks the organization faces, including likelihood and potential impact
+
+Example:
+Collect and communicate metrics on cybersecurity risk management with senior leadership

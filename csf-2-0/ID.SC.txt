@@ -1,0 +1,37 @@
+id: ID.SC
+title: Supply Chain Risk Management
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+
+========================================================================
+Child control ID.SC-01 - ID.SC-01
+
+Statement:
+Cyber supply chain risk management processes are identified, established, assessed, managed, and agreed to by organizational stakeholders
+
+========================================================================
+Child control ID.SC-02 - ID.SC-02
+
+Statement:
+Suppliers and third party partners of information systems, components, and services are identified, prioritized, and assessed using a cyber supply chain risk assessment process
+
+========================================================================
+Child control ID.SC-03 - ID.SC-03
+
+Statement:
+Contracts with suppliers and third-party partners are used to implement appropriate measures designed to meet the objectives of an organization’s cybersecurity program and Cyber Supply Chain Risk Management Plan.
+
+========================================================================
+Child control ID.SC-04 - ID.SC-04
+
+Statement:
+Suppliers and third-party partners are routinely assessed using audits, test results, or other forms of evaluations to confirm they are meeting their contractual obligations.
+
+========================================================================
+Child control ID.SC-05 - ID.SC-05
+
+Statement:
+Response and recovery planning and testing are conducted with suppliers and third-party providers

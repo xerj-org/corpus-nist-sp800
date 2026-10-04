@@ -1,0 +1,7 @@
+id: SP_800_172_3_0_0_03.11.07E
+title: 03.11.07E
+family: Risk Assessment (SP_800_172_3_0_0_3.11)
+class: security_requirement
+
+References:
+- SP_800_171_3_0_0

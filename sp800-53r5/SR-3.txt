@@ -1,0 +1,70 @@
+id: sr-3
+title: Supply Chain Controls and Processes
+family: Supply Chain Risk Management (sr)
+class: SP800-53
+
+Statement:
+  a. Establish a process or processes to identify and address weaknesses or deficiencies in the supply chain elements and processes of [system or system component] in coordination with [supply chain personnel];
+  b. Employ the following controls to protect against supply chain risks to the system, system component, or system service and to limit the harm or consequences from supply chain-related events: [supply chain controls] ; and
+  c. Document the selected and implemented supply chain processes and controls in [Selection (one-or-more): security and privacy plans; supply chain risk management plan; {{ insert: param, sr-03_odp.05 }} ].
+
+Guidance:
+Supply chain elements include organizations, entities, or tools employed for the research and development, design, manufacturing, acquisition, delivery, integration, operations and maintenance, and disposal of systems and system components. Supply chain processes include hardware, software, and firmware development processes; shipping and handling procedures; personnel security and physical security programs; configuration management tools, techniques, and measures to maintain provenance; or other programs, processes, or procedures associated with the development, acquisition, maintenance and disposal of systems and system components. Supply chain elements and processes may be provided by organizations, system integrators, or external providers. Weaknesses or deficiencies in supply chain elements or processes represent potential vulnerabilities that can be exploited by adversaries to cause harm to the organization and affect its ability to carry out its core missions or business functions. Supply chain personnel are individuals with roles and responsibilities in the supply chain.
+
+Parameters:
+- sr-03_odp.01 | label: "system or system component"
+  guideline: the system or system component requiring a process or processes to identify and address weaknesses or deficiencies is defined;
+- sr-03_odp.02 | label: "supply chain personnel"
+  guideline: supply chain personnel with whom to coordinate the process or processes to identify and address weaknesses or deficiencies in the supply chain elements and processes is/are defined;
+- sr-03_odp.03 | label: "supply chain controls"
+  guideline: supply chain controls employed to protect against supply chain risks to the system, system component, or system service and to limit the harm or consequences from supply chain-related events are defined;
+- sr-03_odp.04 | selection (one-or-more): security and privacy plans; supply chain risk management plan; {{ insert: param, sr-03_odp.05 }} 
+- sr-03_odp.05 | label: "document"
+  guideline: the document identifying the selected and implemented supply chain processes and controls is defined (if selected);
+
+References:
+- Secure Technology Act [includes Federal Acquisition Supply Chain Security Act] (P.L. 115-390), December 2018.
+- "Federal Acquisition Supply Chain Security Act; Rule," 85 Federal Register 54263 (September 1, 2020), pp 54263-54271.
+- Executive Order 13873, *Executive Order on Securing the Information and Communications Technology and Services Supply Chain* , May 2019.
+- International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, *Information technology — Open Trusted Technology Provider™ Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations* , February 2018.
+- Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk Assessments. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-30, Rev. 1.
+- Boyens JM, Paulsen C, Moorthy R, Bartol N (2015) Supply Chain Risk Management Practices for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161.
+- Boyens JM, Paulsen C, Bartol N, Shankles S, Moorthy R (2012) Notional Supply Chain Risk Management Practices for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7622.
+
+========================================================================
+Enhancement SR-3(1) (sr-3.1) - Diverse Supply Base
+
+Statement:
+Employ a diverse set of sources for the following system components and services: [organization-defined system components and services].
+
+Guidance:
+Diversifying the supply of systems, system components, and services can reduce the probability that adversaries will successfully identify and target the supply chain and can reduce the impact of a supply chain event or compromise. Identifying multiple suppliers for replacement components can reduce the probability that the replacement component will become unavailable. Employing a diverse set of developers or logistics service providers can reduce the impact of a natural disaster or other supply chain event. Organizations consider designing the system to include diverse materials and components.
+
+Parameters:
+- sr-3.1_prm_1 | label: "organization-defined system components and services"
+- sr-03.01_odp.01 | label: "system components"
+  guideline: system components with a diverse set of sources are defined;
+- sr-03.01_odp.02 | label: "services"
+  guideline: services with a diverse set of sources are defined;
+
+========================================================================
+Enhancement SR-3(2) (sr-3.2) - Limitation of Harm
+
+Statement:
+Employ the following controls to limit harm from potential adversaries identifying and targeting the organizational supply chain: [controls].
+
+Guidance:
+Controls that can be implemented to reduce the probability of adversaries successfully identifying and targeting the supply chain include avoiding the purchase of custom or non-standardized configurations, employing approved vendor lists with standing reputations in industry, following pre-agreed maintenance schedules and update and patch delivery mechanisms, maintaining a contingency plan in case of a supply chain event, using procurement carve-outs that provide exclusions to commitments or obligations, using diverse delivery routes, and minimizing the time between purchase decisions and delivery.
+
+Parameters:
+- sr-03.02_odp | label: "controls"
+  guideline: controls to limit harm from potential supply chain adversaries are defined;
+
+========================================================================
+Enhancement SR-3(3) (sr-3.3) - Sub-tier Flow Down
+
+Statement:
+Ensure that the controls included in the contracts of prime contractors are also included in the contracts of subcontractors.
+
+Guidance:
+To manage supply chain risk effectively and holistically, it is important that organizations ensure that supply chain risk management controls are included at all tiers in the supply chain. This includes ensuring that Tier 1 (prime) contractors have implemented processes to facilitate the "flow down" of supply chain risk management controls to sub-tier contractors. The controls subject to flow down are identified in [SR-3b](#sr-3_smt.b).

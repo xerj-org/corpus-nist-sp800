@@ -1,0 +1,32 @@
+id: SP_800_172_3_0_0_03.04.04E
+title: Automation Support for Baseline Configuration
+family: Configuration Management (SP_800_172_3_0_0_3.4)
+class: security_requirement
+
+Statement:
+Maintain the currency, completeness, accuracy, and availability of the baseline configuration of the system using [automated mechanisms]. 
+
+Guidance:
+Automated mechanisms that help organizations maintain consistent baseline configurations for systems include configuration management tools; hardware, software, and firmware inventory tools; and network management tools. Automated tools can be used to track version numbers on operating systems, applications, the types of software installed, and current patch levels. Automation support for accuracy and currency can be satisfied by the implementation of 03.04.03E for organizations that combine system component inventory and baseline configuration activities. This requirement enhances SP 800-171 requirement 03.04.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.04.04E.ODP.01 | label: "automated mechanisms"
+  guideline: automated mechanisms for maintaining the baseline configuration of the system are defined.
+
+References:
+- CM-02(02)

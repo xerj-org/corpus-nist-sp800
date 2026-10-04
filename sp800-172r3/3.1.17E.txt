@@ -1,0 +1,30 @@
+id: SP_800_172_3_0_0_03.01.17E
+title: Detection of Unsanctioned CUI
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+Statement:
+  ES-03.01.17E-a Examine CUI for the presence of [param: A.03.01.17E.ODP.01] when transferring information between different security domains. 
+  ES-03.01.17E-b Prohibit the transfer of the CUI defined in 03.01.17E.a in accordance with the [param: A.03.01.17E.ODP.02]. 
+
+Guidance:
+Unsanctioned information includes malicious code, information that is inappropriate for release from the source network, information that is not authorized to be stored or processed on the system, or executable code that could disrupt or harm services or systems on the destination network. This requirement enhances SP 800-171 requirement 03.01.03.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.01.17E.ODP.01
+  guideline: unsanctioned information to be detected is defined.
+- A.03.01.17E.ODP.02
+  guideline: a security policy that prohibits the transfer of such information is defined.
+
+References:
+- AC-04(15)

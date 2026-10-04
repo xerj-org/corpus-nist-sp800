@@ -1,0 +1,27 @@
+id: SP_800_171_03.01.05
+title: Least Privilege
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.05.a Allow only authorized system access for users (or processes acting on behalf of users) that is necessary to accomplish assigned organizational tasks.
+  SR-03.01.05.b Authorize access to [security functions] and [security-relevant information].
+  SR-03.01.05.c Review the privileges assigned to roles or classes of users [frequency] to validate the need for such privileges.
+  SR-03.01.05.d Reassign or remove privileges, as necessary.
+
+Guidance:
+Organizations employ the principle of least privilege for specific duties and authorized access for users and system processes. Least privilege is applied to the development, implementation, and operation of the system. Organizations consider creating additional processes, roles, and system accounts to achieve least privilege. Security functions include establishing system accounts and assigning privileges, installing software, configuring access authorizations, configuring settings for events to be audited, establishing vulnerability scanning parameters, establishing intrusion detection parameters, and managing audit information. Security-relevant information includes threat and vulnerability information, filtering rules for routers or firewalls, configuration parameters for security services, security architecture, cryptographic key management information, access control lists, and audit information.
+
+Parameters:
+- A.03.01.05.ODP.01 | label: "security functions"
+  guideline: security functions for authorized access are defined.
+- A.03.01.05.ODP.02 | label: "security-relevant information"
+  guideline: security-relevant information for authorized access is defined.
+- A.03.01.05.ODP.03 | label: "frequency"
+  guideline: the frequency at which to review the privileges assigned to roles or classes of users is defined.
+
+References:
+- AC-06
+- AC-06(01)
+- AC-06(07)
+- AU-09(04)

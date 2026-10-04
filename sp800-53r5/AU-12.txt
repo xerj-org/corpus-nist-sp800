@@ -1,0 +1,70 @@
+id: au-12
+title: Audit Record Generation
+family: Audit and Accountability (au)
+class: SP800-53
+
+Statement:
+  a. Provide audit record generation capability for the event types the system is capable of auditing as defined in [AU-2a](#au-2_smt.a) on [system components];
+  b. Allow [personnel or roles] to select the event types that are to be logged by specific components of the system; and
+  c. Generate audit records for the event types defined in [AU-2c](#au-2_smt.c) that include the audit record content defined in [AU-3](#au-3).
+
+Guidance:
+Audit records can be generated from many different system components. The event types specified in [AU-2d](#au-2_smt.d) are the event types for which audit logs are to be generated and are a subset of all event types for which the system can generate audit records.
+
+Parameters:
+- au-12_odp.01 | label: "system components"
+  guideline: system components that provide an audit record generation capability for the events types (defined in AU-02_ODP[02]) are defined;
+- au-12_odp.02 | label: "personnel or roles"
+  guideline: personnel or roles allowed to select the event types that are to be logged by specific components of the system is/are defined;
+
+========================================================================
+Enhancement AU-12(1) (au-12.1) - System-wide and Time-correlated Audit Trail
+
+Statement:
+Compile audit records from [system components] into a system-wide (logical or physical) audit trail that is time-correlated to within [level of tolerance].
+
+Guidance:
+Audit trails are time-correlated if the time stamps in the individual audit records can be reliably related to the time stamps in other audit records to achieve a time ordering of the records within organizational tolerances.
+
+Parameters:
+- au-12.01_odp.01 | label: "system components"
+  guideline: system components from which audit records are to be compiled into a system-wide (logical or physical) audit trail are defined;
+- au-12.01_odp.02 | label: "level of tolerance"
+  guideline: level of tolerance for the relationship between timestamps of individual records in the audit trail is defined;
+
+========================================================================
+Enhancement AU-12(2) (au-12.2) - Standardized Formats
+
+Statement:
+Produce a system-wide (logical or physical) audit trail composed of audit records in a standardized format.
+
+Guidance:
+Audit records that follow common standards promote interoperability and information exchange between devices and systems. Promoting interoperability and information exchange facilitates the production of event information that can be readily analyzed and correlated. If logging mechanisms do not conform to standardized formats, systems may convert individual audit records into standardized formats when compiling system-wide audit trails.
+
+========================================================================
+Enhancement AU-12(3) (au-12.3) - Changes by Authorized Individuals
+
+Statement:
+Provide and implement the capability for [individuals or roles] to change the logging to be performed on [system components] based on [selectable event criteria] within [time thresholds].
+
+Guidance:
+Permitting authorized individuals to make changes to system logging enables organizations to extend or limit logging as necessary to meet organizational requirements. Logging that is limited to conserve system resources may be extended (either temporarily or permanently) to address certain threat situations. In addition, logging may be limited to a specific set of event types to facilitate audit reduction, analysis, and reporting. Organizations can establish time thresholds in which logging actions are changed (e.g., near real-time, within minutes, or within hours).
+
+Parameters:
+- au-12.03_odp.01 | label: "individuals or roles"
+  guideline: individuals or roles authorized to change the logging on system components are defined;
+- au-12.03_odp.02 | label: "system components"
+  guideline: system components on which logging is to be performed are defined;
+- au-12.03_odp.03 | label: "selectable event criteria"
+  guideline: selectable event criteria with which change logging is to be performed are defined;
+- au-12.03_odp.04 | label: "time thresholds"
+  guideline: time thresholds in which logging actions are to change is defined;
+
+========================================================================
+Enhancement AU-12(4) (au-12.4) - Query Parameter Audits of Personally Identifiable Information
+
+Statement:
+Provide and implement the capability for auditing the parameters of user query events for data sets containing personally identifiable information.
+
+Guidance:
+Query parameters are explicit criteria that an individual or automated system submits to a system to retrieve data. Auditing of query parameters for datasets that contain personally identifiable information augments the capability of an organization to track and understand the access, usage, or sharing of personally identifiable information by authorized personnel.

@@ -1,0 +1,48 @@
+id: PS.1
+title: Protect All Forms of Code from Unauthorized Access and Tampering
+family: Protect Software (PS)
+class: practice
+family-overview: Organizations should protect all components of the software from tampering and unauthorized access
+
+Statement:
+Help prevent unauthorized changes to code, both inadvertent and intentional, which could circumvent or negate the intended security characteristics of the software. For code that is not intended to be publicly accessible, this helps prevent theft of the software and may make it more difficult or time-consuming for attackers to find vulnerabilities in the software.
+
+========================================================================
+Child control PS.1.1 - PS.1.1
+
+Statement:
+Store all forms of code – including source code, executable code, and configuration-as-code – based on the principle of least privilege so that only authorized personnel, tools, services, etc. have access.
+
+Example:
+Store all source code and configuration-as-code in a code repository, and restrict access to it based on the nature of the code. For example, open-source code intended for public access may need its integrity and availability protected; other code may also need its confidentiality protected.
+
+Example:
+Use version control features of the repository to track all changes made to the code with accountability to the individual account.
+
+Example:
+Use commit signing for code repositories.
+
+Example:
+Have the code owner review and approve all changes made to the code by others.
+
+Example:
+Use code signing to help protect the integrity of executables.
+
+Example:
+Use cryptography (e.g., cryptographic hashes) to help protect file integrity.
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Migues S, Erlikhman E, Ewers J, Nassery K (2021) BSIMM12 2021 Foundations Report.
+- Cloud Native Computing Foundation (2021) Software Supply Chain Best Practices.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- Hong Fong EK, Wheeler D, Henninger A (2016) State-of-the-Art Resources (SOAR) for Software Vulnerability Detection, Test, and Evaluation 2016. (Institute for Defense Analyses [IDA], Alexandria, VA), IDA Paper P-8005.
+- International Electrotechnical Commission (IEC), Security for industrial automation and control systems – Part 4-1: Secure product development lifecycle requirements, IEC 62443-4-1, 2018.
+- National Institute of Standards and Technology (2018) Framework for Improving Critical Infrastructure Cybersecurity, Version 1.1. (National Institute of Standards and Technology, Gaithersburg, MD).
+- Open Web Application Security Project (2021) OWASP Application Security Verification Standard 4.0.3.
+- Open Web Application Security Project (2021) OWASP Mobile Application Security Verification Standard, Version 1.4.2.
+- Open Web Application Security Project (2017) Software Assurance Maturity Model Version 1.5.
+- Payment Card Industry (PCI) Security Standards Council (2021) Secure Software Lifecycle (Secure SLC) Requirements and Assessment Procedures Version 1.1.
+- Software Assurance Forum for Excellence in Code (2010) Software Integrity Controls: An Assurance-Based Approach to Minimizing Risks in the Software Supply Chain.
+- Boyens J, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2021) Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-161, Rev. 1.
+- Joint Task Force (2020) Security and Privacy Controls for Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53, Rev. 5. Includes updates as of December 10, 2020.

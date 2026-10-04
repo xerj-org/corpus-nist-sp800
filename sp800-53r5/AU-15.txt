@@ -1,0 +1,4 @@
+id: au-15
+title: Alternate Audit Logging Capability
+family: Audit and Accountability (au)
+class: SP800-53

@@ -1,0 +1,21 @@
+id: SP_800_171_03.04.08
+title: Authorized Software – Allow by Exception
+family: Configuration Management (SP_800_171_03.04)
+class: requirement
+
+Statement:
+  SR-03.04.08.a Identify software programs authorized to execute on the system.
+  SR-03.04.08.b Implement a deny-all, allow-by-exception policy for the execution of authorized software programs on the system.
+  SR-03.04.08.c Review and update the list of authorized software programs [frequency].
+
+Guidance:
+If provided with the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved “app stores.” The policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods. Authorized software programs can be limited to specific versions or come from specific sources. To facilitate a comprehensive authorized software process and increase the strength of protection against attacks that bypass application-level authorized software, software programs may be decomposed into and monitored at different levels of detail. These levels include applications, application programming interfaces, application modules, scripts, system processes, system services, kernel functions, registries, drivers, and dynamic link libraries.
+
+Parameters:
+- A.03.04.08.ODP.01 | label: "frequency"
+  guideline: the frequency at which to review and update the list of authorized software programs is defined.
+
+References:
+- CM-07(05)
+- Ross R, Winstead M, McEvilley M (2022) Engineering Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Rev. 1.
+- Sedgewick A, Souppaya MP, Scarfone KA (2015) Guide to Application Whitelisting. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-167.

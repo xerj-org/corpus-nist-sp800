@@ -1,0 +1,246 @@
+id: ac-3
+title: Access Enforcement
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+Enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies.
+
+Guidance:
+Access control policies control access between active entities or subjects (i.e., users or processes acting on behalf of users) and passive entities or objects (i.e., devices, files, records, domains) in organizational systems. In addition to enforcing authorized access at the system level and recognizing that systems can host many applications and services in support of mission and business functions, access enforcement mechanisms can also be employed at the application and service level to provide increased information security and privacy. In contrast to logical access controls that are implemented within the system, physical access controls are addressed by the controls in the Physical and Environmental Protection ( [PE](#pe) ) family.
+
+References:
+- Privacy Act (P.L. 93-579), December 1974.
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Barker EB (2020) Recommendation for Key Management: Part 1 – General. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 1, Rev. 5.
+- Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.
+- Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3: Application-Specific Key Management Guidance. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.
+- Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.
+- Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and Next Generation Access Control (NGAC). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-178.
+- Hu VC, Scarfone KA (2012) Guidelines for Access Control System Evaluation Metrics. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7874.
+
+========================================================================
+Enhancement AC-3(1) (ac-3.1) - Restricted Access to Privileged Functions
+
+========================================================================
+Enhancement AC-3(2) (ac-3.2) - Dual Authorization
+
+Statement:
+Enforce dual authorization for [privileged commands and/or other actions].
+
+Guidance:
+Dual authorization, also known as two-person control, reduces risk related to insider threats. Dual authorization mechanisms require the approval of two authorized individuals to execute. To reduce the risk of collusion, organizations consider rotating dual authorization duties. Organizations consider the risk associated with implementing dual authorization mechanisms when immediate responses are necessary to ensure public and environmental safety.
+
+Parameters:
+- ac-03.02_odp | label: "privileged commands and/or other actions"
+  guideline: privileged commands and/or other actions requiring dual authorization are defined;
+
+========================================================================
+Enhancement AC-3(3) (ac-3.3) - Mandatory Access Control
+
+Statement:
+Enforce [organization-defined mandatory access control policy] over the set of covered subjects and objects specified in the policy, and where the policy:
+  (a) Is uniformly enforced across the covered subjects and objects within the system;
+  (b) Specifies that a subject that has been granted access to information is constrained from doing any of the following;
+    (1) Passing the information to unauthorized subjects or objects;
+    (2) Granting its privileges to other subjects;
+    (3) Changing one or more security attributes (specified by the policy) on subjects, objects, the system, or system components;
+    (4) Choosing the security attributes and attribute values (specified by the policy) to be associated with newly created or modified objects; and
+    (5) Changing the rules governing access control; and
+  (c) Specifies that [subjects] may explicitly be granted [privileges] such that they are not limited by any defined subset (or all) of the above constraints.
+
+Guidance:
+Mandatory access control is a type of nondiscretionary access control. Mandatory access control policies constrain what actions subjects can take with information obtained from objects for which they have already been granted access. This prevents the subjects from passing the information to unauthorized subjects and objects. Mandatory access control policies constrain actions that subjects can take with respect to the propagation of access control privileges; that is, a subject with a privilege cannot pass that privilege to other subjects. The policy is uniformly enforced over all subjects and objects to which the system has control. Otherwise, the access control policy can be circumvented. This enforcement is provided by an implementation that meets the reference monitor concept as described in [AC-25](#ac-25) . The policy is bounded by the system (i.e., once the information is passed outside of the control of the system, additional means may be required to ensure that the constraints on the information remain in effect).
+
+The trusted subjects described above are granted privileges consistent with the concept of least privilege (see [AC-6](#ac-6) ). Trusted subjects are only given the minimum privileges necessary for satisfying organizational mission/business needs relative to the above policy. The control is most applicable when there is a mandate that establishes a policy regarding access to controlled unclassified information or classified information and some users of the system are not authorized access to all such information resident in the system. Mandatory access control can operate in conjunction with discretionary access control as described in [AC-3(4)](#ac-3.4) . A subject constrained in its operation by mandatory access control policies can still operate under the less rigorous constraints of AC-3(4), but mandatory access control policies take precedence over the less rigorous constraints of AC-3(4). For example, while a mandatory access control policy imposes a constraint that prevents a subject from passing information to another subject operating at a different impact or classification level, AC-3(4) permits the subject to pass the information to any other subject with the same impact or classification level as the subject. Examples of mandatory access control policies include the Bell-LaPadula policy to protect confidentiality of information and the Biba policy to protect the integrity of information.
+
+Parameters:
+- ac-3.3_prm_1 | label: "organization-defined mandatory access control policy"
+- ac-03.03_odp.01 | label: "mandatory access control policy"
+  guideline: mandatory access control policy enforced over the set of covered subjects is defined;
+- ac-03.03_odp.02 | label: "mandatory access control policy"
+  guideline: mandatory access control policy enforced over the set of covered objects is defined;
+- ac-03.03_odp.03 | label: "subjects"
+  guideline: subjects to be explicitly granted privileges are defined;
+- ac-03.03_odp.04 | label: "privileges"
+  guideline: privileges to be explicitly granted to subjects are defined;
+
+========================================================================
+Enhancement AC-3(4) (ac-3.4) - Discretionary Access Control
+
+Statement:
+Enforce [organization-defined discretionary access control policy] over the set of covered subjects and objects specified in the policy, and where the policy specifies that a subject that has been granted access to information can do one or more of the following:
+  (a) Pass the information to any other subjects or objects;
+  (b) Grant its privileges to other subjects;
+  (c) Change security attributes on subjects, objects, the system, or the system’s components;
+  (d) Choose the security attributes to be associated with newly created or revised objects; or
+  (e) Change the rules governing access control.
+
+Guidance:
+When discretionary access control policies are implemented, subjects are not constrained with regard to what actions they can take with information for which they have already been granted access. Thus, subjects that have been granted access to information are not prevented from passing the information to other subjects or objects (i.e., subjects have the discretion to pass). Discretionary access control can operate in conjunction with mandatory access control as described in [AC-3(3)](#ac-3.3) and [AC-3(15)](#ac-3.15) . A subject that is constrained in its operation by mandatory access control policies can still operate under the less rigorous constraints of discretionary access control. Therefore, while [AC-3(3)](#ac-3.3) imposes constraints that prevent a subject from passing information to another subject operating at a different impact or classification level, [AC-3(4)](#ac-3.4) permits the subject to pass the information to any subject at the same impact or classification level. The policy is bounded by the system. Once the information is passed outside of system control, additional means may be required to ensure that the constraints remain in effect. While traditional definitions of discretionary access control require identity-based access control, that limitation is not required for this particular use of discretionary access control.
+
+Parameters:
+- ac-3.4_prm_1 | label: "organization-defined discretionary access control policy"
+- ac-03.04_odp.01 | label: "discretionary access control policy"
+  guideline: discretionary access control policy enforced over the set of covered subjects is defined;
+- ac-03.04_odp.02 | label: "discretionary access control policy"
+  guideline: discretionary access control policy enforced over the set of covered objects is defined;
+
+========================================================================
+Enhancement AC-3(5) (ac-3.5) - Security-relevant Information
+
+Statement:
+Prevent access to [security-relevant information] except during secure, non-operable system states.
+
+Guidance:
+Security-relevant information is information within systems that can potentially impact the operation of security functions or the provision of security services in a manner that could result in failure to enforce system security and privacy policies or maintain the separation of code and data. Security-relevant information includes access control lists, filtering rules for routers or firewalls, configuration parameters for security services, and cryptographic key management information. Secure, non-operable system states include the times in which systems are not performing mission or business-related processing, such as when the system is offline for maintenance, boot-up, troubleshooting, or shut down.
+
+Parameters:
+- ac-03.05_odp | label: "security-relevant information"
+  guideline: security-relevant information to which access is prevented except during secure, non-operable system states is defined;
+
+========================================================================
+Enhancement AC-3(6) (ac-3.6) - Protection of User and System Information
+
+========================================================================
+Enhancement AC-3(7) (ac-3.7) - Role-based Access Control
+
+Statement:
+Enforce a role-based access control policy over defined subjects and objects and control access based upon [organization-defined roles and users authorized to assume such roles].
+
+Guidance:
+Role-based access control (RBAC) is an access control policy that enforces access to objects and system functions based on the defined role (i.e., job function) of the subject. Organizations can create specific roles based on job functions and the authorizations (i.e., privileges) to perform needed operations on the systems associated with the organization-defined roles. When users are assigned to specific roles, they inherit the authorizations or privileges defined for those roles. RBAC simplifies privilege administration for organizations because privileges are not assigned directly to every user (which can be a large number of individuals) but are instead acquired through role assignments. RBAC can also increase privacy and security risk if individuals assigned to a role are given access to information beyond what they need to support organizational missions or business functions. RBAC can be implemented as a mandatory or discretionary form of access control. For organizations implementing RBAC with mandatory access controls, the requirements in [AC-3(3)](#ac-3.3) define the scope of the subjects and objects covered by the policy.
+
+Parameters:
+- ac-3.7_prm_1 | label: "organization-defined roles and users authorized to assume such roles"
+- ac-03.07_odp.01 | label: "roles"
+  guideline: roles upon which to base control of access are defined;
+- ac-03.07_odp.02 | label: "users authorized to assume such roles"
+  guideline: users authorized to assume roles (defined in AC-03(07)_ODP[01]) are defined;
+
+========================================================================
+Enhancement AC-3(8) (ac-3.8) - Revocation of Access Authorizations
+
+Statement:
+Enforce the revocation of access authorizations resulting from changes to the security attributes of subjects and objects based on [rules].
+
+Guidance:
+Revocation of access rules may differ based on the types of access revoked. For example, if a subject (i.e., user or process acting on behalf of a user) is removed from a group, access may not be revoked until the next time the object is opened or the next time the subject attempts to access the object. Revocation based on changes to security labels may take effect immediately. Organizations provide alternative approaches on how to make revocations immediate if systems cannot provide such capability and immediate revocation is necessary.
+
+Parameters:
+- ac-03.08_odp | label: "rules"
+  guideline: rules governing the timing of revocations of access authorizations are defined;
+
+========================================================================
+Enhancement AC-3(9) (ac-3.9) - Controlled Release
+
+Statement:
+Release information outside of the system only if:
+  (a) The receiving [system or system component] provides [controls] ; and
+  (b) [controls] are used to validate the appropriateness of the information designated for release.
+
+Guidance:
+Organizations can only directly protect information when it resides within the system. Additional controls may be needed to ensure that organizational information is adequately protected once it is transmitted outside of the system. In situations where the system is unable to determine the adequacy of the protections provided by external entities, as a mitigation measure, organizations procedurally determine whether the external systems are providing adequate controls. The means used to determine the adequacy of controls provided by external systems include conducting periodic assessments (inspections/tests), establishing agreements between the organization and its counterpart organizations, or some other process. The means used by external entities to protect the information received need not be the same as those used by the organization, but the means employed are sufficient to provide consistent adjudication of the security and privacy policy to protect the information and individuals’ privacy.
+
+Controlled release of information requires systems to implement technical or procedural means to validate the information prior to releasing it to external systems. For example, if the system passes information to a system controlled by another organization, technical means are employed to validate that the security and privacy attributes associated with the exported information are appropriate for the receiving system. Alternatively, if the system passes information to a printer in organization-controlled space, procedural means can be employed to ensure that only authorized individuals gain access to the printer.
+
+Parameters:
+- ac-03.09_odp.01 | label: "system or system component"
+  guideline: the outside system or system component to which to release information is defined;
+- ac-03.09_odp.02 | label: "controls"
+  guideline: controls to be provided by the outside system or system component (defined in AC-03(09)_ODP[01]) are defined;
+- ac-03.09_odp.03 | label: "controls"
+  guideline: controls used to validate appropriateness of information to be released are defined;
+
+========================================================================
+Enhancement AC-3(10) (ac-3.10) - Audited Override of Access Control Mechanisms
+
+Statement:
+Employ an audited override of automated access control mechanisms under [conditions] by [roles].
+
+Guidance:
+In certain situations, such as when there is a threat to human life or an event that threatens the organization’s ability to carry out critical missions or business functions, an override capability for access control mechanisms may be needed. Override conditions are defined by organizations and used only in those limited circumstances. Audit events are defined in [AU-2](#au-2) . Audit records are generated in [AU-12](#au-12).
+
+Parameters:
+- ac-03.10_odp.01 | label: "conditions"
+  guideline: conditions under which to employ an audited override of automated access control mechanisms are defined;
+- ac-03.10_odp.02 | label: "roles"
+  guideline: roles allowed to employ an audited override of automated access control mechanisms are defined;
+
+========================================================================
+Enhancement AC-3(11) (ac-3.11) - Restrict Access to Specific Information Types
+
+Statement:
+Restrict access to data repositories containing [information types].
+
+Guidance:
+Restricting access to specific information is intended to provide flexibility regarding access control of specific information types within a system. For example, role-based access could be employed to allow access to only a specific type of personally identifiable information within a database rather than allowing access to the database in its entirety. Other examples include restricting access to cryptographic keys, authentication information, and selected system information.
+
+Parameters:
+- ac-03.11_odp | label: "information types"
+  guideline: information types requiring restricted access to data repositories are defined;
+
+========================================================================
+Enhancement AC-3(12) (ac-3.12) - Assert and Enforce Application Access
+
+Statement:
+  (a) Require applications to assert, as part of the installation process, the access needed to the following system applications and functions: [system applications and functions];
+  (b) Provide an enforcement mechanism to prevent unauthorized access; and
+  (c) Approve access changes after initial installation of the application.
+
+Guidance:
+Asserting and enforcing application access is intended to address applications that need to access existing system applications and functions, including user contacts, global positioning systems, cameras, keyboards, microphones, networks, phones, or other files.
+
+Parameters:
+- ac-03.12_odp | label: "system applications and functions"
+  guideline: system applications and functions requiring access assertion are defined;
+
+========================================================================
+Enhancement AC-3(13) (ac-3.13) - Attribute-based Access Control
+
+Statement:
+Enforce attribute-based access control policy over defined subjects and objects and control access based upon [attributes].
+
+Guidance:
+Attribute-based access control is an access control policy that restricts system access to authorized users based on specified organizational attributes (e.g., job function, identity), action attributes (e.g., read, write, delete), environmental attributes (e.g., time of day, location), and resource attributes (e.g., classification of a document). Organizations can create rules based on attributes and the authorizations (i.e., privileges) to perform needed operations on the systems associated with organization-defined attributes and rules. When users are assigned to attributes defined in attribute-based access control policies or rules, they can be provisioned to a system with the appropriate privileges or dynamically granted access to a protected resource. Attribute-based access control can be implemented as either a mandatory or discretionary form of access control. When implemented with mandatory access controls, the requirements in [AC-3(3)](#ac-3.3) define the scope of the subjects and objects covered by the policy.
+
+Parameters:
+- ac-03.13_odp | label: "attributes"
+  guideline: attributes to assume access permissions are defined;
+
+========================================================================
+Enhancement AC-3(14) (ac-3.14) - Individual Access
+
+Statement:
+Provide [mechanisms] to enable individuals to have access to the following elements of their personally identifiable information: [elements].
+
+Guidance:
+Individual access affords individuals the ability to review personally identifiable information about them held within organizational records, regardless of format. Access helps individuals to develop an understanding about how their personally identifiable information is being processed. It can also help individuals ensure that their data is accurate. Access mechanisms can include request forms and application interfaces. For federal agencies, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) processes can be located in systems of record notices and on agency websites. Access to certain types of records may not be appropriate (e.g., for federal agencies, law enforcement records within a system of records may be exempt from disclosure under the [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) ) or may require certain levels of authentication assurance. Organizational personnel consult with the senior agency official for privacy and legal counsel to determine appropriate mechanisms and access rights or limitations.
+
+Parameters:
+- ac-03.14_odp.01 | label: "mechanisms"
+  guideline: mechanisms enabling individuals to have access to elements of their personally identifiable information are defined;
+- ac-03.14_odp.02 | label: "elements"
+  guideline: elements of personally identifiable information to which individuals have access are defined;
+
+========================================================================
+Enhancement AC-3(15) (ac-3.15) - Discretionary and Mandatory Access Control
+
+Statement:
+  (a) Enforce [organization-defined mandatory access control policy] over the set of covered subjects and objects specified in the policy; and
+  (b) Enforce [organization-defined discretionary access control policy] over the set of covered subjects and objects specified in the policy.
+
+Guidance:
+Simultaneously implementing a mandatory access control policy and a discretionary access control policy can provide additional protection against the unauthorized execution of code by users or processes acting on behalf of users. This helps prevent a single compromised user or process from compromising the entire system.
+
+Parameters:
+- ac-3.15_prm_1 | label: "organization-defined mandatory access control policy"
+- ac-3.15_prm_2 | label: "organization-defined discretionary access control policy"
+- ac-03.15_odp.01 | label: "mandatory access control policy"
+  guideline: a mandatory access control policy enforced over the set of covered subjects specified in the policy is defined;
+- ac-03.15_odp.02 | label: "mandatory access control policy"
+  guideline: a mandatory access control policy enforced over the set of covered objects specified in the policy is defined;
+- ac-03.15_odp.03 | label: "discretionary access control policy"
+  guideline: a discretionary access control policy enforced over the set of covered subjects specified in the policy is defined;
+- ac-03.15_odp.04 | label: "discretionary access control policy"
+  guideline: a discretionary access control policy enforced over the set of covered objects specified in the policy is defined;

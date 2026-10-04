@@ -1,0 +1,28 @@
+id: SP_800_172_3_0_0_03.01.11E
+title: Role-Based Access Control
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+Statement:
+  ES-03.01.11E-a Enforce a role-based access control policy over defined subjects and objects.
+  ES-03.01.11E-b Control access based upon [param: A.03.01.11E.ODP.01]. 
+
+Guidance:
+Role-based access control (RBAC) is an access control policy that enforces access to objects and system functions based on the defined role (i.e., job function) of the subject. Organizations can create specific roles based on job functions and the authorizations (i.e., privileges) to perform needed operations on the systems associated with the organization-defined roles. When users are assigned to specific roles, they inherit the authorizations or privileges defined for those roles. RBAC simplifies privilege administration for organizations because privileges are not assigned directly to every user (which can be a large number of individuals) but are instead acquired through role assignments. RBAC can also increase security risks if individuals assigned to a role are given access to information beyond what they need to support organizational mission or business functions. RBAC can be implemented as a mandatory or discretionary form of access control. This requirement enhances SP 800-171 requirement 03.01.02.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.01.11E.ODP.01
+  guideline: roles and users authorized to assume such roles are defined.
+
+References:
+- AC-03(07)

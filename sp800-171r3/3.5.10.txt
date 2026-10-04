@@ -1,0 +1,4 @@
+id: SP_800_171_03.05.10
+title: 03.05.10
+family: Identification and Authentication (SP_800_171_03.05)
+class: requirement

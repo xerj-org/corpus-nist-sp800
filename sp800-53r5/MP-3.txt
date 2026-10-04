@@ -1,0 +1,22 @@
+id: mp-3
+title: Media Marking
+family: Media Protection (mp)
+class: SP800-53
+
+Statement:
+  a. Mark system media indicating the distribution limitations, handling caveats, and applicable security markings (if any) of the information; and
+  b. Exempt [types of media exempted from marking] from marking if the media remain within [controlled areas].
+
+Guidance:
+Security marking refers to the application or use of human-readable security attributes. Digital media includes diskettes, magnetic tapes, external or removable hard disk drives (e.g., solid state, magnetic), flash drives, compact discs, and digital versatile discs. Non-digital media includes paper and microfilm. Controlled unclassified information is defined by the National Archives and Records Administration along with the appropriate safeguarding and dissemination requirements for such information and is codified in [32 CFR 2002](#91f992fb-f668-4c91-a50f-0f05b95ccee3) . Security markings are generally not required for media that contains information determined by organizations to be in the public domain or to be publicly releasable. Some organizations may require markings for public information indicating that the information is publicly releasable. System media marking reflects applicable laws, executive orders, directives, policies, regulations, standards, and guidelines.
+
+Parameters:
+- mp-03_odp.01 | label: "types of media exempted from marking"
+  guideline: types of system media exempt from marking when remaining in controlled areas are defined;
+- mp-03_odp.02 | label: "controlled areas"
+  guideline: controlled areas where media is exempt from marking are defined;
+
+References:
+- Executive Order 13556, *Controlled Unclassified Information* , November 2010.
+- Code of Federal Regulations, Title 32, *Controlled Unclassified Information* (32 C.F.R. 2002).
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.

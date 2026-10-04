@@ -1,0 +1,16 @@
+id: SP_800_171_03.04.04
+title: Impact Analyses
+family: Configuration Management (SP_800_171_03.04)
+class: requirement
+
+Statement:
+  SR-03.04.04.a Analyze changes to the system to determine potential security impacts prior to change implementation.
+  SR-03.04.04.b Verify that the security requirements for the system continue to be satisfied after the system changes have been implemented.
+
+Guidance:
+Organizational personnel with security responsibilities conduct impact analyses that include reviewing system security plans, policies, and procedures to understand security requirements; reviewing system design documentation and operational procedures to understand how system changes might affect the security state of the system; reviewing the impacts of system changes on supply chain partners with stakeholders; and determining how potential changes to a system create new risks and the ability to mitigate those risks. Impact analyses also include risk assessments to understand the impacts of changes and determine whether additional security requirements are needed. Changes to the system may affect the safeguards and countermeasures previously implemented. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.04.03)03.04.03. Not all changes to the system are configuration controlled.
+
+References:
+- CM-04
+- CM-04(02)
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.

@@ -1,0 +1,18 @@
+id: SP_800_172_3_0_0_03.12.02E
+title: Independent Assessors
+family: Security Assessment and Monitoring (SP_800_172_3_0_0_3.12)
+class: security_requirement
+
+Statement:
+Use independent assessors or assessment teams to conduct security requirement assessments.
+
+Guidance:
+Independent assessors or assessment teams are individuals or groups who conduct impartial assessments of systems. Impartiality means that assessors are free from any perceived or actual conflicts of interest regarding the development, operation, sustainment, or management of the systems under assessment or the determination of security requirement effectiveness. To achieve impartiality, assessors do not create a mutual or conflicting interest with the organizations where the assessments are being conducted, assess their own work, act as management or employees of the organizations they are serving, or place themselves in positions of advocacy for the organizations acquiring their services. Independent assessments can be obtained from entities that are internal or external to organizations. Organizations determine whether the level of assessor independence provides sufficient assurance such that the assessment results are sound and can be used to make effective risk-based decisions. This requirement enhances SP 800-171 requirement 03.12.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+References:
+- CA-02(01)

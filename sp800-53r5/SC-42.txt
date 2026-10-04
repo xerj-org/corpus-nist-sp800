@@ -1,0 +1,83 @@
+id: sc-42
+title: Sensor Capability and Data
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. Prohibit [Selection (one-or-more): the use of devices possessing {{ insert: param, sc-42_odp.02 }} in {{ insert: param, sc-42_odp.03 }} ; the remote activation of environmental sensing capabilities on organizational systems or system components with the following exceptions: {{ insert: param, sc-42_odp.04 }} ] ; and
+  b. Provide an explicit indication of sensor use to [group of users].
+
+Guidance:
+Sensor capability and data applies to types of systems or system components characterized as mobile devices, such as cellular telephones, smart phones, and tablets. Mobile devices often include sensors that can collect and record data regarding the environment where the system is in use. Sensors that are embedded within mobile devices include microphones, cameras, Global Positioning System (GPS) mechanisms, and accelerometers. While the sensors on mobiles devices provide an important function, if activated covertly, such devices can potentially provide a means for adversaries to learn valuable information about individuals and organizations. For example, remotely activating the GPS function on a mobile device could provide an adversary with the ability to track the movements of an individual. Organizations may prohibit individuals from bringing cellular telephones or digital cameras into certain designated facilities or controlled areas within facilities where classified information is stored or sensitive conversations are taking place.
+
+Parameters:
+- sc-42_odp.01 | selection (one-or-more): the use of devices possessing {{ insert: param, sc-42_odp.02 }} in {{ insert: param, sc-42_odp.03 }} ; the remote activation of environmental sensing capabilities on organizational systems or system components with the following exceptions: {{ insert: param, sc-42_odp.04 }} 
+- sc-42_odp.02 | label: "environmental sensing capabilities"
+  guideline: environmental sensing capabilities in devices are defined (if selected);
+- sc-42_odp.03 | label: "facilities, areas, or systems"
+  guideline: facilities, areas, or systems where the use of devices possessing environmental sensing capabilities is prohibited are defined (if selected);
+- sc-42_odp.04 | label: "exceptions where remote activation of sensors is allowed"
+  guideline: exceptions where remote activation of sensors is allowed are defined (if selected);
+- sc-42_odp.05 | label: "group of users"
+  guideline: group of users to whom an explicit indication of sensor use is to be provided is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.
+
+========================================================================
+Enhancement SC-42(1) (sc-42.1) - Reporting to Authorized Individuals or Roles
+
+Statement:
+Verify that the system is configured so that data or information collected by the [sensors] is only reported to authorized individuals or roles.
+
+Guidance:
+In situations where sensors are activated by authorized individuals, it is still possible that the data or information collected by the sensors will be sent to unauthorized entities.
+
+Parameters:
+- sc-42.01_odp | label: "sensors"
+  guideline: sensors to be used to collect data or information are defined;
+
+========================================================================
+Enhancement SC-42(2) (sc-42.2) - Authorized Use
+
+Statement:
+Employ the following measures so that data or information collected by [param: sc-42.01_odp] is only used for authorized purposes: [measures].
+
+Guidance:
+Information collected by sensors for a specific authorized purpose could be misused for some unauthorized purpose. For example, GPS sensors that are used to support traffic navigation could be misused to track the movements of individuals. Measures to mitigate such activities include additional training to help ensure that authorized individuals do not abuse their authority and, in the case where sensor data is maintained by external parties, contractual restrictions on the use of such data.
+
+Parameters:
+- sc-42.02_odp | label: "measures"
+  guideline: measures to be employed so that data or information collected by sensors is only used for authorized purposes are defined;
+
+========================================================================
+Enhancement SC-42(3) (sc-42.3) - Prohibit Use of Devices
+
+========================================================================
+Enhancement SC-42(4) (sc-42.4) - Notice of Collection
+
+Statement:
+Employ the following measures to facilitate an individual’s awareness that personally identifiable information is being collected by [sensors]: [measures].
+
+Guidance:
+Awareness that organizational sensors are collecting data enables individuals to more effectively engage in managing their privacy. Measures can include conventional written notices and sensor configurations that make individuals directly or indirectly aware through other devices that the sensor is collecting information. The usability and efficacy of the notice are important considerations.
+
+Parameters:
+- sc-42.04_odp.01 | label: "measures"
+  guideline: measures to facilitate an individual’s awareness that personally identifiable information is being collected are defined;
+- sc-42.04_odp.02 | label: "sensors"
+  guideline: sensors that collect personally identifiable information are defined;
+
+========================================================================
+Enhancement SC-42(5) (sc-42.5) - Collection Minimization
+
+Statement:
+Employ [sensors] that are configured to minimize the collection of information about individuals that is not needed.
+
+Guidance:
+Although policies to control for authorized use can be applied to information once it is collected, minimizing the collection of information that is not needed mitigates privacy risk at the system entry point and mitigates the risk of policy control failures. Sensor configurations include the obscuring of human features, such as blurring or pixelating flesh tones.
+
+Parameters:
+- sc-42.05_odp | label: "sensors"
+  guideline: the sensors that are configured to minimize the collection of unneeded information about individuals are defined;

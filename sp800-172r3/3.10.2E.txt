@@ -1,0 +1,26 @@
+id: SP_800_172_3_0_0_03.10.02E
+title: Delivery and Removal of System Components
+family: Physical Protection (SP_800_172_3_0_0_3.10)
+class: security_requirement
+
+Statement:
+  ES-03.10.02E-a Authorize and control [organization-defined types of system components] entering and exiting the facility. 
+  ES-03.10.02E-b Maintain records of the system components.
+
+Guidance:
+Enforcing authorizations for the entry and exit of system components may require restricting access to delivery areas and isolating the areas from the system and media libraries. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+Parameters:
+- A.03.10.02E_prm_1 | label: "organization-defined types of system components"
+- A.03.10.02E.ODP.01 | label: "types of system components"
+  guideline: the types of system components to be authorized and controlled when entering the facility are defined.
+- A.03.10.02E.ODP.02 | label: "types of system components"
+  guideline: the types of system components to be authorized and controlled when exiting the facility are defined.
+
+References:
+- PE-16

@@ -1,0 +1,19 @@
+id: sa-23
+title: Specialization
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+Statement:
+Employ [Selection (one-or-more): design modification; augmentation; reconfiguration] on [systems or system components] supporting mission essential services or functions to increase the trustworthiness in those systems or components.
+
+Guidance:
+It is often necessary for a system or system component that supports mission-essential services or functions to be enhanced to maximize the trustworthiness of the resource. Sometimes this enhancement is done at the design level. In other instances, it is done post-design, either through modifications of the system in question or by augmenting the system with additional components. For example, supplemental authentication or non-repudiation functions may be added to the system to enhance the identity of critical resources to other resources that depend on the organization-defined resources.
+
+Parameters:
+- sa-23_odp.01 | selection (one-or-more): design modification; augmentation; reconfiguration
+- sa-23_odp.02 | label: "systems or system components"
+  guideline: systems or system components supporting mission-essential services or functions are defined;
+
+References:
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.

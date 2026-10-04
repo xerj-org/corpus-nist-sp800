@@ -1,0 +1,115 @@
+id: si-2
+title: Flaw Remediation
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+  a. Identify, report, and correct system flaws;
+  b. Test software and firmware updates related to flaw remediation for effectiveness and potential side effects before installation;
+  c. Install security-relevant software and firmware updates within [time period] of the release of the updates; and
+  d. Incorporate flaw remediation into the organizational configuration management process.
+
+Guidance:
+The need to remediate system flaws applies to all types of software and firmware. Organizations identify systems affected by software flaws, including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security and privacy responsibilities. Organizations consider establishing a controlled patching environment for mission-critical systems. Security-relevant updates include patches, service packs, and malicious code signatures. Organizations also address flaws discovered during assessments, continuous monitoring, incident response activities, and system error handling. By incorporating flaw remediation into configuration management processes, required remediation actions can be tracked and verified.
+
+Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of risk factors, including the security category of the system, the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw), the organizational risk tolerance, the mission supported by the system, or the threat environment. Some types of flaw remediation may require more testing than other types. Organizations determine the type of testing needed for the specific type of flaw remediation activity under consideration and the types of changes that are to be configuration-managed. Flaw remediation testing addresses both effectiveness of addressing security issues and for potential side effects on functionality, system and system component performance and operations. When implementing remediation activities, organizations consider the order and timing of updates to validate correct execution within the system environment, and to support system and component availability needs (i.e., implementing a staggered deployment strategy). In some situations, organizations may determine that the testing of software or firmware updates is not necessary or practical, such as when implementing simple malicious code signature updates. In testing decisions, organizations consider whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures.
+
+When implementing remediation activities, organizations consider the order and timing of updates to validate correct execution within the system environment, and to support system and component availability needs (i.e., implementing a staggered deployment strategy). Organizations verify that software and firmware updates come from authorized sources prior to downloading.
+
+Parameters:
+- si-02_odp | label: "time period"
+  guideline: time period within which to install security-relevant software updates after the release of the updates is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.
+- National Institute of Standards and Technology (2013) Digital Signature Standard (DSS). (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 186-4.
+- Joint Task Force Transformation Initiative (2011) Managing Information Security Risk: Organization, Mission, and Information System View. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.
+- Souppaya MP, Scarfone KA (2013) Guide to Enterprise Patch Management Technologies. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-40, Rev. 3.
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.
+- Singhal A, Ou X (2011) Security Risk Analysis of Enterprise Networks Using Probabilistic Attack Graphs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7788.
+- Chandramouli R, Rose SW (2013) Secure Domain Name System (DNS) Deployment Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-81-2.
+
+========================================================================
+Enhancement SI-2(1) (si-2.1) - Central Management
+
+========================================================================
+Enhancement SI-2(2) (si-2.2) - Automated Flaw Remediation Status
+
+Statement:
+Determine if system components have applicable security-relevant software and firmware updates installed using [automated mechanisms] [frequency].
+
+Guidance:
+Automated mechanisms can track and determine the status of known flaws for system components.
+
+Parameters:
+- si-02.02_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms to determine if applicable security-relevant software and firmware updates are installed on system components are defined;
+- si-02.02_odp.02 | label: "frequency"
+  guideline: the frequency at which to determine if applicable security-relevant software and firmware updates are installed on system components is defined;
+
+========================================================================
+Enhancement SI-2(3) (si-2.3) - Time to Remediate Flaws and Benchmarks for Corrective Actions
+
+Statement:
+  (a) Measure the time between flaw identification and flaw remediation; and
+  (b) Establish the following benchmarks for taking corrective actions: [benchmarks].
+
+Guidance:
+Organizations determine the time it takes on average to correct system flaws after such flaws have been identified and subsequently establish organizational benchmarks (i.e., time frames) for taking corrective actions. Benchmarks can be established by the type of flaw or the severity of the potential vulnerability if the flaw can be exploited.
+
+Parameters:
+- si-02.03_odp | label: "benchmarks"
+  guideline: the benchmarks for taking corrective actions are defined;
+
+========================================================================
+Enhancement SI-2(4) (si-2.4) - Automated Patch Management Tools
+
+Statement:
+Employ automated patch management tools to facilitate flaw remediation to the following system components: [components].
+
+Guidance:
+Using automated tools to support patch management helps to ensure the timeliness and completeness of system patching operations.
+
+Parameters:
+- si-02.04_odp | label: "components"
+  guideline: the system components requiring automated patch management tools to facilitate flaw remediation are defined;
+
+========================================================================
+Enhancement SI-2(5) (si-2.5) - Automatic Software and Firmware Updates
+
+Statement:
+Install [security-relevant software and firmware updates] automatically to [system components].
+
+Guidance:
+Due to system integrity and availability concerns, organizations consider the methodology used to carry out automatic updates. Organizations balance the need to ensure that the updates are installed as soon as possible with the need to maintain configuration management and control with any mission or operational impacts that automatic updates might impose (i.e., implementing a staggered deployment strategy).
+
+Parameters:
+- si-02.05_odp.01 | label: "security-relevant software and firmware updates"
+  guideline: security-relevant software and firmware updates to be automatically installed to system components are defined;
+- si-02.05_odp.02 | label: "system components"
+  guideline: system components requiring security-relevant software updates to be automatically installed are defined;
+
+========================================================================
+Enhancement SI-2(6) (si-2.6) - Removal of Previous Versions of Software and Firmware
+
+Statement:
+Remove previous versions of [software and firmware components] after updated versions have been installed.
+
+Guidance:
+Previous versions of software or firmware components that are not removed from the system after updates have been installed may be exploited by adversaries. Some products may automatically remove previous versions of software and firmware from the system.
+
+Parameters:
+- si-02.06_odp | label: "software and firmware components"
+  guideline: software and firmware components to be removed after updated versions have been installed are defined;
+
+========================================================================
+Enhancement SI-2(7) (si-2.7) - Root Cause Analysis
+
+Statement:
+  a. Conduct root cause analysis to identify underlying causes of issues or failures.
+  b. Develop actions to address the root cause of the issue or failure.
+  c. Implement the actions and monitor the implementation for effectiveness.
+
+Guidance:
+Root cause analysis includes a wide range of approaches, tools, and techniques to systematically identify the underlying cause of issues or failures to systems and systems components (hardware, software, and firmware). Organizations consider the severity of the incident to determine what root cause analysis method is used and how quickly implementation of the remediation actions. The root cause analysis includes a timeline, missed warning signs, key decisions, gaps, mitigations, and verification of effectiveness. The actions identified to address the source of the issue are implemented and integrated into applicable organizational policy, procedures, and control implementation.

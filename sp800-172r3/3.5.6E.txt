@@ -1,0 +1,25 @@
+id: SP_800_172_3_0_0_03.05.06E
+title: Identity Proofing
+family: Identification and Authentication (SP_800_172_3_0_0_3.5)
+class: security_requirement
+
+Statement:
+  ES-03.05.06E-a Identity proof users that require accounts for logical access to systems based on appropriate identity assurance level requirements as specified in applicable standards and guidelines.
+  ES-03.05.06E-b Resolve user identities to a unique individual.
+  ES-03.05.06E-c Collect, validate, and verify identity evidence.
+
+Guidance:
+Identity proofing is the process of collecting, validating, and verifying user identity information to establish credentials for accessing a system. Identity proofing is intended to mitigate threats to the registration of users and the establishment of their accounts. Resolving user identities ensure each user identity belongs to a unique individual. Organizations may be subject to laws, Executive Orders, directives, regulations, or policies that address the collection of identity evidence. An example of an applicable guideline that covers identity proofing is SP 800-63 .ADD REFERENCE. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+References:
+- IA-12

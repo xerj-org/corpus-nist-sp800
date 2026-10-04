@@ -1,0 +1,22 @@
+id: SP_800_172_3_0_0_03.09.04E
+title: Citizenship Requirements
+family: Personnel Security (SP_800_172_3_0_0_3.9)
+class: security_requirement
+
+Statement:
+Verify that individuals accessing a system that processes, stores, or transmits CUI meet [param: A.03.09.04E.ODP.01]. 
+
+Guidance:
+Organizations may determine that individuals who need access to CUI associated with a high value asset or critical program require U.S. citizenship status. This requirement enhances SP 800-171 requirement 03.09.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+Parameters:
+- A.03.09.04E.ODP.01
+  guideline: Citizenship requirements to be met by individuals to access a system processing, storing, or transmitting CUI are defined.
+
+References:
+- PS-03(04)

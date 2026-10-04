@@ -1,0 +1,32 @@
+id: ca-5
+title: Plan of Action and Milestones
+family: Assessment, Authorization, and Monitoring (ca)
+class: SP800-53
+
+Statement:
+  a. Develop a plan of action and milestones for the system to document the planned remediation actions of the organization to correct weaknesses or deficiencies noted during the assessment of the controls and to reduce or eliminate known vulnerabilities in the system; and
+  b. Update existing plan of action and milestones [frequency] based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities.
+
+Guidance:
+Plans of action and milestones are useful for any type of organization to track planned remedial actions. Plans of action and milestones are required in authorization packages and subject to federal reporting requirements established by OMB.
+
+Parameters:
+- ca-05_odp | label: "frequency"
+  guideline: the frequency at which to update an existing plan of action and milestones based on the findings from control assessments, independent audits or reviews, and continuous monitoring activities is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Joint Task Force (2018) Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-37, Rev. 2.
+
+========================================================================
+Enhancement CA-5(1) (ca-5.1) - Automation Support for Accuracy and Currency
+
+Statement:
+Ensure the accuracy, currency, and availability of the plan of action and milestones for the system using [automated mechanisms].
+
+Guidance:
+Using automated tools helps maintain the accuracy, currency, and availability of the plan of action and milestones and facilitates the coordination and sharing of security and privacy information throughout the organization. Such coordination and information sharing help to identify systemic weaknesses or deficiencies in organizational systems and ensure that appropriate resources are directed at the most critical system vulnerabilities in a timely manner.
+
+Parameters:
+- ca-05.01_odp | label: "automated mechanisms"
+  guideline: automated mechanisms used to ensure the accuracy, currency, and availability of the plan of action and milestones for the system are defined;

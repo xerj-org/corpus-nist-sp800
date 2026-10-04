@@ -1,0 +1,14 @@
+id: SP_800_171_03.01.22
+title: Publicly Accessible Content
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.22.a Train authorized individuals to ensure that publicly accessible information does not contain CUI.
+  SR-03.01.22.b Review the content on publicly accessible systems for CUI and remove such information, if discovered.
+
+Guidance:
+In accordance with applicable laws, Executive Orders, directives, policies, regulations, standards, and guidelines, the public is not authorized to have access to nonpublic information, including CUI.
+
+References:
+- AC-22

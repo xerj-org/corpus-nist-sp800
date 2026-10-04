@@ -1,0 +1,16 @@
+id: SP_800_171_03.13.06
+title: Network Communications – Deny by Default – Allow by Exception
+family: System and Communications Protection (SP_800_171_03.13)
+class: requirement
+
+Statement:
+Deny network communications traffic by default, and allow network communications traffic by exception.
+
+Guidance:
+This requirement applies to inbound and outbound network communications traffic at the system boundary and at identified points within the system. A deny-all, allow-by-exception network communications traffic policy ensures that only essential and approved connections are allowed.
+
+References:
+- SC-07(05)
+- Sriram K, Montgomery D (2019) Resilient Interdomain Traffic Exchange: BGP Security and DDoS Mitigation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-189.
+- Scarfone KA, Hoffman P (2009) Guidelines on Firewalls and Firewall Policy. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-41, Rev. 1
+- Barker EB, Dang QH, Frankel SE, Scarfone KA, Wouters P (2020) Guide to IPsec VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-77, Rev. 1.

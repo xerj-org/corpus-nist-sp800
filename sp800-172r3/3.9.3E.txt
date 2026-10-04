@@ -1,0 +1,29 @@
+id: SP_800_172_3_0_0_03.09.03E
+title: Access Agreements
+family: Personnel Security (SP_800_172_3_0_0_3.9)
+class: security_requirement
+
+Statement:
+  ES-03.09.03E-a Develop and document access agreements for systems processing, storing, or transmitting CUI.
+  ES-03.09.03E-b Review and update the access agreements [organization-defined frequency]. 
+  ES-03.09.03E-c Verify that individuals requiring access to CUI and systems processing, storing, or transmitting CUI:
+    ES-03.09.03E-c-1 Sign appropriate access agreements prior to being granted access; and
+    ES-03.09.03E-c-2 Re-sign access agreements to maintain access to systems when access agreements have been updated or [organization-defined frequency]. 
+
+Guidance:
+Access agreements include nondisclosure agreements, acceptable use agreements, rules of behavior, and conflict-of-interest agreements. Signed access agreements include an acknowledgement that individuals have read, understand, and agree to abide by the constraints associated with systems processing, storing, or transmitting CUI to which they have authorized access. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+Parameters:
+- A.03.09.03E_prm_1 | label: "organization-defined frequency"
+- A.03.09.03E.ODP.01 | label: "frequency"
+  guideline: the frequency at which to review and update access agreements is defined.
+- A.03.09.03E.ODP.02 | label: "frequency"
+  guideline: the frequency at which to re-sign access agreements to maintain access systems processing, storing, or transmitting CUI is defined.
+
+References:
+- PS-06

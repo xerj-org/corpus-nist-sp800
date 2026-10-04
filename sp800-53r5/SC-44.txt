@@ -1,0 +1,17 @@
+id: sc-44
+title: Detonation Chambers
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Employ a detonation chamber capability within [system, system component, or location].
+
+Guidance:
+Detonation chambers, also known as dynamic execution environments, allow organizations to open email attachments, execute untrusted or suspicious applications, and execute Universal Resource Locator requests in the safety of an isolated environment or a virtualized sandbox. Protected and isolated execution environments provide a means of determining whether the associated attachments or applications contain malicious code. While related to the concept of deception nets, the employment of detonation chambers is not intended to maintain a long-term environment in which adversaries can operate and their actions can be observed. Rather, detonation chambers are intended to quickly identify malicious code and either reduce the likelihood that the code is propagated to user environments of operation or prevent such propagation completely.
+
+Parameters:
+- sc-44_odp | label: "system, system component, or location"
+  guideline: the system, system component, or location where a detonation chamber capability is to be employed is defined;
+
+References:
+- Rose SW, Nightingale S, Garfinkel SL, Chandramouli R (2019) Trustworthy Email. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-177, Rev. 1.

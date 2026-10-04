@@ -1,0 +1,4 @@
+id: sc-14
+title: Public Access Protections
+family: System and Communications Protection (sc)
+class: SP800-53

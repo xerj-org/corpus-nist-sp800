@@ -1,0 +1,22 @@
+id: SP_800_171_03.03.05
+title: Audit Record Review, Analysis, and Reporting
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.05.a Review and analyze system audit records [frequency] for indications and the potential impact of inappropriate or unusual activity.
+  SR-03.03.05.b Report findings to organizational personnel or roles.
+  SR-03.03.05.c Analyze and correlate audit records across different repositories to gain organization-wide situational awareness.
+
+Guidance:
+Audit record review, analysis, and reporting cover information security logging performed by organizations and can include logging that results from the monitoring of account usage, remote access, wireless connectivity, configuration settings, the use of maintenance tools and nonlocal maintenance, system component inventory, mobile device connection, equipment delivery and removal, physical access, temperature and humidity, communications at system interfaces, and the use of mobile code. Findings can be reported to organizational entities, such as the incident response team, help desk, and security or privacy offices. If organizations are prohibited from reviewing and analyzing audit records or unable to conduct such activities, the review or analysis may be carried out by other organizations granted such authority. The scope, frequency, and/or depth of the audit record review, analysis, and reporting may be adjusted to meet organizational needs based on new information received. Correlating audit record review, analysis, and reporting processes helps to ensure that audit records collectively create a more complete view of events.
+
+Parameters:
+- A.03.03.05.ODP.01 | label: "frequency"
+  guideline: the frequency at which system audit records are reviewed and analyzed is defined.
+
+References:
+- AU-06
+- AU-06(03)
+- Ayers RP, Brothers S, Jansen W (2014) Guidelines on Mobile Device Forensics. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-101, Rev. 1.
+- Kent K, Chevalier S, Grance T, Dang H (2006) Guide to Integrating Forensic Techniques into Incident Response. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-86.

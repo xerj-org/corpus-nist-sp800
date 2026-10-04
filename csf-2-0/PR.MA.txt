@@ -1,0 +1,19 @@
+id: PR.MA
+title: Maintenance
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+
+========================================================================
+Child control PR.MA-01 - PR.MA-01
+
+Statement:
+Maintenance and repair of organizational assets are performed and logged, with approved and controlled tools
+
+========================================================================
+Child control PR.MA-02 - PR.MA-02
+
+Statement:
+Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access

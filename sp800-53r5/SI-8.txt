@@ -1,0 +1,40 @@
+id: si-8
+title: Spam Protection
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+  a. Employ spam protection mechanisms at system entry and exit points to detect and act on unsolicited messages; and
+  b. Update spam protection mechanisms when new releases are available in accordance with organizational configuration management policy and procedures.
+
+Guidance:
+System entry and exit points include firewalls, remote-access servers, electronic mail servers, web servers, proxy servers, workstations, notebook computers, and mobile devices. Spam can be transported by different means, including email, email attachments, and web accesses. Spam protection mechanisms include signature definitions.
+
+References:
+- Tracy MC, Jansen W, Scarfone KA, Butterfield J (2007) Guidelines on Electronic Mail Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-45, Version 2.
+- Rose SW, Nightingale S, Garfinkel SL, Chandramouli R (2019) Trustworthy Email. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-177, Rev. 1.
+
+========================================================================
+Enhancement SI-8(1) (si-8.1) - Central Management
+
+========================================================================
+Enhancement SI-8(2) (si-8.2) - Automatic Updates
+
+Statement:
+Automatically update spam protection mechanisms [frequency].
+
+Guidance:
+Using automated mechanisms to update spam protection mechanisms helps to ensure that updates occur on a regular basis and provide the latest content and protection capabilities.
+
+Parameters:
+- si-08.02_odp | label: "frequency"
+  guideline: the frequency at which to automatically update spam protection mechanisms is defined;
+
+========================================================================
+Enhancement SI-8(3) (si-8.3) - Continuous Learning Capability
+
+Statement:
+Implement spam protection mechanisms with a learning capability to more effectively identify legitimate communications traffic.
+
+Guidance:
+Learning mechanisms include Bayesian filters that respond to user inputs that identify specific traffic as spam or legitimate by updating algorithm parameters and thereby more accurately separating types of traffic.

@@ -1,0 +1,33 @@
+id: SP_800_171_03.04.06
+title: Least Functionality
+family: Configuration Management (SP_800_171_03.04)
+class: requirement
+
+Statement:
+  SR-03.04.06.a Configure the system to provide only mission-essential capabilities.
+  SR-03.04.06.b Prohibit or restrict use of the following functions, ports, protocols, connections, and services: [functions] .
+  SR-03.04.06.c Review the system [frequency] to identify unnecessary or nonsecure functions, ports, protocols, connections, and services.
+  SR-03.04.06.d Disable or remove functions, ports, protocols, connections, and services that are unnecessary or nonsecure.
+
+Guidance:
+Systems can provide a variety of functions and services. Some functions and services that are routinely provided by default may not be necessary to support essential organizational missions, functions, or operations. It may be convenient to provide multiple services from single system components. However, doing so increases risk over limiting the services provided by any one component. Where feasible, organizations limit functionality to a single function per component. Organizations review the functions and services provided by the system or system components to determine which functions and services are candidates for elimination. Organizations disable unused or unnecessary physical and logical ports and protocols to prevent the unauthorized connection of devices, the transfer of information, and tunneling. Organizations can employ network scanning tools, intrusion detection and prevention systems, and endpoint protection systems (e.g., firewalls and host-based intrusion detection systems) to identify and prevent the use of prohibited functions, ports, protocols, system connections, and services. Bluetooth, File Transfer Protocol (FTP), and peer-to-peer networking are examples of the types of protocols that organizations consider eliminating, restricting, or disabling.
+
+Parameters:
+- A.03.04.06.ODP.01 | label: "functions"
+  guideline: functions to be prohibited or restricted are defined.
+- A.03.04.06.ODP.02 | label: "ports"
+  guideline: ports to be prohibited or restricted are defined.
+- A.03.04.06.ODP.03 | label: "protocols"
+  guideline: protocols to be prohibited or restricted are defined.
+- A.03.04.06.ODP.04 | label: "connections"
+  guideline: connections to be prohibited or restricted are defined.
+- A.03.04.06.ODP.05 | label: "services"
+  guideline: services to be prohibited or restricted are defined.
+- A.03.04.06.ODP.06 | label: "frequency"
+  guideline: the frequency at which to review the system to identify unnecessary or nonsecure functions, ports, protocols, connections, or services is defined.
+
+References:
+- CM-07
+- CM-07(01)
+- Ross R, Winstead M, McEvilley M (2022) Engineering Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Rev. 1.
+- Sedgewick A, Souppaya MP, Scarfone KA (2015) Guide to Application Whitelisting. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-167.

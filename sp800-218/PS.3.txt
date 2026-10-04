@@ -1,0 +1,63 @@
+id: PS.3
+title: Archive and Protect Each Software Release
+family: Protect Software (PS)
+class: practice
+family-overview: Organizations should protect all components of the software from tampering and unauthorized access
+
+Statement:
+Preserve software releases in order to help identify, analyze, and eliminate vulnerabilities discovered in the software after release.
+
+========================================================================
+Child control PS.3.1 - PS.3.1
+
+Statement:
+Securely archive the necessary files and supporting data (e.g., integrity verification information, provenance data) to be retained for each software release.
+
+Example:
+Store the release files, associated images, etc. in repositories following the organization’s established policy. Allow read-only access to them by necessary personnel and no access by anyone else.
+
+Example:
+Store and protect release integrity verification information and provenance data, such as by keeping it in a separate location from the release files or by signing the data.
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Cloud Native Computing Foundation (2021) Software Supply Chain Best Practices.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- Hong Fong EK, Wheeler D, Henninger A (2016) State-of-the-Art Resources (SOAR) for Software Vulnerability Detection, Test, and Evaluation 2016. (Institute for Defense Analyses [IDA], Alexandria, VA), IDA Paper P-8005.
+- International Electrotechnical Commission (IEC), Security for industrial automation and control systems – Part 4-1: Secure product development lifecycle requirements, IEC 62443-4-1, 2018.
+- National Institute of Standards and Technology (2018) Framework for Improving Critical Infrastructure Cybersecurity, Version 1.1. (National Institute of Standards and Technology, Gaithersburg, MD).
+- Open Web Application Security Project (2020) OWASP Software Component Verification Standard, Version 1.0.
+- Payment Card Industry (PCI) Security Standards Council (2021) Secure Software Lifecycle (Secure SLC) Requirements and Assessment Procedures Version 1.1.
+- Software Assurance Forum for Excellence in Code (2010) Software Integrity Controls: An Assurance-Based Approach to Minimizing Risks in the Software Supply Chain.
+- Boyens J, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2021) Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-161, Rev. 1.
+- Joint Task Force (2020) Security and Privacy Controls for Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53, Rev. 5. Includes updates as of December 10, 2020.
+
+========================================================================
+Child control PS.3.2 - PS.3.2
+
+Statement:
+Collect, safeguard, maintain, and share provenance data for all components of each software release (e.g., in a software bill of materials .SBOM).
+
+Example:
+Make the provenance data available to software acquirers in accordance with the organization’s policies, preferably using standards-based formats.
+
+Example:
+Make the provenance data available to the organization’s operations and response teams to aid them in mitigating software vulnerabilities.
+
+Example:
+Protect the integrity of provenance data, and provide a way for recipients to verify provenance data integrity.
+
+Example:
+Update the provenance data every time any of the software’s components are updated.
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Migues S, Erlikhman E, Ewers J, Nassery K (2021) BSIMM12 2021 Foundations Report.
+- Cloud Native Computing Foundation (2021) Software Supply Chain Best Practices.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- National Telecommunications and Information Administration (NTIA) (2021) The Minimum Elements For a Software Bill of Materials (SBOM).
+- Open Web Application Security Project (2020) OWASP Software Component Verification Standard, Version 1.0.
+- Software Assurance Forum for Excellence in Code (2010) Software Integrity Controls: An Assurance-Based Approach to Minimizing Risks in the Software Supply Chain.
+- Software Assurance Forum for Excellence in Code (2017) Managing Security Risks Inherent in the Use of Third-Party Components.
+- Boyens J, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2021) Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-161, Rev. 1.
+- Joint Task Force (2020) Security and Privacy Controls for Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53, Rev. 5. Includes updates as of December 10, 2020.

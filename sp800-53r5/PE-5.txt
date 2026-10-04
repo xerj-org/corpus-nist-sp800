@@ -1,0 +1,32 @@
+id: pe-5
+title: Access Control for Output Devices
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+Control physical access to output from [output devices] to prevent unauthorized individuals from obtaining the output.
+
+Guidance:
+Controlling physical access to output devices includes placing output devices in locked rooms or other secured areas with keypad or card reader access controls and allowing access to authorized individuals only, placing output devices in locations that can be monitored by personnel, installing monitor or screen filters, and using headphones. Examples of output devices include monitors, printers, scanners, audio devices, facsimile machines, and copiers.
+
+Parameters:
+- pe-05_odp | label: "output devices"
+  guideline: output devices that require physical access control to output are defined;
+
+References:
+- Dempsey KL, Paulsen C (2015) Risk Management for Replication Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8023.
+
+========================================================================
+Enhancement PE-5(1) (pe-5.1) - Access to Output by Authorized Individuals
+
+========================================================================
+Enhancement PE-5(2) (pe-5.2) - Link to Individual Identity
+
+Statement:
+Link individual identity to receipt of output from output devices.
+
+Guidance:
+Methods for linking individual identity to the receipt of output from output devices include installing security functionality on facsimile machines, copiers, and printers. Such functionality allows organizations to implement authentication on output devices prior to the release of output to individuals.
+
+========================================================================
+Enhancement PE-5(3) (pe-5.3) - Marking Output Devices

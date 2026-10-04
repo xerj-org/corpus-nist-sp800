@@ -1,0 +1,19 @@
+id: SP_800_171_03.08.07
+title: Media Use
+family: Media Protection (SP_800_171_03.08)
+class: requirement
+
+Statement:
+  SR-03.08.07.a Restrict or prohibit the use of [types of system media].
+  SR-03.08.07.b Prohibit the use of removable system media without an identifiable owner.
+
+Guidance:
+In contrast to requirement [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.08.01)03.08.01, which restricts user access to media, this requirement restricts or prohibits the use of certain types of media, such as external hard drives, flash drives, or smart displays. Organizations can use technical and non-technical measures (e.g., policies, procedures, and rules of behavior) to control the use of system media. For example, organizations may control the use of portable storage devices by using physical cages on workstations to prohibit access to external ports or disabling or removing the ability to insert, read, or write to devices. Organizations may limit the use of portable storage devices to only approved devices, including devices provided by the organization, devices provided by other approved organizations, and devices that are not personally owned. Organizations may also control the use of portable storage devices based on the type of device — prohibiting the use of writeable, portable devices — and implement this restriction by disabling or removing the capability to write to such devices. Limits on the use of organization-controlled system media in external systems include restrictions on how the media may be used and under what conditions. Requiring identifiable owners (e.g., individuals, organizations, or projects) for removable system media reduces the risk of using such technologies by allowing organizations to assign responsibility and accountability for addressing known vulnerabilities in the media (e.g., insertion of malicious code).
+
+Parameters:
+- A.03.08.07.ODP.01 | label: "types of system media"
+  guideline: types of system media with usage restrictions or that are prohibited from use are defined.
+
+References:
+- MP-07
+- Scarfone KA, Souppaya MP, Sexton M (2007) Guide to Storage Encryption Technologies for End User Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-111.

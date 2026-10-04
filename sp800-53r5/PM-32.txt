@@ -1,0 +1,19 @@
+id: pm-32
+title: Purposing
+family: Program Management (pm)
+class: SP800-53
+family-overview: [FISMA](#0c67b2a9-bede-43d2-b86d-5f35b8be36e9), [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) , and [OMB A-130](#27847491-5ce1-4f6a-a1e4-9e483782f0ef) require federal agencies to develop, implement, and provide oversight for organization-wide information security and privacy programs to help ensure the confidentiality, integrity, and availability of federal information processed, stored, and transmitted by federal information systems and to protect individual privacy. The program management (PM) controls described in this section are implemented at the organization level and not directed at individual information systems. The PM controls have been designed to facilitate organizational compliance with applicable federal laws, executive orders, directives, policies, regulations, and standards. The controls are independent of [FIPS 200](#599fb53d-5041-444e-a7fe-640d6d30ad05) impact levels and, therefore, are not associated with the control baselines described in [SP 800-53B](#46d9e201-840e-440e-987c-2c773333c752). Organizations document program management controls in the information security and privacy program plans. The organization-wide information security program plan (see [PM-1](#pm-1) ) and privacy program plan (see [PM-18](#pm-18) ) supplement system security and privacy plans (see [PL-2](#pl-2) ) developed for organizational information systems. Together, the system security and privacy plans for the individual information systems and the information security and privacy program plans cover the totality of security and privacy controls employed by the organization.
+
+Statement:
+Analyze [systems or system components] supporting mission essential services or functions to ensure that the information resources are being used consistent with their intended purpose.
+
+Guidance:
+Systems are designed to support a specific mission or business function. However, over time, systems and system components may be used to support services and functions that are outside of the scope of the intended mission or business functions. This can result in exposing information resources to unintended environments and uses that can significantly increase threat exposure. In doing so, the systems are more vulnerable to compromise, which can ultimately impact the services and functions for which they were intended. This is especially impactful for mission-essential services and functions. By analyzing resource use, organizations can identify such potential exposures.
+
+Parameters:
+- pm-32_odp | label: "systems or system components"
+  guideline: the systems or system components supporting mission-essential services or functions are defined;
+
+References:
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.

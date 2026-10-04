@@ -1,0 +1,58 @@
+id: ir-8
+title: Incident Response Plan
+family: Incident Response (ir)
+class: SP800-53
+
+Statement:
+  a. Develop an incident response plan that:
+    1. Provides the organization with a roadmap for implementing its incident response capability;
+    2. Describes the structure and organization of the incident response capability;
+    3. Provides a high-level approach for how the incident response capability fits into the overall organization;
+    4. Meets the unique requirements of the organization, which relate to mission, size, structure, and functions;
+    5. Defines reportable incidents;
+    6. Provides metrics for measuring the incident response capability within the organization;
+    7. Defines the resources and management support needed to effectively maintain and mature an incident response capability;
+    8. Addresses the sharing of incident information;
+    9. Is reviewed and approved by [personnel or roles] [frequency] ; and
+    10. Explicitly designates responsibility for incident response to [entities, personnel, or roles].
+  b. Distribute copies of the incident response plan to [incident response personnel];
+  c. Update the incident response plan to address system and organizational changes or problems encountered during plan implementation, execution, or testing;
+  d. Communicate incident response plan changes to [organization-defined incident response personnel (identified by name and/or by role) and organizational elements] ; and
+  e. Protect the incident response plan from unauthorized disclosure and modification.
+
+Guidance:
+It is important that organizations develop and implement a coordinated approach to incident response. Organizational mission and business functions determine the structure of incident response capabilities. As part of the incident response capabilities, organizations consider the coordination and sharing of information with external organizations, including external service providers and other organizations involved in the supply chain. For incidents involving personally identifiable information (i.e., breaches), include a process to determine whether notice to oversight organizations or affected individuals is appropriate and provide that notice accordingly.
+
+Parameters:
+- ir-8_prm_5 | label: "organization-defined incident response personnel (identified by name and/or by role) and organizational elements"
+- ir-08_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles that review and approve the incident response plan is/are identified;
+- ir-08_odp.02 | label: "frequency"
+  guideline: the frequency at which to review and approve the incident response plan is defined;
+- ir-08_odp.03 | label: "entities, personnel, or roles"
+  guideline: entities, personnel, or roles with designated responsibility for incident response are defined;
+- ir-08_odp.04 | label: "incident response personnel"
+  guideline: incident response personnel (identified by name and/or by role) to whom copies of the incident response plan are to be distributed is/are defined;
+- ir-08_odp.05 | label: "organizational elements"
+  guideline: organizational elements to which copies of the incident response plan are to be distributed are defined;
+- ir-08_odp.06 | label: "incident response personnel"
+  guideline: incident response personnel (identified by name and/or by role) to whom changes to the incident response plan is/are communicated are defined;
+- ir-08_odp.07 | label: "organizational elements"
+  guideline: organizational elements to which changes to the incident response plan are communicated are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Cichonski PR, Millar T, Grance T, Scarfone KA (2012) Computer Security Incident Handling Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-61, Rev. 2.
+- Office of Management and Budget Memorandum M-17-12, *Preparing for and Responding to a Breach of Personally Identifiable Information* , January 2017.
+
+========================================================================
+Enhancement IR-8(1) (ir-8.1) - Breaches
+
+Statement:
+Include the following in the Incident Response Plan for breaches involving personally identifiable information:
+  (a) A process to determine if notice to individuals or other organizations, including oversight organizations, is needed;
+  (b) An assessment process to determine the extent of the harm, embarrassment, inconvenience, or unfairness to affected individuals and any mechanisms to mitigate such harms; and
+  (c) Identification of applicable privacy requirements.
+
+Guidance:
+Organizations may be required by law, regulation, or policy to follow specific procedures relating to breaches, including notice to individuals, affected organizations, and oversight bodies; standards of harm; and mitigation or other specific requirements.

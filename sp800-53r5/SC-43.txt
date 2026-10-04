@@ -1,0 +1,19 @@
+id: sc-43
+title: Usage Restrictions
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. Establish usage restrictions and implementation guidelines for the following system components: [components] ; and
+  b. Authorize, monitor, and control the use of such components within the system.
+
+Guidance:
+Usage restrictions apply to all system components including but not limited to mobile code, mobile devices, wireless access, and wired and wireless peripheral components (e.g., copiers, printers, scanners, optical devices, and other similar technologies). The usage restrictions and implementation guidelines are based on the potential for system components to cause damage to the system and help to ensure that only authorized system use occurs.
+
+Parameters:
+- sc-43_odp | label: "components"
+  guideline: the components for which usage restrictions and implementation guidance are to be established are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.

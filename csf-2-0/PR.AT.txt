@@ -1,0 +1,65 @@
+id: PR.AT
+title: Awareness and Training
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+The organization's personnel are provided with cybersecurity awareness and training so that they can perform their cybersecurity-related tasks
+
+========================================================================
+Child control PR.AT-01 - PR.AT-01
+
+Statement:
+Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind
+
+Example:
+Provide basic cybersecurity awareness and training to employees, contractors, partners, suppliers, and all other users of the organization's non-public resources
+
+Example:
+Train personnel to recognize social engineering attempts and other common attacks, report attacks and suspicious activity, comply with acceptable use policies, and perform basic cyber hygiene tasks (e.g., patching software, choosing passwords, protecting credentials)
+
+Example:
+Explain the consequences of cybersecurity policy violations, both to individual users and the organization as a whole
+
+Example:
+Periodically assess or test users on their understanding of basic cybersecurity practices
+
+Example:
+Require annual refreshers to reinforce existing practices and introduce new practices
+
+========================================================================
+Child control PR.AT-02 - PR.AT-02
+
+Statement:
+Individuals in specialized roles are provided with awareness and training so that they possess the knowledge and skills to perform relevant tasks with cybersecurity risks in mind
+
+Example:
+Identify the specialized roles within the organization that require additional cybersecurity training, such as physical and cybersecurity personnel, finance personnel, senior leadership, and anyone with access to business-critical data
+
+Example:
+Provide role-based cybersecurity awareness and training to all those in specialized roles, including contractors, partners, suppliers, and other third parties
+
+Example:
+Periodically assess or test users on their understanding of cybersecurity practices for their specialized roles
+
+Example:
+Require annual refreshers to reinforce existing practices and introduce new practices
+
+========================================================================
+Child control PR.AT-03 - PR.AT-03
+
+Statement:
+Third-party stakeholders (e.g., suppliers, customers, partners) understand their roles and responsibilities
+
+========================================================================
+Child control PR.AT-04 - PR.AT-04
+
+Statement:
+Senior executives understand their roles and responsibilities
+
+========================================================================
+Child control PR.AT-05 - PR.AT-05
+
+Statement:
+Physical and cybersecurity personnel understand their roles and responsibilities

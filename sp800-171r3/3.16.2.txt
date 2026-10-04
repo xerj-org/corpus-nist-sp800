@@ -1,0 +1,14 @@
+id: SP_800_171_03.16.02
+title: Unsupported System Components
+family: System and Services Acquisition (SP_800_171_03.16)
+class: requirement
+
+Statement:
+  SR-03.16.02.a Replace system components when support for the components is no longer available from the developer, vendor, or manufacturer.
+  SR-03.16.02.b Provide options for risk mitigation or alternative sources for continued support for unsupported components that cannot be replaced.
+
+Guidance:
+Support for system components includes software patches, firmware updates, replacement parts, and maintenance contracts. An example of unsupported components includes when vendors no longer provide critical software patches or product updates, which can result in opportunities for adversaries to exploit weaknesses or deficiencies in the installed components. Exceptions to replacing unsupported system components include systems that provide critical mission or business capabilities when newer technologies are unavailable or when the systems are so isolated that installing replacement components is not an option. Alternative sources of support address the need to provide continued support for system components that are no longer supported by the original manufacturers, developers, or vendors when such components remain essential to organizational missions and business functions. If necessary, organizations can establish in-house support by developing customized patches for critical software components or obtain the services of external service providers who provide ongoing support for unsupported components through contractual relationships. Such contractual relationships can include open-source software value-added vendors. The increased risk of using unsupported system components can be mitigated by prohibiting the connection of such components to public or uncontrolled networks or implementing other forms of isolation.
+
+References:
+- SA-22

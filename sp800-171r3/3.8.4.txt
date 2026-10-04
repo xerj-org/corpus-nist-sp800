@@ -1,0 +1,13 @@
+id: SP_800_171_03.08.04
+title: Media Marking
+family: Media Protection (SP_800_171_03.08)
+class: requirement
+
+Statement:
+Mark system media that contain CUI to indicate distribution limitations, handling caveats, and applicable CUI markings.
+
+Guidance:
+System media include digital and non-digital media. Marking refers to the use or application of human-readable security attributes. Labeling refers to the use of security attributes for internal system data structures. Digital media include diskettes, magnetic tapes, external or removable solid state or magnetic drives, flash drives, compact discs, and digital versatile discs. Non-digital media include paper and microfilm. CUI is defined by NARA along with marking, safeguarding, and dissemination requirements for such information.
+
+References:
+- MP-03

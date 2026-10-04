@@ -1,0 +1,21 @@
+id: pe-10
+title: Emergency Shutoff
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+  a. Provide the capability of shutting off power to [system or individual system components] in emergency situations;
+  b. Place emergency shutoff switches or devices in [location] to facilitate access for authorized personnel; and
+  c. Protect emergency power shutoff capability from unauthorized activation.
+
+Guidance:
+Emergency power shutoff primarily applies to organizational facilities that contain concentrations of system resources, including data centers, mainframe computer rooms, server rooms, and areas with computer-controlled machinery.
+
+Parameters:
+- pe-10_odp.01 | label: "system or individual system components"
+  guideline: system or individual system components that require the capability to shut off power in emergency situations is/are defined;
+- pe-10_odp.02 | label: "location"
+  guideline: location of emergency shutoff switches or devices by system or system component is defined;
+
+========================================================================
+Enhancement PE-10(1) (pe-10.1) - Accidental and Unauthorized Activation

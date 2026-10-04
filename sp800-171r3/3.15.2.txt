@@ -1,0 +1,28 @@
+id: SP_800_171_03.15.02
+title: System Security Plan
+family: Planning (SP_800_171_03.15)
+class: requirement
+
+Statement:
+  SR-03.15.02.a Develop a system security plan that:
+    SR-03.15.02.a.01 Defines the constituent system components;
+    SR-03.15.02.a.02 Identifies the information types processed, stored, and transmitted by the system;
+    SR-03.15.02.a.03 Describes specific threats to the system that are of concern to the organization;
+    SR-03.15.02.a.04 Describes the operational environment for the system and any dependencies on or connections to other systems or system components;
+    SR-03.15.02.a.05 Provides an overview of the security requirements for the system;
+    SR-03.15.02.a.06 Describes the safeguards in place or planned for meeting the security requirements;
+    SR-03.15.02.a.07 Identifies individuals that fulfill system roles and responsibilities; and
+    SR-03.15.02.a.08 Includes other relevant information necessary for the protection of CUI.
+  SR-03.15.02.b Review and update the system security plan [frequency].
+  SR-03.15.02.c Protect the system security plan from unauthorized disclosure.
+
+Guidance:
+System security plans provide key characteristics of the system that is processing, storing, and transmitting CUI and how the system and information are protected. System security plans contain sufficient information to enable a design and implementation that are unambiguously compliant with the intent of the plans and the subsequent determinations of risk if the plan is implemented as intended. System security plans can be a collection of documents, including documents that already exist. Effective system security plans reference policies, procedures, and documents (e.g., design specifications) that provide additional detailed information. This reduces the documentation requirements associated with security programs and maintains security information in other established management or operational areas related to enterprise architecture, the system development life cycle, systems engineering, and acquisition.
+
+Parameters:
+- A.03.15.02.ODP.01 | label: "frequency"
+  guideline: the frequency at which the system security plan is reviewed and updated is defined.
+
+References:
+- PL-02
+- Swanson MA, Hash J, Bowen P (2006) Guide for Developing Security Plans for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-18, Rev. 1.

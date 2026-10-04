@@ -1,0 +1,28 @@
+id: SP_800_172_3_0_0_03.16.01E
+title: Specialization
+family: System and Services Acquisition (SP_800_172_3_0_0_3.16)
+class: security_requirement
+
+Statement:
+Employ [Selection (one-or-more): design; modification; augmentation; reconfiguration] on [systems or system components] supporting mission-essential services or functions to increase the trustworthiness in those systems or components. 
+
+Guidance:
+Systems or system components that support mission-essential services or functions can be enhanced or strengthened to maximize the trustworthiness of the resource. Sometimes, this enhancement or strengthening is done at the design level. In other instances, it is done post-design, either through modifications of the system in question or by augmenting the system with additional components. For example, supplemental authentication or non-repudiation functions may be added to the system to enhance critical resources that depend on organization-defined resources. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.16.01E.ODP.01 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): design; modification; augmentation; reconfiguration
+- A.03.16.01E.ODP.02 | label: "systems or system components"
+  guideline: systems or system components supporting mission-essential services or functions are defined.
+
+References:
+- SA-23

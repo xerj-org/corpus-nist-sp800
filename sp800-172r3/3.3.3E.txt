@@ -1,0 +1,28 @@
+id: SP_800_172_3_0_0_03.03.03E
+title: Dual Authorization for Audit Information and Actions
+family: Audit and Accountability (SP_800_172_3_0_0_3.3)
+class: security_requirement
+
+Statement:
+Enforce dual authorization for [Selection (one-or-more): movement; deletion] of [audit information]. 
+
+Guidance:
+Dual authorization is also known as two-person control since it requires the approval of two authorized individuals to reduce the risk related to insider threat when executing audit functions. Dual authorization reduces risks related to insider threats, including adversaries who have obtained credentials. Organizations may choose different selection options for different types of audit information. To reduce the risk of collusion, organizations consider rotating dual authorization duties to other individuals. Organizations consider the risk associated with implementing dual authorization when immediate responses are necessary to ensure public and environmental safety. This requirement enhances SP 800-171 requirement 03.03.08. It is also related to requirement 03.01.01E.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.03.03E.ODP.01 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): movement; deletion
+- A.03.03.03E.ODP.02 | label: "audit information"
+  guideline: audit information for which dual authorization is to be enforced is defined.
+
+References:
+- AU-09(05)

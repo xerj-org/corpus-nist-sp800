@@ -1,0 +1,33 @@
+id: SP_800_172_3_0_0_03.13.02E
+title: Randomness
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Employ [techniques] to introduce randomness into organizational operations and assets. 
+
+Guidance:
+Randomness introduces increased levels of uncertainty for adversaries regarding the actions that organizations take to defend their systems against attacks. Such actions may impede the ability of adversaries to correctly target organizational systems that support critical missions or business functions. Uncertainty may cause adversaries to hesitate before initiating or continuing attacks. Misdirection techniques that involve randomness include performing certain routine actions at different times of day, employing different information technologies, using different suppliers, and rotating the roles and responsibilities of organizational personnel. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets. This requirement also depends on the selection of 03.13.03E.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes deceive)
+  
+  Direct threat events away from defender-chosen resources.
+    - Reduce likelihood of occurrence and (to a lesser extent) reduce likelihood of impact.
+    - The adversary’s efforts cease.
+    - The adversary actions are mistargeted or misinformed.
+
+Parameters:
+- A.03.13.02E.ODP.01 | label: "techniques"
+  guideline: the techniques employed to introduce randomness into organizational operations and assets are defined.
+
+References:
+- SC-30(02)

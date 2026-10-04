@@ -1,0 +1,31 @@
+id: SP_800_172_3_0_0_03.03.02E
+title: Real-Time Alerts for Audit Processing Failures
+family: Audit and Accountability (SP_800_172_3_0_0_3.3)
+class: security_requirement
+
+Statement:
+Provide an alert within [real-time period] to [personnel, roles, and/or locations] when the following audit failure events occur: [audit logging failure events]. 
+
+Guidance:
+Alerts provide organizations with urgent messages. Real-time alerts provide these messages at information technology speed (i.e., the time from event detection to alert occurs in seconds or less). This requirement enhances SP 800-171 requirement 03.03.04.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.03.02E.ODP.01 | label: "real-time period"
+  guideline: real-time period requiring alerts when audit failure events (defined in A.03.03.02E.ODP.03) occur is defined.
+- A.03.03.02E.ODP.02 | label: "personnel, roles, and/or locations"
+  guideline: personnel, roles, and/or locations to be alerted in real time when audit failure events (defined in A.03.03.02E.ODP.03) occur are defined.
+- A.03.03.02E.ODP.03 | label: "audit logging failure events"
+  guideline: audit logging failure events requiring real-time alerts are defined.
+
+References:
+- AU-05(02)

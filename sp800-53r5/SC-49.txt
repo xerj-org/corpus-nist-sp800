@@ -1,0 +1,17 @@
+id: sc-49
+title: Hardware-enforced Separation and Policy Enforcement
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Implement hardware-enforced separation and policy enforcement mechanisms between [security domains].
+
+Guidance:
+System owners may require additional strength of mechanism and robustness to ensure domain separation and policy enforcement for specific types of threats and environments of operation. Hardware-enforced separation and policy enforcement provide greater strength of mechanism than software-enforced separation and policy enforcement.
+
+Parameters:
+- sc-49_odp | label: "security domains"
+  guideline: security domains requiring hardware-enforced separation and policy enforcement mechanisms are defined;
+
+References:
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.

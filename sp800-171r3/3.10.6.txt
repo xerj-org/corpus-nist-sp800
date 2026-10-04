@@ -1,0 +1,20 @@
+id: SP_800_171_03.10.06
+title: Alternate Work Site
+family: Physical Protection (SP_800_171_03.10)
+class: requirement
+
+Statement:
+  SR-03.10.06.a Determine alternate work sites allowed for use by employees.
+  SR-03.10.06.b Employ the following security requirements at alternate work sites: [security requirements].
+
+Guidance:
+Alternate work sites include the private residences of employees or other facilities designated by the organization. Alternate work sites can provide readily available alternate locations during contingency operations. Organizations can define different security requirements for specific alternate work sites or types of sites, depending on the work-related activities conducted at the sites. Assessing the effectiveness of the requirements and providing a means to communicate incidents at alternate work sites supports the contingency planning activities of organizations.
+
+Parameters:
+- A.03.10.06.ODP.01 | label: "security requirements"
+  guideline: security requirements to be employed at alternate work sites are defined.
+
+References:
+- PE-17
+- Souppaya MP, Scarfone KA (2016) User’s Guide to Telework and Bring Your Own Device (BYOD) Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-114, Rev. 1.
+- Souppaya MP, Scarfone KA (2016) Guide to Enterprise Telework, Remote Access, and Bring Your Own Device (BYOD) Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-46, Rev. 2.

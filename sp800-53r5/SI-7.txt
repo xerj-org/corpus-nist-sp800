@@ -1,0 +1,241 @@
+id: si-7
+title: Software, Firmware, and Information Integrity
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+  a. Employ integrity verification tools to detect unauthorized changes to the following software, firmware, and information: [organization-defined software, firmware, and information] ; and
+  b. Take the following actions when unauthorized changes to the software, firmware, and information are detected: [organization-defined actions].
+
+Guidance:
+Unauthorized changes to software, firmware, and information can occur due to errors or malicious activity. Software includes operating systems (with key internal components, such as kernels or drivers), middleware, and applications. Firmware interfaces include Unified Extensible Firmware Interface (UEFI) and Basic Input/Output System (BIOS). Information includes personally identifiable information and metadata that contains security and privacy attributes associated with information. Integrity-checking mechanisms—including parity checks, cyclical redundancy checks, cryptographic hashes, and associated tools—can automatically monitor the integrity of systems and hosted applications.
+
+Parameters:
+- si-7_prm_1 | label: "organization-defined software, firmware, and information"
+- si-7_prm_2 | label: "organization-defined actions"
+- si-07_odp.01 | label: "software"
+  guideline: software requiring integrity verification tools to be employed to detect unauthorized changes is defined;
+- si-07_odp.02 | label: "firmware"
+  guideline: firmware requiring integrity verification tools to be employed to detect unauthorized changes is defined;
+- si-07_odp.03 | label: "information"
+  guideline: information requiring integrity verification tools to be employed to detect unauthorized changes is defined;
+- si-07_odp.04 | label: "actions"
+  guideline: actions to be taken when unauthorized changes to software are detected are defined;
+- si-07_odp.05 | label: "actions"
+  guideline: actions to be taken when unauthorized changes to firmware are detected are defined;
+- si-07_odp.06 | label: "actions"
+  guideline: actions to be taken when unauthorized changes to information are detected are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.
+- National Institute of Standards and Technology (2015) Secure Hash Standard (SHS). (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 180-4.
+- National Institute of Standards and Technology (2013) Digital Signature Standard (DSS). (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 186-4.
+- National Institute of Standards and Technology (2015) SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 202.
+- Quinn SD, Souppaya MP, Cook MR, Scarfone KA (2018) National Checklist Program for IT Products: Guidelines for Checklist Users and Developers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-70, Rev. 4.
+- Cooper DA, Polk T, Regenscheid AR, Souppaya MP (2011) BIOS Protection Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-147.
+
+========================================================================
+Enhancement SI-7(1) (si-7.1) - Integrity Checks
+
+Statement:
+Perform an integrity check of [organization-defined software, firmware, and information] [Selection (one-or-more): at startup; at {{ insert: param, si-7.1_prm_3 }} ; {{ insert: param, si-7.1_prm_4 }} ].
+
+Guidance:
+Security-relevant events include the identification of new threats to which organizational systems are susceptible and the installation of new hardware, software, or firmware. Transitional states include system startup, restart, shutdown, and abort.
+
+Parameters:
+- si-7.1_prm_1 | label: "organization-defined software, firmware, and information"
+- si-7.1_prm_2 | selection (one-or-more): at startup; at {{ insert: param, si-7.1_prm_3 }} ; {{ insert: param, si-7.1_prm_4 }} 
+- si-7.1_prm_3 | label: "organization-defined transitional states or security-relevant events"
+- si-7.1_prm_4 | label: "organization-defined frequency"
+- si-07.01_odp.01 | label: "software"
+  guideline: software on which an integrity check is to be performed is defined;
+- si-07.01_odp.02 | selection (one-or-more): at startup; at {{ insert: param, si-07.01_odp.03 }} ; {{ insert: param, si-07.01_odp.04 }} 
+- si-07.01_odp.03 | label: "transitional states or security-relevant events"
+  guideline: transitional states or security-relevant events requiring integrity checks (on software) are defined (if selected);
+- si-07.01_odp.04 | label: "frequency"
+  guideline: frequency with which to perform an integrity check (on software) is defined (if selected);
+- si-07.01_odp.05 | label: "firmware"
+  guideline: firmware on which an integrity check is to be performed is defined;
+- si-07.01_odp.06 | selection (one-or-more): at startup; at {{ insert: param, si-07.01_odp.07 }} ; {{ insert: param, si-07.01_odp.08 }} 
+- si-07.01_odp.07 | label: "transitional states or security-relevant events"
+  guideline: transitional states or security-relevant events requiring integrity checks (on firmware) are defined (if selected);
+- si-07.01_odp.08 | label: "frequency"
+  guideline: frequency with which to perform an integrity check (on firmware) is defined (if selected);
+- si-07.01_odp.09 | label: "information"
+  guideline: information on which an integrity check is to be performed is defined;
+- si-07.01_odp.10 | selection (one-or-more): at startup; at {{ insert: param, si-07.01_odp.11 }} ; {{ insert: param, si-07.01_odp.12 }} 
+- si-07.01_odp.11 | label: "transitional states or security-relevant events"
+  guideline: transitional states or security-relevant events requiring integrity checks (of information) are defined (if selected);
+- si-07.01_odp.12 | label: "frequency"
+  guideline: frequency with which to perform an integrity check (of information) is defined (if selected);
+
+========================================================================
+Enhancement SI-7(2) (si-7.2) - Automated Notifications of Integrity Violations
+
+Statement:
+Employ automated tools that provide notification to [personnel or roles] upon discovering discrepancies during integrity verification.
+
+Guidance:
+The employment of automated tools to report system and information integrity violations and to notify organizational personnel in a timely matter is essential to effective risk response. Personnel with an interest in system and information integrity violations include mission and business owners, system owners, senior agency information security official, senior agency official for privacy, system administrators, software developers, systems integrators, information security officers, and privacy officers.
+
+Parameters:
+- si-07.02_odp | label: "personnel or roles"
+  guideline: personnel or roles to whom notification is to be provided upon discovering discrepancies during integrity verification is/are defined;
+
+========================================================================
+Enhancement SI-7(3) (si-7.3) - Centrally Managed Integrity Tools
+
+Statement:
+Employ centrally managed integrity verification tools.
+
+Guidance:
+Centrally managed integrity verification tools provides greater consistency in the application of such tools and can facilitate more comprehensive coverage of integrity verification actions.
+
+========================================================================
+Enhancement SI-7(4) (si-7.4) - Tamper-evident Packaging
+
+========================================================================
+Enhancement SI-7(5) (si-7.5) - Automated Response to Integrity Violations
+
+Statement:
+Automatically [Selection (one-or-more): shut down the system; restart the system; implement {{ insert: param, si-07.05_odp.02 }} ] when integrity violations are discovered.
+
+Guidance:
+Organizations may define different integrity-checking responses by type of information, specific information, or a combination of both. Types of information include firmware, software, and user data. Specific information includes boot firmware for certain types of machines. The automatic implementation of controls within organizational systems includes reversing the changes, halting the system, or triggering audit alerts when unauthorized modifications to critical security files occur.
+
+Parameters:
+- si-07.05_odp.01 | selection (one-or-more): shut down the system; restart the system; implement {{ insert: param, si-07.05_odp.02 }} 
+- si-07.05_odp.02 | label: "controls"
+  guideline: controls to be implemented automatically when integrity violations are discovered are defined (if selected);
+
+========================================================================
+Enhancement SI-7(6) (si-7.6) - Cryptographic Protection
+
+Statement:
+Implement cryptographic mechanisms to detect unauthorized changes to software, firmware, and information.
+
+Guidance:
+Cryptographic mechanisms used to protect integrity include digital signatures and the computation and application of signed hashes using asymmetric cryptography, protecting the confidentiality of the key used to generate the hash, and using the public key to verify the hash information. Organizations that employ cryptographic mechanisms also consider cryptographic key management solutions.
+
+========================================================================
+Enhancement SI-7(7) (si-7.7) - Integration of Detection and Response
+
+Statement:
+Incorporate the detection of the following unauthorized changes into the organizational incident response capability: [changes].
+
+Guidance:
+Integrating detection and response helps to ensure that detected events are tracked, monitored, corrected, and available for historical purposes. Maintaining historical records is important for being able to identify and discern adversary actions over an extended time period and for possible legal actions. Security-relevant changes include unauthorized changes to established configuration settings or the unauthorized elevation of system privileges.
+
+Parameters:
+- si-07.07_odp | label: "changes"
+  guideline: security-relevant changes to the system are defined;
+
+========================================================================
+Enhancement SI-7(8) (si-7.8) - Auditing Capability for Significant Events
+
+Statement:
+Upon detection of a potential integrity violation, provide the capability to audit the event and initiate the following actions: [Selection (one-or-more): generate an audit record; alert current user; alert {{ insert: param, si-07.08_odp.02 }} ; {{ insert: param, si-07.08_odp.03 }} ].
+
+Guidance:
+Organizations select response actions based on types of software, specific software, or information for which there are potential integrity violations.
+
+Parameters:
+- si-07.08_odp.01 | selection (one-or-more): generate an audit record; alert current user; alert {{ insert: param, si-07.08_odp.02 }} ; {{ insert: param, si-07.08_odp.03 }} 
+- si-07.08_odp.02 | label: "personnel or roles"
+  guideline: personnel or roles to be alerted upon the detection of a potential integrity violation is/are defined (if selected);
+- si-07.08_odp.03 | label: "other actions"
+  guideline: other actions to be taken upon the detection of a potential integrity violation are defined (if selected);
+
+========================================================================
+Enhancement SI-7(9) (si-7.9) - Verify Boot Process
+
+Statement:
+Verify the integrity of the boot process of the following system components: [system components].
+
+Guidance:
+Ensuring the integrity of boot processes is critical to starting system components in known, trustworthy states. Integrity verification mechanisms provide a level of assurance that only trusted code is executed during boot processes.
+
+Parameters:
+- si-07.09_odp | label: "system components"
+  guideline: system components requiring integrity verification of the boot process are defined;
+
+========================================================================
+Enhancement SI-7(10) (si-7.10) - Protection of Boot Firmware
+
+Statement:
+Implement the following mechanisms to protect the integrity of boot firmware in [system components]: [mechanisms].
+
+Guidance:
+Unauthorized modifications to boot firmware may indicate a sophisticated, targeted attack. These types of targeted attacks can result in a permanent denial of service or a persistent malicious code presence. These situations can occur if the firmware is corrupted or if the malicious code is embedded within the firmware. System components can protect the integrity of boot firmware in organizational systems by verifying the integrity and authenticity of all updates to the firmware prior to applying changes to the system component and preventing unauthorized processes from modifying the boot firmware.
+
+Parameters:
+- si-07.10_odp.01 | label: "mechanisms"
+  guideline: mechanisms to be implemented to protect the integrity of boot firmware in system components are defined;
+- si-07.10_odp.02 | label: "system components"
+  guideline: system components requiring mechanisms to protect the integrity of boot firmware are defined;
+
+========================================================================
+Enhancement SI-7(11) (si-7.11) - Confined Environments with Limited Privileges
+
+========================================================================
+Enhancement SI-7(12) (si-7.12) - Integrity Verification
+
+Statement:
+Require that the integrity of the following user-installed software be verified prior to execution: [user-installed software].
+
+Guidance:
+Organizations verify the integrity of user-installed software prior to execution to reduce the likelihood of executing malicious code or programs that contains errors from unauthorized modifications. Organizations consider the source of the software, ensuring the software and updates come from authorized sources and/or sites, and the practicality of approaches to verifying software integrity, including the availability of trustworthy checksums from software developers and vendors.
+
+Parameters:
+- si-07.12_odp | label: "user-installed software"
+  guideline: user-installed software requiring integrity verification prior to execution is defined;
+
+References:
+- Chandramouli R, Rose SW (2013) Secure Domain Name System (DNS) Deployment Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-81-2.
+
+========================================================================
+Enhancement SI-7(13) (si-7.13) - Code Execution in Protected Environments
+
+========================================================================
+Enhancement SI-7(14) (si-7.14) - Binary or Machine Executable Code
+
+========================================================================
+Enhancement SI-7(15) (si-7.15) - Code Authentication
+
+Statement:
+Implement cryptographic mechanisms to authenticate the following software or firmware components prior to installation: [software or firmware components].
+
+Guidance:
+Cryptographic authentication includes verifying that software or firmware components have been digitally signed using certificates recognized and approved by organizations. Code signing is an effective method to protect against malicious code. Organizations that employ cryptographic mechanisms also consider cryptographic key management solutions.
+
+Parameters:
+- si-07.15_odp | label: "software or firmware components"
+  guideline: software or firmware components to be authenticated by cryptographic mechanisms prior to installation are defined;
+
+========================================================================
+Enhancement SI-7(16) (si-7.16) - Time Limit on Process Execution Without Supervision
+
+Statement:
+Prohibit processes from executing without supervision for more than [time period].
+
+Guidance:
+Placing a time limit on process execution without supervision is intended to apply to processes for which typical or normal execution periods can be determined and situations in which organizations exceed such periods. Supervision includes timers on operating systems, automated responses, and manual oversight and response when system process anomalies occur.
+
+Parameters:
+- si-07.16_odp | label: "time period"
+  guideline: the maximum time period permitted for processes to execute without supervision is defined;
+
+========================================================================
+Enhancement SI-7(17) (si-7.17) - Runtime Application Self-protection
+
+Statement:
+Implement [controls] for application self-protection at runtime.
+
+Guidance:
+Runtime application self-protection employs runtime instrumentation to detect and block the exploitation of software vulnerabilities by taking advantage of information from the software in execution. Runtime exploit prevention differs from traditional perimeter-based protections such as guards and firewalls which can only detect and block attacks by using network information without contextual awareness. Runtime application self-protection technology can reduce the susceptibility of software to attacks by monitoring its inputs and blocking those inputs that could allow attacks. It can also help protect the runtime environment from unwanted changes and tampering. When a threat is detected, runtime application self-protection technology can prevent exploitation and take other actions (e.g., sending a warning message to the user, terminating the user's session, terminating the application, or sending an alert to organizational personnel). Runtime application self-protection solutions can be deployed in either a monitor or protection mode.
+
+Parameters:
+- si-07.17_odp | label: "controls"
+  guideline: controls to be implemented for application self-protection at runtime are defined;

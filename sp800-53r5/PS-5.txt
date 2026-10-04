@@ -1,0 +1,23 @@
+id: ps-5
+title: Personnel Transfer
+family: Personnel Security (ps)
+class: SP800-53
+
+Statement:
+  a. Review and confirm ongoing operational need for current logical and physical access authorizations to systems and facilities when individuals are reassigned or transferred to other positions within the organization;
+  b. Initiate [transfer or reassignment actions] within [time period following the formal transfer action];
+  c. Modify access authorization as needed to correspond with any changes in operational need due to reassignment or transfer; and
+  d. Notify [personnel or roles] within [time period].
+
+Guidance:
+Personnel transfer applies when reassignments or transfers of individuals are permanent or of such extended duration as to make the actions warranted. Organizations define actions appropriate for the types of reassignments or transfers, whether permanent or extended. Actions that may be required for personnel transfers or reassignments to other positions within organizations include returning old and issuing new keys, identification cards, and building passes; closing system accounts and establishing new accounts; changing system access authorizations (i.e., privileges); and providing for access to official records to which individuals had access at previous work locations and in previous system accounts.
+
+Parameters:
+- ps-05_odp.01 | label: "transfer or reassignment actions"
+  guideline: transfer or reassignment actions to be initiated following transfer or reassignment are defined;
+- ps-05_odp.02 | label: "time period following the formal transfer action"
+  guideline: the time period within which transfer or reassignment actions must occur following transfer or reassignment is defined;
+- ps-05_odp.03 | label: "personnel or roles"
+  guideline: personnel or roles to be notified when individuals are reassigned or transferred to other positions within the organization is/are defined;
+- ps-05_odp.04 | label: "time period"
+  guideline: time period within which to notify organization-defined personnel or roles when individuals are reassigned or transferred to other positions within the organization is defined;

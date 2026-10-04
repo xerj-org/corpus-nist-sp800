@@ -1,0 +1,22 @@
+id: pe-19
+title: Information Leakage
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+Protect the system from information leakage due to electromagnetic signals emanations.
+
+Guidance:
+Information leakage is the intentional or unintentional release of data or information to an untrusted environment from electromagnetic signals emanations. The security categories or classifications of systems (with respect to confidentiality), organizational security policies, and risk tolerance guide the selection of controls employed to protect systems against information leakage due to electromagnetic signals emanations.
+
+References:
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
+
+========================================================================
+Enhancement PE-19(1) (pe-19.1) - National Emissions Policies and Procedures
+
+Statement:
+Protect system components, associated data communications, and networks in accordance with national Emissions Security policies and procedures based on the security category or classification of the information.
+
+Guidance:
+Emissions Security (EMSEC) policies include the former TEMPEST policies.

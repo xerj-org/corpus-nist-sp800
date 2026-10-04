@@ -1,0 +1,24 @@
+id: SP_800_172_3_0_0_03.11.09E
+title: Indicators of Compromise
+family: Risk Assessment (SP_800_172_3_0_0_3.11)
+class: security_requirement
+
+Statement:
+Discover, collect, and distribute to [sources], indicators of compromise provided by [personnel or roles] . 
+
+Guidance:
+Indicators of compromise (IOCs) are forensic artifacts from intrusions that are identified on organizational systems at the host or network level. IOCs provide valuable information on systems that have been compromised. IOCs can include the creation of registry key values. IOCs for network traffic include universal resource locator (URL) or protocol elements that indicate malicious code command and control servers. The rapid distribution and adoption of IOCs can improve information security by reducing the time that systems and organizations are vulnerable to the same exploit or attack. Threat indicators, signatures, tactics, techniques, procedures, and other IOCs may be available via government and non-government cooperatives, including the Forum of Incident Response and Security Teams (FIRST), the Computer Emergency Response Team Coordination Center (CERT/CC), the United States Computer Emergency Readiness Team (US-CERT), and the Defense Industrial Base (DIB) Cybersecurity Information Sharing Program. This requirement enhances SP 800-171 requirement 03.14.06.
+  - (includes detect and reveal)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.11.09E.ODP.01 | label: "sources"
+  guideline: sources that provide indicators of compromise are defined.
+- A.03.11.09E.ODP.02 | label: "personnel or roles"
+  guideline: personnel or roles to whom indicators of compromise are to be distributed are defined.
+
+References:
+- SI-04(24)

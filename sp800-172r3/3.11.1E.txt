@@ -1,0 +1,28 @@
+id: SP_800_172_3_0_0_03.11.01E
+title: Threat Awareness Program
+family: Risk Assessment (SP_800_172_3_0_0_3.11)
+class: security_requirement
+
+Statement:
+Implement a threat awareness program that includes a cross-organization information-sharing capability for threat intelligence.
+
+Guidance:
+Because of the constantly changing and increasing sophistication of adversaries, especially the advanced persistent threat (APT), it may be likely that adversaries can successfully breach or compromise organizational systems. One of the techniques that organizations can use to address this concern is to share threat information. This can include the tactics, techniques, and procedures that organizations have experienced; mitigations that organizations have found to be effective against certain types of threats; and threat intelligence (i.e., indications and warnings about threats). Threat information sharing may be bilateral or multilateral. Bilateral threat sharing includes government-to-commercial and government-to-government cooperatives. Multilateral threat sharing can include organizations taking part in threat-sharing consortia. Threat information may require special agreements and protection, or it may be freely shared. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes negate)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+References:
+- PM-16

@@ -1,0 +1,16 @@
+id: SP_800_171_03.01.04
+title: Separation of Duties
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.04.a Identify the duties of individuals requiring separation.
+  SR-03.01.04.b Define system access authorizations to support separation of duties.
+
+Guidance:
+Separation of duties addresses the potential for abuse of authorized privileges and reduces the risk of malevolent activity without collusion. Separation of duties includes dividing mission functions and support functions among different individuals or roles, conducting system support functions with different individuals or roles (e.g., quality assurance, configuration management, network security, system management, assessments, and programming), and ensuring that personnel who administer access control functions do not also administer audit functions. Because separation of duty violations can span systems and application domains, organizations consider the entirety of their systems and system components when developing policies on separation of duties. This requirement is enforced by [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.01.02) 03.01.02.
+
+References:
+- AC-05
+- Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.
+- Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and

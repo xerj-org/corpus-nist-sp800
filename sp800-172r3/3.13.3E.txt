@@ -1,0 +1,33 @@
+id: SP_800_172_3_0_0_03.13.03E
+title: Concealment and Misdirection
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Employ the following concealment and misdirection techniques to mislead adversaries: [concealment and misdirection techniques] . 
+
+Guidance:
+Concealment and misdirection techniques can significantly reduce the targeting capabilities of adversaries (i.e., window of opportunity and available attack surface) to initiate and complete attacks. For example, virtualization techniques provide organizations with the ability to disguise systems, potentially reducing the likelihood of successful attacks without the cost of having multiple platforms. The increased use of specific concealment and misdirection techniques and methods, including randomness, uncertainty, and virtualization, may sufficiently confuse and mislead adversaries and subsequently increase the risk of discovery or exposing tradecraft. Concealment and misdirection techniques may provide additional time to perform core mission and business functions. The implementation of concealment and misdirection techniques may add to the complexity and management overhead required for the system. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes deceive)
+  
+  Direct threat events away from defender-chosen resources.
+    - Reduce likelihood of occurrence and (to a lesser extent) reduce likelihood of impact.
+    - The adversary’s efforts cease.
+    - The adversary actions are mistargeted or misinformed.
+
+Parameters:
+- A.03.13.03E.ODP.01 | label: "concealment and misdirection techniques"
+  guideline: the concealment and misdirection techniques used to confuse and mislead adversaries potentially targeting systems are defined.
+
+References:
+- SC-30

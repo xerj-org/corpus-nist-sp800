@@ -1,0 +1,39 @@
+id: au-14
+title: Session Audit
+family: Audit and Accountability (au)
+class: SP800-53
+
+Statement:
+  a. Provide and implement the capability for [users or roles] to [Selection (one-or-more): record; view; hear; log] the content of a user session under [circumstances] ; and
+  b. Develop, integrate, and use session auditing activities in consultation with legal counsel and in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+
+Guidance:
+Session audits can include monitoring keystrokes, tracking websites visited, and recording information and/or file transfers. Session audit capability is implemented in addition to event logging and may involve implementation of specialized session capture technology. Organizations consider how session auditing can reveal information about individuals that may give rise to privacy risk as well as how to mitigate those risks. Because session auditing can impact system and network performance, organizations activate the capability under well-defined situations (e.g., the organization is suspicious of a specific individual). Organizations consult with legal counsel, civil liberties officials, and privacy officials to ensure that any legal, privacy, civil rights, or civil liberties issues, including the use of personally identifiable information, are appropriately addressed.
+
+Parameters:
+- au-14_odp.01 | label: "users or roles"
+  guideline: users or roles who can audit the content of a user session are defined;
+- au-14_odp.02 | selection (one-or-more): record; view; hear; log
+- au-14_odp.03 | label: "circumstances"
+  guideline: circumstances under which the content of a user session can be audited are defined;
+
+========================================================================
+Enhancement AU-14(1) (au-14.1) - System Start-up
+
+Statement:
+Initiate session audits automatically at system start-up.
+
+Guidance:
+The automatic initiation of session audits at startup helps to ensure that the information being captured on selected individuals is complete and not subject to compromise through tampering by malicious threat actors.
+
+========================================================================
+Enhancement AU-14(2) (au-14.2) - Capture and Record Content
+
+========================================================================
+Enhancement AU-14(3) (au-14.3) - Remote Viewing and Listening
+
+Statement:
+Provide and implement the capability for authorized users to remotely view and hear content related to an established user session in real time.
+
+Guidance:
+None.

@@ -1,0 +1,80 @@
+id: RC.RP
+title: Incident Recovery Plan Execution
+family: RECOVER (RC)
+class: category
+family-overview: Assets and operations affected by a cybersecurity incident are restored
+
+Statement:
+Restoration activities are performed to ensure operational availability of systems and services affected by cybersecurity incidents
+
+========================================================================
+Child control RC.RP-01 - RC.RP-01
+
+Statement:
+The recovery portion of the incident response plan is executed once initiated from the incident response process
+
+Example:
+Begin recovery procedures during or after incident response processes
+
+Example:
+Make all individuals with recovery responsibilities aware of the plans for recovery and the authorizations required to implement each aspect of the plans
+
+========================================================================
+Child control RC.RP-02 - RC.RP-02
+
+Statement:
+Recovery actions are selected, scoped, prioritized, and performed
+
+Example:
+Select recovery actions based on the criteria defined in the incident response plan and available resources
+
+Example:
+Change planned recovery actions based on a reassessment of organizational needs and resources
+
+========================================================================
+Child control RC.RP-03 - RC.RP-03
+
+Statement:
+The integrity of backups and other restoration assets is verified before using them for restoration
+
+Example:
+Check restoration assets for indicators of compromise, file corruption, and other integrity issues before use
+
+========================================================================
+Child control RC.RP-04 - RC.RP-04
+
+Statement:
+Critical mission functions and cybersecurity risk management are considered to establish post-incident operational norms
+
+Example:
+Use business impact and system categorization records (including service delivery objectives) to validate that essential services are restored in the appropriate order
+
+Example:
+Work with system owners to confirm the successful restoration of systems and the return to normal operations
+
+Example:
+Monitor the performance of restored systems to verify the adequacy of the restoration
+
+========================================================================
+Child control RC.RP-05 - RC.RP-05
+
+Statement:
+The integrity of restored assets is verified, systems and services are restored, and normal operating status is confirmed
+
+Example:
+Check restored assets for indicators of compromise and remediation of root causes of the incident before production use
+
+Example:
+Verify the correctness and adequacy of the restoration actions taken before putting a restored system online
+
+========================================================================
+Child control RC.RP-06 - RC.RP-06
+
+Statement:
+The end of incident recovery is declared based on criteria, and incident-related documentation is completed
+
+Example:
+Prepare an after-action report that documents the incident itself, the response and recovery actions taken, and lessons learned
+
+Example:
+Declare the end of incident recovery once the criteria are met

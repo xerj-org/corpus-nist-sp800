@@ -1,0 +1,32 @@
+id: SP_800_172_3_0_0_03.13.14E
+title: Detonation Chambers
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Employ a detonation chamber capability within [system, system component, or location]. 
+
+Guidance:
+Detonation chambers (also known as dynamic execution environments) allow organizations to open email attachments, execute untrusted or suspicious applications, and execute URL requests in the safety of an isolated environment or a virtualized sandbox. Protected and isolated execution environments provide a means of determining whether the associated attachments or applications contain malicious code. While related to the concept of deception nets, the employment of detonation chambers is not intended to maintain a long-term environment in which adversaries can operate and their actions can be observed. Rather, detonation chambers are intended to quickly identify malicious code and either reduce the likelihood that the code is propagated to user environments of operation or prevent such propagation completely. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt and negate)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes contain and exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect and reveal)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.13.14E.ODP.01 | label: "system, system component, or location"
+  guideline: the system, system component, or location in which a detonation chamber capability is to be employed is defined.
+
+References:
+- SC-44

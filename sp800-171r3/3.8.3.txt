@@ -1,0 +1,14 @@
+id: SP_800_171_03.08.03
+title: Media Sanitization
+family: Media Protection (SP_800_171_03.08)
+class: requirement
+
+Statement:
+Sanitize system media that contain CUI prior to disposal, release out of organizational control, or release for reuse.
+
+Guidance:
+Media sanitization applies to digital and non-digital media that are subject to disposal or reuse, whether or not the media are considered removable. Examples include digital media in scanners, copiers, printers, notebook computers, mobile devices, workstations, network components, and non-digital media. The sanitization process removes CUI from media such that the information cannot be retrieved or reconstructed. Sanitization techniques (e.g., cryptographically erasing, clearing, purging, and destroying) prevent the disclosure of CUI to unauthorized individuals when such media are reused or released for disposal. NARA policies control the sanitization process for media that contain CUI and may require destruction when other methods cannot be applied to the media.
+
+References:
+- MP-06
+- Kissel RL, Regenscheid AR, Scholl MA, Stine KM (2014) Guidelines for Media Sanitization. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-88, Rev.

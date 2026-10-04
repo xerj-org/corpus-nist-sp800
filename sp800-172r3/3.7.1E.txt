@@ -1,0 +1,18 @@
+id: SP_800_172_3_0_0_03.07.01E
+title: Software Updates and Patches for Maintenance Tools
+family: Maintenance (SP_800_172_3_0_0_3.7)
+class: security_requirement
+
+Statement:
+Inspect maintenance tools to ensure the latest software updates and patches are installed.
+
+Guidance:
+Maintenance tools using outdated and/or unpatched software can provide a threat vector for adversaries and result in a significant vulnerability for organizations. This requirement enhances SP 800-171 requirement 03.07.04.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+References:
+- MA-03(06)

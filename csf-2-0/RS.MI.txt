@@ -1,0 +1,47 @@
+id: RS.MI
+title: Incident Mitigation
+family: RESPOND (RS)
+class: category
+family-overview: Actions regarding a detected cybersecurity incident are taken
+
+Statement:
+Activities are performed to prevent expansion of an event and mitigate its effects
+
+========================================================================
+Child control RS.MI-01 - RS.MI-01
+
+Statement:
+Incidents are contained
+
+Example:
+Cybersecurity technologies (e.g., antivirus software) and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform containment actions
+
+Example:
+Allow incident responders to manually select and perform containment actions
+
+Example:
+Allow a third party (e.g., internet service provider, managed security service provider) to perform containment actions on behalf of the organization
+
+Example:
+Automatically transfer compromised endpoints to a remediation virtual local area network (VLAN)
+
+========================================================================
+Child control RS.MI-02 - RS.MI-02
+
+Statement:
+Incidents are eradicated
+
+Example:
+Cybersecurity technologies and cybersecurity features of other technologies (e.g., operating systems, network infrastructure devices) automatically perform eradication actions
+
+Example:
+Allow incident responders to manually select and perform eradication actions
+
+Example:
+Allow a third party (e.g., managed security service provider) to perform eradication actions on behalf of the organization
+
+========================================================================
+Child control RS.MI-03 - RS.MI-03
+
+Statement:
+Newly identified vulnerabilities are mitigated or documented as accepted risks

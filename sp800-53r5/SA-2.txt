@@ -1,0 +1,17 @@
+id: sa-2
+title: Allocation of Resources
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+Statement:
+  a. Determine the high-level information security and privacy requirements for the system or system service in mission and business process planning;
+  b. Determine, document, and allocate the resources required to protect the system or system service as part of the organizational capital planning and investment control process; and
+  c. Establish a discrete line item for information security and privacy in organizational programming and budgeting documentation.
+
+Guidance:
+Resource allocation for information security and privacy includes funding for system and services acquisition, sustainment, and supply chain-related risks throughout the system development life cycle.
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Joint Task Force (2018) Risk Management Framework for Information Systems and Organizations: A System Life Cycle Approach for Security and Privacy. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-37, Rev. 2.
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.

@@ -1,0 +1,25 @@
+id: pm-17
+title: Protecting Controlled Unclassified Information on External Systems
+family: Program Management (pm)
+class: SP800-53
+family-overview: [FISMA](#0c67b2a9-bede-43d2-b86d-5f35b8be36e9), [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) , and [OMB A-130](#27847491-5ce1-4f6a-a1e4-9e483782f0ef) require federal agencies to develop, implement, and provide oversight for organization-wide information security and privacy programs to help ensure the confidentiality, integrity, and availability of federal information processed, stored, and transmitted by federal information systems and to protect individual privacy. The program management (PM) controls described in this section are implemented at the organization level and not directed at individual information systems. The PM controls have been designed to facilitate organizational compliance with applicable federal laws, executive orders, directives, policies, regulations, and standards. The controls are independent of [FIPS 200](#599fb53d-5041-444e-a7fe-640d6d30ad05) impact levels and, therefore, are not associated with the control baselines described in [SP 800-53B](#46d9e201-840e-440e-987c-2c773333c752). Organizations document program management controls in the information security and privacy program plans. The organization-wide information security program plan (see [PM-1](#pm-1) ) and privacy program plan (see [PM-18](#pm-18) ) supplement system security and privacy plans (see [PL-2](#pl-2) ) developed for organizational information systems. Together, the system security and privacy plans for the individual information systems and the information security and privacy program plans cover the totality of security and privacy controls employed by the organization.
+
+Statement:
+  a. Establish policy and procedures to ensure that requirements for the protection of controlled unclassified information that is processed, stored or transmitted on external systems, are implemented in accordance with applicable laws, executive orders, directives, policies, regulations, and standards; and
+  b. Review and update the policy and procedures [organization-defined frequency].
+
+Guidance:
+Controlled unclassified information is defined by the National Archives and Records Administration along with the safeguarding and dissemination requirements for such information and is codified in [32 CFR 2002](#91f992fb-f668-4c91-a50f-0f05b95ccee3) and, specifically for systems external to the federal organization, [32 CFR 2002.14h](https://www.govinfo.gov/content/pkg/CFR-2017-title32-vol6/xml/CFR-2017-title32-vol6-part2002.xml) . The policy prescribes the specific use and conditions to be implemented in accordance with organizational procedures, including via its contracting processes.
+
+Parameters:
+- pm-17_prm_1 | label: "organization-defined frequency"
+- pm-17_odp.01 | label: "frequency"
+  guideline: the frequency at which to review and update the policy is defined;
+- pm-17_odp.02 | label: "frequency"
+  guideline: the frequency at which to review and update the procedures is defined;
+
+References:
+- Code of Federal Regulations, Title 32, *Controlled Unclassified Information* (32 C.F.R. 2002).
+- Ross RS, Pillitteri VY, Dempsey KL, Riddle M, Guissanie G (2020) Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-171, Rev. 2.
+- Ross RS, Pillitteri VY, Graubart RD, Guissanie G, Wagner R, Bodeau D (2020) Enhanced Security Requirements for Protecting Controlled Unclassified Information: A Supplement to NIST Special Publication 800-171 (Final Public Draft). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-172.
+- National Archives and Records Administration, Controlled Unclassified Information (CUI) Registry.

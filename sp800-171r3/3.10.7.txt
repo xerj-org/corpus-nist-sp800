@@ -1,0 +1,20 @@
+id: SP_800_171_03.10.07
+title: Physical Access Control
+family: Physical Protection (SP_800_171_03.10)
+class: requirement
+
+Statement:
+  SR-03.10.07.a Enforce physical access authorizations at entry and exit points to the facility where the system resides by:
+    SR-03.10.07.a.01 Verifying individual physical access authorizations before granting access to the facility and
+    SR-03.10.07.a.02 Controlling ingress and egress with physical access control systems, devices, or guards.
+  SR-03.10.07.b Maintain physical access audit logs for entry or exit points.
+  SR-03.10.07.c Escort visitors, and control visitor activity.
+  SR-03.10.07.d Secure keys, combinations, and other physical access devices.
+  SR-03.10.07.e Control physical access to output devices to prevent unauthorized individuals from obtaining access to CUI.
+
+Guidance:
+This requirement addresses physical locations containing systems or system components that process, store, or transmit CUI. Organizations determine the types of guards needed, including professional security staff or administrative staff. Physical access devices include keys, locks, combinations, biometric readers, and card readers. Physical access control systems comply with applicable laws, Executive Orders, directives, policies, regulations, standards, and guidelines. Organizations have flexibility in the types of audit logs employed. Audit logs can be procedural, automated, or some combination thereof. Physical access points can include exterior access points, interior access points to systems that require supplemental access controls, or both. Physical access control applies to employees and visitors. Individuals with permanent physical access authorizations are not considered visitors. Controlling physical access to output devices includes placing output devices in locked rooms or other secured areas with keypad or card reader access controls and only allowing access to authorized individuals, placing output devices in locations that can be monitored by personnel, installing monitor or screen filters, and using headphones. Examples of output devices include monitors, printers, scanners, facsimile machines, audio devices, and copiers.
+
+References:
+- PE-03
+- PE-05

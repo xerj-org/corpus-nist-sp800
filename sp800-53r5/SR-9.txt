@@ -1,0 +1,22 @@
+id: sr-9
+title: Tamper Resistance and Detection
+family: Supply Chain Risk Management (sr)
+class: SP800-53
+
+Statement:
+Implement a tamper protection program for the system, system component, or system service.
+
+Guidance:
+Anti-tamper technologies, tools, and techniques provide a level of protection for systems, system components, and services against many threats, including reverse engineering, modification, and substitution. Strong identification combined with tamper resistance and/or tamper detection is essential to protecting systems and components during distribution and when in use.
+
+References:
+- International Organization for Standardization/International Electrotechnical Commission 20243-1:2018, *Information technology — Open Trusted Technology Provider™ Standard (O-TTPS) — Mitigating maliciously tainted and counterfeit products — Part 1: Requirements and recommendations* , February 2018.
+
+========================================================================
+Enhancement SR-9(1) (sr-9.1) - Multiple Stages of System Development Life Cycle
+
+Statement:
+Employ anti-tamper technologies, tools, and techniques throughout the system development life cycle.
+
+Guidance:
+The system development life cycle includes research and development, design, manufacturing, acquisition, delivery, integration, operations and maintenance, and disposal. Organizations use a combination of hardware and software techniques for tamper resistance and detection. Organizations use obfuscation and self-checking to make reverse engineering and modifications more difficult, time-consuming, and expensive for adversaries. The customization of systems and system components can make substitutions easier to detect and therefore limit damage.

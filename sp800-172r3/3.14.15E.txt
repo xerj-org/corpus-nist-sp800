@@ -1,0 +1,39 @@
+id: SP_800_172_3_0_0_03.14.15E
+title: Non-Persistent System Components and Services
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+  ES-03.14.15E-a Implement non-persistent [non-persistent system components and services]. 
+  ES-03.14.15E-b Initiate non-persistent [non-persistent system components and services] from a known state. 
+  ES-03.14.15E-c Terminate non-persistent [Selection (one-or-more): upon end of session of use;  {{ insert: param, A.03.14.15E.ODP.03 }} ] [non-persistent system components and services]. 
+
+Guidance:
+Implementation of non-persistent components and services mitigates risk from advanced persistent threats (APTs) by reducing the targeting capability of adversaries (i.e., window of opportunity and available attack surface) to initiate and complete attacks. By implementing the concept of non-persistence for selected system components and services, organizations can provide a trusted computing resource for a specific time period that does not give adversaries sufficient time to exploit vulnerabilities in their systems and operating environments. The use of non-persistent components and services mitigates risk by limiting the targeting capability of adversaries (i.e., reducing the window of opportunity and available attack surface) to initiate and complete attacks. Non-persistent system components and services are activated as required from a known (trusted) state and terminated periodically or at the end of sessions. The use of non-persistent system components and services also increases the work factor of adversaries.
+
+Non-persistence can be achieved by refreshing system components, periodically reimaging components, or using a variety of common virtualization techniques. Non-persistent services can be implemented by using virtual machines or as new instances of processes on physical machines (persistent or non-persistent). The benefit of periodic refreshes of system components and services is that it does not require organizations to determine in advance whether compromises have occurred, which may be difficult or impossible. The refresh of selected system components and services occurs with sufficient frequency to prevent the spread or intended impact of attacks but not with such frequency that it makes the system unstable. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes shorten and reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.14.15E.ODP.01 | label: "non-persistent system components and services"
+  guideline: non-persistent system components and services to be implemented are defined.
+- A.03.14.15E.ODP.02 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): upon end of session of use;  {{ insert: param, A.03.14.15E.ODP.03 }} 
+- A.03.14.15E.ODP.03 | label: "frequency"
+  guideline: the frequency at which to terminate non-persistent components and services that are initiated in a known state is defined (if selected).
+
+References:
+- SI-14

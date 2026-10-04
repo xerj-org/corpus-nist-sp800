@@ -1,0 +1,151 @@
+id: cm-3
+title: Configuration Change Control
+family: Configuration Management (cm)
+class: SP800-53
+
+Statement:
+  a. Determine and document the types of changes to the system that are configuration-controlled;
+  b. Review proposed configuration-controlled changes to the system and approve or disapprove such changes with explicit consideration for security and privacy impact analyses;
+  c. Document configuration change decisions associated with the system;
+  d. Implement approved configuration-controlled changes to the system;
+  e. Retain records of configuration-controlled changes to the system for [time period];
+  f. Monitor and review activities associated with configuration-controlled changes to the system; and
+  g. Coordinate and provide oversight for configuration change control activities through [configuration change control element] that convenes [Selection (one-or-more): {{ insert: param, cm-03_odp.04 }} ; when {{ insert: param, cm-03_odp.05 }} ].
+
+Guidance:
+Configuration change control for organizational systems involves the systematic proposal, justification, implementation, testing, review, and disposition of system changes, including system upgrades and modifications. Configuration change control includes changes to baseline configurations, configuration items of systems, operational procedures, configuration settings for system components, remediate vulnerabilities, and unscheduled or unauthorized changes. Processes for managing configuration changes to systems include Configuration Control Boards or Change Advisory Boards that review and approve proposed changes. For changes that impact privacy risk, the senior agency official for privacy updates privacy impact assessments and system of records notices. For new systems or major upgrades, organizations consider including representatives from the development organizations on the Configuration Control Boards or Change Advisory Boards. Auditing of changes includes activities before and after changes are made to systems and the auditing activities required to implement such changes. See also [SA-10](#sa-10).
+
+Parameters:
+- cm-03_odp.01 | label: "time period"
+  guideline: the time period to retain records of configuration-controlled changes is defined;
+- cm-03_odp.02 | label: "configuration change control element"
+  guideline: the configuration change control element responsible for coordinating and overseeing change control activities is defined;
+- cm-03_odp.03 | selection (one-or-more): {{ insert: param, cm-03_odp.04 }} ; when {{ insert: param, cm-03_odp.05 }} 
+- cm-03_odp.04 | label: "frequency"
+  guideline: the frequency at which the configuration control element convenes is defined (if selected);
+- cm-03_odp.05 | label: "configuration change conditions"
+  guideline: configuration change conditions that prompt the configuration control element to convene are defined (if selected);
+
+References:
+- Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.
+- Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.
+
+========================================================================
+Enhancement CM-3(1) (cm-3.1) - Automated Documentation, Notification, and Prohibition of Changes
+
+Statement:
+Use [automated mechanisms] to:
+  (a) Document proposed changes to the system;
+  (b) Notify [approval authorities] of proposed changes to the system and request change approval;
+  (c) Highlight proposed changes to the system that have not been approved or disapproved within [time period];
+  (d) Prohibit changes to the system until designated approvals are received;
+  (e) Document all changes to the system; and
+  (f) Notify [personnel] when approved changes to the system are completed.
+
+Guidance:
+None.
+
+Parameters:
+- cm-03.01_odp.01 | label: "automated mechanisms"
+  guideline: mechanisms used to automate configuration change control are defined;
+- cm-03.01_odp.02 | label: "approval authorities"
+  guideline: approval authorities to be notified of and request approval for proposed changes to the system are defined;
+- cm-03.01_odp.03 | label: "time period"
+  guideline: the time period after which to highlight changes that have not been approved or disapproved is defined;
+- cm-03.01_odp.04 | label: "personnel"
+  guideline: personnel to be notified when approved changes are complete is/are defined;
+
+========================================================================
+Enhancement CM-3(2) (cm-3.2) - Testing, Validation, and Documentation of Changes
+
+Statement:
+Test, validate, and document changes to the system before finalizing the implementation of the changes.
+
+Guidance:
+Changes to systems include modifications to hardware, software, or firmware components and configuration settings defined in [CM-6](#cm-6) . Organizations ensure that testing does not interfere with system operations that support organizational mission and business functions. Individuals or groups conducting tests understand security and privacy policies and procedures, system security and privacy policies and procedures, and the health, safety, and environmental risks associated with specific facilities or processes. Operational systems may need to be taken offline, or replicated to the extent feasible, before testing can be conducted. If systems must be taken offline for testing, the tests are scheduled to occur during planned system outages whenever possible. If the testing cannot be conducted on operational systems, organizations employ compensating controls.
+
+========================================================================
+Enhancement CM-3(3) (cm-3.3) - Automated Change Implementation
+
+Statement:
+Implement changes to the current system baseline and deploy the updated baseline across the installed base using [automated mechanisms].
+
+Guidance:
+Automated tools can improve the accuracy, consistency, and availability of configuration baseline information. Automation can also provide data aggregation and data correlation capabilities, alerting mechanisms, and dashboards to support risk-based decision-making within the organization.
+
+Parameters:
+- cm-03.03_odp | label: "automated mechanisms"
+  guideline: mechanisms used to automate the implementation of changes and deployment of the updated baseline across the installed base are defined;
+
+========================================================================
+Enhancement CM-3(4) (cm-3.4) - Security and Privacy Representatives
+
+Statement:
+Require [organization-defined security and privacy representatives] to be members of the [configuration change control element].
+
+Guidance:
+Information security and privacy representatives include system security officers, senior agency information security officers, senior agency officials for privacy, or system privacy officers. Representation by personnel with information security and privacy expertise is important because changes to system configurations can have unintended side effects, some of which may be security- or privacy-relevant. Detecting such changes early in the process can help avoid unintended, negative consequences that could ultimately affect the security and privacy posture of systems. The configuration change control element referred to in the second organization-defined parameter reflects the change control elements defined by organizations in [CM-3g](#cm-3_smt.g).
+
+Parameters:
+- cm-3.4_prm_1 | label: "organization-defined security and privacy representatives"
+- cm-03.04_odp.01 | label: "security representatives"
+  guideline: security representatives required to be members of the change control element are defined;
+- cm-03.04_odp.02 | label: "privacy representatives"
+  guideline: privacy representatives required to be members of the change control element are defined;
+- cm-03.04_odp.03 | label: "configuration change control element"
+  guideline: the configuration change control element of which the security and privacy representatives are to be members is defined;
+
+========================================================================
+Enhancement CM-3(5) (cm-3.5) - Automated Security Response
+
+Statement:
+Implement the following security responses automatically if baseline configurations are changed in an unauthorized manner: [security responses].
+
+Guidance:
+Automated security responses include halting selected system functions, halting system processing, and issuing alerts or notifications to organizational personnel when there is an unauthorized modification of a configuration item.
+
+Parameters:
+- cm-03.05_odp | label: "security responses"
+  guideline: security responses to be automatically implemented are defined;
+
+========================================================================
+Enhancement CM-3(6) (cm-3.6) - Cryptography Management
+
+Statement:
+Ensure that cryptographic mechanisms used to provide the following controls are under configuration management: [controls].
+
+Guidance:
+The controls referenced in the control enhancement refer to security and privacy controls from the control catalog. Regardless of the cryptographic mechanisms employed, processes and procedures are in place to manage those mechanisms. For example, if system components use certificates for identification and authentication, a process is implemented to address the expiration of those certificates.
+
+Parameters:
+- cm-03.06_odp | label: "controls"
+  guideline: controls provided by cryptographic mechanisms that are to be under configuration management are defined;
+
+========================================================================
+Enhancement CM-3(7) (cm-3.7) - Review System Changes
+
+Statement:
+Review changes to the system [frequency] or when [circumstances] to determine whether unauthorized changes have occurred.
+
+Guidance:
+Indications that warrant a review of changes to the system and the specific circumstances justifying such reviews may be obtained from activities carried out by organizations during the configuration change process or continuous monitoring process.
+
+Parameters:
+- cm-03.07_odp.01 | label: "frequency"
+  guideline: the frequency at which changes are to be reviewed is defined;
+- cm-03.07_odp.02 | label: "circumstances"
+  guideline: the circumstances under which changes are to be reviewed are defined;
+
+========================================================================
+Enhancement CM-3(8) (cm-3.8) - Prevent or Restrict Configuration Changes
+
+Statement:
+Prevent or restrict changes to the configuration of the system under the following circumstances: [circumstances].
+
+Guidance:
+System configuration changes can adversely affect critical system security and privacy functionality. Change restrictions can be enforced through automated mechanisms.
+
+Parameters:
+- cm-03.08_odp | label: "circumstances"
+  guideline: the circumstances under which changes are to be prevented or restricted are defined;

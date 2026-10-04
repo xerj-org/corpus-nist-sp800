@@ -1,0 +1,23 @@
+id: pm-23
+title: Data Governance Body
+family: Program Management (pm)
+class: SP800-53
+family-overview: [FISMA](#0c67b2a9-bede-43d2-b86d-5f35b8be36e9), [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) , and [OMB A-130](#27847491-5ce1-4f6a-a1e4-9e483782f0ef) require federal agencies to develop, implement, and provide oversight for organization-wide information security and privacy programs to help ensure the confidentiality, integrity, and availability of federal information processed, stored, and transmitted by federal information systems and to protect individual privacy. The program management (PM) controls described in this section are implemented at the organization level and not directed at individual information systems. The PM controls have been designed to facilitate organizational compliance with applicable federal laws, executive orders, directives, policies, regulations, and standards. The controls are independent of [FIPS 200](#599fb53d-5041-444e-a7fe-640d6d30ad05) impact levels and, therefore, are not associated with the control baselines described in [SP 800-53B](#46d9e201-840e-440e-987c-2c773333c752). Organizations document program management controls in the information security and privacy program plans. The organization-wide information security program plan (see [PM-1](#pm-1) ) and privacy program plan (see [PM-18](#pm-18) ) supplement system security and privacy plans (see [PL-2](#pl-2) ) developed for organizational information systems. Together, the system security and privacy plans for the individual information systems and the information security and privacy program plans cover the totality of security and privacy controls employed by the organization.
+
+Statement:
+Establish a Data Governance Body consisting of [roles] with [responsibilities].
+
+Guidance:
+A Data Governance Body can help ensure that the organization has coherent policies and the ability to balance the utility of data with security and privacy requirements. The Data Governance Body establishes policies, procedures, and standards that facilitate data governance so that data, including personally identifiable information, is effectively managed and maintained in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidance. Responsibilities can include developing and implementing guidelines that support data modeling, quality, integrity, and the de-identification needs of personally identifiable information across the information life cycle as well as reviewing and approving applications to release data outside of the organization, archiving the applications and the released data, and performing post-release monitoring to ensure that the assumptions made as part of the data release continue to be valid. Members include the chief information officer, senior agency information security officer, and senior agency official for privacy. Federal agencies are required to establish a Data Governance Body with specific roles and responsibilities in accordance with the [EVIDACT](#511da9ca-604d-43f7-be41-b862085420a9) and policies set forth under [OMB M-19-23](#d886c141-c832-4ad7-ac6d-4b94f4b550d3).
+
+Parameters:
+- pm-23_odp.01 | label: "roles"
+  guideline: the roles of a Data Governance Body are defined;
+- pm-23_odp.02 | label: "responsibilities"
+  guideline: the responsibilities of a Data Governance Body are defined;
+
+References:
+- Foundations for Evidence-Based Policymaking Act of 2018 (P.L. 115-435), January 2019.
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Office of Management and Budget Memorandum M-19-23, *Phase 1 Implementation of the Foundations for Evidence-Based Policymaking Act of 2018: Learning Agendas, Personnel, and Planning Guidance* , July 2019.
+- Garfinkel S (2016) De-Identifying Government Datasets. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-188.

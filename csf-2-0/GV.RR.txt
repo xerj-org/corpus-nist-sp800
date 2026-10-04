@@ -1,0 +1,80 @@
+id: GV.RR
+title: Roles, Responsibilities, and Authorities
+family: GOVERN (GV)
+class: category
+family-overview: The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored
+
+Statement:
+Cybersecurity roles, responsibilities, and authorities to foster accountability, performance assessment, and continuous improvement are established and communicated
+
+========================================================================
+Child control GV.RR-01 - GV.RR-01
+
+Statement:
+Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving
+
+Example:
+Leaders (e.g., directors) agree on their roles and responsibilities in developing, implementing, and assessing the organization's cybersecurity strategy
+
+Example:
+Share leaders' expectations regarding a secure and ethical culture, especially when current events present the opportunity to highlight positive or negative examples of cybersecurity risk management
+
+Example:
+Leaders direct the CISO to maintain a comprehensive cybersecurity risk strategy and review and update it at least annually and after major events
+
+Example:
+Conduct reviews to ensure adequate authority and coordination among those responsible for managing cybersecurity risk
+
+========================================================================
+Child control GV.RR-02 - GV.RR-02
+
+Statement:
+Roles, responsibilities, and authorities related to cybersecurity risk management are established, communicated, understood, and enforced
+
+Example:
+Document risk management roles and responsibilities in policy
+
+Example:
+Document who is responsible and accountable for cybersecurity risk management activities and how those teams and individuals are to be consulted and informed
+
+Example:
+Include cybersecurity responsibilities and performance requirements in personnel descriptions
+
+Example:
+Document performance goals for personnel with cybersecurity risk management responsibilities, and periodically measure performance to identify areas for improvement
+
+Example:
+Clearly articulate cybersecurity responsibilities within operations, risk functions, and internal audit functions
+
+========================================================================
+Child control GV.RR-03 - GV.RR-03
+
+Statement:
+Adequate resources are allocated commensurate with the cybersecurity risk strategy, roles, responsibilities, and policies
+
+Example:
+Conduct periodic management reviews to ensure that those given cybersecurity risk management responsibilities have the necessary authority
+
+Example:
+Identify resource allocation and investment in line with risk tolerance and response
+
+Example:
+Provide adequate and sufficient people, process, and technical resources to support the cybersecurity strategy
+
+========================================================================
+Child control GV.RR-04 - GV.RR-04
+
+Statement:
+Cybersecurity is included in human resources practices
+
+Example:
+Integrate cybersecurity risk management considerations into human resources processes (e.g., personnel screening, onboarding, change notification, offboarding)
+
+Example:
+Consider cybersecurity knowledge to be a positive factor in hiring, training, and retention decisions
+
+Example:
+Conduct background checks prior to onboarding new personnel for sensitive roles, and periodically repeat background checks for personnel with such roles
+
+Example:
+Define and enforce obligations for personnel to be aware of, adhere to, and uphold security policies as they relate to their roles

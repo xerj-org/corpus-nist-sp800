@@ -1,0 +1,48 @@
+id: cm-11
+title: User-installed Software
+family: Configuration Management (cm)
+class: SP800-53
+
+Statement:
+  a. Establish [policies] governing the installation of software by users;
+  b. Enforce software installation policies through the following methods: [methods] ; and
+  c. Monitor policy compliance [frequency].
+
+Guidance:
+If provided the necessary privileges, users can install software in organizational systems. To maintain control over the software installed, organizations identify permitted and prohibited actions regarding software installation. Permitted software installations include updates and security patches to existing software and downloading new applications from organization-approved "app stores." Prohibited software installations include software with unknown or suspect pedigrees or software that organizations consider potentially malicious. Policies selected for governing user-installed software are organization-developed or provided by some external entity. Policy enforcement methods can include procedural methods and automated methods.
+
+Parameters:
+- cm-11_odp.01 | label: "policies"
+  guideline: policies governing the installation of software by users are defined;
+- cm-11_odp.02 | label: "methods"
+  guideline: methods used to enforce software installation policies are defined;
+- cm-11_odp.03 | label: "frequency"
+  guideline: frequency with which to monitor compliance is defined;
+
+========================================================================
+Enhancement CM-11(1) (cm-11.1) - Alerts for Unauthorized Installations
+
+========================================================================
+Enhancement CM-11(2) (cm-11.2) - Software Installation with Privileged Status
+
+Statement:
+Allow user installation of software only with explicit privileged status.
+
+Guidance:
+Privileged status can be obtained, for example, by serving in the role of system administrator.
+
+========================================================================
+Enhancement CM-11(3) (cm-11.3) - Automated Enforcement and Monitoring
+
+Statement:
+Enforce and monitor compliance with software installation policies using [organization-defined automated mechanisms].
+
+Guidance:
+Organizations enforce and monitor compliance with software installation policies using automated mechanisms to more quickly detect and respond to unauthorized software installation which can be an indicator of an internal or external hostile attack.
+
+Parameters:
+- cm-11.3_prm_1 | label: "organization-defined automated mechanisms"
+- cm-11.03_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to enforce compliance are defined;
+- cm-11.03_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to monitor compliance are defined;

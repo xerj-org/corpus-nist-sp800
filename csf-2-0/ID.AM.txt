@@ -1,0 +1,137 @@
+id: ID.AM
+title: Asset Management
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+Assets (e.g., data, hardware, software, systems, facilities, services, people) that enable the organization to achieve business purposes are identified and managed consistent with their relative importance to organizational objectives and the organization's risk strategy
+
+========================================================================
+Child control ID.AM-01 - ID.AM-01
+
+Statement:
+Inventories of hardware managed by the organization are maintained
+
+Example:
+Maintain inventories for all types of hardware, including IT, IoT, OT, and mobile devices
+
+Example:
+Constantly monitor networks to detect new hardware and automatically update inventories
+
+========================================================================
+Child control ID.AM-02 - ID.AM-02
+
+Statement:
+Inventories of software, services, and systems managed by the organization are maintained
+
+Example:
+Maintain inventories for all types of software and services, including commercial-off-the-shelf, open-source, custom applications, API services, and cloud-based applications and services
+
+Example:
+Constantly monitor all platforms, including containers and virtual machines, for software and service inventory changes
+
+Example:
+Maintain an inventory of the organization's systems
+
+========================================================================
+Child control ID.AM-03 - ID.AM-03
+
+Statement:
+Representations of the organization's authorized network communication and internal and external network data flows are maintained
+
+Example:
+Maintain baselines of communication and data flows within the organization's wired and wireless networks
+
+Example:
+Maintain baselines of communication and data flows between the organization and third parties
+
+Example:
+Maintain baselines of communication and data flows for the organization's infrastructure-as-a-service (IaaS) usage
+
+Example:
+Maintain documentation of expected network ports, protocols, and services that are typically used among authorized systems
+
+========================================================================
+Child control ID.AM-04 - ID.AM-04
+
+Statement:
+Inventories of services provided by suppliers are maintained
+
+Example:
+Inventory all external services used by the organization, including third-party infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) offerings; APIs; and other externally hosted application services
+
+Example:
+Update the inventory when a new external service is going to be utilized to ensure adequate cybersecurity risk management monitoring of the organization's use of that service
+
+========================================================================
+Child control ID.AM-05 - ID.AM-05
+
+Statement:
+Assets are prioritized based on classification, criticality, resources, and impact on the mission
+
+Example:
+Define criteria for prioritizing each class of assets
+
+Example:
+Apply the prioritization criteria to assets
+
+Example:
+Track the asset priorities and update them periodically or when significant changes to the organization occur
+
+========================================================================
+Child control ID.AM-06 - ID.AM-06
+
+Statement:
+Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) are established
+
+========================================================================
+Child control ID.AM-07 - ID.AM-07
+
+Statement:
+Inventories of data and corresponding metadata for designated data types are maintained
+
+Example:
+Maintain a list of the designated data types of interest (e.g., personally identifiable information, protected health information, financial account numbers, organization intellectual property, operational technology data)
+
+Example:
+Continuously discover and analyze ad hoc data to identify new instances of designated data types
+
+Example:
+Assign data classifications to designated data types through tags or labels
+
+Example:
+Track the provenance, data owner, and geolocation of each instance of designated data types
+
+========================================================================
+Child control ID.AM-08 - ID.AM-08
+
+Statement:
+Systems, hardware, software, services, and data are managed throughout their life cycles
+
+Example:
+Integrate cybersecurity considerations throughout the life cycles of systems, hardware, software, and services
+
+Example:
+Integrate cybersecurity considerations into product life cycles
+
+Example:
+Identify unofficial uses of technology to meet mission objectives (i.e., shadow IT)
+
+Example:
+Periodically identify redundant systems, hardware, software, and services that unnecessarily increase the organization's attack surface
+
+Example:
+Properly configure and secure systems, hardware, software, and services prior to their deployment in production
+
+Example:
+Update inventories when systems, hardware, software, and services are moved or transferred within the organization
+
+Example:
+Securely destroy stored data based on the organization's data retention policy using the prescribed destruction method, and keep and manage a record of the destructions
+
+Example:
+Securely sanitize data storage when hardware is being retired, decommissioned, reassigned, or sent for repairs or replacement
+
+Example:
+Offer methods for destroying paper, storage media, and other physical forms of data storage

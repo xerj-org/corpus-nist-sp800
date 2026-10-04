@@ -1,0 +1,78 @@
+id: sc-30
+title: Concealment and Misdirection
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Employ the following concealment and misdirection techniques for [systems] at [time periods] to confuse and mislead adversaries: [concealment and misdirection techniques].
+
+Guidance:
+Concealment and misdirection techniques can significantly reduce the targeting capabilities of adversaries (i.e., window of opportunity and available attack surface) to initiate and complete attacks. For example, virtualization techniques provide organizations with the ability to disguise systems, potentially reducing the likelihood of successful attacks without the cost of having multiple platforms. The increased use of concealment and misdirection techniques and methods—including randomness, uncertainty, and virtualization—may sufficiently confuse and mislead adversaries and subsequently increase the risk of discovery and/or exposing tradecraft. Concealment and misdirection techniques may provide additional time to perform core mission and business functions. The implementation of concealment and misdirection techniques may add to the complexity and management overhead required for the system.
+
+Parameters:
+- sc-30_odp.01 | label: "concealment and misdirection techniques"
+  guideline: concealment and misdirection techniques to be employed to confuse and mislead adversaries potentially targeting systems are defined;
+- sc-30_odp.02 | label: "systems"
+  guideline: systems for which concealment and misdirection techniques are to be employed are defined;
+- sc-30_odp.03 | label: "time periods"
+  guideline: time periods to employ concealment and misdirection techniques for systems are defined;
+
+========================================================================
+Enhancement SC-30(1) (sc-30.1) - Virtualization Techniques
+
+========================================================================
+Enhancement SC-30(2) (sc-30.2) - Randomness
+
+Statement:
+Employ [techniques] to introduce randomness into organizational operations and assets.
+
+Guidance:
+Randomness introduces increased levels of uncertainty for adversaries regarding the actions that organizations take to defend their systems against attacks. Such actions may impede the ability of adversaries to correctly target information resources of organizations that support critical missions or business functions. Uncertainty may also cause adversaries to hesitate before initiating or continuing attacks. Misdirection techniques that involve randomness include performing certain routine actions at different times of day, employing different information technologies, using different suppliers, and rotating roles and responsibilities of organizational personnel.
+
+Parameters:
+- sc-30.02_odp | label: "techniques"
+  guideline: techniques employed to introduce randomness into organizational operations and assets are defined;
+
+========================================================================
+Enhancement SC-30(3) (sc-30.3) - Change Processing and Storage Locations
+
+Statement:
+Change the location of [processing and/or storage] [Selection (): {{ insert: param, sc-30.03_odp.03 }} ; random time intervals]].
+
+Guidance:
+Adversaries target critical mission and business functions and the systems that support those mission and business functions while also trying to minimize the exposure of their existence and tradecraft. The static, homogeneous, and deterministic nature of organizational systems targeted by adversaries make such systems more susceptible to attacks with less adversary cost and effort to be successful. Changing processing and storage locations (also referred to as moving target defense) addresses the advanced persistent threat using techniques such as virtualization, distributed processing, and replication. This enables organizations to relocate the system components (i.e., processing, storage) that support critical mission and business functions. Changing the locations of processing activities and/or storage sites introduces a degree of uncertainty into the targeting activities of adversaries. The targeting uncertainty increases the work factor of adversaries and makes compromises or breaches of the organizational systems more difficult and time-consuming. It also increases the chances that adversaries may inadvertently disclose certain aspects of their tradecraft while attempting to locate critical organizational resources.
+
+Parameters:
+- sc-30.03_odp.01 | label: "processing and/or storage"
+  guideline: processing and/or storage locations to be changed are defined;
+- sc-30.03_odp.02 | selection (): {{ insert: param, sc-30.03_odp.03 }} ; random time intervals
+- sc-30.03_odp.03 | label: "time frequency"
+  guideline: time frequency at which to change the location of processing and/or storage is defined (if selected);
+
+========================================================================
+Enhancement SC-30(4) (sc-30.4) - Misleading Information
+
+Statement:
+Employ realistic, but misleading information in [system components] about its security state or posture.
+
+Guidance:
+Employing misleading information is intended to confuse potential adversaries regarding the nature and extent of controls deployed by organizations. Thus, adversaries may employ incorrect and ineffective attack techniques. One technique for misleading adversaries is for organizations to place misleading information regarding the specific controls deployed in external systems that are known to be targeted by adversaries. Another technique is the use of deception nets that mimic actual aspects of organizational systems but use, for example, out-of-date software configurations.
+
+Parameters:
+- sc-30.04_odp | label: "system components"
+  guideline: system components for which realistic but misleading information about their security state or posture is employed are defined;
+
+========================================================================
+Enhancement SC-30(5) (sc-30.5) - Concealment of System Components
+
+Statement:
+Employ the following techniques to hide or conceal [system components]: [techniques].
+
+Guidance:
+By hiding, disguising, or concealing critical system components, organizations may be able to decrease the probability that adversaries target and successfully compromise those assets. Potential means to hide, disguise, or conceal system components include the configuration of routers or the use of encryption or virtualization techniques.
+
+Parameters:
+- sc-30.05_odp.01 | label: "techniques"
+  guideline: techniques to be employed to hide or conceal system components are defined;
+- sc-30.05_odp.02 | label: "system components"
+  guideline: system components to be hidden or concealed using techniques (defined in SC-30(05)_ODP[01]) are defined;

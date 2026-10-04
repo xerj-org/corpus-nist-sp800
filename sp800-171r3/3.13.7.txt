@@ -1,0 +1,4 @@
+id: SP_800_171_03.13.07
+title: 03.13.07
+family: System and Communications Protection (SP_800_171_03.13)
+class: requirement

@@ -1,0 +1,83 @@
+id: ID.IM
+title: Improvement
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+Improvements to organizational cybersecurity risk management processes, procedures and activities are identified across all CSF Functions
+
+========================================================================
+Child control ID.IM-01 - ID.IM-01
+
+Statement:
+Improvements are identified from evaluations
+
+Example:
+Perform self-assessments of critical services that take current threats and TTPs into consideration
+
+Example:
+Invest in third-party assessments or independent audits of the effectiveness of the organization's cybersecurity program to identify areas that need improvement
+
+Example:
+Constantly evaluate compliance with selected cybersecurity requirements through automated means
+
+========================================================================
+Child control ID.IM-02 - ID.IM-02
+
+Statement:
+Improvements are identified from security tests and exercises, including those done in coordination with suppliers and relevant third parties
+
+Example:
+Identify improvements for future incident response activities based on findings from incident response assessments (e.g., tabletop exercises and simulations, tests, internal reviews, independent audits)
+
+Example:
+Identify improvements for future business continuity, disaster recovery, and incident response activities based on exercises performed in coordination with critical service providers and product suppliers
+
+Example:
+Involve internal stakeholders (e.g., senior executives, legal department, HR) in security tests and exercises as appropriate
+
+Example:
+Perform penetration testing to identify opportunities to improve the security posture of selected high-risk systems as approved by leadership
+
+Example:
+Exercise contingency plans for responding to and recovering from the discovery that products or services did not originate with the contracted supplier or partner or were altered before receipt
+
+Example:
+Collect and analyze performance metrics using security tools and services to inform improvements to the cybersecurity program
+
+========================================================================
+Child control ID.IM-03 - ID.IM-03
+
+Statement:
+Improvements are identified from execution of operational processes, procedures, and activities
+
+Example:
+Conduct collaborative lessons learned sessions with suppliers
+
+Example:
+Annually review cybersecurity policies, processes, and procedures to take lessons learned into account
+
+Example:
+Use metrics to assess operational cybersecurity performance over time
+
+========================================================================
+Child control ID.IM-04 - ID.IM-04
+
+Statement:
+Incident response plans and other cybersecurity plans that affect operations are established, communicated, maintained, and improved
+
+Example:
+Establish contingency plans (e.g., incident response, business continuity, disaster recovery) for responding to and recovering from adverse events that can interfere with operations, expose confidential information, or otherwise endanger the organization's mission and viability
+
+Example:
+Include contact and communication information, processes for handling common scenarios, and criteria for prioritization, escalation, and elevation in all contingency plans
+
+Example:
+Create a vulnerability management plan to identify and assess all types of vulnerabilities and to prioritize, test, and implement risk responses
+
+Example:
+Communicate cybersecurity plans (including updates) to those responsible for carrying them out and to affected parties
+
+Example:
+Review and update all cybersecurity plans annually or when a need for significant improvements is identified

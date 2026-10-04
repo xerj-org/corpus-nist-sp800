@@ -1,0 +1,49 @@
+id: SP_800_172_3_0_0_03.14.08E
+title: Integrity Checks
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Perform an integrity check of [organization-defined software, firmware, and information] [Selection (one-or-more): at startup; at {{ insert: param, A.03.14.08E.ODP.03 }} ;  {{ insert: param, A.03.14.08E.ODP.04 }} ]. 
+
+Guidance:
+Security-relevant events include the identification of new threats to which organizational systems are susceptible and the installation of hardware, software, or firmware. Transitional states include system startup, restart, shutdown, and abort. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.14.08E_prm_1 | label: "organization-defined software, firmware, and information"
+- A.03.14.08E_prm_2 | label: "organization-defined transitional states or security-relevant events"
+- A.03.14.08E_prm_3 | label: "organization-defined frequency"
+- A.03.14.08E.ODP.01 | label: "software"
+  guideline: software on which an integrity check is to be performed is defined.
+- A.03.14.08E.ODP.02 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): at startup; at {{ insert: param, A.03.14.08E.ODP.03 }} ;  {{ insert: param, A.03.14.08E.ODP.04 }} 
+- A.03.14.08E.ODP.05 | label: "firmware"
+  guideline: firmware on which an integrity check is to be performed is defined.
+- A.03.14.08E.ODP.06 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): at startup; at {{ insert: param, A.03.14.08E.ODP.07 }} ;  {{ insert: param, A.03.14.08E.ODP.08 }} 
+- A.03.14.08E.ODP.09 | label: "information"
+  guideline: information on which an integrity check is to be performed is defined.
+- A.03.14.08E.ODP.10 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): at startup; at {{ insert: param, A.03.14.08E.ODP.11 }} ;  {{ insert: param, A.03.14.08E.ODP.12 }} 
+- A.03.14.08E.ODP.03 | label: "transitional states or security-relevant events"
+  guideline: transitional states or security-relevant events requiring integrity checks (on software) are defined (if selected).
+- A.03.14.08E.ODP.04 | label: "frequency"
+  guideline: the frequency at which to perform an integrity check (on software) is defined (if selected).
+- A.03.14.08E.ODP.07 | label: "transitional states or security-relevant events"
+  guideline: transitional states or security-relevant events requiring integrity checks (on firmware) are defined (if selected).
+- A.03.14.08E.ODP.08 | label: "frequency"
+  guideline: the frequency at which to perform an integrity check (on firmware) is defined (if selected).
+- A.03.14.08E.ODP.11 | label: "transitional states or security-relevant events"
+  guideline: transitional states or security-relevant events requiring integrity checks (of information) are defined (if selected).
+- A.03.14.08E.ODP.12 | label: "frequency"
+  guideline: the frequency at which to perform an integrity check (of information) is defined (if selected).
+
+References:
+- SI-07(01)

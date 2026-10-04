@@ -1,0 +1,28 @@
+id: SP_800_172_3_0_0_03.01.09E
+title: Attribute-Based Access Control
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+Statement:
+  ES-03.01.09E-a Enforce attribute-based access control policy over defined subjects and objects.
+  ES-03.01.09E-b Control access based upon [attributes]. 
+
+Guidance:
+Attribute-based access control is an access control policy that restricts system access to authorized users based on specified organizational attributes (e.g., job function, role, identity), action attributes (e.g., read, write, delete), environmental attributes (e.g., time of day, location), and resource attributes (e.g., document classification). Organizations can create rules based on specified attributes and the authorizations (i.e., privileges) to perform needed operations on the systems associated with organization-defined attributes and rules. When users are assigned to attributes defined in attribute-based access control policies or rules, they can be provisioned to a system with the appropriate privileges or dynamically granted access to a protected resource. Attribute-based access control can be implemented as either a mandatory or discretionary form of access control. This requirement enhances SP 800-171 requirement 03.01.02.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.01.09E.ODP.01 | label: "attributes"
+  guideline: attributes to assume access permissions are defined.
+
+References:
+- AC-03(13)

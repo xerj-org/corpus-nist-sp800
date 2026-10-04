@@ -1,0 +1,31 @@
+id: SP_800_172_3_0_0_03.17.03E
+title: Component Authenticity
+family: Supply Chain Risk Management (SP_800_172_3_0_0_3.17)
+class: security_requirement
+
+Statement:
+  ES-03.17.03E-a Develop and implement anti-counterfeit policy and procedures that include the means to detect and prevent counterfeit components from entering the system.
+  ES-03.17.03E-b Report counterfeit system components to [Selection (one-or-more): source of counterfeit component;  {{ insert: param, A.03.17.03E.ODP.02 }} ;  {{ insert: param, A.03.17.03E.ODP.03 }} ]. 
+
+Guidance:
+Sources of counterfeit components include manufacturers, developers, vendors, and contractors. Anti-counterfeiting policies and procedures support tamper resistance and provide a level of protection against the introduction of malicious code. External reporting organizations include the Cybersecurity and Infrastructure Security Agency (CISA). This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.17.03E.ODP.01 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): source of counterfeit component;  {{ insert: param, A.03.17.03E.ODP.02 }} ;  {{ insert: param, A.03.17.03E.ODP.03 }} 
+- A.03.17.03E.ODP.02 | label: "external reporting organizations"
+  guideline: external reporting organizations to whom counterfeit system components are to be reported are defined (if selected).
+- A.03.17.03E.ODP.03 | label: "personnel or roles"
+  guideline: personnel or roles to whom counterfeit system components are to be reported are defined (if selected).
+
+References:
+- SR-11

@@ -1,0 +1,16 @@
+id: ac-10
+title: Concurrent Session Control
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+Limit the number of concurrent sessions for each [account and/or account types] to [number].
+
+Guidance:
+Organizations may define the maximum number of concurrent sessions for system accounts globally, by account type, by account, or any combination thereof. For example, organizations may limit the number of concurrent sessions for system administrators or other individuals working in particularly sensitive domains or mission-critical applications. Concurrent session control addresses concurrent sessions for system accounts. It does not, however, address concurrent sessions by single users via multiple system accounts.
+
+Parameters:
+- ac-10_odp.01 | label: "account and/or account types"
+  guideline: accounts and/or account types for which to limit the number of concurrent sessions is defined;
+- ac-10_odp.02 | label: "number"
+  guideline: the number of concurrent sessions to be allowed for each account and/or account type is defined;

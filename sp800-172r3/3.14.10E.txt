@@ -1,0 +1,29 @@
+id: SP_800_172_3_0_0_03.14.10E
+title: Protection of Boot Firmware
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Implement the following mechanisms to protect the integrity of boot firmware in [mechanisms]: [system components]. 
+
+Guidance:
+Unauthorized modifications to boot firmware may indicate a sophisticated, targeted attack. These types of targeted attacks can result in a permanent denial of service or a persistent malicious code presence. These situations can occur if the firmware is corrupted or malicious code is embedded in the firmware. System components can protect the integrity of boot firmware in organizational systems by verifying the integrity and authenticity of updates to the firmware prior to applying changes to the system component and preventing unauthorized processes from modifying the boot firmware. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.14.10E.ODP.01 | label: "mechanisms"
+  guideline: mechanisms to be implemented to protect the integrity of boot firmware in system components are defined.
+- A.03.14.10E.ODP.02 | label: "system components"
+  guideline: system components requiring mechanisms to protect the integrity of boot firmware are defined.
+
+References:
+- SI-07(10)

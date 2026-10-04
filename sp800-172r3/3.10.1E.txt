@@ -1,0 +1,18 @@
+id: SP_800_172_3_0_0_03.10.01E
+title: Intrusion Alarms and Surveillance Equipment
+family: Physical Protection (SP_800_172_3_0_0_3.10)
+class: security_requirement
+
+Statement:
+Monitor physical access to the facility where the system resides using physical intrusion alarms and surveillance equipment.
+
+Guidance:
+Physical intrusion alarms can be used to alert security personnel when unauthorized access to the facility is attempted. Alarm systems work in conjunction with physical barriers, physical access control systems, and facility security guards by triggering a response when these other forms of security have been compromised or breached. Physical intrusion alarms can include different types of sensor devices, including motion sensors, contact sensors, and broken glass sensors. Surveillance equipment includes video cameras installed at strategic locations throughout the facility. This requirement enhances SP 800-171 requirement 03.10.02.
+  - (includes detect and reveal)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+References:
+- PE-06(01)

@@ -1,0 +1,31 @@
+id: ir-5
+title: Incident Monitoring
+family: Incident Response (ir)
+class: SP800-53
+
+Statement:
+Track and document incidents.
+
+Guidance:
+Documenting incidents includes maintaining records about each incident, the status of the incident, and other pertinent information necessary for forensics as well as evaluating incident details, trends, and handling. Incident information can be obtained from a variety of sources, including network monitoring, incident reports, incident response teams, user complaints, supply chain partners, audit monitoring, physical access monitoring, and user and administrator reports. [IR-4](#ir-4) provides information on the types of incidents that are appropriate for monitoring.
+
+References:
+- Cichonski PR, Millar T, Grance T, Scarfone KA (2012) Computer Security Incident Handling Guide. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-61, Rev. 2.
+
+========================================================================
+Enhancement IR-5(1) (ir-5.1) - Automated Tracking, Data Collection, and Analysis
+
+Statement:
+Track incidents and collect and analyze incident information using [organization-defined automated mechanisms].
+
+Guidance:
+Automated mechanisms for tracking incidents and collecting and analyzing incident information include Computer Incident Response Centers or other electronic databases of incidents and network monitoring devices.
+
+Parameters:
+- ir-5.1_prm_1 | label: "organization-defined automated mechanisms"
+- ir-05.01_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to track incidents are defined;
+- ir-05.01_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to collect incident information are defined;
+- ir-05.01_odp.03 | label: "automated mechanisms"
+  guideline: automated mechanisms used to analyze incident information are defined;

@@ -1,0 +1,47 @@
+id: sr-1
+title: Policy and Procedures
+family: Supply Chain Risk Management (sr)
+class: SP800-53
+
+Statement:
+  a. Develop, document, and disseminate to [organization-defined personnel or roles]:
+    1. [Selection (one-or-more): organization-level; mission/business process-level; system-level] supply chain risk management policy that:
+      (a) Addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
+      (b) Is consistent with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines; and
+    2. Procedures to facilitate the implementation of the supply chain risk management policy and the associated supply chain risk management controls;
+  b. Designate an [official] to manage the development, documentation, and dissemination of the supply chain risk management policy and procedures; and
+  c. Review and update the current supply chain risk management:
+    1. Policy [frequency] and following [events] ; and
+    2. Procedures [frequency] and following [events].
+
+Guidance:
+Supply chain risk management policy and procedures address the controls in the SR family as well as supply chain-related controls in other families that are implemented within systems and organizations. The risk management strategy is an important factor in establishing such policies and procedures. Policies and procedures contribute to security and privacy assurance. Therefore, it is important that security and privacy programs collaborate on the development of supply chain risk management policy and procedures. Security and privacy program policies and procedures at the organization level are preferable, in general, and may obviate the need for mission- or system-specific policies and procedures. The policy can be included as part of the general security and privacy policy or be represented by multiple policies that reflect the complex nature of organizations. Procedures can be established for security and privacy programs, for mission or business processes, and for systems, if needed. Procedures describe how the policies or controls are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security and privacy plans or in one or more separate documents. Events that may precipitate an update to supply chain risk management policy and procedures include assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines. Simply restating controls does not constitute an organizational policy or procedure.
+
+Parameters:
+- sr-1_prm_1 | label: "organization-defined personnel or roles"
+- sr-01_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles to whom supply chain risk management policy is to be disseminated to is/are defined;
+- sr-01_odp.02 | label: "personnel or roles"
+  guideline: personnel or roles to whom supply chain risk management procedures are disseminated to is/are defined;
+- sr-01_odp.03 | selection (one-or-more): organization-level; mission/business process-level; system-level
+- sr-01_odp.04 | label: "official"
+  guideline: an official to manage the development, documentation, and dissemination of the supply chain risk management policy and procedures is defined;
+- sr-01_odp.05 | label: "frequency"
+  guideline: the frequency at which the current supply chain risk management policy is reviewed and updated is defined;
+- sr-01_odp.06 | label: "events"
+  guideline: events that require the current supply chain risk management policy to be reviewed and updated are defined;
+- sr-01_odp.07 | label: "frequency"
+  guideline: the frequency at which the current supply chain risk management procedure is reviewed and updated is defined;
+- sr-01_odp.08 | label: "events"
+  guideline: events that require the supply chain risk management procedures to be reviewed and updated are defined;
+
+References:
+- Secure Technology Act [includes Federal Acquisition Supply Chain Security Act] (P.L. 115-390), December 2018.
+- "Federal Acquisition Supply Chain Security Act; Rule," 85 Federal Register 54263 (September 1, 2020), pp 54263-54271.
+- Executive Order 13873, *Executive Order on Securing the Information and Communications Technology and Services Supply Chain* , May 2019.
+- Committee on National Security Systems Directive No. 505, *Supply Chain Risk Management (SCRM)* , August 2017.
+- Nieles M, Pillitteri VY, Dempsey KL (2017) An Introduction to Information Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-12, Rev. 1.
+- Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk Assessments. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-30, Rev. 1.
+- Joint Task Force Transformation Initiative (2011) Managing Information Security Risk: Organization, Mission, and Information System View. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.
+- Bowen P, Hash J, Wilson M (2006) Information Security Handbook: A Guide for Managers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-100, Includes updates as of March 7, 2007.
+- Boyens JM, Paulsen C, Moorthy R, Bartol N (2015) Supply Chain Risk Management Practices for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161.

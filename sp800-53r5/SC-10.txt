@@ -1,0 +1,14 @@
+id: sc-10
+title: Network Disconnect
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Terminate the network connection associated with a communications session at the end of the session or after [time period] of inactivity.
+
+Guidance:
+Network disconnect applies to internal and external networks. Terminating network connections associated with specific communications sessions includes de-allocating TCP/IP address or port pairs at the operating system level and de-allocating the networking assignments at the application level if multiple application sessions are using a single operating system-level network connection. Periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.
+
+Parameters:
+- sc-10_odp | label: "time period"
+  guideline: a time period of inactivity after which the system terminates a network connection associated with a communication session is defined;

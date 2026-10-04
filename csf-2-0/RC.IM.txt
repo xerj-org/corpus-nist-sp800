@@ -1,0 +1,19 @@
+id: RC.IM
+title: Improvements
+family: RECOVER (RC)
+class: category
+family-overview: Assets and operations affected by a cybersecurity incident are restored
+
+Statement:
+
+========================================================================
+Child control RC.IM-01 - RC.IM-01
+
+Statement:
+Recovery plans incorporate lessons learned
+
+========================================================================
+Child control RC.IM-02 - RC.IM-02
+
+Statement:
+Recovery strategies are updated

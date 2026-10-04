@@ -1,0 +1,14 @@
+id: SP_800_171_03.08.02
+title: Media Access
+family: Media Protection (SP_800_171_03.08)
+class: requirement
+
+Statement:
+Restrict access to CUI on system media to authorized personnel or roles.
+
+Guidance:
+System media include digital and non-digital media. Access to CUI on system media can be restricted by physically controlling such media. This includes conducting inventories, ensuring that procedures are in place to allow individuals to check out and return media to the media library, and maintaining accountability for stored media. For digital media, access to CUI can be restricted by using cryptographic means. Encrypting data in storage or at rest is addressed in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.08) 03.13.08.
+
+References:
+- MP-02
+- Scarfone KA, Souppaya MP, Sexton M (2007) Guide to Storage Encryption Technologies for End User Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-111.

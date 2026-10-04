@@ -1,0 +1,24 @@
+id: SP_800_171_03.06.05
+title: Incident Response Plan
+family: Incident Response (SP_800_171_03.06)
+class: requirement
+
+Statement:
+  SR-03.06.05.a Develop an incident response plan that:
+    SR-03.06.05.a.01 Provides the organization with a roadmap for implementing its incident response capability,
+    SR-03.06.05.a.02 Describes the structure and organization of the incident response capability,
+    SR-03.06.05.a.03 Provides a high-level approach for how the incident response capability fits into the overall organization,
+    SR-03.06.05.a.04 Defines reportable incidents,
+    SR-03.06.05.a.05 Addresses the sharing of incident information, and
+    SR-03.06.05.a.06 Designates responsibilities to organizational entities, personnel, or roles.
+  SR-03.06.05.b Distribute copies of the incident response plan to designated incident response personnel (identified by name and/or by role) and organizational elements.
+  SR-03.06.05.c Update the incident response plan to address system and organizational changes or problems encountered during plan implementation, execution, or testing.
+  SR-03.06.05.d Protect the incident response plan from unauthorized disclosure.
+
+Guidance:
+It is important that organizations develop and implement a coordinated approach to incident response. Organizational mission and business functions determine the structure of incident response capabilities. As part of the incident response capabilities, organizations consider the coordination and sharing of information with external organizations, including external service providers and other organizations involved in the supply chain.
+
+References:
+- IR-08
+- Dempsey KL, Chawla NS, Johnson LA, Johnston R, Jones AC, Orebaugh AD, Scholl MA, Stine KM (2011) Information Security Continuous Monitoring (ISCM) for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-137.
+- Kent K, Chevalier S, Grance T, Dang H (2006) Guide to Integrating Forensic Techniques into Incident Response. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-86.

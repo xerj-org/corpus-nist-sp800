@@ -1,0 +1,15 @@
+id: SP_800_171_03.03.08
+title: Protection of Audit Information
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.08.a Protect audit information and audit logging tools from unauthorized access, modification, and deletion.
+  SR-03.03.08.b Authorize access to management of audit logging functionality to only a subset of privileged users or roles.
+
+Guidance:
+Audit information includes the information needed to successfully audit system activity, such as audit records, audit log settings, audit reports, and personally identifiable information. Audit logging tools are programs and devices used to conduct audit and logging activities. The protection of audit information focuses on technical protection and limits the ability to access and execute audit logging tools to authorized individuals. The physical protection of audit information is addressed by media and physical protection requirements. Individuals or roles with privileged access to a system and who are also the subject of an audit by that system may affect the reliability of the audit information by inhibiting audit activities or modifying audit records. Requiring privileged access to be further defined between audit-related privileges and other privileges limits the number of users or roles with audit-related privileges.
+
+References:
+- AU-09
+- AU-09(04)

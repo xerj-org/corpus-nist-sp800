@@ -1,0 +1,36 @@
+id: pe-9
+title: Power Equipment and Cabling
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+Protect power equipment and power cabling for the system from damage and destruction.
+
+Guidance:
+Organizations determine the types of protection necessary for the power equipment and cabling employed at different locations that are both internal and external to organizational facilities and environments of operation. Types of power equipment and cabling include internal cabling and uninterruptable power sources in offices or data centers, generators and power cabling outside of buildings, and power sources for self-contained components such as satellites, vehicles, and other deployable systems.
+
+========================================================================
+Enhancement PE-9(1) (pe-9.1) - Redundant Cabling
+
+Statement:
+Employ redundant power cabling paths that are physically separated by [distance].
+
+Guidance:
+Physically separate and redundant power cables ensure that power continues to flow in the event that one of the cables is cut or otherwise damaged.
+
+Parameters:
+- pe-09.01_odp | label: "distance"
+  guideline: distance by which redundant power cabling paths are to be physically separated is defined;
+
+========================================================================
+Enhancement PE-9(2) (pe-9.2) - Automatic Voltage Controls
+
+Statement:
+Employ automatic voltage controls for [critical system components].
+
+Guidance:
+Automatic voltage controls can monitor and control voltage. Such controls include voltage regulators, voltage conditioners, and voltage stabilizers.
+
+Parameters:
+- pe-09.02_odp | label: "critical system components"
+  guideline: the critical system components that require automatic voltage controls are defined;

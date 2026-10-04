@@ -1,0 +1,18 @@
+id: SP_800_171_03.04.03
+title: Configuration Change Control
+family: Configuration Management (SP_800_171_03.04)
+class: requirement
+
+Statement:
+  SR-03.04.03.a Define the types of changes to the system that are configuration-controlled.
+  SR-03.04.03.b Review proposed configuration-controlled changes to the system, and approve or disapprove such changes with explicit consideration for security impacts.
+  SR-03.04.03.c Implement and document approved configuration-controlled changes to the system.
+  SR-03.04.03.d Monitor and review activities associated with configuration-controlled changes to the system.
+
+Guidance:
+Configuration change control refers to tracking, reviewing, approving or disapproving, and logging changes to the system. Specifically, it involves the systematic proposal, justification, implementation, testing, review, and disposition of changes to the system, including system upgrades and modifications. Configuration change control includes changes to baseline configurations for system components (e.g., operating systems, applications, firewalls, routers, mobile devices) and configuration items of the system, changes to configuration settings, unscheduled and unauthorized changes, and changes to remediate vulnerabilities. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.04.04) 03.04.04.
+
+References:
+- CM-03
+- Howell G, Franklin JM, Sritapan V, Souppaya M, Scarfone K (2023) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 2.
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.

@@ -1,0 +1,13 @@
+id: ps-9
+title: Position Descriptions
+family: Personnel Security (ps)
+class: SP800-53
+
+Statement:
+Incorporate security and privacy roles and responsibilities into organizational position descriptions.
+
+Guidance:
+Specification of security and privacy roles in individual organizational position descriptions facilitates clarity in understanding the security or privacy responsibilities associated with the roles and the role-based security and privacy training requirements for the roles.
+
+References:
+- Petersen R, Santos D, Smith MC, Wetzel KA, Witte G (2020) Workforce Framework for Cybersecurity (NICE Framework). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181, Rev. 1.

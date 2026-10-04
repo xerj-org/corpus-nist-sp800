@@ -1,0 +1,23 @@
+id: SP_800_172_3_0_0_03.02.02E
+title: Literacy and Awareness Training Practical Exercises
+family: Awareness and Training (SP_800_172_3_0_0_3.2)
+class: security_requirement
+
+Statement:
+Provide practical exercises in literacy training that simulate events and incidents.
+
+Guidance:
+Practical exercises include no-notice social engineering attempts to collect information, gain unauthorized access, or simulate the adverse impact of opening malicious email attachments or invoking malicious web links via spear phishing attacks. This requirement enhances SP 800-171 requirement 03.02.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+References:
+- AT-02(01)

@@ -1,0 +1,19 @@
+id: ia-10
+title: Adaptive Authentication
+family: Identification and Authentication (ia)
+class: SP800-53
+
+Statement:
+Require individuals accessing the system to employ [supplemental authentication techniques or mechanisms] under specific [circumstances or situations].
+
+Guidance:
+Adversaries may compromise individual authentication mechanisms employed by organizations and subsequently attempt to impersonate legitimate users. To address this threat, organizations may employ specific techniques or mechanisms and establish protocols to assess suspicious behavior. Suspicious behavior may include accessing information that individuals do not typically access as part of their duties, roles, or responsibilities; accessing greater quantities of information than individuals would routinely access; or attempting to access information from suspicious network addresses. When pre-established conditions or triggers occur, organizations can require individuals to provide additional authentication information. Another potential use for adaptive authentication is to increase the strength of mechanism based on the number or types of records being accessed. Adaptive authentication does not replace and is not used to avoid the use of multi-factor authentication mechanisms but can augment implementations of multi-factor authentication.
+
+Parameters:
+- ia-10_odp.01 | label: "supplemental authentication techniques or mechanisms"
+  guideline: supplemental authentication techniques or mechanisms to be employed when accessing the system under specific circumstances or situations are defined;
+- ia-10_odp.02 | label: "circumstances or situations"
+  guideline: circumstances or situations that require individuals accessing the system to employ supplemental authentication techniques or mechanisms are defined;
+
+References:
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.

@@ -1,0 +1,7 @@
+id: SP_800_172_3_0_0_03.04.01E
+title: 03.04.01E
+family: Configuration Management (SP_800_172_3_0_0_3.4)
+class: security_requirement
+
+References:
+- SP_800_171_3_0_0

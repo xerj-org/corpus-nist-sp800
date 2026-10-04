@@ -1,0 +1,113 @@
+id: PR.DS
+title: Data Security
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+Data are managed consistent with the organization's risk strategy to protect the confidentiality, integrity, and availability of information
+
+========================================================================
+Child control PR.DS-01 - PR.DS-01
+
+Statement:
+The confidentiality, integrity, and availability of data-at-rest are protected
+
+Example:
+Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of stored data in files, databases, virtual machine disk images, container images, and other resources
+
+Example:
+Use full disk encryption to protect data stored on user endpoints
+
+Example:
+Confirm the integrity of software by validating signatures
+
+Example:
+Restrict the use of removable media to prevent data exfiltration
+
+Example:
+Physically secure removable media containing unencrypted sensitive information, such as within locked offices or file cabinets
+
+========================================================================
+Child control PR.DS-02 - PR.DS-02
+
+Statement:
+The confidentiality, integrity, and availability of data-in-transit are protected
+
+Example:
+Use encryption, digital signatures, and cryptographic hashes to protect the confidentiality and integrity of network communications
+
+Example:
+Automatically encrypt or block outbound emails and other communications that contain sensitive data, depending on the data classification
+
+Example:
+Block access to personal email, file sharing, file storage services, and other personal communications applications and services from organizational systems and networks
+
+Example:
+Prevent reuse of sensitive data from production environments (e.g., customer records) in development, testing, and other non-production environments
+
+========================================================================
+Child control PR.DS-03 - PR.DS-03
+
+Statement:
+Assets are formally managed throughout removal, transfers, and disposition
+
+========================================================================
+Child control PR.DS-04 - PR.DS-04
+
+Statement:
+Adequate capacity to ensure availability is maintained
+
+========================================================================
+Child control PR.DS-05 - PR.DS-05
+
+Statement:
+Protections against data leaks are implemented
+
+========================================================================
+Child control PR.DS-06 - PR.DS-06
+
+Statement:
+Integrity checking mechanisms are used to verify software, firmware, and information integrity
+
+========================================================================
+Child control PR.DS-07 - PR.DS-07
+
+Statement:
+The development and testing environment(s) are separate from the production environment
+
+========================================================================
+Child control PR.DS-08 - PR.DS-08
+
+Statement:
+Integrity checking mechanisms are used to verify hardware integrity
+
+========================================================================
+Child control PR.DS-10 - PR.DS-10
+
+Statement:
+The confidentiality, integrity, and availability of data-in-use are protected
+
+Example:
+Remove data that must remain confidential (e.g., from processors and memory) as soon as it is no longer needed
+
+Example:
+Protect data in use from access by other users and processes of the same platform
+
+========================================================================
+Child control PR.DS-11 - PR.DS-11
+
+Statement:
+Backups of data are created, protected, maintained, and tested
+
+Example:
+Continuously back up critical data in near-real-time, and back up other data frequently at agreed-upon schedules
+
+Example:
+Test backups and restores for all types of data sources at least annually
+
+Example:
+Securely store some backups offline and offsite so that an incident or disaster will not damage them
+
+Example:
+Enforce geographic separation and geolocation restrictions for data backup storage

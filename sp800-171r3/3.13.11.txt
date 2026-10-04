@@ -1,0 +1,18 @@
+id: SP_800_171_03.13.11
+title: Cryptographic Protection
+family: System and Communications Protection (SP_800_171_03.13)
+class: requirement
+
+Statement:
+Implement the following types of cryptography to protect the confidentiality of CUI: [types of cryptography].
+
+Guidance:
+Cryptography is implemented in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines. FIPS-validated cryptography is recommended for the protection of CUI.
+
+Parameters:
+- A.03.13.11.ODP.01 | label: "types of cryptography"
+  guideline: the types of cryptography for protecting the confidentiality of CUI are defined.
+
+References:
+- SC-13
+- National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.

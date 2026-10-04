@@ -1,0 +1,22 @@
+id: SP_800_172_3_0_0_03.17.04E
+title: Provenance
+family: Supply Chain Risk Management (SP_800_172_3_0_0_3.17)
+class: security_requirement
+
+Statement:
+Document, monitor, and maintain valid provenance of the following systems, system components, and associated CUI: [systems, system components, and associated CUI]. 
+
+Guidance:
+Every system and system component has a point of origin and may be changed throughout its existence. Provenance is the chronology of the origin, development, ownership, location, and changes to a system or system component and associated data. It may also include personnel and processes used to interact with or make modifications to the system, component, or associated data. Organizations have methods to document, monitor, and maintain valid provenance baselines for systems, system components, and related data. These actions help track, assess, and document any changes to the provenance, including changes in supply chain elements or configuration, and help ensure non-repudiation of provenance information and the provenance change records. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.17.04E.ODP.01 | label: "systems, system components, and associated CUI"
+  guideline: systems, system components, and associated CUI that require valid provenance are defined.
+
+References:
+- SR-04

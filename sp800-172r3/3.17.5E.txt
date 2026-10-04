@@ -1,0 +1,24 @@
+id: SP_800_172_3_0_0_03.17.05E
+title: Supply Chain Integrity – Pedigree
+family: Supply Chain Risk Management (SP_800_172_3_0_0_3.17)
+class: security_requirement
+
+Statement:
+Employ [safeguards] and conduct [analysis method] to ensure the integrity of the system and system components by validating the internal composition and provenance of critical or mission-essential technologies, products, and services. 
+
+Guidance:
+Authoritative information regarding the internal composition of system components and the provenance of technology, products, and services provides a strong basis for trust. The validation of the internal composition and provenance of technologies, products, and services is referred to as the pedigree. For microelectronics, this includes the material composition of components. For software this includes the composition of open-source and proprietary code, including the version of the component at a given point in time. Pedigrees increase the assurance that the claims suppliers assert about the internal composition and provenance of the products, services, and technologies they provide are valid. The validation of the internal composition and provenance can be achieved by various evidentiary artifacts or records that manufacturers and suppliers produce during the research, development, design, manufacturing, acquisition, delivery, integration, operations, maintenance, and disposal of technology, products, and services. Evidentiary artifacts include software identification (SWID) tags, software component inventory, the manufacturers’ declarations of platform attributes (e.g., serial numbers, hardware component inventory), and measurements (e.g., firmware hashes) that are tightly bound to the hardware. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.17.05E.ODP.01 | label: "safeguards"
+  guideline: safeguards employed to ensure the integrity of the system and system component are defined.
+- A.03.17.05E.ODP.02 | label: "analysis method"
+  guideline: an analysis method to be conducted to validate the internal composition and provenance of critical or mission-essential technologies, products, and services to ensure the integrity of the system and system component is defined.
+
+References:
+- SR-04(04)

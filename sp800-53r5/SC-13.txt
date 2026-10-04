@@ -1,0 +1,32 @@
+id: sc-13
+title: Cryptographic Protection
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. Determine the [cryptographic uses] ; and
+  b. Implement the following types of cryptography required for each specified cryptographic use: [types of cryptography].
+
+Guidance:
+Cryptography can be employed to support a variety of security solutions, including the protection of classified information and controlled unclassified information, the provision and implementation of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances but lack the necessary formal access approvals. Cryptography can also be used to support random number and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. For example, organizations that need to protect classified information may specify the use of NSA-approved cryptography. Organizations that need to provision and implement digital signatures may specify the use of FIPS-validated cryptography. Cryptography is implemented in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+
+Parameters:
+- sc-13_odp.01 | label: "cryptographic uses"
+  guideline: cryptographic uses are defined;
+- sc-13_odp.02 | label: "types of cryptography"
+  guideline: types of cryptography for each specified cryptographic use are defined;
+
+References:
+- National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.
+
+========================================================================
+Enhancement SC-13(1) (sc-13.1) - FIPS-validated Cryptography
+
+========================================================================
+Enhancement SC-13(2) (sc-13.2) - NSA-approved Cryptography
+
+========================================================================
+Enhancement SC-13(3) (sc-13.3) - Individuals Without Formal Access Approvals
+
+========================================================================
+Enhancement SC-13(4) (sc-13.4) - Digital Signatures

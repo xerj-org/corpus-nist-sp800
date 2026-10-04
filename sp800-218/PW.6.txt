@@ -1,0 +1,81 @@
+id: PW.6
+title: Configure the Compilation, Interpreter, and Build Processes to Improve Executable Security
+family: Produce Well-Secured Software (PW)
+class: practice
+family-overview: Organizations should produce well-secured software with minimal security vulnerabilities in its releases.
+
+Statement:
+Decrease the number of security vulnerabilities in the software and reduce costs by eliminating vulnerabilities before testing occurs.
+
+========================================================================
+Child control PW.6.1 - PW.6.1
+
+Statement:
+Use compiler, interpreter, and build tools that offer features to improve executable security.
+
+Example:
+Use up-to-date versions of compiler, interpreter, and build tools.
+
+Example:
+Follow change management processes when deploying or updating compiler, interpreter, and build tools, and audit all unexpected changes to tools.
+
+Example:
+Regularly validate the authenticity and integrity of compiler, interpreter, and build tools. See PO.3.
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Migues S, Erlikhman E, Ewers J, Nassery K (2021) BSIMM12 2021 Foundations Report.
+- Cloud Native Computing Foundation (2021) Software Supply Chain Best Practices.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- International Electrotechnical Commission (IEC), Security for industrial automation and control systems – Part 4-1: Secure product development lifecycle requirements, IEC 62443-4-1, 2018.
+- Microsoft (2021) Security Development Lifecycle.
+- Software Assurance Forum for Excellence in Code (2012) Practical Security Stories and Security Tasks for Agile Development Environments.
+- Software Assurance Forum for Excellence in Code (2018) Fundamental Practices for Secure Software Development: Essential Elements of a Secure Development Lifecycle Program, Third Edition.
+- Software Assurance Forum for Excellence in Code (2010) Software Integrity Controls: An Assurance-Based Approach to Minimizing Risks in the Software Supply Chain.
+- Boyens J, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2021) Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-161, Rev. 1.
+- Joint Task Force (2020) Security and Privacy Controls for Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53, Rev. 5. Includes updates as of December 10, 2020.
+
+========================================================================
+Child control PW.6.2 - PW.6.2
+
+Statement:
+Determine which compiler, interpreter, and build tool features should be used and how each should be configured, then implement and use the approved configurations.
+
+Example:
+Enable compiler features that produce warnings for poorly secured code during the compilation process.
+
+Example:
+Implement the “clean build” concept, where all compiler warnings are treated as errors and eliminated except those determined to be false positives or irrelevant.
+
+Example:
+Perform all builds in a dedicated, highly controlled build environment.
+
+Example:
+Enable compiler features that randomize or obfuscate execution characteristics, such as memory location usage, that would otherwise be predictable and thus potentially exploitable.
+
+Example:
+Test to ensure that the features are working as expected and are not inadvertently causing any operational issues or other problems.
+
+Example:
+Continuously verify that the approved configurations are being used.
+
+Example:
+Make the approved tool configurations available as configuration-as-code so developers can readily use them.
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Migues S, Erlikhman E, Ewers J, Nassery K (2021) BSIMM12 2021 Foundations Report.
+- Cloud Native Computing Foundation (2021) Software Supply Chain Best Practices.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- International Electrotechnical Commission (IEC), Security for industrial automation and control systems – Part 4-1: Secure product development lifecycle requirements, IEC 62443-4-1, 2018.
+- Black P, Guttman B, Okun V (2021) Guidelines on Minimum Standards for Developer Verification of Software. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8397.
+- Microsoft (2021) Security Development Lifecycle.
+- Open Web Application Security Project (2021) OWASP Application Security Verification Standard 4.0.3.
+- Open Web Application Security Project (2021) OWASP Mobile Application Security Verification Standard, Version 1.4.2.
+- Payment Card Industry (PCI) Security Standards Council (2021) Secure Software Lifecycle (Secure SLC) Requirements and Assessment Procedures Version 1.1.
+- Software Assurance Forum for Excellence in Code (2012) Practical Security Stories and Security Tasks for Agile Development Environments.
+- Software Assurance Forum for Excellence in Code (2018) Fundamental Practices for Secure Software Development: Essential Elements of a Secure Development Lifecycle Program, Third Edition.
+- Software Assurance Forum for Excellence in Code (2010) Software Integrity Controls: An Assurance-Based Approach to Minimizing Risks in the Software Supply Chain.
+- Boyens J, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2021) Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), Second Draft NIST Special Publication (SP) 800-161, Rev. 1.
+- "Newhouse W, Keith S, Scribner B, Witte G (2017) National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181."
+- Joint Task Force (2020) Security and Privacy Controls for Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-53, Rev. 5. Includes updates as of December 10, 2020.

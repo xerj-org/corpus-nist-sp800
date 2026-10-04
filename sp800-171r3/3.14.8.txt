@@ -1,0 +1,13 @@
+id: SP_800_171_03.14.08
+title: Information Management and Retention
+family: System and Information Integrity (SP_800_171_03.14)
+class: requirement
+
+Statement:
+Manage and retain CUI within the system and CUI output from the system in accordance with applicable laws, Executive Orders, directives, regulations, policies, standards, guidelines, and operational requirements.
+
+Guidance:
+Federal agencies consider data retention requirements for nonfederal organizations. Retaining CUI on nonfederal systems after contracts or agreements have concluded increases the attack surface for those systems and the risk of the information being compromised. NARA provides federal policy and guidance on records retention and schedules.
+
+References:
+- SI-12

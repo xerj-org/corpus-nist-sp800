@@ -1,0 +1,21 @@
+id: pt-8
+title: Computer Matching Requirements
+family: Personally Identifiable Information Processing and Transparency (pt)
+class: SP800-53
+
+Statement:
+When a system or organization processes information for the purpose of conducting a matching program:
+  a. Obtain approval from the Data Integrity Board to conduct the matching program;
+  b. Develop and enter into a computer matching agreement;
+  c. Publish a matching notice in the Federal Register;
+  d. Independently verify the information produced by the matching program before taking adverse action against an individual, if required; and
+  e. Provide individuals with notice and an opportunity to contest the findings before taking adverse action against an individual.
+
+Guidance:
+The [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) establishes requirements for federal and non-federal agencies if they engage in a matching program. In general, a matching program is a computerized comparison of records from two or more automated [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) systems of records or an automated system of records and automated records maintained by a non-federal agency (or agent thereof). A matching program either pertains to federal benefit programs or federal personnel or payroll records. A federal benefit match is performed to determine or verify eligibility for payments under federal benefit programs or to recoup payments or delinquent debts under federal benefit programs. A matching program involves not just the matching activity itself but also the investigative follow-up and ultimate action, if any.
+
+References:
+- Privacy Act (P.L. 93-579), December 1974.
+- Computer Matching and Privacy Protection Act of 1988 (P.L. 100-503), October 1988.
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Office of Management and Budget Memorandum Circular A-108, *Federal Agency Responsibilities for Review, Reporting, and Publication under the Privacy Act* , December 2016.

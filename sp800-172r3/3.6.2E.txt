@@ -1,0 +1,37 @@
+id: SP_800_172_3_0_0_03.06.02E
+title: Integrated Incident Response Team
+family: Incident Response (SP_800_172_3_0_0_3.6)
+class: security_requirement
+
+Statement:
+Establish and maintain an integrated incident response team that can be deployed to any location identified by the organization in [time period]. 
+
+Guidance:
+An integrated incident response team is a group of individuals who assess, document, and respond to incidents so that organizational systems and networks can recover quickly and implement the necessary controls to avoid future incidents. Incident response team personnel include forensic and malicious code analysts, tool developers, systems security engineers, and real-time operations personnel. The incident handling capability includes performing rapid forensic preservation of evidence and analysis of and response to intrusions. An integrated incident response team facilitates information sharing and allows organizational personnel (e.g., developers, implementers, and operators) to leverage team knowledge of the threat and implement defensive measures that enable organizations to deter intrusions more effectively. Moreover, integrated teams promote the rapid detection of intrusions, the development of appropriate mitigations, and the deployment of effective defensive measures. Integrated incident response teams are better able to identify adversary tactics, techniques, and procedures that are linked to the operations tempo or specific mission and business functions and to define responsive actions in a way that does not disrupt those mission and business functions. Incident response teams can be distributed within organizations to make the capability resilient. For some organizations, the incident response team can be a cross-organizational entity. This requirement enhances SP 800-171 requirement 03.06.01.
+  - (includes expunge)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes contain and exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes shorten and reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+  - (includes scrutinize)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.06.02E.ODP.01 | label: "time period"
+  guideline: the time period within which an integrated incident response team can be deployed is defined.
+
+References:
+- IR-04(11)

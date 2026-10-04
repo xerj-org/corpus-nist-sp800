@@ -1,0 +1,10 @@
+id: sa-18
+title: Tamper Resistance and Detection
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+========================================================================
+Enhancement SA-18(1) (sa-18.1) - Multiple Phases of System Development Life Cycle
+
+========================================================================
+Enhancement SA-18(2) (sa-18.2) - Inspection of Systems or Components

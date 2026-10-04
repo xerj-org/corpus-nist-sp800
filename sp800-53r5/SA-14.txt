@@ -1,0 +1,7 @@
+id: sa-14
+title: Criticality Analysis
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+========================================================================
+Enhancement SA-14(1) (sa-14.1) - Critical Components with No Viable Alternative Sourcing

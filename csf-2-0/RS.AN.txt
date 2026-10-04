@@ -1,0 +1,83 @@
+id: RS.AN
+title: Incident Analysis
+family: RESPOND (RS)
+class: category
+family-overview: Actions regarding a detected cybersecurity incident are taken
+
+Statement:
+Investigations are conducted to ensure effective response and support forensics and recovery activities
+
+========================================================================
+Child control RS.AN-01 - RS.AN-01
+
+Statement:
+Notifications from detection systems are investigated
+
+========================================================================
+Child control RS.AN-02 - RS.AN-02
+
+Statement:
+The impact of the incident is understood
+
+========================================================================
+Child control RS.AN-03 - RS.AN-03
+
+Statement:
+Analysis is performed to establish what has taken place during an incident and the root cause of the incident
+
+Example:
+Determine the sequence of events that occurred during the incident and which assets and resources were involved in each event
+
+Example:
+Attempt to determine what vulnerabilities, threats, and threat actors were directly or indirectly involved in the incident
+
+Example:
+Analyze the incident to find the underlying, systemic root causes
+
+Example:
+Check any cyber deception technology for additional information on attacker behavior
+
+========================================================================
+Child control RS.AN-04 - RS.AN-04
+
+Statement:
+Incidents are categorized consistent with response plans
+
+========================================================================
+Child control RS.AN-05 - RS.AN-05
+
+Statement:
+Processes are established to receive, analyze and respond to vulnerabilities disclosed to the organization from internal and external sources (e.g. internal testing, security bulletins, or security researchers)
+
+========================================================================
+Child control RS.AN-06 - RS.AN-06
+
+Statement:
+Actions performed during an investigation are recorded, and the records' integrity and provenance are preserved
+
+Example:
+Require each incident responder and others (e.g., system administrators, cybersecurity engineers) who perform incident response tasks to record their actions and make the record immutable
+
+Example:
+Require the incident lead to document the incident in detail and be responsible for preserving the integrity of the documentation and the sources of all information being reported
+
+========================================================================
+Child control RS.AN-07 - RS.AN-07
+
+Statement:
+Incident data and metadata are collected, and their integrity and provenance are preserved
+
+Example:
+Collect, preserve, and safeguard the integrity of all pertinent incident data and metadata (e.g., data source, date/time of collection) based on evidence preservation and chain-of-custody procedures
+
+========================================================================
+Child control RS.AN-08 - RS.AN-08
+
+Statement:
+An incident's magnitude is estimated and validated
+
+Example:
+Review other potential targets of the incident to search for indicators of compromise and evidence of persistence
+
+Example:
+Automatically run tools on targets to look for indicators of compromise and evidence of persistence

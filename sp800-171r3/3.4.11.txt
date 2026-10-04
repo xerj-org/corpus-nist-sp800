@@ -1,0 +1,14 @@
+id: SP_800_171_03.04.11
+title: Information Location
+family: Configuration Management (SP_800_171_03.04)
+class: requirement
+
+Statement:
+  SR-03.04.11.a Identify and document the location of CUI and the system components on which the information is processed and stored.
+  SR-03.04.11.b Document changes to the system or system component location where CUI is processed and stored.
+
+Guidance:
+Information location addresses the need to understand the specific system components where CUI is being processed and stored and the users who have access to CUI so that appropriate protection mechanisms can be provided, including information flow controls, access controls, and information management.
+
+References:
+- CM-12

@@ -1,0 +1,25 @@
+id: SP_800_171_03.01.08
+title: Unsuccessful Logon Attempts
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.08.a Enforce a limit of [number] consecutive invalid logon attempts by a user during a [time period].
+  SR-03.01.08.b Automatically [Selection (one-or-more): lock the account or node for an {{ insert: param, A.03.01.08.ODP.04 }}; lock the account or node until released by an administrator; delay next logon prompt; notify system administrator; take other action] when the maximum number of unsuccessful attempts is exceeded.
+
+Guidance:
+Due to the potential for denial of service, automatic system lockouts are in most cases, temporary and automatically release after a predetermined time period established by the organization (i.e., using a delay algorithm). Organizations may employ different delay algorithms for different system components based on the capabilities of the respective components. Responses to unsuccessful system logon attempts may be implemented at the system and application levels. Organization-defined actions that may be taken include prompting the user to answer a secret question in addition to the username and password, invoking a lockdown mode with limited user capabilities (instead of a full lockout), allowing users to only logon from specified Internet Protocol (IP) addresses, requiring a CAPTCHA to prevent automated attacks, or applying user profiles, such as location, time of day, IP address, device, or Media Access Control (MAC) address.
+
+Parameters:
+- A.03.01.08.ODP.01 | label: "number"
+  guideline: the number of consecutive invalid logon attempts by a user allowed during a time period is defined.
+- A.03.01.08.ODP.02 | label: "time period"
+  guideline: the time period to which the number of consecutive invalid logon attempts by a user is limited is defined.
+- A.03.01.08.ODP.03 | label: "SELECTED PARAMETER VALUES" | selection (one-or-more): lock the account or node for an {{ insert: param, A.03.01.08.ODP.04 }}; lock the account or node until released by an administrator; delay next logon prompt; notify system administrator; take other action
+- A.03.01.08.ODP.04 | label: "time period"
+  guideline: the time period for an account or node to be locked is defined (if selected).
+
+References:
+- AC-07
+- Howell G, Franklin JM, Sritapan V, Souppaya M, Scarfone K (2023) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 2.
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.

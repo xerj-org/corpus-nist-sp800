@@ -1,0 +1,34 @@
+id: SP_800_172_3_0_0_03.15.03E
+title: Supplier Diversity
+family: Planning (SP_800_172_3_0_0_3.15)
+class: security_requirement
+
+Statement:
+Require that [safeguards] allocated to [architectural layers and locations] are obtained from different suppliers. 
+
+Guidance:
+Information technology products have different strengths and weaknesses. Providing a broad spectrum of products complements the individual offerings. For example, vendors that offer malicious code protection typically update their products at different times and develop solutions for known viruses, Trojans, or worms based on their priorities and development schedules. Deploying different types of products from a diversity of suppliers at different locations increases the likelihood that at least one of the products will detect the malicious code. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt and negate)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.15.03E.ODP.01 | label: "safeguards"
+  guideline: safeguards to be allocated to architectural layers and locations are defined.
+- A.03.15.03E.ODP.02 | label: "architectural layers and locations"
+  guideline: architectural layers and locations are defined.
+
+References:
+- PL-08(02)

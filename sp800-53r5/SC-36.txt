@@ -1,0 +1,52 @@
+id: sc-36
+title: Distributed Processing and Storage
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Distribute the following processing and storage components across multiple [Selection (): physical locations; logical domains]: [organization-defined processing and storage components].
+
+Guidance:
+Distributing processing and storage across multiple physical locations or logical domains provides a degree of redundancy or overlap for organizations. The redundancy and overlap increase the work factor of adversaries to adversely impact organizational operations, assets, and individuals. The use of distributed processing and storage does not assume a single primary processing or storage location. Therefore, it allows for parallel processing and storage.
+
+Parameters:
+- sc-36_prm_1 | selection (): physical locations; logical domains
+- sc-36_prm_2 | label: "organization-defined processing and storage components"
+- sc-36_odp.01 | label: "processing components"
+  guideline: processing components to be distributed across multiple locations/domains are defined;
+- sc-36_odp.02 | selection (): physical locations; logical domains
+- sc-36_odp.03 | label: "storage components"
+  guideline: storage components to be distributed across multiple locations/domains are defined;
+- sc-36_odp.04 | selection (): physical locations; logical domains
+
+References:
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.
+
+========================================================================
+Enhancement SC-36(1) (sc-36.1) - Polling Techniques
+
+Statement:
+  (a) Employ polling techniques to identify potential faults, errors, or compromises to the following processing and storage components: [distributed processing and storage components] ; and
+  (b) Take the following actions in response to identified faults, errors, or compromises: [actions].
+
+Guidance:
+Distributed processing and/or storage may be used to reduce opportunities for adversaries to compromise the confidentiality, integrity, or availability of organizational information and systems. However, the distribution of processing and storage components does not prevent adversaries from compromising one or more of the components. Polling compares the processing results and/or storage content from the distributed components and subsequently votes on the outcomes. Polling identifies potential faults, compromises, or errors in the distributed processing and storage components.
+
+Parameters:
+- sc-36.01_odp.01 | label: "distributed processing and storage components"
+  guideline: distributed processing and storage components for which polling techniques are to be employed to identify potential faults, errors, or compromises are defined;
+- sc-36.01_odp.02 | label: "actions"
+  guideline: actions to be taken in response to identified faults, errors, or compromise are defined;
+
+========================================================================
+Enhancement SC-36(2) (sc-36.2) - Synchronization
+
+Statement:
+Synchronize the following duplicate systems or system components: [duplicate systems or system components].
+
+Guidance:
+[SC-36](#sc-36) and [CP-9(6)](#cp-9.6) require the duplication of systems or system components in distributed locations. The synchronization of duplicated and redundant services and data helps to ensure that information contained in the distributed locations can be used in the mission or business functions of organizations, as needed.
+
+Parameters:
+- sc-36.02_odp | label: "duplicate systems or system components"
+  guideline: duplicate systems or system components to be synchronized are defined;

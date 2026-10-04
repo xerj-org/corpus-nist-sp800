@@ -1,0 +1,13 @@
+id: SP_800_171_03.05.11
+title: Authentication Feedback
+family: Identification and Authentication (SP_800_171_03.05)
+class: requirement
+
+Statement:
+Obscure feedback of authentication information during the authentication process.
+
+Guidance:
+Authentication feedback does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For example, for desktop or notebook systems with relatively large monitors, the threat may be significant (commonly referred to as shoulder surfing). For mobile devices with small displays, this threat may be less significant and is balanced against the increased likelihood of input errors due to small keyboards. Therefore, the means of obscuring authenticator feedback is selected accordingly. Obscuring feedback includes displaying asterisks when users type passwords into input devices or displaying feedback for a limited time before fully obscuring it.
+
+References:
+- IA-06

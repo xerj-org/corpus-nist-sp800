@@ -1,0 +1,24 @@
+id: SP_800_171_03.09.02
+title: Personnel Termination and Transfer
+family: Personnel Security (SP_800_171_03.09)
+class: requirement
+
+Statement:
+  SR-03.09.02.a When individual employment is terminated:
+    SR-03.09.02.a.01 Disable system access within [time period],
+    SR-03.09.02.a.02 Terminate or revoke authenticators and credentials associated with the individual, and
+    SR-03.09.02.a.03 Retrieve security-related system property.
+  SR-03.09.02.b When individuals are reassigned or transferred to other positions in the organization:
+    SR-03.09.02.b.01 Review and confirm the ongoing operational need for current logical and physical access authorizations to the system and facility, and
+    SR-03.09.02.b.02 Modify access authorization to correspond with any changes in operational need.
+
+Guidance:
+Security-related system property includes hardware authentication tokens, system administration technical manuals, keys, identification cards, and building passes. Exit interviews ensure that terminated individuals understand the security constraints imposed by being former employees and that accountability is achieved for the organizational property. Security topics at exit interviews include reminding individuals of potential limitations on future employment and non-disclosure agreements. Exit interviews may not always be possible for some individuals, including in cases related to the unavailability of supervisors, illnesses, or job abandonment. The timely execution of termination actions is essential for individuals who have been terminated for cause. Organizations may consider disabling the accounts of individuals who are being terminated prior to the individuals being notified. This requirement applies to the reassignment or transfer of individuals when the personnel action is permanent or of such extended duration as to require protection. Protections that may be required for transfers or reassignments to other positions within organizations include returning old and issuing new identification cards, keys, and building passes; changing system access authorizations (i.e., privileges); closing system accounts and establishing new accounts; and providing access to official records to which individuals had access at previous work locations in previous system accounts.
+
+Parameters:
+- A.03.09.02.ODP.01 | label: "time period"
+  guideline: the time period within which to disable system access is defined.
+
+References:
+- PS-04
+- PS-05

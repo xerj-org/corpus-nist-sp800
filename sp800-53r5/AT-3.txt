@@ -1,0 +1,91 @@
+id: at-3
+title: Role-based Training
+family: Awareness and Training (at)
+class: SP800-53
+
+Statement:
+  a. Provide role-based security and privacy training to personnel with the following roles and responsibilities: [organization-defined roles and responsibilities]:
+    1. Before authorizing access to the system, information, or performing assigned duties, and [frequency] thereafter; and
+    2. When required by system changes;
+  b. Update role-based training content [frequency] and following [events] ; and
+  c. Incorporate lessons learned from internal or external security incidents or breaches into role-based training.
+
+Guidance:
+Organizations determine the content of training based on the assigned roles and responsibilities of individuals as well as the security and privacy requirements of organizations and the systems to which personnel have authorized access, including technical training specifically tailored for assigned duties. Roles that may require role-based training include senior leaders or management officials (e.g., head of agency/chief executive officer, chief information officer, senior accountable official for risk management, senior agency information security officer, senior agency official for privacy), system owners; authorizing officials; system security officers; privacy officers; acquisition and procurement officials; enterprise architects; systems engineers; software developers; systems security engineers; privacy engineers; system, network, and database administrators; auditors; personnel conducting configuration management activities; personnel performing verification and validation activities; personnel with access to system-level software; control assessors; personnel with contingency planning and incident response duties; personnel with privacy management responsibilities; and personnel with access to personally identifiable information.
+
+Comprehensive role-based training addresses management, operational, and technical roles and responsibilities covering physical, personnel, and technical controls. Role-based training also includes policies, procedures, tools, methods, and artifacts for the security and privacy roles defined. Organizations provide the training necessary for individuals to fulfill their responsibilities related to operations and supply chain risk management within the context of organizational security and privacy programs. Role-based training also applies to contractors who provide services to federal agencies. Types of training include web-based and computer-based training, classroom-style training, and hands-on training (including micro-training). Updating role-based training on a regular basis helps to ensure that the content remains relevant and effective. Events that may precipitate an update to role-based training content include, but are not limited to, assessment or audit findings, security incidents or breaches, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+
+Parameters:
+- at-3_prm_1 | label: "organization-defined roles and responsibilities"
+- at-03_odp.01 | label: "roles and responsibilities"
+  guideline: roles and responsibilities for role-based security training are defined;
+- at-03_odp.02 | label: "roles and responsibilities"
+  guideline: roles and responsibilities for role-based privacy training are defined;
+- at-03_odp.03 | label: "frequency"
+  guideline: the frequency at which to provide role-based security and privacy training to assigned personnel after initial training is defined;
+- at-03_odp.04 | label: "frequency"
+  guideline: the frequency at which to update role-based training content is defined;
+- at-03_odp.05 | label: "events"
+  guideline: events that require role-based training content to be updated are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Wilson M, Hash J (2003) Building an Information Technology Security Awareness and Training Program. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-50.
+- Petersen R, Santos D, Smith MC, Wetzel KA, Witte G (2020) Workforce Framework for Cybersecurity (NICE Framework). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181, Rev. 1.
+
+========================================================================
+Enhancement AT-3(1) (at-3.1) - Environmental Controls
+
+Statement:
+Provide [personnel or roles] with initial and [frequency] training in the employment and operation of environmental controls.
+
+Guidance:
+Environmental controls include fire suppression and detection devices or systems, sprinkler systems, handheld fire extinguishers, fixed fire hoses, smoke detectors, temperature or humidity, heating, ventilation, air conditioning, and power within the facility.
+
+Parameters:
+- at-03.01_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles to be provided with initial and refresher training in the employment and operation of environmental controls are defined;
+- at-03.01_odp.02 | label: "frequency"
+  guideline: the frequency at which to provide refresher training in the employment and operation of environmental controls is defined;
+
+========================================================================
+Enhancement AT-3(2) (at-3.2) - Physical Security Controls
+
+Statement:
+Provide [personnel or roles] with initial and [frequency] training in the employment and operation of physical security controls.
+
+Guidance:
+Physical security controls include physical access control devices, physical intrusion and detection alarms, operating procedures for facility security guards, and monitoring or surveillance equipment.
+
+Parameters:
+- at-03.02_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles to be provided with initial and refresher training in the employment and operation of physical security controls is/are defined;
+- at-03.02_odp.02 | label: "frequency"
+  guideline: the frequency at which to provide refresher training in the employment and operation of physical security controls is defined;
+
+========================================================================
+Enhancement AT-3(3) (at-3.3) - Practical Exercises
+
+Statement:
+Provide practical exercises in security and privacy training that reinforce training objectives.
+
+Guidance:
+Practical exercises for security include training for software developers that addresses simulated attacks that exploit common software vulnerabilities or spear or whale phishing attacks targeted at senior leaders or executives. Practical exercises for privacy include modules with quizzes on identifying and processing personally identifiable information in various scenarios or scenarios on conducting privacy impact assessments.
+
+========================================================================
+Enhancement AT-3(4) (at-3.4) - Suspicious Communications and Anomalous System Behavior
+
+========================================================================
+Enhancement AT-3(5) (at-3.5) - Processing Personally Identifiable Information
+
+Statement:
+Provide [personnel or roles] with initial and [frequency] training in the employment and operation of personally identifiable information processing and transparency controls.
+
+Guidance:
+Personally identifiable information processing and transparency controls include the organization’s authority to process personally identifiable information and personally identifiable information processing purposes. Role-based training for federal agencies addresses the types of information that may constitute personally identifiable information and the risks, considerations, and obligations associated with its processing. Such training also considers the authority to process personally identifiable information documented in privacy policies and notices, system of records notices, computer matching agreements and notices, privacy impact assessments, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, contracts, information sharing agreements, memoranda of understanding, and/or other documentation.
+
+Parameters:
+- at-03.05_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles to be provided with initial and refresher training in the employment and operation of personally identifiable information processing and transparency controls is/are defined;
+- at-03.05_odp.02 | label: "frequency"
+  guideline: the frequency at which to provide refresher training in the employment and operation of personally identifiable information processing and transparency controls is defined;

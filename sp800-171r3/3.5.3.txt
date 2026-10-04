@@ -1,0 +1,15 @@
+id: SP_800_171_03.05.03
+title: Multi-Factor Authentication
+family: Identification and Authentication (SP_800_171_03.05)
+class: requirement
+
+Statement:
+Implement multi-factor authentication for access to privileged and non-privileged accounts.
+
+Guidance:
+This requirement applies to user accounts. Multi-factor authentication requires the use of two or more different factors to achieve authentication. The authentication factors are defined as follows: something you know (e.g., a personal identification number .PIN), something you have (e.g., a physical authenticator, such as a cryptographic private key), or something you are (e.g., a biometric). Multi-factor authentication solutions that feature physical authenticators include hardware authenticators that provide time-based or challenge-response outputs and smart cards. In addition to authenticating users at the system level, organizations may also employ authentication mechanisms at the application level to provide increased information security.
+
+References:
+- IA-02(01)
+- IA-02(02)
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.

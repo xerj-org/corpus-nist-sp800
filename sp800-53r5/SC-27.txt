@@ -1,0 +1,14 @@
+id: sc-27
+title: Platform-independent Applications
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Include within organizational systems the following platform independent applications: [platform-independent applications].
+
+Guidance:
+Platforms are combinations of hardware, firmware, and software components used to execute software applications. Platforms include operating systems, the underlying computer architectures, or both. Platform-independent applications are applications with the capability to execute on multiple platforms. Such applications promote portability and reconstitution on different platforms. Application portability and the ability to reconstitute on different platforms increase the availability of mission-essential functions within organizations in situations where systems with specific operating systems are under attack.
+
+Parameters:
+- sc-27_odp | label: "platform-independent applications"
+  guideline: platform-independent applications to be included within organizational systems are defined;

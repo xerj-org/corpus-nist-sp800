@@ -1,0 +1,25 @@
+id: SP_800_171_03.05.07
+title: Password Management
+family: Identification and Authentication (SP_800_171_03.05)
+class: requirement
+
+Statement:
+  SR-03.05.07.a Maintain a list of commonly-used, expected, or compromised passwords, and update the list [frequency] and when organizational passwords are suspected to have been compromised.
+  SR-03.05.07.b Verify that passwords are not found on the list of commonly used, expected, or compromised passwords when users create or update passwords.
+  SR-03.05.07.c Transmit passwords only over cryptographically protected channels.
+  SR-03.05.07.d Store passwords in a cryptographically protected form.
+  SR-03.05.07.e Select a new password upon first use after account recovery.
+  SR-03.05.07.f Enforce the following composition and complexity rules for passwords: [rules].
+
+Guidance:
+Password-based authentication applies to passwords used in single-factor or multi-factor authentication. Long passwords or passphrases are preferable to shorter passwords. Enforced composition rules provide marginal security benefits while decreasing usability. However, organizations may choose to establish and enforce certain rules for password generation (e.g., minimum character length) under certain circumstances. For example, account recovery can occur when a password is forgotten. Cryptographically protected passwords include salted one-way cryptographic hashes of passwords. The list of commonly used, compromised, or expected passwords includes passwords obtained from previous breach corpuses, dictionary words, and repetitive or sequential characters. The list includes context-specific words, such as the name of the service, username, and derivatives thereof. Changing temporary passwords to permanent passwords immediately after system logon ensures that the necessary strength of the authentication mechanism is implemented at the earliest opportunity and reduces susceptibility to authenticator compromises. Long passwords and passphrases can be used to increase the complexity of passwords.
+
+Parameters:
+- A.03.05.07.ODP.01 | label: "frequency"
+  guideline: the frequency at which to update the list of commonly used, expected, or compromised passwords is defined.
+- A.03.05.07.ODP.02 | label: "rules"
+  guideline: password composition and complexity rules are defined.
+
+References:
+- IA-05(01)
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.

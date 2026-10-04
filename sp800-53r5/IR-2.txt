@@ -1,0 +1,59 @@
+id: ir-2
+title: Incident Response Training
+family: Incident Response (ir)
+class: SP800-53
+
+Statement:
+  a. Provide incident response training to system users consistent with assigned roles and responsibilities:
+    1. Within [time period] of assuming an incident response role or responsibility or acquiring system access;
+    2. When required by system changes; and
+    3. [frequency] thereafter; and
+  b. Review and update incident response training content [frequency] and following [events].
+
+Guidance:
+Incident response training is associated with the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail are included in such training. For example, users may only need to know who to call or how to recognize an incident; system administrators may require additional training on how to handle incidents; and incident responders may receive more specific training on forensics, data collection techniques, reporting, system recovery, and system restoration. Incident response training includes user training in identifying and reporting suspicious activities from external and internal sources. Incident response training for users may be provided as part of [AT-2](#at-2) or [AT-3](#at-3) . Events that may precipitate an update to incident response training content include, but are not limited to, incident response plan testing or response to an actual incident (lessons learned), assessment or audit findings, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.
+
+Parameters:
+- ir-02_odp.01 | label: "time period"
+  guideline: a time period within which incident response training is to be provided to system users assuming an incident response role or responsibility is defined;
+- ir-02_odp.02 | label: "frequency"
+  guideline: frequency at which to provide incident response training to users is defined;
+- ir-02_odp.03 | label: "frequency"
+  guideline: frequency at which to review and update incident response training content is defined;
+- ir-02_odp.04 | label: "events"
+  guideline: events that initiate a review of the incident response training content are defined;
+
+References:
+- Office of Management and Budget Memorandum M-17-12, *Preparing for and Responding to a Breach of Personally Identifiable Information* , January 2017.
+- Wilson M, Hash J (2003) Building an Information Technology Security Awareness and Training Program. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-50.
+
+========================================================================
+Enhancement IR-2(1) (ir-2.1) - Simulated Events
+
+Statement:
+Incorporate simulated events into incident response training to facilitate the required response by personnel in crisis situations.
+
+Guidance:
+Organizations establish requirements for responding to incidents in incident response plans. Incorporating simulated events into incident response training helps to ensure that personnel understand their individual responsibilities and what specific actions to take in crisis situations.
+
+========================================================================
+Enhancement IR-2(2) (ir-2.2) - Automated Training Environments
+
+Statement:
+Provide an incident response training environment using [automated mechanisms].
+
+Guidance:
+Automated mechanisms can provide a more thorough and realistic incident response training environment. This can be accomplished, for example, by providing more complete coverage of incident response issues, selecting more realistic training scenarios and environments, and stressing the response capability.
+
+Parameters:
+- ir-02.02_odp | label: "automated mechanisms"
+  guideline: automated mechanisms used in an incident response training environment are defined;
+
+========================================================================
+Enhancement IR-2(3) (ir-2.3) - Breach
+
+Statement:
+Provide incident response training on how to identify and respond to a breach, including the organization’s process for reporting a breach.
+
+Guidance:
+For federal agencies, an incident that involves personally identifiable information is considered a breach. A breach results in the loss of control, compromise, unauthorized disclosure, unauthorized acquisition, or a similar occurrence where a person other than an authorized user accesses or potentially accesses personally identifiable information or an authorized user accesses or potentially accesses such information for other than authorized purposes. The incident response training emphasizes the obligation of individuals to report both confirmed and suspected breaches involving information in any medium or form, including paper, oral, and electronic. Incident response training includes tabletop exercises that simulate a breach. See [IR-2(1)](#ir-2.1).

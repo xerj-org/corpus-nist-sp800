@@ -1,0 +1,30 @@
+id: SP_800_172_3_0_0_03.04.05E
+title: Dual Authorization for System Changes
+family: Configuration Management (SP_800_172_3_0_0_3.4)
+class: security_requirement
+
+Statement:
+Enforce dual authorization for implementing changes to [organization-defined system components and system-level information]. 
+
+Guidance:
+Dual authorization is also known as two-person control. Organizations employ dual authorization to help ensure that any changes to selected system components and system-level information cannot occur unless two qualified individuals approve and implement such changes. Requiring two individuals to implement system changes provides an increased level of assurance that the proposed changes are correct implementations of approved changes. The individuals are also accountable for the changes that have been implemented. To reduce the risk of collusion, organizations consider rotating dual authorization duties to other individuals. System-level information includes operational procedures. This requirement enhances SP 800-171 requirement 03.04.05.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.04.05E_prm_1 | label: "organization-defined system components and system-level information"
+- A.03.04.05E.ODP.01 | label: "system components"
+  guideline: system components requiring dual authorization for the implementation of changes are defined.
+- A.03.04.05E.ODP.02 | label: "system-level information"
+  guideline: system-level information requiring dual authorization for the implementation of changes is defined.
+
+References:
+- CM-05(04)

@@ -1,0 +1,68 @@
+id: sc-28
+title: Protection of Information at Rest
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Protect the [Selection (one-or-more): confidentiality; integrity] of the following information at rest: [information at rest].
+
+Guidance:
+Information at rest refers to the state of information when it is not in process or in transit and is located on system components. Such components include internal or external hard disk drives, storage area network devices, or databases. However, the focus of protecting information at rest is not on the type of storage device or frequency of access but rather on the state of the information. Information at rest addresses the confidentiality and integrity of information and covers user information and system information. System-related information that requires protection includes configurations or rule sets for firewalls, intrusion detection and prevention systems, filtering routers, and authentication information. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing write-once-read-many (WORM) technologies. When adequate protection of information at rest cannot otherwise be achieved, organizations may employ other controls, including frequent scanning to identify malicious code at rest and secure offline storage in lieu of online storage.
+
+Parameters:
+- sc-28_odp.01 | selection (one-or-more): confidentiality; integrity
+- sc-28_odp.02 | label: "information at rest"
+  guideline: information at rest requiring protection is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Barker EB, Chen L, Roginsky A, Vassilev A, Davis R (2018) Recommendation for Pair-Wise Key-Establishment Schemes Using Discrete Logarithm Cryptography. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-56A, Rev. 3.
+- Barker EB, Chen L, Roginsky A, Vassilev A, Davis R, Simon S (2019) Recommendation for Pair-Wise Key-Establishment Using Integer Factorization Cryptography. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-56B, Rev. 2.
+- Barker EB, Chen L, Davis R (2020) Recommendation for Key-Derivation Methods in Key-Establishment Schemes. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-56C, Rev. 2.
+- Barker EB (2020) Recommendation for Key Management: Part 1 – General. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 1, Rev. 5.
+- Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.
+- Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3: Application-Specific Key Management Guidance. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.
+- Scarfone KA, Souppaya MP, Sexton M (2007) Guide to Storage Encryption Technologies for End User Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-111.
+- Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.
+
+========================================================================
+Enhancement SC-28(1) (sc-28.1) - Cryptographic Protection
+
+Statement:
+Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of the following information at rest on [system components or media]: [information].
+
+Guidance:
+The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of organizational information. The strength of mechanism is commensurate with the security category or classification of the information. Organizations have the flexibility to encrypt information on system components or media or encrypt data structures, including files, records, or fields.
+
+Parameters:
+- sc-28.01_odp.01 | label: "information"
+  guideline: information requiring cryptographic protection is defined;
+- sc-28.01_odp.02 | label: "system components or media"
+  guideline: system components or media requiring cryptographic protection is/are defined;
+
+========================================================================
+Enhancement SC-28(2) (sc-28.2) - Offline Storage
+
+Statement:
+Remove the following information from online storage and store offline in a secure location: [information].
+
+Guidance:
+Removing organizational information from online storage to offline storage eliminates the possibility of individuals gaining unauthorized access to the information through a network. Therefore, organizations may choose to move information to offline storage in lieu of protecting such information in online storage.
+
+Parameters:
+- sc-28.02_odp | label: "information"
+  guideline: information to be removed from online storage and stored offline in a secure location is defined;
+
+========================================================================
+Enhancement SC-28(3) (sc-28.3) - Cryptographic Keys
+
+Statement:
+Provide protected storage for cryptographic keys [Selection (): {{ insert: param, sc-28.03_odp.02 }} ; hardware-protected key store].
+
+Guidance:
+A Trusted Platform Module (TPM) is an example of a hardware-protected data store that can be used to protect cryptographic keys.
+
+Parameters:
+- sc-28.03_odp.01 | selection (): {{ insert: param, sc-28.03_odp.02 }} ; hardware-protected key store
+- sc-28.03_odp.02 | label: "safeguards"
+  guideline: safeguards for protecting the storage of cryptographic keys are defined (if selected);

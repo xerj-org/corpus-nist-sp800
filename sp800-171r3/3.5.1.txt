@@ -1,0 +1,20 @@
+id: SP_800_171_03.05.01
+title: User Identification and Authentication
+family: Identification and Authentication (SP_800_171_03.05)
+class: requirement
+
+Statement:
+  SR-03.05.01.a Uniquely identify and authenticate system users, and associate that unique identification with processes acting on behalf of those users.
+  SR-03.05.01.b Re-authenticate users when [circumstances or situations] .
+
+Guidance:
+System users include individuals (or system processes acting on behalf of individuals) who are authorized to access a system. Typically, individual identifiers are the usernames associated with the system accounts assigned to those individuals. Since system processes execute on behalf of groups and roles, organizations may require the unique identification of individuals in group accounts or the accountability of individual activity. The unique identification and authentication of users apply to all system accesses. Organizations use passwords, physical authenticators, biometrics, or some combination thereof to authenticate user identities. Organizations may re-authenticate individuals in certain situations, including when roles, authenticators, or credentials change; when the execution of privileged functions occurs; after a fixed time period; or periodically.
+
+Parameters:
+- A.03.05.01.ODP.01 | label: "circumstances or situations"
+  guideline: circumstances or situations that require re-authentication are defined.
+
+References:
+- IA-02
+- IA-11
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.

@@ -1,0 +1,23 @@
+id: SP_800_172_3_0_0_03.14.13E
+title: Error Handling
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+  ES-03.14.13E-a Generate error messages that provide information necessary for corrective actions without revealing information that could be exploited.
+  ES-03.14.13E-b Reveal error messages only to [personnel or roles]. 
+
+Guidance:
+Organizations consider the structure and content of error messages. The extent to which systems can handle error conditions is guided and informed by organizational policy and operational requirements. Exploitable information includes stack traces and implementation details; erroneous logon attempts with passwords mistakenly entered as the username; mission or business information that can be derived from, if not stated explicitly by, the information recorded; and personally identifiable information, such as account numbers, Social Security numbers, and credit card numbers. Error messages may also provide a covert channel for transmitting information. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+Parameters:
+- A.03.14.13E.ODP.01 | label: "personnel or roles"
+  guideline: personnel or roles to whom error messages are to be revealed are defined.
+
+References:
+- SI-11

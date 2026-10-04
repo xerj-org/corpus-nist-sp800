@@ -1,0 +1,38 @@
+id: sc-48
+title: Sensor Relocation
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Relocate [sensors and monitoring capabilities] to [locations] under the following conditions or circumstances: [conditions or circumstances].
+
+Guidance:
+Adversaries may take various paths and use different approaches as they move laterally through an organization (including its systems) to reach their target or as they attempt to exfiltrate information from the organization. The organization often only has a limited set of monitoring and detection capabilities, and they may be focused on the critical or likely infiltration or exfiltration paths. By using communications paths that the organization typically does not monitor, the adversary can increase its chances of achieving its desired goals. By relocating its sensors or monitoring capabilities to new locations, the organization can impede the adversary’s ability to achieve its goals. The relocation of the sensors or monitoring capabilities might be done based on threat information that the organization has acquired or randomly to confuse the adversary and make its lateral transition through the system or organization more challenging.
+
+Parameters:
+- sc-48_odp.01 | label: "sensors and monitoring capabilities"
+  guideline: sensors and monitoring capabilities to be relocated are defined;
+- sc-48_odp.02 | label: "locations"
+  guideline: locations to where sensors and monitoring capabilities are to be relocated are defined;
+- sc-48_odp.03 | label: "conditions or circumstances"
+  guideline: conditions or circumstances for relocating sensors and monitoring capabilities are defined;
+
+References:
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.
+
+========================================================================
+Enhancement SC-48(1) (sc-48.1) - Dynamic Relocation of Sensors or Monitoring Capabilities
+
+Statement:
+Dynamically relocate [sensors and monitoring capabilities] to [locations] under the following conditions or circumstances: [conditions or circumstances].
+
+Guidance:
+None.
+
+Parameters:
+- sc-48.01_odp.01 | label: "sensors and monitoring capabilities"
+  guideline: sensors and monitoring capabilities to be dynamically relocated are defined;
+- sc-48.01_odp.02 | label: "locations"
+  guideline: locations to where sensors and monitoring capabilities are to be dynamically relocated are defined;
+- sc-48.01_odp.03 | label: "conditions or circumstances"
+  guideline: conditions or circumstances for dynamically relocating sensors and monitoring capabilities are defined;

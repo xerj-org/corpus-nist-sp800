@@ -1,0 +1,27 @@
+id: SP_800_172_3_0_0_03.08.02E
+title: Dual Authorization for System Backup Deletion and Destruction
+family: Media Protection (SP_800_172_3_0_0_3.8)
+class: security_requirement
+
+Statement:
+Enforce dual authorization for the deletion or destruction of [system backup information]. 
+
+Guidance:
+Dual authorization is also known as two-person control. Dual authorization reduces risk related to insider threats, including adversaries who have obtained credentials. Dual authorization ensures that the deletion or destruction of backup information cannot occur unless two qualified individuals carry out the task. Individuals who delete or destroy backup information possess the knowledge, skills, or expertise to determine whether the proposed deletion or destruction of such information reflects organizational policies and procedures. To reduce the risk of collusion, organizations often rotate dual authorization duties among various individuals. Organizations also consider the risk associated with implementing dual authorization when immediate responses are necessary to ensure public and environmental safety. This requirement enhances SP 800-171 requirement 03.08.09.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.08.02E.ODP.01 | label: "system backup information"
+  guideline: backup information for which to enforce dual authorization in order to delete or destroy is defined.
+
+References:
+- CP-09(07)

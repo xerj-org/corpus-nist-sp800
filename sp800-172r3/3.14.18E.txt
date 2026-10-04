@@ -1,0 +1,26 @@
+id: SP_800_172_3_0_0_03.14.18E
+title: Automated Organization-Generated Alerts
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Alert [personnel or roles] using [automated mechanisms] when the following indications of inappropriate or unusual activities with security implications occur: [activities]. 
+
+Guidance:
+Organization-generated alerts are focused on information sources that are external to the system, such as suspicious activity reports and reports on potential insider threats. Organizational personnel on the system alert notification list include system administrators, mission or business owners, system owners, chief information security officers, and system security officers. This requirement enhances SP 800-171 requirement 03.14.06.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.14.18E.ODP.01 | label: "personnel or roles"
+  guideline: personnel or roles to be alerted when indications of inappropriate or unusual activity with security implications occur are defined.
+- A.03.14.18E.ODP.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to alert personnel or roles are defined.
+- A.03.14.18E.ODP.03 | label: "activities"
+  guideline: activities that trigger alerts to personnel or roles are defined.
+
+References:
+- SI-04(12)

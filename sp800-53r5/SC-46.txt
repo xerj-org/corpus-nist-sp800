@@ -1,0 +1,16 @@
+id: sc-46
+title: Cross Domain Policy Enforcement
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Implement a policy enforcement mechanism [Selection (): physically; logically] between the physical and/or network interfaces for the connecting security domains.
+
+Guidance:
+For logical policy enforcement mechanisms, organizations avoid creating a logical path between interfaces to prevent the ability to bypass the policy enforcement mechanism. For physical policy enforcement mechanisms, the robustness of physical isolation afforded by the physical implementation of policy enforcement to preclude the presence of logical covert channels penetrating the security domain may be needed. Contact [ncdsmo@nsa.gov](mailto:ncdsmo@nsa.gov) for more information.
+
+Parameters:
+- sc-46_odp | selection (): physically; logically
+
+References:
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.

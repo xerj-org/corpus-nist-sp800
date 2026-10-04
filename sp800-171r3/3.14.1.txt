@@ -1,0 +1,23 @@
+id: SP_800_171_03.14.01
+title: Flaw Remediation
+family: System and Information Integrity (SP_800_171_03.14)
+class: requirement
+
+Statement:
+  SR-03.14.01.a Identify, report, and correct system flaws.
+  SR-03.14.01.b Install security-relevant software and firmware updates within [time period] of the release of the updates.
+
+Guidance:
+Organizations identify systems that are affected by announced software and firmware flaws, including potential vulnerabilities that result from those flaws, and report this information to designated personnel with information security responsibilities. Security-relevant updates include patches, service packs, hot fixes, and anti-virus signatures. Organizations address the flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling. Organizations can take advantage of available resources (e.g., CWE or CVE databases) when remediating system flaws. Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of factors, including the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Some types of flaw remediation may require more testing than other types.
+
+Parameters:
+- A.03.14.01.ODP.01 | label: "time period"
+  guideline: the time period within which to install security-relevant software updates after the release of the updates is defined.
+- A.03.14.01.ODP.02 | label: "time period"
+  guideline: the time period within which to install security-relevant firmware updates after the release of the updates is defined.
+
+References:
+- SI-02
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.
+- Joint Task Force Transformation Initiative (2011) Managing Information Security Risk: Organization, Mission, and Information System View. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.
+- Souppaya MP, Scarfone KA (2022) Guide to Enterprise Patch Management Planning: Preventive Maintenance for Technology. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-40, Rev. 4.

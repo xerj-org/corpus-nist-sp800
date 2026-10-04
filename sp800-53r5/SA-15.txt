@@ -1,0 +1,177 @@
+id: sa-15
+title: Development Process, Standards, and Tools
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+Statement:
+  a. Require the developer of the system, system component, or system service to follow a documented development process that:
+    1. Explicitly addresses security and privacy requirements;
+    2. Identifies the standards and tools used in the development process;
+    3. Documents the specific tool options and tool configurations used in the development process; and
+    4. Documents, manages, and ensures the integrity of changes to the process and/or tools used in development; and
+  b. Review the development process, standards, tools, tool options, and tool configurations [frequency] to determine if the process, standards, tools, tool options and tool configurations selected and employed can satisfy the following security and privacy requirements: [organization-defined security and privacy requirements].
+
+Guidance:
+Development tools include programming languages and computer-aided design systems. Reviews of development processes include the use of maturity models to determine the potential effectiveness of such processes. Maintaining the integrity of changes to tools and processes facilitates effective supply chain risk assessment and mitigation. Such integrity requires configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes.
+
+Parameters:
+- sa-15_prm_2 | label: "organization-defined security and privacy requirements"
+- sa-15_odp.01 | label: "frequency"
+  guideline: frequency at which to review the development process, standards, tools, tool options, and tool configurations is defined;
+- sa-15_odp.02 | label: "security requirements"
+  guideline: security requirements to be satisfied by the process, standards, tools, tool options, and tool configurations are defined;
+- sa-15_odp.03 | label: "privacy requirements"
+  guideline: privacy requirements to be satisfied by the process, standards, tools, tool options, and tool configurations are defined;
+
+References:
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.
+- Paulsen C, Boyens JM, Bartol N, Winkler K (2018) Criticality Analysis Process Model: Prioritizing Systems and Components. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8179.
+
+========================================================================
+Enhancement SA-15(1) (sa-15.1) - Quality Metrics
+
+Statement:
+Require the developer of the system, system component, or system service to:
+  (a) Define quality metrics at the beginning of the development process; and
+  (b) Provide evidence of meeting the quality metrics [Selection (one-or-more): {{ insert: param, sa-15.01_odp.02 }} ; {{ insert: param, sa-15.01_odp.03 }} ; upon delivery].
+
+Guidance:
+Organizations use quality metrics to establish acceptable levels of system quality. Metrics can include quality gates, which are collections of completion criteria or sufficiency standards that represent the satisfactory execution of specific phases of the system development project. For example, a quality gate may require the elimination of all compiler warnings or a determination that such warnings have no impact on the effectiveness of required security or privacy capabilities. During the execution phases of development projects, quality gates provide clear, unambiguous indications of progress. Other metrics apply to the entire development project. Metrics can include defining the severity thresholds of vulnerabilities in accordance with organizational risk tolerance, such as requiring no known vulnerabilities in the delivered system with a Common Vulnerability Scoring System (CVSS) severity of medium or high.
+
+Parameters:
+- sa-15.01_odp.01 | selection (one-or-more): {{ insert: param, sa-15.01_odp.02 }} ; {{ insert: param, sa-15.01_odp.03 }} ; upon delivery
+- sa-15.01_odp.02 | label: "frequency"
+  guideline: frequency at which to provide evidence of meeting the quality metrics is defined (if selected);
+- sa-15.01_odp.03 | label: "program review"
+  guideline: program review milestones are defined (if selected);
+
+========================================================================
+Enhancement SA-15(2) (sa-15.2) - Security and Privacy Tracking Tools
+
+Statement:
+Require the developer of the system, system component, or system service to select and employ security and privacy tracking tools for use during the development process.
+
+Guidance:
+System development teams select and deploy security and privacy tracking tools, including vulnerability or work item tracking systems that facilitate assignment, sorting, filtering, and tracking of completed work items or tasks associated with development processes.
+
+========================================================================
+Enhancement SA-15(3) (sa-15.3) - Criticality Analysis
+
+Statement:
+Require the developer of the system, system component, or system service to perform a criticality analysis:
+  (a) At the following decision points in the system development life cycle: [decision points] ; and
+  (b) At the following level of rigor: [organization-defined breadth and depth of criticality analysis].
+
+Guidance:
+Criticality analysis performed by the developer provides input to the criticality analysis performed by organizations. Developer input is essential to organizational criticality analysis because organizations may not have access to detailed design documentation for system components that are developed as commercial off-the-shelf products. Such design documentation includes functional specifications, high-level designs, low-level designs, source code, and hardware schematics. Criticality analysis is important for organizational systems that are designated as high value assets. High value assets can be moderate- or high-impact systems due to heightened adversarial interest or potential adverse effects on the federal enterprise. Developer input is especially important when organizations conduct supply chain criticality analyses.
+
+Parameters:
+- sa-15.3_prm_2 | label: "organization-defined breadth and depth of criticality analysis"
+- sa-15.03_odp.01 | label: "decision points"
+  guideline: decision points in the system development life cycle are defined;
+- sa-15.03_odp.02 | label: "breadth"
+  guideline: the breadth of criticality analysis is defined;
+- sa-15.03_odp.03 | label: "depth"
+  guideline: the depth of criticality analysis is defined;
+
+========================================================================
+Enhancement SA-15(4) (sa-15.4) - Threat Modeling and Vulnerability Analysis
+
+========================================================================
+Enhancement SA-15(5) (sa-15.5) - Attack Surface Reduction
+
+Statement:
+Require the developer of the system, system component, or system service to reduce attack surfaces to [thresholds].
+
+Guidance:
+Attack surface reduction is closely aligned with threat and vulnerability analyses and system architecture and design. Attack surface reduction is a means of reducing risk to organizations by giving attackers less opportunity to exploit weaknesses or deficiencies (i.e., potential vulnerabilities) within systems, system components, and system services. Attack surface reduction includes implementing the concept of layered defenses, applying the principles of least privilege and least functionality, applying secure software development practices, deprecating unsafe functions, reducing entry points available to unauthorized users, reducing the amount of code that executes, and eliminating application programming interfaces (APIs) that are vulnerable to attacks.
+
+Parameters:
+- sa-15.05_odp | label: "thresholds"
+  guideline: thresholds to which attack surfaces are to be reduced are defined;
+
+========================================================================
+Enhancement SA-15(6) (sa-15.6) - Continuous Improvement
+
+Statement:
+Require the developer of the system, system component, or system service to implement an explicit process to continuously improve the development process.
+
+Guidance:
+Developers of systems, system components, and system services consider the effectiveness and efficiency of their development processes for meeting quality objectives and addressing the security and privacy capabilities in current threat environments.
+
+========================================================================
+Enhancement SA-15(7) (sa-15.7) - Automated Vulnerability Analysis
+
+Statement:
+Require the developer of the system, system component, or system service [frequency] to:
+  (a) Perform an automated vulnerability analysis using [tools];
+  (b) Determine the exploitation potential for discovered vulnerabilities;
+  (c) Determine potential risk mitigations for delivered vulnerabilities; and
+  (d) Deliver the outputs of the tools and results of the analysis to [personnel or roles].
+
+Guidance:
+Automated tools can be more effective at analyzing exploitable weaknesses or deficiencies in large and complex systems, prioritizing vulnerabilities by severity, and providing recommendations for risk mitigations.
+
+Parameters:
+- sa-15.07_odp.01 | label: "frequency"
+  guideline: frequency at which to conduct vulnerability analysis is defined;
+- sa-15.07_odp.02 | label: "tools"
+  guideline: tools used to perform automated vulnerability analysis are defined;
+- sa-15.07_odp.03 | label: "personnel or roles"
+  guideline: personnel or roles to whom the outputs of tools and results of the analysis are to be delivered is/are defined;
+
+========================================================================
+Enhancement SA-15(8) (sa-15.8) - Reuse of Threat and Vulnerability Information
+
+Statement:
+Require the developer of the system, system component, or system service to use threat modeling and vulnerability analyses from similar systems, components, or services to inform the current development process.
+
+Guidance:
+Analysis of vulnerabilities found in similar software applications can inform potential design and implementation issues for systems under development. Similar systems or system components may exist within developer organizations. Vulnerability information is available from a variety of public and private sector sources, including the NIST National Vulnerability Database.
+
+========================================================================
+Enhancement SA-15(9) (sa-15.9) - Use of Live Data
+
+========================================================================
+Enhancement SA-15(10) (sa-15.10) - Incident Response Plan
+
+Statement:
+Require the developer of the system, system component, or system service to provide, implement, and test an incident response plan.
+
+Guidance:
+The incident response plan provided by developers may provide information not readily available to organizations and be incorporated into organizational incident response plans. Developer information may also be extremely helpful, such as when organizations respond to vulnerabilities in commercial off-the-shelf products.
+
+========================================================================
+Enhancement SA-15(11) (sa-15.11) - Archive System or Component
+
+Statement:
+Require the developer of the system or system component to archive the system or component to be released or delivered together with the corresponding evidence supporting the final security and privacy review.
+
+Guidance:
+Archiving system or system components requires the developer to retain key development artifacts, including hardware specifications, source code, object code, and relevant documentation from the development process that can provide a readily available configuration baseline for system and component upgrades or modifications.
+
+========================================================================
+Enhancement SA-15(12) (sa-15.12) - Minimize Personally Identifiable Information
+
+Statement:
+Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environments.
+
+Guidance:
+Organizations can minimize the risk to an individual’s privacy by using techniques such as de-identification or synthetic data. Limiting the use of personally identifiable information in development and test environments helps reduce the level of privacy risk created by a system.
+
+========================================================================
+Enhancement SA-15(13) (sa-15.13) - Logging Syntax
+
+Statement:
+Require the developer of the system or system component to minimize the use of personally identifiable information in development and test environments.
+
+Guidance:
+In support of better incident response and the ability to more quickly reconstruct security-related actions, identifying specific requirements for secure logging facilitates the ability to connect application-produced audit event logs with operational data. Event types are consistent with the event types defined in [AU-02](#au-2).
+
+Parameters:
+- sa-15.13_odp.01 | label: "secure logging format(s)"
+  guideline: secure logging format(s) are defined;
+- sa-15.13_odp.02 | label: "events types to log"
+  guideline: events types to log are defined;
+- sa-15.13_odp.03 | label: "level of detail to log"
+  guideline: level of detail to log is defined;

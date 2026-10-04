@@ -1,0 +1,19 @@
+id: SP_800_171_03.07.04
+title: Maintenance Tools
+family: Maintenance (SP_800_171_03.07)
+class: requirement
+
+Statement:
+  SR-03.07.04.a Approve, control, and monitor the use of system maintenance tools.
+  SR-03.07.04.b Check media with diagnostic and test programs for malicious code before it is used in the system.
+  SR-03.07.04.c Prevent the removal of system maintenance equipment containing CUI by verifying that there is no CUI on the equipment, sanitizing or destroying the equipment, or retaining the equipment within the facility.
+
+Guidance:
+Approving, controlling, monitoring, and reviewing maintenance tools address security-related issues associated with the tools that are used for diagnostic and repair actions on the system. Maintenance tools can include hardware and software diagnostic and test equipment as well as packet sniffers. The tools may be pre-installed, brought in with maintenance personnel on media, cloud-based, or downloaded from a website. Diagnostic and test programs are potential vehicles for transporting malicious code into the system, either intentionally or unintentionally. Examples of media inspection include checking the cryptographic hash or digital signatures of diagnostic and test programs and media. If organizations inspect media that contain diagnostic and test programs and determine that the media also contain malicious code, the incident is handled consistent with incident handling policies and procedures. A periodic review of system maintenance tools can result in the withdrawal of approval for outdated, unsupported, irrelevant, or no-longer-used tools. Maintenance tools do not address the hardware and software components that support maintenance and are considered a part of the system.
+
+References:
+- MA-03
+- MA-03(01)
+- MA-03(02)
+- MA-03(03)
+- Kissel RL, Regenscheid AR, Scholl MA, Stine KM (2014) Guidelines for Media Sanitization. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-88, Rev.

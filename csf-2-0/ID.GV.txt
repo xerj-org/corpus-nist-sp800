@@ -1,0 +1,31 @@
+id: ID.GV
+title: Governance
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+
+========================================================================
+Child control ID.GV-01 - ID.GV-01
+
+Statement:
+Organizational cybersecurity policy is established and communicated
+
+========================================================================
+Child control ID.GV-02 - ID.GV-02
+
+Statement:
+Cybersecurity roles and responsibilities are coordinated and aligned with internal roles and external partners
+
+========================================================================
+Child control ID.GV-03 - ID.GV-03
+
+Statement:
+Legal and regulatory requirements regarding cybersecurity, including privacy and civil liberties obligations, are understood and managed
+
+========================================================================
+Child control ID.GV-04 - ID.GV-04
+
+Statement:
+Governance and risk management processes address cybersecurity risks

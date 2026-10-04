@@ -1,0 +1,43 @@
+id: sc-34
+title: Non-modifiable Executable Programs
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+For [system components] , load and execute:
+  a. The operating environment from hardware-enforced, read-only media; and
+  b. The following applications from hardware-enforced, read-only media: [applications].
+
+Guidance:
+The operating environment for a system contains the code that hosts applications, including operating systems, executives, or virtual machine monitors (i.e., hypervisors). It can also include certain applications that run directly on hardware platforms. Hardware-enforced, read-only media include Compact Disc-Recordable (CD-R) and Digital Versatile Disc-Recordable (DVD-R) disk drives as well as one-time, programmable, read-only memory. The use of non-modifiable storage ensures the integrity of software from the point of creation of the read-only image. The use of reprogrammable, read-only memory can be accepted as read-only media provided that integrity can be adequately protected from the point of initial writing to the insertion of the memory into the system, and there are reliable hardware protections against reprogramming the memory while installed in organizational systems.
+
+Parameters:
+- sc-34_odp.01 | label: "system components"
+  guideline: system components for which the operating environment and applications are to be loaded and executed from hardware-enforced, read-only media are defined;
+- sc-34_odp.02 | label: "applications"
+  guideline: applications to be loaded and executed from hardware-enforced, read-only media are defined;
+
+========================================================================
+Enhancement SC-34(1) (sc-34.1) - No Writable Storage
+
+Statement:
+Employ [system components] with no writeable storage that is persistent across component restart or power on/off.
+
+Guidance:
+Disallowing writeable storage eliminates the possibility of malicious code insertion via persistent, writeable storage within the designated system components. The restriction applies to fixed and removable storage, with the latter being addressed either directly or as specific restrictions imposed through access controls for mobile devices.
+
+Parameters:
+- sc-34.01_odp | label: "system components"
+  guideline: system components to be employed with no writeable storage are defined;
+
+========================================================================
+Enhancement SC-34(2) (sc-34.2) - Integrity Protection on Read-only Media
+
+Statement:
+Protect the integrity of information prior to storage on read-only media and control the media after such information has been recorded onto the media.
+
+Guidance:
+Controls prevent the substitution of media into systems or the reprogramming of programmable read-only media prior to installation into the systems. Integrity protection controls include a combination of prevention, detection, and response.
+
+========================================================================
+Enhancement SC-34(3) (sc-34.3) - Hardware-based Protection

@@ -1,0 +1,92 @@
+id: au-5
+title: Response to Audit Logging Process Failures
+family: Audit and Accountability (au)
+class: SP800-53
+
+Statement:
+  a. Alert [personnel or roles] within [time period] in the event of an audit logging process failure; and
+  b. Take the following additional actions: [additional actions].
+
+Guidance:
+Audit logging process failures include software and hardware errors, failures in audit log capturing mechanisms, and reaching or exceeding audit log storage capacity. Organization-defined actions include overwriting oldest audit records, shutting down the system, and stopping the generation of audit records. Organizations may choose to define additional actions for audit logging process failures based on the type of failure, the location of the failure, the severity of the failure, or a combination of such factors. When the audit logging process failure is related to storage, the response is carried out for the audit log storage repository (i.e., the distinct system component where the audit logs are stored), the system on which the audit logs reside, the total audit log storage capacity of the organization (i.e., all audit log storage repositories combined), or all three. Organizations may decide to take no additional actions after alerting designated roles or personnel.
+
+Parameters:
+- au-05_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles receiving audit logging process failure alerts are defined;
+- au-05_odp.02 | label: "time period"
+  guideline: time period for personnel or roles receiving audit logging process failure alerts is defined;
+- au-05_odp.03 | label: "additional actions"
+  guideline: additional actions to be taken in the event of an audit logging process failure are defined;
+
+========================================================================
+Enhancement AU-5(1) (au-5.1) - Storage Capacity Warning
+
+Statement:
+Provide a warning to [personnel, roles, and/or locations] within [time period] when allocated audit log storage volume reaches [percentage] of repository maximum audit log storage capacity.
+
+Guidance:
+Organizations may have multiple audit log storage repositories distributed across multiple system components with each repository having different storage volume capacities.
+
+Parameters:
+- au-05.01_odp.01 | label: "personnel, roles, and/or locations"
+  guideline: personnel, roles, and/or locations to be warned when allocated audit log storage volume reaches a percentage of repository maximum audit log storage capacity.
+- au-05.01_odp.02 | label: "time period"
+  guideline: time period for defined personnel, roles, and/or locations to be warned when allocated audit log storage volume reaches a percentage of repository maximum audit log storage capacity is defined;
+- au-05.01_odp.03 | label: "percentage"
+  guideline: percentage of repository maximum audit log storage capacity is defined;
+
+========================================================================
+Enhancement AU-5(2) (au-5.2) - Real-time Alerts
+
+Statement:
+Provide an alert within [real-time period] to [personnel, roles, and/or locations] when the following audit failure events occur: [audit logging failure events requiring real-time alerts].
+
+Guidance:
+Alerts provide organizations with urgent messages. Real-time alerts provide these messages at information technology speed (i.e., the time from event detection to alert occurs in seconds or less).
+
+Parameters:
+- au-05.02_odp.01 | label: "real-time period"
+  guideline: real-time period requiring alerts when audit failure events (defined in AU-05(02)_ODP[03]) occur is defined;
+- au-05.02_odp.02 | label: "personnel, roles, and/or locations"
+  guideline: personnel, roles, and/or locations to be alerted in real time when audit failure events (defined in AU-05(02)_ODP[03]) occur is/are defined;
+- au-05.02_odp.03 | label: "audit logging failure events requiring real-time alerts"
+  guideline: audit logging failure events requiring real-time alerts are defined;
+
+========================================================================
+Enhancement AU-5(3) (au-5.3) - Configurable Traffic Volume Thresholds
+
+Statement:
+Enforce configurable network communications traffic volume thresholds reflecting limits on audit log storage capacity and [Selection (one-or-more): reject; delay] network traffic above those thresholds.
+
+Guidance:
+Organizations have the capability to reject or delay the processing of network communications traffic if audit logging information about such traffic is determined to exceed the storage capacity of the system audit logging function. The rejection or delay response is triggered by the established organizational traffic volume thresholds that can be adjusted based on changes to audit log storage capacity.
+
+Parameters:
+- au-05.03_odp | selection (one-or-more): reject; delay
+
+========================================================================
+Enhancement AU-5(4) (au-5.4) - Shutdown on Failure
+
+Statement:
+Invoke a [Selection (one-or-more): full system shutdown; partial system shutdown; degraded operational mode with limited mission or business functionality available] in the event of [audit logging failures] , unless an alternate audit logging capability exists.
+
+Guidance:
+Organizations determine the types of audit logging failures that can trigger automatic system shutdowns or degraded operations. Because of the importance of ensuring mission and business continuity, organizations may determine that the nature of the audit logging failure is not so severe that it warrants a complete shutdown of the system supporting the core organizational mission and business functions. In those instances, partial system shutdowns or operating in a degraded mode with reduced capability may be viable alternatives.
+
+Parameters:
+- au-05.04_odp.01 | selection (one-or-more): full system shutdown; partial system shutdown; degraded operational mode with limited mission or business functionality available
+- au-05.04_odp.02 | label: "audit logging failures"
+  guideline: audit logging failures that trigger a change in operational mode are defined;
+
+========================================================================
+Enhancement AU-5(5) (au-5.5) - Alternate Audit Logging Capability
+
+Statement:
+Provide an alternate audit logging capability in the event of a failure in primary audit logging capability that implements [alternate audit logging functionality].
+
+Guidance:
+Since an alternate audit logging capability may be a short-term protection solution employed until the failure in the primary audit logging capability is corrected, organizations may determine that the alternate audit logging capability need only provide a subset of the primary audit logging functionality that is impacted by the failure.
+
+Parameters:
+- au-05.05_odp | label: "alternate audit logging functionality"
+  guideline: an alternate audit logging functionality in the event of a failure in primary audit logging capability is defined;

@@ -1,0 +1,37 @@
+id: PR.PT
+title: Protective Technology
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+
+========================================================================
+Child control PR.PT-01 - PR.PT-01
+
+Statement:
+Audit/log records are determined, documented, implemented, and reviewed in accordance with policy
+
+========================================================================
+Child control PR.PT-02 - PR.PT-02
+
+Statement:
+Removable media is protected and its use restricted according to policy
+
+========================================================================
+Child control PR.PT-03 - PR.PT-03
+
+Statement:
+The principle of least functionality is incorporated by configuring systems to provide only essential capabilities
+
+========================================================================
+Child control PR.PT-04 - PR.PT-04
+
+Statement:
+Communications and control networks are protected
+
+========================================================================
+Child control PR.PT-05 - PR.PT-05
+
+Statement:
+Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to achieve resilience requirements in normal and adverse situations

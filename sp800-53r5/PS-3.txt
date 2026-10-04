@@ -1,0 +1,77 @@
+id: ps-3
+title: Personnel Screening
+family: Personnel Security (ps)
+class: SP800-53
+
+Statement:
+  a. Screen individuals prior to authorizing access to the system; and
+  b. Rescreen individuals in accordance with [organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of rescreening].
+
+Guidance:
+Personnel screening and rescreening activities reflect applicable laws, executive orders, directives, regulations, policies, standards, guidelines, and specific criteria established for the risk designations of assigned positions. Examples of personnel screening include background investigations and agency checks. Organizations may define different rescreening conditions and frequencies for personnel accessing systems based on types of information processed, stored, or transmitted by the systems.
+
+Parameters:
+- ps-3_prm_1 | label: "organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of rescreening"
+- ps-03_odp.01 | label: "conditions requiring rescreening"
+  guideline: conditions requiring rescreening of individuals are defined;
+- ps-03_odp.02 | label: "frequency"
+  guideline: the frequency of rescreening individuals where it is so indicated is defined;
+
+References:
+- Executive Order 13526, *Classified National Security Information* , December 2009.
+- Executive Order 13587, *Structural Reforms to Improve the Security of Classified Networks and the Responsible Sharing and Safeguarding of Classified Information* , October 2011.
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
+- National Institute of Standards and Technology (2013) Personal Identity Verification (PIV) of Federal Employees and Contractors. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 201-2.
+- Stine KM, Kissel RL, Barker WC, Fahlsing J, Gulick J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 1, Rev. 1.
+- Stine KM, Kissel RL, Barker WC, Lee A, Fahlsing J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories: Appendices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 2, Rev. 1.
+- Cooper DA, Ferraiolo H, Mehta KL, Francomacaro S, Chandramouli R, Mohler J (2015) Interfaces for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-73-4, Includes updates as of February 8, 2016.
+- Grother PJ, Salamon WJ, Chandramouli R (2013) Biometric Specifications for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-76-2.
+- Polk T, Dodson DF, Burr WE, Ferraiolo H, Cooper DA (2015) Cryptographic Algorithms and Key Sizes for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-78-4.
+
+========================================================================
+Enhancement PS-3(1) (ps-3.1) - Classified Information
+
+Statement:
+Verify that individuals accessing a system processing, storing, or transmitting classified information are cleared and indoctrinated to the highest classification level of the information to which they have access on the system.
+
+Guidance:
+Classified information is the most sensitive information that the Federal Government processes, stores, or transmits. It is imperative that individuals have the requisite security clearances and system access authorizations prior to gaining access to such information. Access authorizations are enforced by system access controls (see [AC-3](#ac-3) ) and flow controls (see [AC-4](#ac-4)).
+
+========================================================================
+Enhancement PS-3(2) (ps-3.2) - Formal Indoctrination
+
+Statement:
+Verify that individuals accessing a system processing, storing, or transmitting types of classified information that require formal indoctrination, are formally indoctrinated for all the relevant types of information to which they have access on the system.
+
+Guidance:
+Types of classified information that require formal indoctrination include Special Access Program (SAP), Restricted Data (RD), and Sensitive Compartmented Information (SCI).
+
+========================================================================
+Enhancement PS-3(3) (ps-3.3) - Information Requiring Special Protective Measures
+
+Statement:
+Verify that individuals accessing a system processing, storing, or transmitting information requiring special protection:
+  (a) Have valid access authorizations that are demonstrated by assigned official government duties; and
+  (b) Satisfy [additional personnel screening criteria].
+
+Guidance:
+Organizational information that requires special protection includes controlled unclassified information. Personnel security criteria include position sensitivity background screening requirements.
+
+Parameters:
+- ps-03.03_odp | label: "additional personnel screening criteria"
+  guideline: additional personnel screening criteria to be satisfied for individuals accessing a system processing, storing, or transmitting information requiring special protection are defined;
+
+========================================================================
+Enhancement PS-3(4) (ps-3.4) - Citizenship Requirements
+
+Statement:
+Verify that individuals accessing a system processing, storing, or transmitting [information types] meet [citizenship requirements].
+
+Guidance:
+None.
+
+Parameters:
+- ps-03.04_odp.01 | label: "information types"
+  guideline: information types that are processed, stored, or transmitted by a system that require individuals accessing the system to meet [citizenship requirements] are defined;
+- ps-03.04_odp.02 | label: "citizenship requirements"
+  guideline: citizenship requirements to be met by individuals to access a system processing, storing, or transmitting information are defined;

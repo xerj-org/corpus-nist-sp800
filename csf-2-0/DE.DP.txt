@@ -1,0 +1,37 @@
+id: DE.DP
+title: Detection Processes
+family: DETECT (DE)
+class: category
+family-overview: Possible cybersecurity attacks and compromises are found and analyzed
+
+Statement:
+
+========================================================================
+Child control DE.DP-01 - DE.DP-01
+
+Statement:
+Roles and responsibilities for detection are well defined to ensure accountability
+
+========================================================================
+Child control DE.DP-02 - DE.DP-02
+
+Statement:
+Detection activities comply with all applicable requirements
+
+========================================================================
+Child control DE.DP-03 - DE.DP-03
+
+Statement:
+Detection processes are tested
+
+========================================================================
+Child control DE.DP-04 - DE.DP-04
+
+Statement:
+Event detection information is communicated
+
+========================================================================
+Child control DE.DP-05 - DE.DP-05
+
+Statement:
+Detection processes are continuously improved

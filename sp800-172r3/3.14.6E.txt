@@ -1,0 +1,4 @@
+id: SP_800_172_3_0_0_03.14.06E
+title: 03.14.06E
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement

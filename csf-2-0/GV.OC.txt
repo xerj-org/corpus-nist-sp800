@@ -1,0 +1,71 @@
+id: GV.OC
+title: Organizational Context
+family: GOVERN (GV)
+class: category
+family-overview: The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored
+
+Statement:
+The circumstances - mission, stakeholder expectations, dependencies, and legal, regulatory, and contractual requirements - surrounding the organization's cybersecurity risk management decisions are understood
+
+========================================================================
+Child control GV.OC-01 - GV.OC-01
+
+Statement:
+The organizational mission is understood and informs cybersecurity risk management
+
+Example:
+Share the organization's mission (e.g., through vision and mission statements, marketing, and service strategies) to provide a basis for identifying risks that may impede that mission
+
+========================================================================
+Child control GV.OC-02 - GV.OC-02
+
+Statement:
+Internal and external stakeholders are understood, and their needs and expectations regarding cybersecurity risk management are understood and considered
+
+Example:
+Identify relevant internal stakeholders and their cybersecurity-related expectations (e.g., performance and risk expectations of officers, directors, and advisors; cultural expectations of employees)
+
+Example:
+Identify relevant external stakeholders and their cybersecurity-related expectations (e.g., privacy expectations of customers, business expectations of partnerships, compliance expectations of regulators, ethics expectations of society)
+
+========================================================================
+Child control GV.OC-03 - GV.OC-03
+
+Statement:
+Legal, regulatory, and contractual requirements regarding cybersecurity - including privacy and civil liberties obligations - are understood and managed
+
+Example:
+Determine a process to track and manage legal and regulatory requirements regarding protection of individuals' information (e.g., Health Insurance Portability and Accountability Act, California Consumer Privacy Act, General Data Protection Regulation)
+
+Example:
+Determine a process to track and manage contractual requirements for cybersecurity management of supplier, customer, and partner information
+
+Example:
+Align the organization's cybersecurity strategy with legal, regulatory, and contractual requirements
+
+========================================================================
+Child control GV.OC-04 - GV.OC-04
+
+Statement:
+Critical objectives, capabilities, and services that external stakeholders depend on or expect from the organization are understood and communicated
+
+Example:
+Establish criteria for determining the criticality of capabilities and services as viewed by internal and external stakeholders
+
+Example:
+Determine (e.g., from a business impact analysis) assets and business operations that are vital to achieving mission objectives and the potential impact of a loss (or partial loss) of such operations
+
+Example:
+Establish and communicate resilience objectives (e.g., recovery time objectives) for delivering critical capabilities and services in various operating states (e.g., under attack, during recovery, normal operation)
+
+========================================================================
+Child control GV.OC-05 - GV.OC-05
+
+Statement:
+Outcomes, capabilities, and services that the organization depends on are understood and communicated
+
+Example:
+Create an inventory of the organization's dependencies on external resources (e.g., facilities, cloud-based hosting providers) and their relationships to organizational assets and business functions
+
+Example:
+Identify and document external dependencies that are potential points of failure for the organization's critical capabilities and services, and share that information with appropriate personnel

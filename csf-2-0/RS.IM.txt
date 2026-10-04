@@ -1,0 +1,19 @@
+id: RS.IM
+title: Improvements
+family: RESPOND (RS)
+class: category
+family-overview: Actions regarding a detected cybersecurity incident are taken
+
+Statement:
+
+========================================================================
+Child control RS.IM-01 - RS.IM-01
+
+Statement:
+Response plans incorporate lessons learned
+
+========================================================================
+Child control RS.IM-02 - RS.IM-02
+
+Statement:
+Response strategies are updated

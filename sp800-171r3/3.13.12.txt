@@ -1,0 +1,18 @@
+id: SP_800_171_03.13.12
+title: Collaborative Computing Devices and Applications
+family: System and Communications Protection (SP_800_171_03.13)
+class: requirement
+
+Statement:
+  SR-03.13.12.a Prohibit the remote activation of collaborative computing devices and applications with the following exceptions: [exceptions].
+  SR-03.13.12.b Provide an explicit indication of use to users physically present at the devices.
+
+Guidance:
+Collaborative computing devices include white boards, microphones, and cameras. Notebook computers, smartphones, display monitors, and tablets containing cameras and microphones are considered part of collaborative computing devices when conferencing software is in use. Indication of use includes notifying users (e.g., a pop-up menu stating that recording is in progress or that the microphone has been turned on) when collaborative computing devices are activated. Dedicated video conferencing systems, which typically rely on one of the participants calling or connecting to the other party to activate the video conference, are excluded. Solutions to prevent device usage include webcam covers and buttons to disable microphones.
+
+Parameters:
+- A.03.13.12.ODP.01 | label: "exceptions"
+  guideline: exceptions where remote activation is to be allowed are defined.
+
+References:
+- SC-15

@@ -1,0 +1,146 @@
+id: cm-8
+title: System Component Inventory
+family: Configuration Management (cm)
+class: SP800-53
+
+Statement:
+  a. Develop and document an inventory of system components that:
+    1. Accurately reflects the system;
+    2. Includes all components within the system;
+    3. Does not include duplicate accounting of components or components assigned to any other system;
+    4. Is at the level of granularity deemed necessary for tracking and reporting; and
+    5. Includes the following information to achieve system component accountability: [information] ; and
+  b. Review and update the system component inventory [frequency].
+
+Guidance:
+System components are discrete, identifiable information technology assets that include hardware, software, and firmware. Organizations may choose to implement centralized system component inventories that include components from all organizational systems. In such situations, organizations ensure that the inventories include system-specific information required for component accountability. The information necessary for effective accountability of system components includes the system name, software owners, software version numbers, hardware inventory specifications, software license information, and for networked components, the machine names and network addresses across all implemented protocols (e.g., IPv4, IPv6). Inventory specifications include date of receipt, cost, model, serial number, manufacturer, supplier information, component type, and physical location.
+
+Preventing duplicate accounting of system components addresses the lack of accountability that occurs when component ownership and system association is not known, especially in large or complex connected systems. Effective prevention of duplicate accounting of system components necessitates use of a unique identifier for each component. For software inventory, centrally managed software that is accessed via other systems is addressed as a component of the system on which it is installed and managed. Software installed on multiple organizational systems and managed at the system level is addressed for each individual system and may appear more than once in a centralized component inventory, necessitating a system association for each software instance in the centralized inventory to avoid duplicate accounting of components. Scanning systems implementing multiple network protocols (e.g., IPv4 and IPv6) can result in duplicate components being identified in different address spaces. The implementation of [CM-8(7)](#cm-8.7) can help to eliminate duplicate accounting of components.
+
+Parameters:
+- cm-08_odp.01 | label: "information"
+  guideline: information deemed necessary to achieve effective system component accountability is defined;
+- cm-08_odp.02 | label: "frequency"
+  guideline: frequency at which to review and update the system component inventory is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Barker EB (2020) Recommendation for Key Management: Part 1 – General. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 1, Rev. 5.
+- Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.
+- Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3: Application-Specific Key Management Guidance. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.
+- Dempsey KL, Eavy P, Moore G (2017) Automation Support for Security Control Assessments: Volume 2: Hardware Asset Management. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8011, Volume 2.
+- Dempsey KL, Eavy P, Goren N, Moore G (2018) Automation Support for Security Control Assessments: Volume 3: Software Asset Management. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8011, Volume 3.
+
+========================================================================
+Enhancement CM-8(1) (cm-8.1) - Updates During Installation and Removal
+
+Statement:
+Update the inventory of system components as part of component installations, removals, and system updates.
+
+Guidance:
+Organizations can improve the accuracy, completeness, and consistency of system component inventories if the inventories are updated as part of component installations or removals or during general system updates. If inventories are not updated at these key times, there is a greater likelihood that the information will not be appropriately captured and documented. System updates include hardware, software, and firmware components.
+
+========================================================================
+Enhancement CM-8(2) (cm-8.2) - Automated Maintenance
+
+Statement:
+Maintain the currency, completeness, accuracy, and availability of the inventory of system components using [organization-defined automated mechanisms].
+
+Guidance:
+Organizations maintain system inventories to the extent feasible. For example, virtual machines can be difficult to monitor because such machines are not visible to the network when not in use. In such cases, organizations maintain as up-to-date, complete, and accurate an inventory as is deemed reasonable. Automated maintenance can be achieved by the implementation of [CM-2(2)](#cm-2.2) for organizations that combine system component inventory and baseline configuration activities.
+
+Parameters:
+- cm-8.2_prm_1 | label: "organization-defined automated mechanisms"
+- cm-08.02_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the currency of the system component inventory are defined;
+- cm-08.02_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the completeness of the system component inventory are defined;
+- cm-08.02_odp.03 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the accuracy of the system component inventory are defined;
+- cm-08.02_odp.04 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain the availability of the system component inventory are defined;
+
+========================================================================
+Enhancement CM-8(3) (cm-8.3) - Automated Unauthorized Component Detection
+
+Statement:
+  (a) Detect the presence of unauthorized hardware, software, and firmware components within the system using [organization-defined automated mechanisms] [frequency] ; and
+  (b) Take the following actions when unauthorized components are detected: [Selection (one-or-more): disable network access by unauthorized components; isolate unauthorized components; notify {{ insert: param, cm-08.03_odp.06 }} ].
+
+Guidance:
+Automated unauthorized component detection is applied in addition to the monitoring for unauthorized remote connections and mobile devices. Monitoring for unauthorized system components may be accomplished on an ongoing basis or by the periodic scanning of systems for that purpose. Automated mechanisms may also be used to prevent the connection of unauthorized components (see [CM-7(9)](#cm-7.9) ). Automated mechanisms can be implemented in systems or in separate system components. When acquiring and implementing automated mechanisms, organizations consider whether such mechanisms depend on the ability of the system component to support an agent or supplicant in order to be detected since some types of components do not have or cannot support agents (e.g., IoT devices, sensors). Isolation can be achieved , for example, by placing unauthorized system components in separate domains or subnets or quarantining such components. This type of component isolation is commonly referred to as "sandboxing." 
+
+Parameters:
+- cm-8.3_prm_1 | label: "organization-defined automated mechanisms"
+- cm-08.03_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to detect the presence of unauthorized hardware within the system are defined;
+- cm-08.03_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to detect the presence of unauthorized software within the system are defined;
+- cm-08.03_odp.03 | label: "automated mechanisms"
+  guideline: automated mechanisms used to detect the presence of unauthorized firmware within the system are defined;
+- cm-08.03_odp.04 | label: "frequency"
+  guideline: frequency at which automated mechanisms are used to detect the presence of unauthorized system components within the system is defined;
+- cm-08.03_odp.05 | selection (one-or-more): disable network access by unauthorized components; isolate unauthorized components; notify {{ insert: param, cm-08.03_odp.06 }} 
+- cm-08.03_odp.06 | label: "personnel or roles"
+  guideline: personnel or roles to be notified when unauthorized components are detected is/are defined (if selected);
+
+========================================================================
+Enhancement CM-8(4) (cm-8.4) - Accountability Information
+
+Statement:
+Include in the system component inventory information, a means for identifying by [Selection (one-or-more): name; position; role] , individuals responsible and accountable for administering those components.
+
+Guidance:
+Identifying individuals who are responsible and accountable for administering system components ensures that the assigned components are properly administered and that organizations can contact those individuals if some action is required (e.g., when the component is determined to be the source of a breach, needs to be recalled or replaced, or needs to be relocated).
+
+Parameters:
+- cm-08.04_odp | selection (one-or-more): name; position; role
+
+========================================================================
+Enhancement CM-8(5) (cm-8.5) - No Duplicate Accounting of Components
+
+========================================================================
+Enhancement CM-8(6) (cm-8.6) - Assessed Configurations and Approved Deviations
+
+Statement:
+Include assessed component configurations and any approved deviations to current deployed configurations in the system component inventory.
+
+Guidance:
+Assessed configurations and approved deviations focus on configuration settings established by organizations for system components, the specific components that have been assessed to determine compliance with the required configuration settings, and any approved deviations from established configuration settings.
+
+========================================================================
+Enhancement CM-8(7) (cm-8.7) - Centralized Repository
+
+Statement:
+Provide a centralized repository for the inventory of system components.
+
+Guidance:
+Organizations may implement centralized system component inventories that include components from all organizational systems. Centralized repositories of component inventories provide opportunities for efficiencies in accounting for organizational hardware, software, and firmware assets. Such repositories may also help organizations rapidly identify the location and responsible individuals of components that have been compromised, breached, or are otherwise in need of mitigation actions. Organizations ensure that the resulting centralized inventories include system-specific information required for proper component accountability.
+
+========================================================================
+Enhancement CM-8(8) (cm-8.8) - Automated Location Tracking
+
+Statement:
+Support the tracking of system components by geographic location using [automated mechanisms].
+
+Guidance:
+The use of automated mechanisms to track the location of system components can increase the accuracy of component inventories. Such capability may help organizations rapidly identify the location and responsible individuals of system components that have been compromised, breached, or are otherwise in need of mitigation actions. The use of tracking mechanisms can be coordinated with senior agency officials for privacy if there are implications that affect individual privacy.
+
+Parameters:
+- cm-08.08_odp | label: "automated mechanisms"
+  guideline: automated mechanisms for tracking components are defined;
+
+========================================================================
+Enhancement CM-8(9) (cm-8.9) - Assignment of Components to Systems
+
+Statement:
+  (a) Assign system components to a system; and
+  (b) Receive an acknowledgement from [personnel or roles] of this assignment.
+
+Guidance:
+System components that are not assigned to a system may be unmanaged, lack the required protection, and become an organizational vulnerability.
+
+Parameters:
+- cm-08.09_odp | label: "personnel or roles"
+  guideline: personnel or roles from which to receive an acknowledgement is/are defined;

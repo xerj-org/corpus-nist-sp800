@@ -1,0 +1,29 @@
+id: SP_800_172_3_0_0_03.01.04E
+title: Concurrent Session Control
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+Statement:
+Limit the number of concurrent sessions for each [account and/or account types] to [number]. 
+
+Guidance:
+Organizations may define the maximum number of concurrent sessions for system accounts globally, by account type, by account, or any combination thereof. For example, organizations may limit the number of concurrent sessions for system administrators or other individuals working in particularly sensitive domains or mission-critical applications. Concurrent session control addresses concurrent sessions for system accounts. It does not, however, address concurrent sessions by single users via multiple system accounts. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes contain and exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.01.04E.ODP.01 | label: "account and/or account types"
+  guideline: accounts and/or account types for which to limit the number of concurrent sessions is defined.
+- A.03.01.04E.ODP.02 | label: "number"
+  guideline: the number of concurrent sessions to be allowed for each account and/or account type is defined.
+
+References:
+- AC-10

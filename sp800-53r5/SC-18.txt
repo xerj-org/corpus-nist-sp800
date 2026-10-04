@@ -1,0 +1,79 @@
+id: sc-18
+title: Mobile Code
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. Define acceptable and unacceptable mobile code and mobile code technologies; and
+  b. Authorize, monitor, and control the use of mobile code within the system.
+
+Guidance:
+Mobile code includes any program, application, or content that can be transmitted across a network (e.g., embedded in an email, document, or website) and executed on a remote system. Decisions regarding the use of mobile code within organizational systems are based on the potential for the code to cause damage to the systems if used maliciously. Mobile code technologies include Java applets, JavaScript, HTML5, WebGL, and VBScript. Usage restrictions and implementation guidelines apply to both the selection and use of mobile code installed on servers and mobile code downloaded and executed on individual workstations and devices, including notebook computers and smart phones. Mobile code policy and procedures address specific actions taken to prevent the development, acquisition, and introduction of unacceptable mobile code within organizational systems, including requiring mobile code to be digitally signed by a trusted source.
+
+References:
+- Jansen W, Winograd T, Scarfone KA (2008) Guidelines on Active Content and Mobile Code. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-28, Version 2.
+
+========================================================================
+Enhancement SC-18(1) (sc-18.1) - Identify Unacceptable Code and Take Corrective Actions
+
+Statement:
+Identify [unacceptable mobile code] and take [corrective actions].
+
+Guidance:
+Corrective actions when unacceptable mobile code is detected include blocking, quarantine, or alerting administrators. Blocking includes preventing the transmission of word processing files with embedded macros when such macros have been determined to be unacceptable mobile code.
+
+Parameters:
+- sc-18.01_odp.01 | label: "unacceptable mobile code"
+  guideline: unacceptable mobile code to be identified is defined;
+- sc-18.01_odp.02 | label: "corrective actions"
+  guideline: corrective actions to be taken when unacceptable mobile code is identified are defined;
+
+========================================================================
+Enhancement SC-18(2) (sc-18.2) - Acquisition, Development, and Use
+
+Statement:
+Verify that the acquisition, development, and use of mobile code to be deployed in the system meets [mobile code requirements].
+
+Guidance:
+None.
+
+Parameters:
+- sc-18.02_odp | label: "mobile code requirements"
+  guideline: mobile code requirements for the acquisition, development, and use of mobile code to be deployed in the system are defined;
+
+========================================================================
+Enhancement SC-18(3) (sc-18.3) - Prevent Downloading and Execution
+
+Statement:
+Prevent the download and execution of [unacceptable mobile code].
+
+Guidance:
+None.
+
+Parameters:
+- sc-18.03_odp | label: "unacceptable mobile code"
+  guideline: unacceptable mobile code to be prevented from downloading and executing is defined;
+
+========================================================================
+Enhancement SC-18(4) (sc-18.4) - Prevent Automatic Execution
+
+Statement:
+Prevent the automatic execution of mobile code in [software applications] and enforce [actions] prior to executing the code.
+
+Guidance:
+Actions enforced before executing mobile code include prompting users prior to opening email attachments or clicking on web links. Preventing the automatic execution of mobile code includes disabling auto-execute features on system components that employ portable storage devices, such as compact discs, digital versatile discs, and universal serial bus devices.
+
+Parameters:
+- sc-18.04_odp.01 | label: "software applications"
+  guideline: software applications in which the automatic execution of mobile code is to be prevented are defined;
+- sc-18.04_odp.02 | label: "actions"
+  guideline: actions to be enforced by the system prior to executing mobile code are defined;
+
+========================================================================
+Enhancement SC-18(5) (sc-18.5) - Allow Execution Only in Confined Environments
+
+Statement:
+Allow execution of permitted mobile code only in confined virtual machine environments.
+
+Guidance:
+Permitting the execution of mobile code only in confined virtual machine environments helps prevent the introduction of malicious code into other systems and system components.

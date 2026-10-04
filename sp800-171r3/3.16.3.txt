@@ -1,0 +1,21 @@
+id: SP_800_171_03.16.03
+title: External System Services
+family: System and Services Acquisition (SP_800_171_03.16)
+class: requirement
+
+Statement:
+  SR-03.16.03.a Require the providers of external system services used for the processing, storage, or transmission of CUI to comply with the following security requirements: [security requirements].
+  SR-03.16.03.b Define and document user roles and responsibilities with regard to external system services, including shared responsibilities with external service providers.
+  SR-03.16.03.c Implement processes, methods, and techniques to monitor security requirement compliance by external service providers on an ongoing basis.
+
+Guidance:
+External system services are provided by external service providers. Organizations establish relationships with external service providers in a variety of ways, including through business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, joint ventures, and supply chain exchanges. The responsibility for managing risks from the use of external system services remains with the organization charged with protecting CUI. Service-level agreements define expectations of performance, describe measurable outcomes, and identify remedies, mitigations, and response requirements for instances of noncompliance. Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be useful when there is a need to understand the trade-offs involved in restricting certain functions and services or blocking certain ports and protocols. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.01.20) 03.01.20.
+
+Parameters:
+- A.03.16.03.ODP.01 | label: "security requirements"
+  guideline: security requirements to be satisfied by external system service providers are defined.
+
+References:
+- SA-09
+- Ross R, Winstead M, McEvilley M (2022) Engineering Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Rev. 1.
+- Boyens JM, Smith A, Bartol N, Winkler K, Holbrook A, Fallon M (2022) Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161, Rev. 1.

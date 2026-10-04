@@ -1,0 +1,18 @@
+id: at-4
+title: Training Records
+family: Awareness and Training (at)
+class: SP800-53
+
+Statement:
+  a. Document and monitor information security and privacy training activities, including security and privacy awareness training and specific role-based security and privacy training; and
+  b. Retain individual training records for [time period].
+
+Guidance:
+Documentation for specialized training may be maintained by individual supervisors at the discretion of the organization. The National Archives and Records Administration provides guidance on records retention for federal agencies.
+
+Parameters:
+- at-04_odp | label: "time period"
+  guideline: time period for retaining individual training records is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.

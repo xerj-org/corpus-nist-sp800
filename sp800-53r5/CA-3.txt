@@ -1,0 +1,60 @@
+id: ca-3
+title: Information Exchange
+family: Assessment, Authorization, and Monitoring (ca)
+class: SP800-53
+
+Statement:
+  a. Approve and manage the exchange of information between the system and other systems using [Selection (one-or-more): interconnection security agreements; information exchange security agreements; memoranda of understanding or agreement; service level agreements; user agreements; non-disclosure agreements; {{ insert: param, ca-03_odp.02 }} ];
+  b. Document, as part of each exchange agreement, the interface characteristics, security and privacy requirements, controls, and responsibilities for each system, and the impact level of the information communicated; and
+  c. Review and update the agreements [frequency].
+
+Guidance:
+System information exchange requirements apply to information exchanges between two or more systems. System information exchanges include connections via leased lines or virtual private networks, connections to internet service providers, database sharing or exchanges of database transaction information, connections and exchanges with cloud services, exchanges via web-based services, or exchanges of files via file transfer protocols, network protocols (e.g., IPv4, IPv6), email, or other organization-to-organization communications. Organizations consider the risk related to new or increased threats that may be introduced when systems exchange information with other systems that may have different security and privacy requirements and controls. This includes systems within the same organization and systems that are external to the organization. A joint authorization of the systems exchanging information, as described in [CA-6(1)](#ca-6.1) or [CA-6(2)](#ca-6.2) , may help to communicate and reduce risk.
+
+Authorizing officials determine the risk associated with system information exchange and the controls needed for appropriate risk mitigation. The types of agreements selected are based on factors such as the impact level of the information being exchanged, the relationship between the organizations exchanging information (e.g., government to government, government to business, business to business, government or business to service provider, government or business to individual), or the level of access to the organizational system by users of the other system. If systems that exchange information have the same authorizing official, organizations need not develop agreements. Instead, the interface characteristics between the systems (e.g., how the information is being exchanged. how the information is protected) are described in the respective security and privacy plans. If the systems that exchange information have different authorizing officials within the same organization, the organizations can develop agreements or provide the same information that would be provided in the appropriate agreement type from [CA-3a](#ca-3_smt.a) in the respective security and privacy plans for the systems. Organizations may incorporate agreement information into formal contracts, especially for information exchanges established between federal agencies and nonfederal organizations (including service providers, contractors, system developers, and system integrators). Risk considerations include systems that share the same networks.
+
+Parameters:
+- ca-03_odp.01 | selection (one-or-more): interconnection security agreements; information exchange security agreements; memoranda of understanding or agreement; service level agreements; user agreements; non-disclosure agreements; {{ insert: param, ca-03_odp.02 }} 
+- ca-03_odp.02 | label: "type of agreement"
+  guideline: the type of agreement used to approve and manage the exchange of information is defined (if selected);
+- ca-03_odp.03 | label: "frequency"
+  guideline: the frequency at which to review and update agreements is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
+- Grance T, Hash J, Peck S, Smith J, Korow-Diks K (2002) Security Guide for Interconnecting Information Technology Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-47.
+
+========================================================================
+Enhancement CA-3(1) (ca-3.1) - Unclassified National Security System Connections
+
+========================================================================
+Enhancement CA-3(2) (ca-3.2) - Classified National Security System Connections
+
+========================================================================
+Enhancement CA-3(3) (ca-3.3) - Unclassified Non-national Security System Connections
+
+========================================================================
+Enhancement CA-3(4) (ca-3.4) - Connections to Public Networks
+
+========================================================================
+Enhancement CA-3(5) (ca-3.5) - Restrictions on External System Connections
+
+========================================================================
+Enhancement CA-3(6) (ca-3.6) - Transfer Authorizations
+
+Statement:
+Verify that individuals or systems transferring data between interconnecting systems have the requisite authorizations (i.e., write permissions or privileges) prior to accepting such data.
+
+Guidance:
+To prevent unauthorized individuals and systems from making information transfers to protected systems, the protected system verifies—via independent means— whether the individual or system attempting to transfer information is authorized to do so. Verification of the authorization to transfer information also applies to control plane traffic (e.g., routing and DNS) and services (e.g., authenticated SMTP relays).
+
+========================================================================
+Enhancement CA-3(7) (ca-3.7) - Transitive Information Exchanges
+
+Statement:
+  (a) Identify transitive (downstream) information exchanges with other systems through the systems identified in [CA-3a](#ca-3_smt.a) ; and
+  (b) Take measures to ensure that transitive (downstream) information exchanges cease when the controls on identified transitive (downstream) systems cannot be verified or validated.
+
+Guidance:
+Transitive or "downstream" information exchanges are information exchanges between the system or systems with which the organizational system exchanges information and other systems. For mission-essential systems, services, and applications, including high value assets, it is necessary to identify such information exchanges. The transparency of the controls or protection measures in place in such downstream systems connected directly or indirectly to organizational systems is essential to understanding the security and privacy risks resulting from those information exchanges. Organizational systems can inherit risk from downstream systems through transitive connections and information exchanges, which can make the organizational systems more susceptible to threats, hazards, and adverse impacts.

@@ -1,0 +1,59 @@
+id: sc-5
+title: Denial-of-service Protection
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. [Selection (): protect against; limit] the effects of the following types of denial-of-service events: [types of denial-of-service events] ; and
+  b. Employ the following controls to achieve the denial-of-service objective: [controls by type of denial-of-service event].
+
+Guidance:
+Denial-of-service events may occur due to a variety of internal and external causes, such as an attack by an adversary or a lack of planning to support organizational needs with respect to capacity and bandwidth. Such attacks can occur across a wide range of network protocols (e.g., IPv4, IPv6). A variety of technologies are available to limit or eliminate the origination and effects of denial-of-service events. For example, boundary protection devices can filter certain types of packets to protect system components on internal networks from being directly affected by or the source of denial-of-service attacks. Employing increased network capacity and bandwidth combined with service redundancy also reduces the susceptibility to denial-of-service events.
+
+Parameters:
+- sc-05_odp.01 | label: "types of denial-of-service events"
+  guideline: types of denial-of-service events to be protected against or limited are defined;
+- sc-05_odp.02 | selection (): protect against; limit
+- sc-05_odp.03 | label: "controls by type of denial-of-service event"
+  guideline: controls to achieve the denial-of-service objective by type of denial-of-service event are defined;
+
+References:
+- Sriram K, Montgomery D (2019) Resilient Interdomain Traffic Exchange: BGP Security and DDoS Mitigation. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-189.
+
+========================================================================
+Enhancement SC-5(1) (sc-5.1) - Restrict Ability to Attack Other Systems
+
+Statement:
+Restrict the ability of individuals to launch the following denial-of-service attacks against other systems: [denial-of-service attacks].
+
+Guidance:
+Restricting the ability of individuals to launch denial-of-service attacks requires the mechanisms commonly used for such attacks to be unavailable. Individuals of concern include hostile insiders or external adversaries who have breached or compromised the system and are using it to launch a denial-of-service attack. Organizations can restrict the ability of individuals to connect and transmit arbitrary information on the transport medium (i.e., wired networks, wireless networks, spoofed Internet protocol packets). Organizations can also limit the ability of individuals to use excessive system resources. Protection against individuals having the ability to launch denial-of-service attacks may be implemented on specific systems or boundary devices that prohibit egress to potential target systems.
+
+Parameters:
+- sc-05.01_odp | label: "denial-of-service attacks"
+  guideline: denial-of-service attacks for which to restrict the ability of individuals to launch are defined;
+
+========================================================================
+Enhancement SC-5(2) (sc-5.2) - Capacity, Bandwidth, and Redundancy
+
+Statement:
+Manage capacity, bandwidth, or other redundancy to limit the effects of information flooding denial-of-service attacks.
+
+Guidance:
+Managing capacity ensures that sufficient capacity is available to counter flooding attacks. Managing capacity includes establishing selected usage priorities, quotas, partitioning, or load balancing.
+
+========================================================================
+Enhancement SC-5(3) (sc-5.3) - Detection and Monitoring
+
+Statement:
+  (a) Employ the following monitoring tools to detect indicators of denial-of-service attacks against, or launched from, the system: [monitoring tools] ; and
+  (b) Monitor the following system resources to determine if sufficient resources exist to prevent effective denial-of-service attacks: [system resources].
+
+Guidance:
+Organizations consider the utilization and capacity of system resources when managing risk associated with a denial of service due to malicious attacks. Denial-of-service attacks can originate from external or internal sources. System resources that are sensitive to denial of service include physical disk storage, memory, and CPU cycles. Techniques used to prevent denial-of-service attacks related to storage utilization and capacity include instituting disk quotas, configuring systems to automatically alert administrators when specific storage capacity thresholds are reached, using file compression technologies to maximize available storage space, and imposing separate partitions for system and user data.
+
+Parameters:
+- sc-05.03_odp.01 | label: "monitoring tools"
+  guideline: monitoring tools for detecting indicators of denial-of-service attacks are defined;
+- sc-05.03_odp.02 | label: "system resources"
+  guideline: system resources to be monitored to determine if sufficient resources exist to prevent effective denial-of-service attacks are defined;

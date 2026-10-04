@@ -1,0 +1,4 @@
+id: sc-9
+title: Transmission Confidentiality
+family: System and Communications Protection (sc)
+class: SP800-53

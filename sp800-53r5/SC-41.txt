@@ -1,0 +1,17 @@
+id: sc-41
+title: Port and I/O Device Access
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+[Selection (): physically; logically] disable or remove [connection ports or input/output devices] on the following systems or system components: [systems or system components].
+
+Guidance:
+Connection ports include Universal Serial Bus (USB), Thunderbolt, and Firewire (IEEE 1394). Input/output (I/O) devices include compact disc and digital versatile disc drives. Disabling or removing such connection ports and I/O devices helps prevent the exfiltration of information from systems and the introduction of malicious code from those ports or devices. Physically disabling or removing ports and/or devices is the stronger action.
+
+Parameters:
+- sc-41_odp.01 | label: "connection ports or input/output devices"
+  guideline: connection ports or input/output devices to be disabled or removed are defined;
+- sc-41_odp.02 | selection (): physically; logically
+- sc-41_odp.03 | label: "systems or system components"
+  guideline: systems or system components with connection ports or input/output devices to be disabled or removed are defined;

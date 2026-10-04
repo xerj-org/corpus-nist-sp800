@@ -1,0 +1,18 @@
+id: SP_800_171_03.08.09
+title: System Backup – Cryptographic Protection
+family: Media Protection (SP_800_171_03.08)
+class: requirement
+
+Statement:
+  SR-03.08.09.a Protect the confidentiality of backup information.
+  SR-03.08.09.b Implement cryptographic mechanisms to prevent the unauthorized disclosure of CUI at backup storage locations.
+
+Guidance:
+The selection of cryptographic mechanisms is based on the need to protect the confidentiality of backup information. Hardware security module (HSM) devices safeguard and manage cryptographic keys and provide cryptographic processing. Cryptographic operations (e.g., encryption, decryption, and signature generation and verification) are typically hosted on the HSM device, and many implementations provide hardware-accelerated mechanisms for cryptographic operations. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.11) 03.13.11.
+
+References:
+- CP-09
+- CP-09(08)
+- Barker EB, Smid ME, Branstad DK, Chokhani S (2013) A Framework for Designing Cryptographic Key Management Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-130.
+- Barker EB, Branstad DK, Smid ME (2015) A Profile for U.S. Federal Cryptographic Key Management Systems (CKMS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-152.
+- Swanson MA, Bowen P, Phillips AW, Gallup D, Lynes D (2010) Contingency Planning Guide for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special

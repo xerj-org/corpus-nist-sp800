@@ -1,0 +1,41 @@
+id: sc-45
+title: System Time Synchronization
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Synchronize system clocks within and between systems and system components.
+
+Guidance:
+Time synchronization of system clocks is essential for the correct execution of many system services, including identification and authentication processes that involve certificates and time-of-day restrictions as part of access control. Denial of service or failure to deny expired credentials may result without properly synchronized clocks within and between systems and system components. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. The granularity of time measurements refers to the degree of synchronization between system clocks and reference clocks, such as clocks synchronizing within hundreds of milliseconds or tens of milliseconds. Organizations may define different time granularities for system components. Time service can be critical to other security capabilities—such as access control and identification and authentication—depending on the nature of the mechanisms used to support the capabilities.
+
+References:
+- Internet Engineering Task Force (IETF), Request for Comments: 5905, *Network Time Protocol Version 4: Protocol and Algorithms Specification* , June 2010.
+
+========================================================================
+Enhancement SC-45(1) (sc-45.1) - Synchronization with Authoritative Time Source
+
+Statement:
+  (a) Compare the internal system clocks [frequency] with [authoritative time source] ; and
+  (b) Synchronize the internal system clocks to the authoritative time source when the time difference is greater than [time period].
+
+Guidance:
+Synchronization of internal system clocks with an authoritative source provides uniformity of time stamps for systems with multiple system clocks and systems connected over a network.
+
+Parameters:
+- sc-45.01_odp.01 | label: "frequency"
+  guideline: the frequency at which to compare the internal system clocks with the authoritative time source is defined;
+- sc-45.01_odp.02 | label: "authoritative time source"
+  guideline: the authoritative time source to which internal system clocks are to be compared is defined;
+- sc-45.01_odp.03 | label: "time period"
+  guideline: the time period to compare the internal system clocks with the authoritative time source is defined;
+
+========================================================================
+Enhancement SC-45(2) (sc-45.2) - Secondary Authoritative Time Source
+
+Statement:
+  (a) Identify a secondary authoritative time source that is in a different geographic region than the primary authoritative time source; and
+  (b) Synchronize the internal system clocks to the secondary authoritative time source if the primary authoritative time source is unavailable.
+
+Guidance:
+It may be necessary to employ geolocation information to determine that the secondary authoritative time source is in a different geographic region.

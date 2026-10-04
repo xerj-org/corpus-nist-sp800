@@ -1,0 +1,16 @@
+id: sa-19
+title: Component Authenticity
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+========================================================================
+Enhancement SA-19(1) (sa-19.1) - Anti-counterfeit Training
+
+========================================================================
+Enhancement SA-19(2) (sa-19.2) - Configuration Control for Component Service and Repair
+
+========================================================================
+Enhancement SA-19(3) (sa-19.3) - Component Disposal
+
+========================================================================
+Enhancement SA-19(4) (sa-19.4) - Anti-counterfeit Scanning

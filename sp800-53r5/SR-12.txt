@@ -1,0 +1,16 @@
+id: sr-12
+title: Component Disposal
+family: Supply Chain Risk Management (sr)
+class: SP800-53
+
+Statement:
+Dispose of [data, documentation, tools, or system components] using the following techniques and methods: [techniques and methods].
+
+Guidance:
+Data, documentation, tools, or system components can be disposed of at any time during the system development life cycle (not only in the disposal or retirement phase of the life cycle). For example, disposal can occur during research and development, design, prototyping, or operations/maintenance and include methods such as disk cleaning, removal of cryptographic keys, partial reuse of components. Opportunities for compromise during disposal affect physical and logical data, including system documentation in paper-based or digital files; shipping and delivery documentation; memory sticks with software code; or complete routers or servers that include permanent media, which contain sensitive or proprietary information. Additionally, proper disposal of system components helps to prevent such components from entering the gray market.
+
+Parameters:
+- sr-12_odp.01 | label: "data, documentation, tools, or system components"
+  guideline: data, documentation, tools, or system components to be disposed of are defined;
+- sr-12_odp.02 | label: "techniques and methods"
+  guideline: techniques and methods for disposing of data, documentation, tools, or system components are defined;

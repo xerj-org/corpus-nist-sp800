@@ -1,0 +1,77 @@
+id: RS.MA
+title: Incident Management
+family: RESPOND (RS)
+class: category
+family-overview: Actions regarding a detected cybersecurity incident are taken
+
+Statement:
+Responses to detected cybersecurity incidents are managed
+
+========================================================================
+Child control RS.MA-01 - RS.MA-01
+
+Statement:
+The incident response plan is executed in coordination with relevant third parties once an incident is declared
+
+Example:
+Detection technologies automatically report confirmed incidents
+
+Example:
+Request incident response assistance from the organization's incident response outsourcer
+
+Example:
+Designate an incident lead for each incident
+
+Example:
+Initiate execution of additional cybersecurity plans as needed to support incident response (for example, business continuity and disaster recovery)
+
+========================================================================
+Child control RS.MA-02 - RS.MA-02
+
+Statement:
+Incident reports are triaged and validated
+
+Example:
+Preliminarily review incident reports to confirm that they are cybersecurity-related and necessitate incident response activities
+
+Example:
+Apply criteria to estimate the severity of an incident
+
+========================================================================
+Child control RS.MA-03 - RS.MA-03
+
+Statement:
+Incidents are categorized and prioritized
+
+Example:
+Further review and categorize incidents based on the type of incident (e.g., data breach, ransomware, DDoS, account compromise)
+
+Example:
+Prioritize incidents based on their scope, likely impact, and time-critical nature
+
+Example:
+Select incident response strategies for active incidents by balancing the need to quickly recover from an incident with the need to observe the attacker or conduct a more thorough investigation
+
+========================================================================
+Child control RS.MA-04 - RS.MA-04
+
+Statement:
+Incidents are escalated or elevated as needed
+
+Example:
+Track and validate the status of all ongoing incidents
+
+Example:
+Coordinate incident escalation or elevation with designated internal and external stakeholders
+
+========================================================================
+Child control RS.MA-05 - RS.MA-05
+
+Statement:
+The criteria for initiating incident recovery are applied
+
+Example:
+Apply incident recovery criteria to known and assumed characteristics of the incident to determine whether incident recovery processes should be initiated
+
+Example:
+Take the possible operational disruption of incident recovery activities into account

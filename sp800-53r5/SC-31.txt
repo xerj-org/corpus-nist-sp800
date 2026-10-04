@@ -1,0 +1,50 @@
+id: sc-31
+title: Covert Channel Analysis
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. Perform a covert channel analysis to identify those aspects of communications within the system that are potential avenues for covert [Selection (one-or-more): storage; timing] channels; and
+  b. Estimate the maximum bandwidth of those channels.
+
+Guidance:
+Developers are in the best position to identify potential areas within systems that might lead to covert channels. Covert channel analysis is a meaningful activity when there is the potential for unauthorized information flows across security domains, such as in the case of systems that contain export-controlled information and have connections to external networks (i.e., networks that are not controlled by organizations). Covert channel analysis is also useful for multilevel secure systems, multiple security level systems, and cross-domain systems.
+
+Parameters:
+- sc-31_odp | selection (one-or-more): storage; timing
+
+========================================================================
+Enhancement SC-31(1) (sc-31.1) - Test Covert Channels for Exploitability
+
+Statement:
+Test a subset of the identified covert channels to determine the channels that are exploitable.
+
+Guidance:
+None.
+
+========================================================================
+Enhancement SC-31(2) (sc-31.2) - Maximum Bandwidth
+
+Statement:
+Reduce the maximum bandwidth for identified covert [Selection (one-or-more): storage; timing] channels to [values].
+
+Guidance:
+The complete elimination of covert channels, especially covert timing channels, is usually not possible without significant performance impacts.
+
+Parameters:
+- sc-31.02_odp.01 | selection (one-or-more): storage; timing
+- sc-31.02_odp.02 | label: "values"
+  guideline: values for the maximum bandwidth for identified covert channels are defined;
+
+========================================================================
+Enhancement SC-31(3) (sc-31.3) - Measure Bandwidth in Operational Environments
+
+Statement:
+Measure the bandwidth of [subset of identified covert channels] in the operational environment of the system.
+
+Guidance:
+Measuring covert channel bandwidth in specified operational environments helps organizations determine how much information can be covertly leaked before such leakage adversely affects mission or business functions. Covert channel bandwidth may be significantly different when measured in settings that are independent of the specific environments of operation, including laboratories or system development environments.
+
+Parameters:
+- sc-31.03_odp | label: "subset of identified covert channels"
+  guideline: subset of identified covert channels whose bandwidth is to be measured in the operational environment of the system is defined;

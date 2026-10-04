@@ -1,0 +1,52 @@
+id: ac-24
+title: Access Control Decisions
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+[Selection (one-or-more): establish procedures; implement mechanisms] to ensure [access control decisions] are applied to each access request prior to access enforcement.
+
+Guidance:
+Access control decisions (also known as authorization decisions) occur when authorization information is applied to specific accesses. In contrast, access enforcement occurs when systems enforce access control decisions. While it is common to have access control decisions and access enforcement implemented by the same entity, it is not required, and it is not always an optimal implementation choice. For some architectures and distributed systems, different entities may make access control decisions and enforce access.
+
+Parameters:
+- ac-24_odp.01 | selection (one-or-more): establish procedures; implement mechanisms
+- ac-24_odp.02 | label: "access control decisions"
+  guideline: access control decisions applied to each access request prior to access enforcement are defined;
+
+References:
+- Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.
+- Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and Next Generation Access Control (NGAC). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-178.
+
+========================================================================
+Enhancement AC-24(1) (ac-24.1) - Transmit Access Authorization Information
+
+Statement:
+Transmit [access authorization information] using [controls] to [systems] that enforce access control decisions.
+
+Guidance:
+Authorization processes and access control decisions may occur in separate parts of systems or in separate systems. In such instances, authorization information is transmitted securely (e.g., using cryptographic mechanisms) so that timely access control decisions can be enforced at the appropriate locations. To support the access control decisions, it may be necessary to transmit as part of the access authorization information supporting security and privacy attributes. This is because in distributed systems, there are various access control decisions that need to be made, and different entities make these decisions in a serial fashion, each requiring those attributes to make the decisions. Protecting access authorization information ensures that such information cannot be altered, spoofed, or compromised during transmission.
+
+Parameters:
+- ac-24.01_odp.01 | label: "access authorization information"
+  guideline: access authorization information transmitted to systems that enforce access control decisions is defined;
+- ac-24.01_odp.02 | label: "controls"
+  guideline: controls to be used when authorization information is transmitted to systems that enforce access control decisions are defined;
+- ac-24.01_odp.03 | label: "systems"
+  guideline: systems that enforce access control decisions are defined;
+
+========================================================================
+Enhancement AC-24(2) (ac-24.2) - No User or Process Identity
+
+Statement:
+Enforce access control decisions based on [organization-defined security or privacy attributes] that do not include the identity of the user or process acting on behalf of the user.
+
+Guidance:
+In certain situations, it is important that access control decisions can be made without information regarding the identity of the users issuing the requests. These are generally instances where preserving individual privacy is of paramount importance. In other situations, user identification information is simply not needed for access control decisions, and especially in the case of distributed systems, transmitting such information with the needed degree of assurance may be very expensive or difficult to accomplish. MAC, RBAC, ABAC, and label-based control policies, for example, might not include user identity as an attribute.
+
+Parameters:
+- ac-24.2_prm_1 | label: "organization-defined security or privacy attributes"
+- ac-24.02_odp.01 | label: "security attributes"
+  guideline: security attributes that do not include the identity of the user or process acting on behalf of the user are defined (if selected);
+- ac-24.02_odp.02 | label: "privacy attributes"
+  guideline: privacy attributes that do not include the identity of the user or process acting on behalf of the user are defined (if selected);

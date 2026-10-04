@@ -1,0 +1,21 @@
+id: SP_800_171_03.12.05
+title: Information Exchange
+family: Security Assessment and Monitoring (SP_800_171_03.12)
+class: requirement
+
+Statement:
+  SR-03.12.05.a Approve and manage the exchange of CUI between the system and other systems using [Selection (one-or-more): interconnection security agreements; information exchange security agreements; memoranda of understanding or agreement; service-level agreements; user agreements; non-disclosure agreements; other types of agreements].
+  SR-03.12.05.b Document interface characteristics, security requirements, and responsibilities for each system as part of the exchange agreements.
+  SR-03.12.05.c Review and update the exchange agreements [frequency].
+
+Guidance:
+Information exchange applies to information exchanges between two or more systems, both internal and external to the organization. Organizations consider the risks related to new or increased threats that may be introduced when systems exchange information with other systems that may have different security requirements or policies. The types of agreements selected are based on factors such as the relationship between the organizations exchanging information (e.g., government to government, business to business, government to business, government or business, or government or business to individual) and the level of access to the organizational system by users of the other system. The types of agreements can include information exchange security agreements, interconnection security agreements, memoranda of understanding or agreement, service-level agreements, or other types of agreements. Organizations may incorporate agreement information into formal contracts, especially for information exchanges established between federal agencies and nonfederal organizations (e.g., service providers, contractors, system developers, and system integrators). The types of information contained in exchange agreements include the interface characteristics, security requirements, controls, and responsibilities for each system.
+
+Parameters:
+- A.03.12.05.ODP.01 | label: "SELECTED PARAMETER VALUES" | selection (one-or-more): interconnection security agreements; information exchange security agreements; memoranda of understanding or agreement; service-level agreements; user agreements; non-disclosure agreements; other types of agreements
+- A.03.12.05.ODP.02 | label: "frequency"
+  guideline: the frequency at which to review and update agreements is defined.
+
+References:
+- CA-03
+- Dempsey K, Pillitteri V, Regenscheid A (2021) Managing the Security of Information Exchanges. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-47,

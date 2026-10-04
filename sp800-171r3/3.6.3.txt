@@ -1,0 +1,18 @@
+id: SP_800_171_03.06.03
+title: Incident Response Testing
+family: Incident Response (SP_800_171_03.06)
+class: requirement
+
+Statement:
+Test the effectiveness of the incident response capability [frequency].
+
+Guidance:
+Organizations test incident response capabilities to determine their effectiveness and identify potential weaknesses or deficiencies. Incident response testing includes the use of checklists, walk-through or tabletop exercises, and simulations. Incident response testing can include a determination of the effects of incident response on organizational operations, organizational assets, and individuals. Qualitative and quantitative data can help determine the effectiveness of incident response processes.
+
+Parameters:
+- A.03.06.03.ODP.01 | label: "frequency"
+  guideline: the frequency at which to test the effectiveness of the incident response capability for the system is defined.
+
+References:
+- IR-03
+- Grance T, Nolan T, Burke K, Dudley R, White G, Good T (2006) Guide to Test, Training, and Exercise Programs for IT Plans and Capabilities. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-84.

@@ -1,0 +1,38 @@
+id: SP_800_172_3_0_0_03.15.02E
+title: Defense In Depth
+family: Planning (SP_800_172_3_0_0_3.15)
+class: security_requirement
+
+Statement:
+  ES-03.15.02E-a Design the security architecture for the system using a defense-in-depth approach.
+  ES-03.15.02E-b Allocate [security requirements] to [architectural layers and locations]. 
+  ES-03.15.02E-c Ensure that the allocated requirements operate in a coordinated and mutually reinforcing manner.
+
+Guidance:
+Organizations strategically allocate security requirements and the associated protection mechanisms in the security architecture so that adversaries must overcome multiple defensive layers to achieve their objective. Requiring adversaries to defeat multiple defensive layers makes it more difficult to attack systems by increasing the work factor of the adversary. It also increases the likelihood of detection. Defense-in-depth architectural approaches include modularity and layering, the separation of system and user functionality, and security function isolation.
+
+The coordination of allocated security requirements is essential to help ensure that an attack that involves one requirement does not create adverse, unintended consequences (e.g., system lockout and cascading alarms) by interfering with other requirements. The value of organizational assets and the impacts or consequences of loss are important considerations in providing additional defensive layers. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.15.02E.ODP.01 | label: "security requirements"
+  guideline: safeguards to be allocated to architectural layers and locations are defined.
+- A.03.15.02E.ODP.02 | label: "architectural layers and locations"
+  guideline: architectural layers and locations are defined.
+
+References:
+- PL-08(01)

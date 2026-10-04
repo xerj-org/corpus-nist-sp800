@@ -1,0 +1,7 @@
+id: SP_800_172_3_0_0_03.09.01E
+title: 03.09.01E
+family: Personnel Security (SP_800_172_3_0_0_3.9)
+class: security_requirement
+
+References:
+- SP_800_171_3_0_0

@@ -1,0 +1,65 @@
+id: PR.IR
+title: Technology Infrastructure Resilience
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+Security architectures are managed with the organization's risk strategy to protect asset confidentiality, integrity, and availability, and organizational resilience
+
+========================================================================
+Child control PR.IR-01 - PR.IR-01
+
+Statement:
+Networks and environments are protected from unauthorized logical access and usage
+
+Example:
+Logically segment organization networks and cloud-based platforms according to trust boundaries and platform types (e.g., IT, IoT, OT, mobile, guests), and permit required communications only between segments
+
+Example:
+Logically segment organization networks from external networks, and permit only necessary communications to enter the organization's networks from the external networks
+
+Example:
+Implement zero trust architectures to restrict network access to each resource to the minimum necessary
+
+Example:
+Check the cyber health of endpoints before allowing them to access and use production resources
+
+========================================================================
+Child control PR.IR-02 - PR.IR-02
+
+Statement:
+The organization's technology assets are protected from environmental threats
+
+Example:
+Protect organizational equipment from known environmental threats, such as flooding, fire, wind, and excessive heat and humidity
+
+Example:
+Include protection from environmental threats and provisions for adequate operating infrastructure in requirements for service providers that operate systems on the organization's behalf
+
+========================================================================
+Child control PR.IR-03 - PR.IR-03
+
+Statement:
+Mechanisms are implemented to achieve resilience requirements in normal and adverse situations
+
+Example:
+Avoid single points of failure in systems and infrastructure
+
+Example:
+Use load balancing to increase capacity and improve reliability
+
+Example:
+Use high-availability components like redundant storage and power supplies to improve system reliability
+
+========================================================================
+Child control PR.IR-04 - PR.IR-04
+
+Statement:
+Adequate resource capacity to ensure availability is maintained
+
+Example:
+Monitor usage of storage, power, compute, network bandwidth, and other resources
+
+Example:
+Forecast future needs, and scale resources accordingly

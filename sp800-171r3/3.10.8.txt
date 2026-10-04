@@ -1,0 +1,13 @@
+id: SP_800_171_03.10.08
+title: Access Control for Transmission
+family: Physical Protection (SP_800_171_03.10)
+class: requirement
+
+Statement:
+Control physical access to system distribution and transmission lines within organizational facilities.
+
+Guidance:
+Safeguarding measures applied to system distribution and transmission lines prevent accidental damage, disruption, and physical tampering. Such measures may also be necessary to prevent eavesdropping or the modification of unencrypted transmissions. Safeguarding measures used to control physical access to system distribution and transmission lines include disconnected or locked spare jacks, locked wiring closets, cabling protection with conduit or cable trays, and wiretapping sensors.
+
+References:
+- PE-04

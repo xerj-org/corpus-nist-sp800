@@ -1,0 +1,232 @@
+id: ac-2
+title: Account Management
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+  a. Define and document the types of accounts allowed and specifically prohibited for use within the system;
+  b. Assign account managers;
+  c. Require [prerequisites and criteria] for group and role membership;
+  d. Specify:
+    1. Authorized users of the system;
+    2. Group and role membership; and
+    3. Access authorizations (i.e., privileges) and [attributes (as required)] for each account;
+  e. Require approvals by [personnel or roles] for requests to create accounts;
+  f. Create, enable, modify, disable, and remove accounts in accordance with [policy, procedures, prerequisites, and criteria];
+  g. Monitor the use of accounts;
+  h. Notify account managers and [personnel or roles] within:
+    1. [time period] when accounts are no longer required;
+    2. [time period] when users are terminated or transferred; and
+    3. [time period] when system usage or need-to-know changes for an individual;
+  i. Authorize access to the system based on:
+    1. A valid access authorization;
+    2. Intended system usage; and
+    3. [attributes (as required)];
+  j. Review accounts for compliance with account management requirements [frequency];
+  k. Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group; and
+  l. Align account management processes with personnel termination and transfer processes.
+
+Guidance:
+Examples of system account types include individual, shared, group, system, guest, anonymous, emergency, developer, temporary, and service. Identification of authorized system users and the specification of access privileges reflect the requirements in other controls in the security plan. Users requiring administrative privileges on system accounts receive additional scrutiny by organizational personnel responsible for approving such accounts and privileged access, including system owner, mission or business owner, senior agency information security officer, or senior agency official for privacy. Types of accounts that organizations may wish to prohibit due to increased risk include shared, group, emergency, anonymous, temporary, and guest accounts.
+
+Where access involves personally identifiable information, security programs collaborate with the senior agency official for privacy to establish the specific conditions for group and role membership; specify authorized users, group and role membership, and access authorizations for each account; and create, adjust, or remove system accounts in accordance with organizational policies. Policies can include such information as account expiration dates or other factors that trigger the disabling of accounts. Organizations may choose to define access privileges or other attributes by account, type of account, or a combination of the two. Examples of other attributes required for authorizing access include restrictions on time of day, day of week, and point of origin. In defining other system account attributes, organizations consider system-related requirements and mission/business requirements. Failure to consider these factors could affect system availability.
+
+Temporary and emergency accounts are intended for short-term use. Organizations establish temporary accounts as part of normal account activation procedures when there is a need for short-term accounts without the demand for immediacy in account activation. Organizations establish emergency accounts in response to crisis situations and with the need for rapid account activation. Therefore, emergency account activation may bypass normal account authorization processes. Emergency and temporary accounts are not to be confused with infrequently used accounts, including local logon accounts used for special tasks or when network resources are unavailable (may also be known as accounts of last resort). Such accounts remain available and are not subject to automatic disabling or removal dates. Conditions for disabling or deactivating accounts include when shared/group, emergency, or temporary accounts are no longer required and when individuals are transferred or terminated. Changing shared/group authenticators when members leave the group is intended to ensure that former group members do not retain access to the shared or group account. Some types of system accounts may require specialized training.
+
+Parameters:
+- ac-02_odp.01 | label: "prerequisites and criteria"
+  guideline: prerequisites and criteria for group and role membership are defined;
+- ac-02_odp.02 | label: "attributes (as required)"
+  guideline: attributes (as required) for each account are defined;
+- ac-02_odp.03 | label: "personnel or roles"
+  guideline: personnel or roles required to approve requests to create accounts is/are defined;
+- ac-02_odp.04 | label: "policy, procedures, prerequisites, and criteria"
+  guideline: policy, procedures, prerequisites, and criteria for account creation, enabling, modification, disabling, and removal are defined;
+- ac-02_odp.05 | label: "personnel or roles"
+  guideline: personnel or roles to be notified is/are defined;
+- ac-02_odp.06 | label: "time period"
+  guideline: time period within which to notify account managers when accounts are no longer required is defined;
+- ac-02_odp.07 | label: "time period"
+  guideline: time period within which to notify account managers when users are terminated or transferred is defined; 
+- ac-02_odp.08 | label: "time period"
+  guideline: time period within which to notify account managers when system usage or the need to know changes for an individual is defined;
+- ac-02_odp.09 | label: "attributes (as required)"
+  guideline: attributes needed to authorize system access (as required) are defined;
+- ac-02_odp.10 | label: "frequency"
+  guideline: the frequency of account review is defined;
+
+References:
+- Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.
+- Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and Next Generation Access Control (NGAC). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-178.
+- Yaga DJ, Kuhn R, Hu VC (2017) Verification and Test Methods for Access Control Policies/Models. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-192.
+
+========================================================================
+Enhancement AC-2(1) (ac-2.1) - Automated System Account Management
+
+Statement:
+Support the management of system accounts using [automated mechanisms].
+
+Guidance:
+Automated system account management includes using automated mechanisms to create, enable, modify, disable, and remove accounts; notify account managers when an account is created, enabled, modified, disabled, or removed, or when users are terminated or transferred; monitor system account usage; and report atypical system account usage. Automated mechanisms can include internal system functions and email, telephonic, and text messaging notifications.
+
+Parameters:
+- ac-02.01_odp | label: "automated mechanisms"
+  guideline: automated mechanisms used to support the management of system accounts are defined; 
+
+========================================================================
+Enhancement AC-2(2) (ac-2.2) - Automated Temporary and Emergency Account Management
+
+Statement:
+Automatically [Selection (): remove; disable] temporary and emergency accounts after [time period].
+
+Guidance:
+Management of temporary and emergency accounts includes the removal or disabling of such accounts automatically after a predefined time period rather than at the convenience of the system administrator. Automatic removal or disabling of accounts provides a more consistent implementation.
+
+Parameters:
+- ac-02.02_odp.01 | selection (): remove; disable
+- ac-02.02_odp.02 | label: "time period"
+  guideline: the time period after which to automatically remove or disable temporary or emergency accounts is defined;
+
+========================================================================
+Enhancement AC-2(3) (ac-2.3) - Disable Accounts
+
+Statement:
+Disable accounts within [time period] when the accounts:
+  (a) Have expired;
+  (b) Are no longer associated with a user or individual;
+  (c) Are in violation of organizational policy; or
+  (d) Have been inactive for [time period].
+
+Guidance:
+Disabling expired, inactive, or otherwise anomalous accounts supports the concepts of least privilege and least functionality which reduce the attack surface of the system.
+
+Parameters:
+- ac-02.03_odp.01 | label: "time period"
+  guideline: time period within which to disable accounts is defined;
+- ac-02.03_odp.02 | label: "time period"
+  guideline: time period for account inactivity before disabling is defined;
+
+========================================================================
+Enhancement AC-2(4) (ac-2.4) - Automated Audit Actions
+
+Statement:
+Automatically audit account creation, modification, enabling, disabling, and removal actions.
+
+Guidance:
+Account management audit records are defined in accordance with [AU-02](#au-2) and reviewed, analyzed, and reported in accordance with [AU-06](#au-6).
+
+========================================================================
+Enhancement AC-2(5) (ac-2.5) - Inactivity Logout
+
+Statement:
+Require that users log out when [time period of expected inactivity or description of when to log out].
+
+Guidance:
+Inactivity logout is behavior- or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period. Automatic enforcement of inactivity logout is addressed by [AC-11](#ac-11).
+
+Parameters:
+- ac-02.05_odp | label: "time period of expected inactivity or description of when to log out"
+  guideline: the time period of expected inactivity or description of when to log out is defined;
+
+========================================================================
+Enhancement AC-2(6) (ac-2.6) - Dynamic Privilege Management
+
+Statement:
+Implement [dynamic privilege management capabilities].
+
+Guidance:
+In contrast to access control approaches that employ static accounts and predefined user privileges, dynamic access control approaches rely on runtime access control decisions facilitated by dynamic privilege management, such as attribute-based access control. While user identities remain relatively constant over time, user privileges typically change more frequently based on ongoing mission or business requirements and the operational needs of organizations. An example of dynamic privilege management is the immediate revocation of privileges from users as opposed to requiring that users terminate and restart their sessions to reflect changes in privileges. Dynamic privilege management can also include mechanisms that change user privileges based on dynamic rules as opposed to editing specific user profiles. Examples include automatic adjustments of user privileges if they are operating out of their normal work times, if their job function or assignment changes, or if systems are under duress or in emergency situations. Dynamic privilege management includes the effects of privilege changes, for example, when there are changes to encryption keys used for communications.
+
+Parameters:
+- ac-02.06_odp | label: "dynamic privilege management capabilities"
+  guideline: dynamic privilege management capabilities are defined;
+
+========================================================================
+Enhancement AC-2(7) (ac-2.7) - Privileged User Accounts
+
+Statement:
+  (a) Establish and administer privileged user accounts in accordance with [Selection (): a role-based access scheme; an attribute-based access scheme];
+  (b) Monitor privileged role or attribute assignments;
+  (c) Monitor changes to roles or attributes; and
+  (d) Revoke access when privileged role or attribute assignments are no longer appropriate.
+
+Guidance:
+Privileged roles are organization-defined roles assigned to individuals that allow those individuals to perform certain security-relevant functions that ordinary users are not authorized to perform. Privileged roles include key management, account management, database administration, system and network administration, and web administration. A role-based access scheme organizes permitted system access and privileges into roles. In contrast, an attribute-based access scheme specifies allowed system access and privileges based on attributes.
+
+Parameters:
+- ac-02.07_odp | selection (): a role-based access scheme; an attribute-based access scheme
+
+========================================================================
+Enhancement AC-2(8) (ac-2.8) - Dynamic Account Management
+
+Statement:
+Create, activate, manage, and deactivate [system accounts] dynamically.
+
+Guidance:
+Approaches for dynamically creating, activating, managing, and deactivating system accounts rely on automatically provisioning the accounts at runtime for entities that were previously unknown. Organizations plan for the dynamic management, creation, activation, and deactivation of system accounts by establishing trust relationships, business rules, and mechanisms with appropriate authorities to validate related authorizations and privileges.
+
+Parameters:
+- ac-02.08_odp | label: "system accounts"
+  guideline: system accounts that are dynamically created, activated, managed, and deactivated are defined;
+
+========================================================================
+Enhancement AC-2(9) (ac-2.9) - Restrictions on Use of Shared and Group Accounts
+
+Statement:
+Only permit the use of shared and group accounts that meet [conditions].
+
+Guidance:
+Before permitting the use of shared or group accounts, organizations consider the increased risk due to the lack of accountability with such accounts.
+
+Parameters:
+- ac-02.09_odp | label: "conditions"
+  guideline: conditions for establishing shared and group accounts are defined;
+
+========================================================================
+Enhancement AC-2(10) (ac-2.10) - Shared and Group Account Credential Change
+
+========================================================================
+Enhancement AC-2(11) (ac-2.11) - Usage Conditions
+
+Statement:
+Enforce [circumstances and/or usage conditions] for [system accounts].
+
+Guidance:
+Specifying and enforcing usage conditions helps to enforce the principle of least privilege, increase user accountability, and enable effective account monitoring. Account monitoring includes alerts generated if the account is used in violation of organizational parameters. Organizations can describe specific conditions or circumstances under which system accounts can be used, such as by restricting usage to certain days of the week, time of day, or specific durations of time.
+
+Parameters:
+- ac-02.11_odp.01 | label: "circumstances and/or usage conditions"
+  guideline: circumstances and/or usage conditions to be enforced for system accounts are defined;
+- ac-02.11_odp.02 | label: "system accounts"
+  guideline: system accounts subject to enforcement of circumstances and/or usage conditions are defined;
+
+========================================================================
+Enhancement AC-2(12) (ac-2.12) - Account Monitoring for Atypical Usage
+
+Statement:
+  (a) Monitor system accounts for [atypical usage] ; and
+  (b) Report atypical usage of system accounts to [personnel or roles].
+
+Guidance:
+Atypical usage includes accessing systems at certain times of the day or from locations that are not consistent with the normal usage patterns of individuals. Monitoring for atypical usage may reveal rogue behavior by individuals or an attack in progress. Account monitoring may inadvertently create privacy risks since data collected to identify atypical usage may reveal previously unknown information about the behavior of individuals. Organizations assess and document privacy risks from monitoring accounts for atypical usage in their privacy impact assessment and make determinations that are in alignment with their privacy program plan.
+
+Parameters:
+- ac-02.12_odp.01 | label: "atypical usage"
+  guideline: atypical usage for which to monitor system accounts is defined;
+- ac-02.12_odp.02 | label: "personnel or roles"
+  guideline: personnel or roles to report atypical usage is/are defined;
+
+========================================================================
+Enhancement AC-2(13) (ac-2.13) - Disable Accounts for High-risk Individuals
+
+Statement:
+Disable accounts of individuals within [time period] of discovery of [significant risks].
+
+Guidance:
+Users who pose a significant security and/or privacy risk include individuals for whom reliable evidence indicates either the intention to use authorized access to systems to cause harm or through whom adversaries will cause harm. Such harm includes adverse impacts to organizational operations, organizational assets, individuals, other organizations, or the Nation. Close coordination among system administrators, legal staff, human resource managers, and authorizing officials is essential when disabling system accounts for high-risk individuals.
+
+Parameters:
+- ac-02.13_odp.01 | label: "time period"
+  guideline: time period within which to disable accounts of individuals who are discovered to pose significant risk is defined;
+- ac-02.13_odp.02 | label: "significant risks"
+  guideline: significant risks leading to disabling accounts are defined;

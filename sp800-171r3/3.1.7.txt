@@ -1,0 +1,15 @@
+id: SP_800_171_03.01.07
+title: Least Privilege – Privileged Functions
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.07.a Prevent non-privileged users from executing privileged functions.
+  SR-03.01.07.b Log the execution of privileged functions.
+
+Guidance:
+Privileged functions include establishing system accounts, performing system integrity checks, conducting patching operations, changing system configuration settings, or administering cryptographic key management activities. Non-privileged users do not possess the authorizations to execute privileged functions. Bypassing intrusion detection and prevention mechanisms or malicious code protection mechanisms are examples of privileged functions that require protection from non-privileged users. This requirement represents a condition achieved by the definition of authorized privileges in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.01.01)03.01.01 and privilege enforcement in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.01.02)03.01.02. The misuse of privileged functions — whether intentionally or unintentionally by authorized users or by unauthorized external entities that have compromised system accounts — is a serious and ongoing concern that can have significant adverse impacts on organizations. Logging the use of privileged functions is one way to detect such misuse and mitigate risks from advanced persistent threats and insider threats.
+
+References:
+- AC-06(09)
+- AC-06(10)

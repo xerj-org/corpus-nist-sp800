@@ -1,0 +1,34 @@
+id: SP_800_172_3_0_0_03.12.04E
+title: Internal System Connections
+family: Security Assessment and Monitoring (SP_800_172_3_0_0_3.12)
+class: security_requirement
+
+Statement:
+  ES-03.12.04E-a Authorize internal connections of [system components or classes of components] to the system. 
+  ES-03.12.04E-b Document, for each internal connection, the interface characteristics, security requirements, and the nature of the information communicated.
+  ES-03.12.04E-c Terminate internal system connections after [conditions]. 
+  ES-03.12.04E-d Review [frequency] the continued need for each internal connection. 
+
+Guidance:
+Internal system connections are connections between organizational systems and separate constituent system components (i.e., connections between components that are part of the same system), including components that are used for system development. Intra-system connections include connections with mobile devices, notebook and desktop computers, tablets, printers, copiers, facsimile machines, scanners, sensors, and servers. Organizations can authorize internal connections for a class of system components with common characteristics and/or configurations, including printers, scanners, and copiers with a specified processing, transmission, and storage capability or smart phones and tablets with a specific baseline configuration. The continued need for an internal system connection is reviewed from the perspective of whether it provides support for organizational missions or business functions. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.12.04E.ODP.01 | label: "system components or classes of components"
+  guideline: system components or classes of components requiring internal connections to the system are defined.
+- A.03.12.04E.ODP.02 | label: "conditions"
+  guideline: conditions requiring the termination of internal connections are defined.
+- A.03.12.04E.ODP.03 | label: "frequency"
+  guideline: the frequency at which to review the continued need for each internal connection is defined.
+
+References:
+- CA-09

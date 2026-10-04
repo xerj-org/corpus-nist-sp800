@@ -1,0 +1,10 @@
+id: sc-35
+title: External Malicious Code Identification
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Include system components that proactively seek to identify network-based malicious code or malicious websites.
+
+Guidance:
+External malicious code identification differs from decoys in [SC-26](#sc-26) in that the components actively probe networks, including the Internet, in search of malicious code contained on external websites. Like decoys, the use of external malicious code identification techniques requires some supporting isolation measures to ensure that any malicious code discovered during the search and subsequently executed does not infect organizational systems. Virtualization is a common technique for achieving such isolation.

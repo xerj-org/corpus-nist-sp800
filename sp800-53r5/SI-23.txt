@@ -1,0 +1,23 @@
+id: si-23
+title: Information Fragmentation
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+Based on [circumstances]:
+  a. Fragment the following information: [information] ; and
+  b. Distribute the fragmented information across the following systems or system components: [systems or system components].
+
+Guidance:
+One objective of the advanced persistent threat is to exfiltrate valuable information. Once exfiltrated, there is generally no way for the organization to recover the lost information. Therefore, organizations may consider dividing the information into disparate elements and distributing those elements across multiple systems or system components and locations. Such actions will increase the adversary’s work factor to capture and exfiltrate the desired information and, in so doing, increase the probability of detection. The fragmentation of information impacts the organization’s ability to access the information in a timely manner. The extent of the fragmentation is dictated by the impact or classification level (and value) of the information, threat intelligence information received, and whether data tainting is used (i.e., data tainting-derived information about the exfiltration of some information could result in the fragmentation of the remaining information).
+
+Parameters:
+- si-23_odp.01 | label: "circumstances"
+  guideline: circumstances that require information fragmentation are defined;
+- si-23_odp.02 | label: "information"
+  guideline: the information to be fragmented is defined;
+- si-23_odp.03 | label: "systems or system components"
+  guideline: systems or system components across which the fragmented information is to be distributed are defined;
+
+References:
+- Ross RS, Pillitteri VY, Graubart R, Bodeau D, McQuaid R (2019) Developing Cyber Resilient Systems: A Systems Security Engineering Approach. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 2.

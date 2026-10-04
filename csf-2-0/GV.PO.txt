@@ -1,0 +1,47 @@
+id: GV.PO
+title: Policy
+family: GOVERN (GV)
+class: category
+family-overview: The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored
+
+Statement:
+Organizational cybersecurity policy is established, communicated, and enforced
+
+========================================================================
+Child control GV.PO-01 - GV.PO-01
+
+Statement:
+Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced
+
+Example:
+Create, disseminate, and maintain an understandable, usable risk management policy with statements of management intent, expectations, and direction
+
+Example:
+Periodically review policy and supporting processes and procedures to ensure that they align with risk management strategy objectives and priorities, as well as the high-level direction of the cybersecurity policy
+
+Example:
+Require approval from senior management on policy
+
+Example:
+Communicate cybersecurity risk management policy and supporting processes and procedures across the organization
+
+Example:
+Require personnel to acknowledge receipt of policy when first hired, annually, and whenever policy is updated
+
+========================================================================
+Child control GV.PO-02 - GV.PO-02
+
+Statement:
+Policy for managing cybersecurity risks is reviewed, updated, communicated, and enforced to reflect changes in requirements, threats, technology, and organizational mission
+
+Example:
+Update policy based on periodic reviews of cybersecurity risk management results to ensure that policy and supporting processes and procedures adequately maintain risk at an acceptable level
+
+Example:
+Provide a timeline for reviewing changes to the organization's risk environment (e.g., changes in risk or in the organization's mission objectives), and communicate recommended policy updates
+
+Example:
+Update policy to reflect changes in legal and regulatory requirements
+
+Example:
+Update policy to reflect changes in technology (e.g., adoption of artificial intelligence) and changes to the business (e.g., acquisition of a new business, new contract requirements)

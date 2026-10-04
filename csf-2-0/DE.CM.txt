@@ -1,0 +1,119 @@
+id: DE.CM
+title: Continuous Monitoring
+family: DETECT (DE)
+class: category
+family-overview: Possible cybersecurity attacks and compromises are found and analyzed
+
+Statement:
+Assets are monitored to find anomalies, indicators of compromise, and other potentially adverse events
+
+========================================================================
+Child control DE.CM-01 - DE.CM-01
+
+Statement:
+Networks and network services are monitored to find potentially adverse events
+
+Example:
+Monitor DNS, BGP, and other network services for adverse events
+
+Example:
+Monitor wired and wireless networks for connections from unauthorized endpoints
+
+Example:
+Monitor facilities for unauthorized or rogue wireless networks
+
+Example:
+Compare actual network flows against baselines to detect deviations
+
+Example:
+Monitor network communications to identify changes in security postures for zero trust purposes
+
+========================================================================
+Child control DE.CM-02 - DE.CM-02
+
+Statement:
+The physical environment is monitored to find potentially adverse events
+
+Example:
+Monitor logs from physical access control systems (e.g., badge readers) to find unusual access patterns (e.g., deviations from the norm) and failed access attempts
+
+Example:
+Review and monitor physical access records (e.g., from visitor registration, sign-in sheets)
+
+Example:
+Monitor physical access controls (e.g., locks, latches, hinge pins, alarms) for signs of tampering
+
+Example:
+Monitor the physical environment using alarm systems, cameras, and security guards
+
+========================================================================
+Child control DE.CM-03 - DE.CM-03
+
+Statement:
+Personnel activity and technology usage are monitored to find potentially adverse events
+
+Example:
+Use behavior analytics software to detect anomalous user activity to mitigate insider threats
+
+Example:
+Monitor logs from logical access control systems to find unusual access patterns and failed access attempts
+
+Example:
+Continuously monitor deception technology, including user accounts, for any usage
+
+========================================================================
+Child control DE.CM-04 - DE.CM-04
+
+Statement:
+Malicious code is detected
+
+========================================================================
+Child control DE.CM-05 - DE.CM-05
+
+Statement:
+Unauthorized mobile code is detected
+
+========================================================================
+Child control DE.CM-06 - DE.CM-06
+
+Statement:
+External service provider activities and services are monitored to find potentially adverse events
+
+Example:
+Monitor remote and onsite administration and maintenance activities that external providers perform on organizational systems
+
+Example:
+Monitor activity from cloud-based services, internet service providers, and other service providers for deviations from expected behavior
+
+========================================================================
+Child control DE.CM-07 - DE.CM-07
+
+Statement:
+Monitoring for unauthorized personnel, connections, devices, and software is performed
+
+========================================================================
+Child control DE.CM-08 - DE.CM-08
+
+Statement:
+Vulnerability scans are performed
+
+========================================================================
+Child control DE.CM-09 - DE.CM-09
+
+Statement:
+Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events
+
+Example:
+Monitor email, web, file sharing, collaboration services, and other common attack vectors to detect malware, phishing, data leaks and exfiltration, and other adverse events
+
+Example:
+Monitor authentication attempts to identify attacks against credentials and unauthorized credential reuse
+
+Example:
+Monitor software configurations for deviations from security baselines
+
+Example:
+Monitor hardware and software for signs of tampering
+
+Example:
+Use technologies with a presence on endpoints to detect cyber health issues (e.g., missing patches, malware infections, unauthorized software), and redirect the endpoints to a remediation environment before access is authorized

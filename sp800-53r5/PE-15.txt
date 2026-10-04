@@ -1,0 +1,25 @@
+id: pe-15
+title: Water Damage Protection
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+Protect the system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and known to key personnel.
+
+Guidance:
+The provision of water damage protection primarily applies to organizational facilities that contain concentrations of system resources, including data centers, server rooms, and mainframe computer rooms. Isolation valves can be employed in addition to or in lieu of master shutoff valves to shut off water supplies in specific areas of concern without affecting entire organizations.
+
+========================================================================
+Enhancement PE-15(1) (pe-15.1) - Automation Support
+
+Statement:
+Detect the presence of water near the system and alert [personnel or roles] using [automated mechanisms].
+
+Guidance:
+Automated mechanisms include notification systems, water detection sensors, and alarms.
+
+Parameters:
+- pe-15.01_odp.01 | label: "personnel or roles"
+  guideline: personnel or roles to be alerted when the presence of water is detected near the system is/are defined;
+- pe-15.01_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to detect the presence of water near the system are defined;

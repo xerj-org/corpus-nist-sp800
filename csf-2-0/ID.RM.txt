@@ -1,0 +1,25 @@
+id: ID.RM
+title: Risk Management Strategy
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+
+========================================================================
+Child control ID.RM-01 - ID.RM-01
+
+Statement:
+Risk management processes are established, managed, and agreed to by organizational stakeholders
+
+========================================================================
+Child control ID.RM-02 - ID.RM-02
+
+Statement:
+Organizational risk tolerance is determined and clearly expressed
+
+========================================================================
+Child control ID.RM-03 - ID.RM-03
+
+Statement:
+The organization’s determination of risk tolerance is informed by its role in critical infrastructure and sector specific risk analysis

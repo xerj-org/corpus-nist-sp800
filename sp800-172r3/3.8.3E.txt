@@ -1,0 +1,35 @@
+id: SP_800_172_3_0_0_03.08.03E
+title: Testing System Backups for Reliability and Integrity
+family: Media Protection (SP_800_172_3_0_0_3.8)
+class: security_requirement
+
+Statement:
+Test backup information [organization-defined frequency] to verify media reliability and information integrity. 
+
+Guidance:
+Organizations need assurance that backup information can be reliably retrieved. Reliability pertains to the systems and system components in which the backup information is stored, the operations used to retrieve the information, and the integrity of the information being retrieved. Independent and specialized tests can be used for each of these aspects of reliability. For example, decrypting and transporting (or transmitting) a random sample of backup files from the alternate storage or backup site and comparing the information to the same information at the primary processing site can provide such assurance. This requirement enhances SP 800-171 requirement 03.08.09.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes shorten and reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.08.03E_prm_1 | label: "organization-defined frequency"
+- A.03.08.03E.ODP.01 | label: "frequency"
+  guideline: the frequency at which to test backup information for media reliability is defined.
+- A.03.08.03E.ODP.02 | label: "frequency"
+  guideline: the frequency at which to test backup information for information integrity is defined.
+
+References:
+- CP-09(01)

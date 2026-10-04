@@ -1,0 +1,45 @@
+id: mp-5
+title: Media Transport
+family: Media Protection (mp)
+class: SP800-53
+
+Statement:
+  a. Protect and control [types of system media] during transport outside of controlled areas using [organization-defined controls];
+  b. Maintain accountability for system media during transport outside of controlled areas;
+  c. Document activities associated with the transport of system media; and
+  d. Restrict the activities associated with the transport of system media to authorized personnel.
+
+Guidance:
+System media includes digital and non-digital media. Digital media includes flash drives, diskettes, magnetic tapes, external or removable hard disk drives (e.g., solid state and magnetic), compact discs, and digital versatile discs. Non-digital media includes microfilm and paper. Controlled areas are spaces for which organizations provide physical or procedural controls to meet requirements established for protecting information and systems. Controls to protect media during transport include cryptography and locked containers. Cryptographic mechanisms can provide confidentiality and integrity protections depending on the mechanisms implemented. Activities associated with media transport include releasing media for transport, ensuring that media enters the appropriate transport processes, and the actual transport. Authorized transport and courier personnel may include individuals external to the organization. Maintaining accountability of media during transport includes restricting transport activities to authorized personnel and tracking and/or obtaining records of transport activities as the media moves through the transportation system to prevent and detect loss, destruction, or tampering. Organizations establish documentation requirements for activities associated with the transport of system media in accordance with organizational assessments of risk. Organizations maintain the flexibility to define record-keeping methods for the different types of media transport as part of a system of transport-related records.
+
+Parameters:
+- mp-5_prm_2 | label: "organization-defined controls"
+- mp-05_odp.01 | label: "types of system media"
+  guideline: types of system media to protect and control during transport outside of controlled areas are defined;
+- mp-05_odp.02 | label: "controls"
+  guideline: controls used to protect system media outside of controlled areas are defined;
+- mp-05_odp.03 | label: "controls"
+  guideline: controls used to control system media outside of controlled areas are defined;
+
+References:
+- National Institute of Standards and Technology (2004) Standards for Security Categorization of Federal Information and Information Systems. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 199.
+- Stine KM, Kissel RL, Barker WC, Fahlsing J, Gulick J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 1, Rev. 1.
+- Stine KM, Kissel RL, Barker WC, Lee A, Fahlsing J (2008) Guide for Mapping Types of Information and Information Systems to Security Categories: Appendices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-60, Vol. 2, Rev. 1.
+
+========================================================================
+Enhancement MP-5(1) (mp-5.1) - Protection Outside of Controlled Areas
+
+========================================================================
+Enhancement MP-5(2) (mp-5.2) - Documentation of Activities
+
+========================================================================
+Enhancement MP-5(3) (mp-5.3) - Custodians
+
+Statement:
+Employ an identified custodian during transport of system media outside of controlled areas.
+
+Guidance:
+Identified custodians provide organizations with specific points of contact during the media transport process and facilitate individual accountability. Custodial responsibilities can be transferred from one individual to another if an unambiguous custodian is identified.
+
+========================================================================
+Enhancement MP-5(4) (mp-5.4) - Cryptographic Protection

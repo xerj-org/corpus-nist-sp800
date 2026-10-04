@@ -1,0 +1,47 @@
+id: ps-4
+title: Personnel Termination
+family: Personnel Security (ps)
+class: SP800-53
+
+Statement:
+Upon termination of individual employment:
+  a. Disable system access within [time period];
+  b. Terminate or revoke any authenticators and credentials associated with the individual;
+  c. Conduct exit interviews that include a discussion of [information security topics];
+  d. Retrieve all security-related organizational system-related property; and
+  e. Retain access to organizational information and systems formerly controlled by terminated individual.
+
+Guidance:
+System property includes hardware authentication tokens, system administration technical manuals, keys, identification cards, and building passes. Exit interviews ensure that terminated individuals understand the security constraints imposed by being former employees and that proper accountability is achieved for system-related property. Security topics at exit interviews include reminding individuals of nondisclosure agreements and potential limitations on future employment. Exit interviews may not always be possible for some individuals, including in cases related to the unavailability of supervisors, illnesses, or job abandonment. Exit interviews are important for individuals with security clearances. The timely execution of termination actions is essential for individuals who have been terminated for cause. In certain situations, organizations consider disabling the system accounts of individuals who are being terminated prior to the individuals being notified.
+
+Parameters:
+- ps-04_odp.01 | label: "time period"
+  guideline: a time period within which to disable system access is defined;
+- ps-04_odp.02 | label: "information security topics"
+  guideline: information security topics to be discussed when conducting exit interviews are defined;
+
+========================================================================
+Enhancement PS-4(1) (ps-4.1) - Post-employment Requirements
+
+Statement:
+  (a) Notify terminated individuals of applicable, legally binding post-employment requirements for the protection of organizational information; and
+  (b) Require terminated individuals to sign an acknowledgment of post-employment requirements as part of the organizational termination process.
+
+Guidance:
+Organizations consult with the Office of the General Counsel regarding matters of post-employment requirements on terminated individuals.
+
+========================================================================
+Enhancement PS-4(2) (ps-4.2) - Automated Actions
+
+Statement:
+Use [automated mechanisms] to [Selection (one-or-more): notify {{ insert: param, ps-04.02_odp.03 }} of individual termination actions; disable access to system resources].
+
+Guidance:
+In organizations with many employees, not all personnel who need to know about termination actions receive the appropriate notifications, or if such notifications are received, they may not occur in a timely manner. Automated mechanisms can be used to send automatic alerts or notifications to organizational personnel or roles when individuals are terminated. Such automatic alerts or notifications can be conveyed in a variety of ways, including via telephone, electronic mail, text message, or websites. Automated mechanisms can also be employed to quickly and thoroughly disable access to system resources after an employee is terminated.
+
+Parameters:
+- ps-04.02_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms to notify personnel or roles of individual termination actions and/or to disable access to system resources are defined;
+- ps-04.02_odp.02 | selection (one-or-more): notify {{ insert: param, ps-04.02_odp.03 }} of individual termination actions; disable access to system resources
+- ps-04.02_odp.03 | label: "personnel or roles"
+  guideline: personnel or roles to be notified upon termination of an individual is/are defined (if selected);

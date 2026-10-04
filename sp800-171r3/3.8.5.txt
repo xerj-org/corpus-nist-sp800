@@ -1,0 +1,17 @@
+id: SP_800_171_03.08.05
+title: Media Transport
+family: Media Protection (SP_800_171_03.08)
+class: requirement
+
+Statement:
+  SR-03.08.05.a Protect and control system media that contain CUI during transport outside of controlled areas.
+  SR-03.08.05.b Maintain accountability of system media that contain CUI during transport outside of controlled areas.
+  SR-03.08.05.c Document activities associated with the transport of system media that contain CUI.
+
+Guidance:
+System media include digital and non-digital media. Digital media include flash drives, diskettes, magnetic tapes, external or removable solid state or magnetic drives, compact discs, and digital versatile discs. Non-digital media include microfilm and paper. Controlled areas are spaces for which organizations provide physical or procedural measures to meet the requirements established for protecting CUI and systems. Media protection during transport can include cryptography and/or locked containers. Activities associated with media transport include releasing media for transport, ensuring that media enter the appropriate transport processes, and the actual transport. Authorized transport and courier personnel may include individuals external to the organization. Maintaining accountability of media during transport includes restricting transport activities to authorized personnel and tracking or obtaining the records of transport activities as the media move through the transportation system to prevent and detect loss, destruction, or tampering. This requirement is related to [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.08)03.13.08 and [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.13.11) 03.13.11.
+
+References:
+- MP-05
+- SC-28
+- Scarfone KA, Souppaya MP, Sexton M (2007) Guide to Storage Encryption Technologies for End User Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-111.

@@ -1,0 +1,35 @@
+id: SP_800_172_3_0_0_03.13.05E
+title: Change Processing and Storage Locations
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Change the location of [Selection (one):  {{ insert: param, A.03.13.05E.ODP.03 }} ; at random time intervals] [processing and/or storage]. 
+
+Guidance:
+Adversaries target critical missions and business functions and the systems that support those missions and business functions while also trying to minimize the exposure of their existence and tradecraft. The static, homogeneous, and deterministic nature of organizational systems targeted by adversaries make such systems more susceptible to attacks with less adversary cost and effort to be successful. Changing processing and storage locations (also referred to as moving target defense) addresses the advanced persistent threat using techniques such as virtualization, distributed processing, and replication. This enables organizations to relocate the system components (i.e., processing, storage) that support critical missions and business functions. Changing the locations of processing activities and/or storage sites introduces a degree of uncertainty to the targeting activities of adversaries. The targeting uncertainty increases the work factor of adversaries and makes compromises or breaches of the organizational systems more difficult and time-consuming. Uncertainty also increases the chances that adversaries may inadvertently disclose aspects of their tradecraft while attempting to locate critical organizational assets. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt and negate)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes contain and exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.13.05E.ODP.01 | label: "processing and/or storage"
+  guideline: processing and/or storage locations to be changed are defined.
+- A.03.13.05E.ODP.02 | label: "SELECTED PARAMETER VALUE" | selection (one):  {{ insert: param, A.03.13.05E.ODP.03 }} ; at random time intervals
+- A.03.13.05E.ODP.03 | label: "frequency"
+  guideline: the frequency at which to change the location of processing and/or storage is defined (if selected).
+
+References:
+- SC-30(03)

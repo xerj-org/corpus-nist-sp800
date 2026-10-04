@@ -1,0 +1,46 @@
+id: pe-14
+title: Environmental Controls
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+  a. Maintain [Selection (one-or-more): temperature; humidity; pressure; radiation; {{ insert: param, pe-14_odp.02 }} ] levels within the facility where the system resides at [acceptable levels] ; and
+  b. Monitor environmental control levels [frequency].
+
+Guidance:
+The provision of environmental controls applies primarily to organizational facilities that contain concentrations of system resources (e.g., data centers, mainframe computer rooms, and server rooms). Insufficient environmental controls, especially in very harsh environments, can have a significant adverse impact on the availability of systems and system components that are needed to support organizational mission and business functions.
+
+Parameters:
+- pe-14_odp.01 | selection (one-or-more): temperature; humidity; pressure; radiation; {{ insert: param, pe-14_odp.02 }} 
+- pe-14_odp.02 | label: "environmental control"
+  guideline: environmental control(s) for which to maintain a specified level in the facility where the system resides are defined (if selected);
+- pe-14_odp.03 | label: "acceptable levels"
+  guideline: acceptable levels for environmental controls are defined;
+- pe-14_odp.04 | label: "frequency"
+  guideline: frequency at which to monitor environmental control levels is defined;
+
+========================================================================
+Enhancement PE-14(1) (pe-14.1) - Automatic Controls
+
+Statement:
+Employ the following automatic environmental controls in the facility to prevent fluctuations potentially harmful to the system: [automatic environmental controls].
+
+Guidance:
+The implementation of automatic environmental controls provides an immediate response to environmental conditions that can damage, degrade, or destroy organizational systems or systems components.
+
+Parameters:
+- pe-14.01_odp | label: "automatic environmental controls"
+  guideline: automatic environmental controls to prevent fluctuations that are potentially harmful to the system are defined;
+
+========================================================================
+Enhancement PE-14(2) (pe-14.2) - Monitoring with Alarms and Notifications
+
+Statement:
+Employ environmental control monitoring that provides an alarm or notification of changes potentially harmful to personnel or equipment to [personnel or roles].
+
+Guidance:
+The alarm or notification may be an audible alarm or a visual message in real time to personnel or roles defined by the organization. Such alarms and notifications can help minimize harm to individuals and damage to organizational assets by facilitating a timely incident response.
+
+Parameters:
+- pe-14.02_odp | label: "personnel or roles"
+  guideline: personnel or roles to be notified by environmental control monitoring when environmental changes are potentially harmful to personnel or equipment is/are defined;

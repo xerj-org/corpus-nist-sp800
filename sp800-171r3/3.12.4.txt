@@ -1,0 +1,4 @@
+id: SP_800_171_03.12.04
+title: 03.12.04
+family: Security Assessment and Monitoring (SP_800_171_03.12)
+class: requirement

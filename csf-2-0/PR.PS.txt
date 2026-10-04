@@ -1,0 +1,110 @@
+id: PR.PS
+title: Platform Security
+family: PROTECT (PR)
+class: category
+family-overview: Safeguards to manage the organization's cybersecurity risks are used
+
+Statement:
+The hardware, software (e.g., firmware, operating systems, applications), and services of physical and virtual platforms are managed consistent with the organization's risk strategy to protect their confidentiality, integrity, and availability
+
+========================================================================
+Child control PR.PS-01 - PR.PS-01
+
+Statement:
+Configuration management practices are established and applied
+
+Example:
+Establish, test, deploy, and maintain hardened baselines that enforce the organization's cybersecurity policies and provide only essential capabilities (i.e., principle of least functionality)
+
+Example:
+Review all default configuration settings that may potentially impact cybersecurity when installing or upgrading software
+
+Example:
+Monitor implemented software for deviations from approved baselines
+
+========================================================================
+Child control PR.PS-02 - PR.PS-02
+
+Statement:
+Software is maintained, replaced, and removed commensurate with risk
+
+Example:
+Perform routine and emergency patching within the timeframes specified in the vulnerability management plan
+
+Example:
+Update container images, and deploy new container instances to replace rather than update existing instances
+
+Example:
+Replace end-of-life software and service versions with supported, maintained versions
+
+Example:
+Uninstall and remove unauthorized software and services that pose undue risks
+
+Example:
+Uninstall and remove any unnecessary software components (e.g., operating system utilities) that attackers might misuse
+
+Example:
+Define and implement plans for software and service end-of-life maintenance support and obsolescence
+
+========================================================================
+Child control PR.PS-03 - PR.PS-03
+
+Statement:
+Hardware is maintained, replaced, and removed commensurate with risk
+
+Example:
+Replace hardware when it lacks needed security capabilities or when it cannot support software with needed security capabilities
+
+Example:
+Define and implement plans for hardware end-of-life maintenance support and obsolescence
+
+Example:
+Perform hardware disposal in a secure, responsible, and auditable manner
+
+========================================================================
+Child control PR.PS-04 - PR.PS-04
+
+Statement:
+Log records are generated and made available for continuous monitoring
+
+Example:
+Configure all operating systems, applications, and services (including cloud-based services) to generate log records
+
+Example:
+Configure log generators to securely share their logs with the organization's logging infrastructure systems and services
+
+Example:
+Configure log generators to record the data needed by zero-trust architectures
+
+========================================================================
+Child control PR.PS-05 - PR.PS-05
+
+Statement:
+Installation and execution of unauthorized software are prevented
+
+Example:
+When risk warrants it, restrict software execution to permitted products only or deny the execution of prohibited and unauthorized software
+
+Example:
+Verify the source of new software and the software's integrity before installing it
+
+Example:
+Configure platforms to use only approved DNS services that block access to known malicious domains
+
+Example:
+Configure platforms to allow the installation of organization-approved software only
+
+========================================================================
+Child control PR.PS-06 - PR.PS-06
+
+Statement:
+Secure software development practices are integrated, and their performance is monitored throughout the software development life cycle
+
+Example:
+Protect all components of organization-developed software from tampering and unauthorized access
+
+Example:
+Secure all software produced by the organization, with minimal vulnerabilities in their releases
+
+Example:
+Maintain the software used in production environments, and securely dispose of software once it is no longer needed

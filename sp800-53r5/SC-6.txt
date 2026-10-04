@@ -1,0 +1,21 @@
+id: sc-6
+title: Resource Availability
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Protect the availability of resources by allocating [resources] by [Selection (one-or-more): priority; quota; {{ insert: param, sc-06_odp.03 }} ].
+
+Guidance:
+Priority protection prevents lower-priority processes from delaying or interfering with the system that services higher-priority processes. Quotas prevent users or processes from obtaining more than predetermined amounts of resources.
+
+Parameters:
+- sc-06_odp.01 | label: "resources"
+  guideline: resources to be allocated to protect the availability of resources are defined;
+- sc-06_odp.02 | selection (one-or-more): priority; quota; {{ insert: param, sc-06_odp.03 }} 
+- sc-06_odp.03 | label: "controls"
+  guideline: controls to protect the availability of resources are defined (if selected);
+
+References:
+- Office of Management and Budget Memorandum M-08-05, *Implementation of Trusted Internet Connections (TIC)* , November 2007.
+- Department of Homeland Security, *Trusted Internet Connections (TIC)*.

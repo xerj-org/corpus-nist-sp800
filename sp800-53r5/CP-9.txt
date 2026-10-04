@@ -1,0 +1,122 @@
+id: cp-9
+title: System Backup
+family: Contingency Planning (cp)
+class: SP800-53
+
+Statement:
+  a. Conduct backups of user-level information contained in [system components] [frequency];
+  b. Conduct backups of system-level information contained in the system [frequency];
+  c. Conduct backups of system documentation, including security- and privacy-related documentation [frequency] ; and
+  d. Protect the confidentiality, integrity, and availability of backup information.
+
+Guidance:
+System-level information includes system state information, operating system software, middleware, application software, and licenses. User-level information includes information other than system-level information. Mechanisms employed to protect the integrity of system backups include digital signatures and cryptographic hashes. Protection of system backup information while in transit is addressed by [MP-5](#mp-5) and [SC-8](#sc-8) . System backups reflect the requirements in contingency plans as well as other organizational requirements for backing up information. Organizations may be subject to laws, executive orders, directives, regulations, or policies with requirements regarding specific categories of information (e.g., personal health information). Organizational personnel consult with the senior agency official for privacy and legal counsel regarding such requirements.
+
+Parameters:
+- cp-09_odp.01 | label: "system components"
+  guideline: system components for which to conduct backups of user-level information is defined;
+- cp-09_odp.02 | label: "frequency"
+  guideline: frequency at which to conduct backups of user-level information consistent with recovery time and recovery point objectives is defined;
+- cp-09_odp.03 | label: "frequency"
+  guideline: frequency at which to conduct backups of system-level information consistent with recovery time and recovery point objectives is defined;
+- cp-09_odp.04 | label: "frequency"
+  guideline: frequency at which to conduct backups of system documentation consistent with recovery time and recovery point objectives is defined;
+
+References:
+- National Institute of Standards and Technology (2019) Security Requirements for Cryptographic Modules. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 140-3.
+- National Institute of Standards and Technology (2013) Digital Signature Standard (DSS). (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 186-4.
+- Swanson MA, Bowen P, Phillips AW, Gallup D, Lynes D (2010) Contingency Planning Guide for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-34, Rev. 1, Includes updates as of November 11, 2010.
+- Barker EB, Smid ME, Branstad DK, Chokhani S (2013) A Framework for Designing Cryptographic Key Management Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-130.
+- Barker EB, Branstad DK, Smid ME (2015) A Profile for U.S. Federal Cryptographic Key Management Systems (CKMS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-152.
+
+========================================================================
+Enhancement CP-9(1) (cp-9.1) - Testing for Reliability and Integrity
+
+Statement:
+Test backup information [organization-defined frequency] to verify media reliability and information integrity.
+
+Guidance:
+Organizations need assurance that backup information can be reliably retrieved. Reliability pertains to the systems and system components where the backup information is stored, the operations used to retrieve the information, and the integrity of the information being retrieved. Independent and specialized tests can be used for each of the aspects of reliability. For example, decrypting and transporting (or transmitting) a random sample of backup files from the alternate storage or backup site and comparing the information to the same information at the primary processing site can provide such assurance.
+
+Parameters:
+- cp-9.1_prm_1 | label: "organization-defined frequency"
+- cp-09.01_odp.01 | label: "frequency"
+  guideline: frequency at which to test backup information for media reliability is defined;
+- cp-09.01_odp.02 | label: "frequency"
+  guideline: frequency at which to test backup information for information integrity is defined;
+
+========================================================================
+Enhancement CP-9(2) (cp-9.2) - Test Restoration Using Sampling
+
+Statement:
+Use a sample of backup information in the restoration of selected system functions as part of contingency plan testing.
+
+Guidance:
+Organizations need assurance that system functions can be restored correctly and can support established organizational missions. To ensure that the selected system functions are thoroughly exercised during contingency plan testing, a sample of backup information is retrieved to determine whether the functions are operating as intended. Organizations can determine the sample size for the functions and backup information based on the level of assurance needed.
+
+========================================================================
+Enhancement CP-9(3) (cp-9.3) - Separate Storage for Critical Information
+
+Statement:
+Store backup copies of [critical system software and other security-related information] in a separate facility or in a fire rated container that is not collocated with the operational system.
+
+Guidance:
+Separate storage for critical information applies to all critical information regardless of the type of backup storage media. Critical system software includes operating systems, middleware, cryptographic key management systems, and intrusion detection systems. Security-related information includes inventories of system hardware, software, and firmware components. Alternate storage sites, including geographically distributed architectures, serve as separate storage facilities for organizations. Organizations may provide separate storage by implementing automated backup processes at alternative storage sites (e.g., data centers). The General Services Administration (GSA) establishes standards and specifications for security and fire rated containers.
+
+Parameters:
+- cp-09.03_odp | label: "critical system software and other security-related information"
+  guideline: critical system software and other security-related information backups to be stored in a separate facility are defined;
+
+========================================================================
+Enhancement CP-9(4) (cp-9.4) - Protection from Unauthorized Modification
+
+========================================================================
+Enhancement CP-9(5) (cp-9.5) - Transfer to Alternate Storage Site
+
+Statement:
+Transfer system backup information to the alternate storage site [organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives].
+
+Guidance:
+System backup information can be transferred to alternate storage sites either electronically or by the physical shipment of storage media.
+
+Parameters:
+- cp-9.5_prm_1 | label: "organization-defined time period and transfer rate consistent with the recovery time and recovery point objectives"
+- cp-09.05_odp.01 | label: "time period"
+  guideline: time period consistent with recovery time and recovery point objectives is defined;
+- cp-09.05_odp.02 | label: "transfer rate"
+  guideline: transfer rate consistent with recovery time and recovery point objectives is defined;
+
+========================================================================
+Enhancement CP-9(6) (cp-9.6) - Redundant Secondary System
+
+Statement:
+Conduct system backup by maintaining a redundant secondary system that is not collocated with the primary system and that can be activated without loss of information or disruption to operations.
+
+Guidance:
+The effect of system backup can be achieved by maintaining a redundant secondary system that mirrors the primary system, including the replication of information. If this type of redundancy is in place and there is sufficient geographic separation between the two systems, the secondary system can also serve as the alternate processing site.
+
+========================================================================
+Enhancement CP-9(7) (cp-9.7) - Dual Authorization for Deletion or Destruction
+
+Statement:
+Enforce dual authorization for the deletion or destruction of [backup information].
+
+Guidance:
+Dual authorization ensures that deletion or destruction of backup information cannot occur unless two qualified individuals carry out the task. Individuals deleting or destroying backup information possess the skills or expertise to determine if the proposed deletion or destruction of information reflects organizational policies and procedures. Dual authorization may also be known as two-person control. To reduce the risk of collusion, organizations consider rotating dual authorization duties to other individuals.
+
+Parameters:
+- cp-09.07_odp | label: "backup information"
+  guideline: backup information for which to enforce dual authorization in order to delete or destroy is defined;
+
+========================================================================
+Enhancement CP-9(8) (cp-9.8) - Cryptographic Protection
+
+Statement:
+Implement cryptographic mechanisms to prevent unauthorized disclosure and modification of [backup information].
+
+Guidance:
+The selection of cryptographic mechanisms is based on the need to protect the confidentiality and integrity of backup information. The strength of mechanisms selected is commensurate with the security category or classification of the information. Cryptographic protection applies to system backup information in storage at both primary and alternate locations. Organizations that implement cryptographic mechanisms to protect information at rest also consider cryptographic key management solutions.
+
+Parameters:
+- cp-09.08_odp | label: "backup information"
+  guideline: backup information to protect against unauthorized disclosure and modification is defined;

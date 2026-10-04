@@ -1,0 +1,140 @@
+id: pe-3
+title: Physical Access Control
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+  a. Enforce physical access authorizations at [entry and exit points] by:
+    1. Verifying individual access authorizations before granting access to the facility; and
+    2. Controlling ingress and egress to the facility using [Selection (one-or-more): {{ insert: param, pe-03_odp.03 }} ; guards];
+  b. Maintain physical access audit logs for [entry or exit points];
+  c. Control access to areas within the facility designated as publicly accessible by implementing the following controls: [physical access controls];
+  d. Escort visitors and control visitor activity [circumstances];
+  e. Secure keys, combinations, and other physical access devices;
+  f. Inventory [physical access devices] every [frequency] ; and
+  g. Change combinations and keys [organization-defined frequency] and/or when keys are lost, combinations are compromised, or when individuals possessing the keys or combinations are transferred or terminated.
+
+Guidance:
+Physical access control applies to employees and visitors. Individuals with permanent physical access authorizations are not considered visitors. Physical access controls for publicly accessible areas may include physical access control logs/records, guards, or physical access devices and barriers to prevent movement from publicly accessible areas to non-public areas. Organizations determine the types of guards needed, including professional security staff, system users, or administrative staff. Physical access devices include keys, locks, combinations, biometric readers, and card readers. Physical access control systems comply with applicable laws, executive orders, directives, policies, regulations, standards, and guidelines. Organizations have flexibility in the types of audit logs employed. Audit logs can be procedural, automated, or some combination thereof. Physical access points can include facility access points, interior access points to systems that require supplemental access controls, or both. Components of systems may be in areas designated as publicly accessible with organizations controlling access to the components.
+
+Parameters:
+- pe-3_prm_9 | label: "organization-defined frequency"
+- pe-03_odp.01 | label: "entry and exit points"
+  guideline: entry and exit points to the facility in which the system resides are defined;
+- pe-03_odp.02 | selection (one-or-more): {{ insert: param, pe-03_odp.03 }} ; guards
+- pe-03_odp.03 | label: "systems or devices"
+  guideline: physical access control systems or devices used to control ingress and egress to the facility are defined (if selected);
+- pe-03_odp.04 | label: "entry or exit points"
+  guideline: entry or exit points for which physical access logs are maintained are defined;
+- pe-03_odp.05 | label: "physical access controls"
+  guideline: physical access controls to control access to areas within the facility designated as publicly accessible are defined;
+- pe-03_odp.06 | label: "circumstances"
+  guideline: circumstances requiring visitor escorts and control of visitor activity are defined;
+- pe-03_odp.07 | label: "physical access devices"
+  guideline: physical access devices to be inventoried are defined;
+- pe-03_odp.08 | label: "frequency"
+  guideline: frequency at which to inventory physical access devices is defined;
+- pe-03_odp.09 | label: "frequency"
+  guideline: frequency at which to change combinations is defined;
+- pe-03_odp.10 | label: "frequency"
+  guideline: frequency at which to change keys is defined;
+
+References:
+- National Institute of Standards and Technology (2013) Personal Identity Verification (PIV) of Federal Employees and Contractors. (U.S. Department of Commerce, Washington, D.C.), Federal Information Processing Standards Publication (FIPS) 201-2.
+- Cooper DA, Ferraiolo H, Mehta KL, Francomacaro S, Chandramouli R, Mohler J (2015) Interfaces for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-73-4, Includes updates as of February 8, 2016.
+- Grother PJ, Salamon WJ, Chandramouli R (2013) Biometric Specifications for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-76-2.
+- Polk T, Dodson DF, Burr WE, Ferraiolo H, Cooper DA (2015) Cryptographic Algorithms and Key Sizes for Personal Identity Verification. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-78-4.
+- Ferraiolo H, Mehta KL, Ghadiali N, Mohler J, Johnson V, Brady S (2018) A Recommendation for the Use of PIV Credentials in Physical Access Control Systems (PACS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-116, Rev. 1.
+
+========================================================================
+Enhancement PE-3(1) (pe-3.1) - System Access
+
+Statement:
+Enforce physical access authorizations to the system in addition to the physical access controls for the facility at [physical spaces].
+
+Guidance:
+Control of physical access to the system provides additional physical security for those areas within facilities where there is a concentration of system components.
+
+Parameters:
+- pe-03.01_odp | label: "physical spaces"
+  guideline: physical spaces containing one or more components of the system are defined;
+
+========================================================================
+Enhancement PE-3(2) (pe-3.2) - Facility and Systems
+
+Statement:
+Perform security checks [frequency] at the physical perimeter of the facility or system for exfiltration of information or removal of system components.
+
+Guidance:
+Organizations determine the extent, frequency, and/or randomness of security checks to adequately mitigate risk associated with exfiltration.
+
+Parameters:
+- pe-03.02_odp | label: "frequency"
+  guideline: the frequency at which to perform security checks at the physical perimeter of the facility or system for exfiltration of information or removal of system components is defined;
+
+========================================================================
+Enhancement PE-3(3) (pe-3.3) - Continuous Guards
+
+Statement:
+Employ guards to control [physical access points] to the facility where the system resides 24 hours per day, 7 days per week.
+
+Guidance:
+Employing guards at selected physical access points to the facility provides a more rapid response capability for organizations. Guards also provide the opportunity for human surveillance in areas of the facility not covered by video surveillance.
+
+Parameters:
+- pe-03.03_odp | label: "physical access points"
+  guideline: physical access points to the facility where the system resides are defined;
+
+========================================================================
+Enhancement PE-3(4) (pe-3.4) - Lockable Casings
+
+Statement:
+Use lockable physical casings to protect [system components] from unauthorized physical access.
+
+Guidance:
+The greatest risk from the use of portable devices—such as smart phones, tablets, and notebook computers—is theft. Organizations can employ lockable, physical casings to reduce or eliminate the risk of equipment theft. Such casings come in a variety of sizes, from units that protect a single notebook computer to full cabinets that can protect multiple servers, computers, and peripherals. Lockable physical casings can be used in conjunction with cable locks or lockdown plates to prevent the theft of the locked casing containing the computer equipment.
+
+Parameters:
+- pe-03.04_odp | label: "system components"
+  guideline: system components to be protected from unauthorized physical access are defined;
+
+========================================================================
+Enhancement PE-3(5) (pe-3.5) - Tamper Protection
+
+Statement:
+Employ [anti-tamper technologies] to [Selection (one-or-more): detect; prevent] physical tampering or alteration of [hardware components] within the system.
+
+Guidance:
+Organizations can implement tamper detection and prevention at selected hardware components or implement tamper detection at some components and tamper prevention at other components. Detection and prevention activities can employ many types of anti-tamper technologies, including tamper-detection seals and anti-tamper coatings. Anti-tamper programs help to detect hardware alterations through counterfeiting and other supply chain-related risks.
+
+Parameters:
+- pe-03.05_odp.01 | label: "anti-tamper technologies"
+  guideline: anti-tamper technologies to be employed are defined;
+- pe-03.05_odp.02 | selection (one-or-more): detect; prevent
+- pe-03.05_odp.03 | label: "hardware components"
+  guideline: hardware components to be protected from physical tampering or alteration are defined;
+
+========================================================================
+Enhancement PE-3(6) (pe-3.6) - Facility Penetration Testing
+
+========================================================================
+Enhancement PE-3(7) (pe-3.7) - Physical Barriers
+
+Statement:
+Limit access using physical barriers.
+
+Guidance:
+Physical barriers include bollards, concrete slabs, jersey walls, and hydraulic active vehicle barriers.
+
+========================================================================
+Enhancement PE-3(8) (pe-3.8) - Access Control Vestibules
+
+Statement:
+Employ access control vestibules at [locations].
+
+Guidance:
+An access control vestibule is part of a physical access control system that typically provides a space between two sets of interlocking doors. Vestibules are designed to prevent unauthorized individuals from following authorized individuals into facilities with controlled access. This activity, also known as piggybacking or tailgating, results in unauthorized access to the facility. Interlocking door controllers can be used to limit the number of individuals who enter controlled access points and to provide containment areas while authorization for physical access is verified. Interlocking door controllers can be fully automated (i.e., controlling the opening and closing of the doors) or partially automated (i.e., using security guards to control the number of individuals entering the containment area).
+
+Parameters:
+- pe-03.08_odp | label: "locations"
+  guideline: locations within the facility where access control vestibules are to be employed are defined;

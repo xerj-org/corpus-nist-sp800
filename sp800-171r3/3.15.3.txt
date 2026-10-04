@@ -1,0 +1,21 @@
+id: SP_800_171_03.15.03
+title: Rules of Behavior
+family: Planning (SP_800_171_03.15)
+class: requirement
+
+Statement:
+  SR-03.15.03.a Establish rules that describe the responsibilities and expected behavior for system usage and protecting CUI.
+  SR-03.15.03.b Provide rules to individuals who require access to the system.
+  SR-03.15.03.c Receive a documented acknowledgement from individuals indicating that they have read, understand, and agree to abide by the rules of behavior before authorizing access to CUI and the system.
+  SR-03.15.03.d Review and update the rules of behavior [frequency].
+
+Guidance:
+Rules of behavior represent a type of access agreement for system users. Organizations consider rules of behavior for the handling of CUI based on individual user roles and responsibilities and differentiate between rules that apply to privileged users and rules that apply to general users.
+
+Parameters:
+- A.03.15.03.ODP.01 | label: "frequency"
+  guideline: the frequency at which the rules of behavior are reviewed and updated is defined.
+
+References:
+- PL-04
+- Swanson MA, Hash J, Bowen P (2006) Guide for Developing Security Plans for Federal Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-18, Rev. 1.

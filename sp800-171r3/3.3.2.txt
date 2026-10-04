@@ -1,0 +1,21 @@
+id: SP_800_171_03.03.02
+title: Audit Record Content
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.02.a Include the following content in audit records:
+    SR-03.03.02.a.01 What type of event occurred
+    SR-03.03.02.a.02 When the event occurred
+    SR-03.03.02.a.03 Where the event occurred
+    SR-03.03.02.a.04 Source of the event
+    SR-03.03.02.a.05 Outcome of the event
+    SR-03.03.02.a.06 Identity of the individuals, subjects, objects, or entities associated with the event
+  SR-03.03.02.b Provide additional information for audit records as needed.
+
+Guidance:
+Audit record content that may be necessary to support the auditing function includes time stamps, source and destination addresses, user or process identifiers, event descriptions, file names, and the access control or flow control rules that are invoked. Event outcomes can include indicators of event success or failure and event-specific results (e.g., the security state of the system after the event occurred). Detailed information that organizations consider in audit records may include a full text recording of privileged commands or the individual identities of group account users.
+
+References:
+- AU-03
+- AU-03(01)

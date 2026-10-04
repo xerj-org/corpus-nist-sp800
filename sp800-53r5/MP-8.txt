@@ -1,0 +1,66 @@
+id: mp-8
+title: Media Downgrading
+family: Media Protection (mp)
+class: SP800-53
+
+Statement:
+  a. Establish [system media downgrading process] that includes employing downgrading mechanisms with strength and integrity commensurate with the security category or classification of the information;
+  b. Verify that the system media downgrading process is commensurate with the security category and/or classification level of the information to be removed and the access authorizations of the potential recipients of the downgraded information;
+  c. Identify [system media requiring downgrading] ; and
+  d. Downgrade the identified system media using the established process.
+
+Guidance:
+Media downgrading applies to digital and non-digital media subject to release outside of the organization, whether the media is considered removable or not. When applied to system media, the downgrading process removes information from the media, typically by security category or classification level, such that the information cannot be retrieved or reconstructed. Downgrading of media includes redacting information to enable wider release and distribution. Downgrading ensures that empty space on the media is devoid of information.
+
+Parameters:
+- mp-08_odp.01 | label: "system media downgrading process"
+  guideline: a system media downgrading process is defined;
+- mp-08_odp.02 | label: "system media requiring downgrading"
+  guideline: system media requiring downgrading is defined;
+
+References:
+- Code of Federal Regulations, Title 32, *Controlled Unclassified Information* (32 C.F.R. 2002).
+- National Security Agency, *Media Destruction Guidance*.
+
+========================================================================
+Enhancement MP-8(1) (mp-8.1) - Documentation of Process
+
+Statement:
+Document system media downgrading actions.
+
+Guidance:
+Organizations can document the media downgrading process by providing information, such as the downgrading technique employed, the identification number of the downgraded media, and the identity of the individual that authorized and/or performed the downgrading action.
+
+========================================================================
+Enhancement MP-8(2) (mp-8.2) - Equipment Testing
+
+Statement:
+Test downgrading equipment and procedures [organization-defined frequency] to ensure that downgrading actions are being achieved.
+
+Guidance:
+None.
+
+Parameters:
+- mp-8.2_prm_1 | label: "organization-defined frequency"
+- mp-08.02_odp.01 | label: "frequency"
+  guideline: the frequency with which to test downgrading equipment is defined;
+- mp-08.02_odp.02 | label: "frequency"
+  guideline: the frequency with which to test downgrading procedures is defined;
+
+========================================================================
+Enhancement MP-8(3) (mp-8.3) - Controlled Unclassified Information
+
+Statement:
+Downgrade system media containing controlled unclassified information prior to public release.
+
+Guidance:
+The downgrading of controlled unclassified information uses approved sanitization tools, techniques, and procedures.
+
+========================================================================
+Enhancement MP-8(4) (mp-8.4) - Classified Information
+
+Statement:
+Downgrade system media containing classified information prior to release to individuals without required access authorizations.
+
+Guidance:
+Downgrading of classified information uses approved sanitization tools, techniques, and procedures to transfer information confirmed to be unclassified from classified systems to unclassified media.

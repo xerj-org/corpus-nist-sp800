@@ -1,0 +1,38 @@
+id: SP_800_172_3_0_0_03.04.02E
+title: Automated Unauthorized Component Detection
+family: Configuration Management (SP_800_172_3_0_0_3.4)
+class: security_requirement
+
+Statement:
+  ES-03.04.02E-a Detect the presence of unauthorized or misconfigured system components using [automated mechanisms]. 
+  ES-03.04.02E-b Take the following actions when unauthorized or misconfigured components are detected: [Selection (one-or-more): disable network access by such components; isolate the components; notify {{ insert: param, A.03.04.02E.ODP.03 }} ] . 
+
+Guidance:
+Monitoring for unauthorized or misconfigured components may be accomplished on an ongoing basis or by the periodic scanning of systems for that purpose. Automated mechanisms may also be used to prevent the connection of unauthorized or misconfigured system components. Automated mechanisms can be implemented in systems or in separate system components. When acquiring and implementing automated mechanisms, organizations consider whether such mechanisms depend on the ability of the system component to support an agent or supplicant in order to be detected since some types of components do not have or cannot support agents (e.g., IoT devices, sensors). Isolation can be achieved, for example, by placing unauthorized system components in separate domains or subnets or quarantining such components. This type of component isolation is commonly referred to as "sandboxing." This requirement enhances SP 800-171 requirement 03.04.10. 
+  - (includes expunge and preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes contain)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.04.02E.ODP.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to detect the presence of unauthorized or misconfigured system components are defined.
+- A.03.04.02E.ODP.02 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): disable network access by such components; isolate the components; notify {{ insert: param, A.03.04.02E.ODP.03 }} 
+- A.03.04.02E.ODP.03 | label: "personnel or roles"
+  guideline: personnel or roles to be notified when unauthorized or misconfigured system components are detected are defined (if selected).
+
+References:
+- CM-06(01)
+- CM-06(02)
+- CM-08(03)

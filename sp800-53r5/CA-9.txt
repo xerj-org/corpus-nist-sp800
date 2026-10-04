@@ -1,0 +1,34 @@
+id: ca-9
+title: Internal System Connections
+family: Assessment, Authorization, and Monitoring (ca)
+class: SP800-53
+
+Statement:
+  a. Authorize internal connections of [system components] to the system;
+  b. Document, for each internal connection, the interface characteristics, security and privacy requirements, and the nature of the information communicated;
+  c. Terminate internal system connections after [conditions] ; and
+  d. Review [frequency] the continued need for each internal connection.
+
+Guidance:
+Internal system connections are connections between organizational systems and separate constituent system components (i.e., connections between components that are part of the same system) including components used for system development. Intra-system connections include connections with mobile devices, notebook and desktop computers, tablets, printers, copiers, facsimile machines, scanners, sensors, and servers. Instead of authorizing each internal system connection individually, organizations can authorize internal connections for a class of system components with common characteristics and/or configurations, including printers, scanners, and copiers with a specified processing, transmission, and storage capability or smart phones and tablets with a specific baseline configuration. The continued need for an internal system connection is reviewed from the perspective of whether it provides support for organizational missions or business functions.
+
+Parameters:
+- ca-09_odp.01 | label: "system components"
+  guideline: system components or classes of components requiring internal connections to the system are defined;
+- ca-09_odp.02 | label: "conditions"
+  guideline: conditions requiring termination of internal connections are defined;
+- ca-09_odp.03 | label: "frequency"
+  guideline: frequency at which to review the continued need for each internal connection is defined;
+
+References:
+- Souppaya MP, Scarfone KA (2013) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 1.
+- Dempsey KL, Paulsen C (2015) Risk Management for Replication Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8023.
+
+========================================================================
+Enhancement CA-9(1) (ca-9.1) - Compliance Checks
+
+Statement:
+Perform security and privacy compliance checks on constituent system components prior to the establishment of the internal connection.
+
+Guidance:
+Compliance checks include verification of the relevant baseline configuration.

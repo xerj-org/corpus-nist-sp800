@@ -1,0 +1,22 @@
+id: SP_800_172_3_0_0_03.06.03E
+title: Behavior Analysis
+family: Incident Response (SP_800_172_3_0_0_3.6)
+class: security_requirement
+
+Statement:
+Analyze anomalous or suspected adversarial behavior in or related to [environments or resources]. 
+
+Guidance:
+If the organization maintains a deception environment, an analysis of behaviors in that environment, including resources targeted by the adversary and the timing of the incident or event, can provide significant insights into adversarial tactics, techniques, and procedures. External to a deception environment, the analysis of anomalous behavior (e.g., changes in system performance or usage patterns) or suspected adversarial behavior (e.g., changes in searches for the location of specific resources) can give the organization such insight. This requirement enhances SP 800-171 requirement 03.06.01.
+  - (includes detect and reveal)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.06.03E.ODP.01 | label: "environments or resources"
+  guideline: environments or resources that may contain or be related to anomalous or suspected adversarial behavior are defined.
+
+References:
+- IR-04(13)

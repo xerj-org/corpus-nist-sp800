@@ -1,0 +1,14 @@
+id: ia-11
+title: Re-authentication
+family: Identification and Authentication (ia)
+class: SP800-53
+
+Statement:
+Require users to re-authenticate when [circumstances or situations].
+
+Guidance:
+In addition to the re-authentication requirements associated with device locks, organizations may require re-authentication of individuals in certain situations, including when roles, authenticators or credentials change, when security categories of systems change, when the execution of privileged functions occurs, after a fixed time period, or periodically.
+
+Parameters:
+- ia-11_odp | label: "circumstances or situations"
+  guideline: circumstances or situations requiring re-authentication are defined;

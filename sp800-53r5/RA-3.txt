@@ -1,0 +1,98 @@
+id: ra-3
+title: Risk Assessment
+family: Risk Assessment (ra)
+class: SP800-53
+
+Statement:
+  a. Conduct a risk assessment, including:
+    1. Identifying threats to and vulnerabilities in the system;
+    2. Determining the likelihood and magnitude of harm from unauthorized access, use, disclosure, disruption, modification, or destruction of the system, the information it processes, stores, or transmits, and any related information; and
+    3. Determining the likelihood and impact of adverse effects on individuals arising from the processing of personally identifiable information;
+  b. Integrate risk assessment results and risk management decisions from the organization and mission or business process perspectives with system-level risk assessments;
+  c. Document risk assessment results in [Selection (): security and privacy plans; risk assessment report; {{ insert: param, ra-03_odp.02 }} ];
+  d. Review risk assessment results [frequency];
+  e. Disseminate risk assessment results to [personnel or roles] ; and
+  f. Update the risk assessment [frequency] or when there are significant changes to the system, its environment of operation, or other conditions that may impact the security or privacy state of the system.
+
+Guidance:
+Risk assessments consider threats, vulnerabilities, likelihood, and impact to organizational operations and assets, individuals, other organizations, and the Nation. Risk assessments also consider risk from external parties, including contractors who operate systems on behalf of the organization, individuals who access organizational systems, service providers, and outsourcing entities.
+
+Organizations can conduct risk assessments at all three levels in the risk management hierarchy (i.e., organization level, mission/business process level, or information system level) and at any stage in the system development life cycle. Risk assessments can also be conducted at various steps in the Risk Management Framework, including preparation, categorization, control selection, control implementation, control assessment, authorization, and control monitoring. Risk assessment is an ongoing activity carried out throughout the system development life cycle.
+
+Risk assessments can also address information related to the system, including system design, the intended use of the system, testing results, and supply chain-related information or artifacts. Risk assessments can play an important role in control selection processes, particularly during the application of tailoring guidance and in the earliest phases of capability determination.
+
+Parameters:
+- ra-03_odp.01 | selection (): security and privacy plans; risk assessment report; {{ insert: param, ra-03_odp.02 }} 
+- ra-03_odp.02 | label: "document"
+  guideline: a document in which risk assessment results are to be documented (if not documented in the security and privacy plans or risk assessment report) is defined (if selected);
+- ra-03_odp.03 | label: "frequency"
+  guideline: the frequency to review risk assessment results is defined;
+- ra-03_odp.04 | label: "personnel or roles"
+  guideline: personnel or roles to whom risk assessment results are to be disseminated is/are defined;
+- ra-03_odp.05 | label: "frequency"
+  guideline: the frequency to update the risk assessment is defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Joint Task Force Transformation Initiative (2012) Guide for Conducting Risk Assessments. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-30, Rev. 1.
+- Joint Task Force Transformation Initiative (2011) Managing Information Security Risk: Organization, Mission, and Information System View. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-39.
+- Boyens JM, Paulsen C, Moorthy R, Bartol N (2015) Supply Chain Risk Management Practices for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161.
+- Dempsey KL, Paulsen C (2015) Risk Management for Replication Devices. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8023.
+- Brooks S, Garcia M, Lefkovitz N, Lightman S, Nadeau E (2017) An Introduction to Privacy Engineering and Risk Management in Federal Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8062.
+- Paulsen C, Winkler K, Boyens JM, Ng J, Gimbi J (2020) Impact Analysis Tool for Interdependent Cyber Supply Chain Risks. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8272.
+
+========================================================================
+Enhancement RA-3(1) (ra-3.1) - Supply Chain Risk Assessment
+
+Statement:
+  (a) Assess supply chain risks associated with [systems, system components, and system services] ; and
+  (b) Update the supply chain risk assessment [frequency] , when there are significant changes to the relevant supply chain, or when changes to the system, environments of operation, or other conditions may necessitate a change in the supply chain.
+
+Guidance:
+Supply chain-related events include disruption, use of defective components, insertion of counterfeits, theft, malicious development practices, improper delivery practices, and insertion of malicious code. These events can have a significant impact on the confidentiality, integrity, or availability of a system and its information and, therefore, can also adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, individuals, other organizations, and the Nation. The supply chain-related events may be unintentional or malicious and can occur at any point during the system life cycle. An analysis of supply chain risk can help an organization identify systems or components for which additional supply chain risk mitigations are required.
+
+Parameters:
+- ra-03.01_odp.01 | label: "systems, system components, and system services"
+  guideline: systems, system components, and system services to assess supply chain risks are defined;
+- ra-03.01_odp.02 | label: "frequency"
+  guideline: the frequency at which to update the supply chain risk assessment is defined;
+
+========================================================================
+Enhancement RA-3(2) (ra-3.2) - Use of All-source Intelligence
+
+Statement:
+Use all-source intelligence to assist in the analysis of risk.
+
+Guidance:
+Organizations employ all-source intelligence to inform engineering, acquisition, and risk management decisions. All-source intelligence consists of information derived from all available sources, including publicly available or open-source information, measurement and signature intelligence, human intelligence, signals intelligence, and imagery intelligence. All-source intelligence is used to analyze the risk of vulnerabilities (both intentional and unintentional) from development, manufacturing, and delivery processes, people, and the environment. The risk analysis may be performed on suppliers at multiple tiers in the supply chain sufficient to manage risks. Organizations may develop agreements to share all-source intelligence information or resulting decisions with other organizations, as appropriate.
+
+========================================================================
+Enhancement RA-3(3) (ra-3.3) - Dynamic Threat Awareness
+
+Statement:
+Determine the current cyber threat environment on an ongoing basis using [means].
+
+Guidance:
+The threat awareness information that is gathered feeds into the organization’s information security operations to ensure that procedures are updated in response to the changing threat environment. For example, at higher threat levels, organizations may change the privilege or authentication thresholds required to perform certain operations.
+
+Parameters:
+- ra-03.03_odp | label: "means"
+  guideline: means to determine the current cyber threat environment on an ongoing basis;
+
+========================================================================
+Enhancement RA-3(4) (ra-3.4) - Predictive Cyber Analytics
+
+Statement:
+Employ the following advanced automation and analytics capabilities to predict and identify risks to [systems or system components]: [organization-defined advanced automation and analytics capabilities].
+
+Guidance:
+A properly resourced Security Operations Center (SOC) or Computer Incident Response Team (CIRT) may be overwhelmed by the volume of information generated by the proliferation of security tools and appliances unless it employs advanced automation and analytics to analyze the data. Advanced automation and analytics capabilities are typically supported by artificial intelligence concepts, including machine learning. Examples include Automated Threat Discovery and Response (which includes broad-based collection, context-based analysis, and adaptive response capabilities), automated workflow operations, and machine assisted decision tools. Note, however, that sophisticated adversaries may be able to extract information related to analytic parameters and retrain the machine learning to classify malicious activity as benign. Accordingly, machine learning is augmented by human monitoring to ensure that sophisticated adversaries are not able to conceal their activities.
+
+Parameters:
+- ra-3.4_prm_2 | label: "organization-defined advanced automation and analytics capabilities"
+- ra-03.04_odp.01 | label: "advanced automation capabilities"
+  guideline: advanced automation capabilities to predict and identify risks are defined;
+- ra-03.04_odp.02 | label: "systems or system components"
+  guideline: systems or system components where advanced automation and analytics capabilities are to be employed are defined;
+- ra-03.04_odp.03 | label: "advanced analytics capabilities"
+  guideline: advanced analytics capabilities to predict and identify risks are defined;

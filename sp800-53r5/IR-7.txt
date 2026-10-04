@@ -1,0 +1,37 @@
+id: ir-7
+title: Incident Response Assistance
+family: Incident Response (ir)
+class: SP800-53
+
+Statement:
+Provide an incident response support resource, integral to the organizational incident response capability, that offers advice and assistance to users of the system for the handling and reporting of incidents.
+
+Guidance:
+Incident response support resources provided by organizations include help desks, assistance groups, automated ticketing systems to open and track incident response tickets, and access to forensics services or consumer redress services, when required.
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Singhal A, Gunestas M, Wijesekera D (2010) Forensics Web Services (FWS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7559.
+
+========================================================================
+Enhancement IR-7(1) (ir-7.1) - Automation Support for Availability of Information and Support
+
+Statement:
+Increase the availability of incident response information and support using [automated mechanisms].
+
+Guidance:
+Automated mechanisms can provide a push or pull capability for users to obtain incident response assistance. For example, individuals may have access to a website to query the assistance capability, or the assistance capability can proactively send incident response information to users (general distribution or targeted) as part of increasing understanding of current response capabilities and support.
+
+Parameters:
+- ir-07.01_odp | label: "automated mechanisms"
+  guideline: automated mechanisms used to increase the availability of incident response information and support are defined;
+
+========================================================================
+Enhancement IR-7(2) (ir-7.2) - Coordination with External Providers
+
+Statement:
+  (a) Establish a direct, cooperative relationship between its incident response capability and external providers of system protection capability; and
+  (b) Identify organizational incident response team members to the external providers.
+
+Guidance:
+External providers of a system protection capability include the Computer Network Defense program within the U.S. Department of Defense. External providers help to protect, monitor, analyze, detect, and respond to unauthorized activity within organizational information systems and networks. It may be beneficial to have agreements in place with external providers to clarify the roles and responsibilities of each party before an incident occurs.

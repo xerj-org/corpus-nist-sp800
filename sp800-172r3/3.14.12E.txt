@@ -1,0 +1,22 @@
+id: SP_800_172_3_0_0_03.14.12E
+title: Information Input Validation
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Check the validity of the following information inputs: [information inputs]. 
+
+Guidance:
+Checking the valid syntax and semantics of system inputs—including character set, length, numerical range, and acceptable values—verifies that inputs match specified definitions for format and content. Valid inputs are likely to vary from field to field within a software application. Applications typically follow well-defined protocols that use structured messages (i.e., commands or queries) to communicate between software modules or system components. Structured messages can contain raw or unstructured data interspersed with metadata or control information. If software applications use attacker-supplied inputs to construct structured messages without properly encoding such messages, the attacker could insert malicious commands or special characters that can cause the data to be interpreted as control information or metadata. Consequently, the module or component that receives the corrupted output will perform incorrect operations or otherwise interpret the data incorrectly. Prescreening inputs prior to passing them to interpreters prevents content from being unintentionally interpreted as commands. Input validation ensures accurate and correct inputs and prevents attacks, such as cross-site scripting and a variety of injection attacks. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+Parameters:
+- A.03.14.12E.ODP.01 | label: "information inputs"
+  guideline: information inputs to the system requiring validity checks are defined.
+
+References:
+- SI-10

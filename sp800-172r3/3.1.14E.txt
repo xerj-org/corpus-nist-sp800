@@ -1,0 +1,33 @@
+id: SP_800_172_3_0_0_03.01.14E
+title: Security Policy Filters
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+Statement:
+  ES-03.01.14E-a Enforce information flow control using [param: A.03.01.14E.ODP.01] as a basis for flow control decisions for [param: A.03.01.14E.ODP.02]. 
+  ES-03.01.14E-b  [Selection (one-or-more): Block; Strip; Modify; Quarantine] data after a filter processing failure in accordance with [param: A.03.01.14E.ODP.04]. 
+
+Guidance:
+Security policy filters for data structures check for maximum file lengths, maximum field sizes, and data/file types for structured and unstructured data. Security policy filters for data content check for specific words, enumerated values or data value ranges, and hidden content. Structured data permits the interpretation of data content by applications. Unstructured data refers to digital information without a data structure or with a data structure that does not facilitate the development of rule sets to address the criticality or sensitivity of information conveyed by the data or the flow enforcement decisions. Unstructured data consists of bitmap objects that are inherently non-language-based (e.g., image, video, or audio files) and textual objects that are based on written or printed languages. This requirement enhances SP 800-171 requirement 03.01.03.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.01.14E.ODP.01
+  guideline: security policy filers are defined.
+- A.03.01.14E.ODP.02
+  guideline: information flows are defined.
+- A.03.01.14E.ODP.03 | label: "SELECTED PARAMETER VALUE(S)" | selection (one-or-more): Block; Strip; Modify; Quarantine
+- A.03.01.14E.ODP.04
+  guideline: security policy addressing a filter processing failure is defined.
+
+References:
+- AC-04(08)

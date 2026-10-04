@@ -1,0 +1,24 @@
+id: SP_800_172_3_0_0_03.14.17E
+title: System-Generated Alerts
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Alert [personnel or roles] when the following system-generated indications of compromise or potential compromise occur: [indicators of compromise]. 
+
+Guidance:
+Alerts may be generated from different sources internal to the system, including audit records, inputs from malicious code protection mechanisms, intrusion detection or prevention mechanisms, or boundary protection devices such as firewalls, gateways, and routers. Compromise indicators could include CUI being accessed by unauthorized users or when CUI traverses architecture outside of defined data flows. Alerts can be automated and transmitted telephonically, by electronic mail messages, or by text messaging. Organizational personnel on the alert notification list can include system administrators, mission or business owners, system owners, information owners or stewards, chief information security officers, and system security officers. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.14.17E.ODP.01 | label: "personnel or roles"
+  guideline: personnel or roles to be alerted when indications of compromise or potential compromise occur are defined.
+- A.03.14.17E.ODP.02 | label: "indicators of compromise"
+  guideline: compromise indicators are defined.
+
+References:
+- SI-04(05)

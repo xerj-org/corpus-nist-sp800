@@ -1,0 +1,17 @@
+id: SP_800_171_03.13.09
+title: Network Disconnect
+family: System and Communications Protection (SP_800_171_03.13)
+class: requirement
+
+Statement:
+Terminate the network connection associated with a communications session at the end of the session or after [time period] of inactivity.
+
+Guidance:
+This requirement applies to internal and external networks. Terminating network connections associated with communications sessions includes deallocating TCP/IP addresses or port pairs at the operating system level or deallocating networking assignments at the application level if multiple application sessions are using a single network connection. Time periods of inactivity may be established by organizations and include time periods by type of network access or for specific network accesses.
+
+Parameters:
+- A.03.13.09.ODP.01 | label: "time period"
+  guideline: the time period of inactivity after which the system terminates a network connection associated with a communications session is defined.
+
+References:
+- SC-10

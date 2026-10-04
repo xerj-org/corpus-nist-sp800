@@ -1,0 +1,22 @@
+id: SP_800_171_03.04.12
+title: System and Component Configuration for High-Risk Areas
+family: Configuration Management (SP_800_171_03.04)
+class: requirement
+
+Statement:
+  SR-03.04.12.a Issue systems or system components with the following configurations to individuals traveling to high-risk locations: [configurations].
+  SR-03.04.12.b Apply the following security requirements to the systems or components when the individuals return from travel: [security requirements].
+
+Guidance:
+When it is known that a system or a system component will be in a high-risk area, additional security requirements may be needed to counter the increased threat. Organizations can implement protective measures on the systems or system components used by individuals departing on and returning from travel. Actions include determining whether the locations are of concern, defining the required configurations for the components, ensuring that the components are configured as intended before travel is initiated, and taking additional actions after travel is completed. For example, systems going into high-risk areas can be configured with sanitized hard drives, limited applications, and more stringent configuration settings. Actions applied to mobile devices upon return from travel include examining the device for signs of physical tampering and purging and reimaging the device storage.
+
+Parameters:
+- A.03.04.12.ODP.01 | label: "configurations"
+  guideline: configurations for systems or system components to be issued to individuals traveling to high-risk locations are defined.
+- A.03.04.12.ODP.02 | label: "security requirements"
+  guideline: security requirements to be applied to the system or system components when individuals return from travel are defined.
+
+References:
+- CM-02(07)
+- Howell G, Franklin JM, Sritapan V, Souppaya M, Scarfone K (2023) Guidelines for Managing the Security of Mobile Devices in the Enterprise. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-124, Rev. 2.
+- Johnson LA, Dempsey KL, Ross RS, Gupta S, Bailey D (2011) Guide for Security-Focused Configuration Management of Information Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-128, Includes updates as of October 10, 2019.

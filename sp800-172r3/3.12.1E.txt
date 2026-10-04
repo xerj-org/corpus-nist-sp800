@@ -1,0 +1,34 @@
+id: SP_800_172_3_0_0_03.12.01E
+title: Penetration Testing
+family: Security Assessment and Monitoring (SP_800_172_3_0_0_3.12)
+class: security_requirement
+
+Statement:
+Conduct penetration testing [frequency] on [systems or system components]. 
+
+Guidance:
+Penetration testing is a specialized type of assessment conducted on systems or system components to identify vulnerabilities that could be exploited by adversaries. It is conducted by penetration testing agents and teams with particular skills and experience that include technical expertise in network, operating system, and application-level security. Penetration testing can be used to validate vulnerabilities or to determine a system’s penetration resistance to adversaries within specified constraints, such as time, resources, and skills. It can be conducted internally or externally on the hardware, software, or firmware components of a system and can exercise both physical and technical controls. A standard method for conducting penetration testing includes pretest analysis based on full knowledge of the system, pretest identification of potential vulnerabilities based on the pretest analysis, and testing designed to determine the exploitability of vulnerabilities. All parties agree to the specified rules of engagement before the commencement of penetration testing. Organizations may also supplement penetration testing with red team exercises. Red teams attempt to duplicate the actions of adversaries in carrying out attacks against organizations and provide an in-depth analysis of security-related weaknesses or deficiencies. Organizations correlate the rules of engagement for penetration tests and red teaming exercises (if used) with the tools, techniques, and procedures that they anticipate adversaries may employ. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes detect)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.12.01E.ODP.01 | label: "frequency"
+  guideline: the frequency at which to conduct penetration testing on systems or system components is defined.
+- A.03.12.01E.ODP.02 | label: "systems or system components"
+  guideline: systems or system components on which penetration testing is to be conducted are defined.
+
+References:
+- CA-08

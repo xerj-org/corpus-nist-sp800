@@ -1,0 +1,126 @@
+id: sa-9
+title: External System Services
+family: System and Services Acquisition (sa)
+class: SP800-53
+
+Statement:
+  a. Require that providers of external system services comply with organizational security and privacy requirements and employ the following controls: [controls];
+  b. Define and document organizational oversight and user roles and responsibilities with regard to external system services; and
+  c. Employ the following processes, methods, and techniques to monitor control compliance by external service providers on an ongoing basis: [processes, methods, and techniques].
+
+Guidance:
+External system services are provided by an external provider, and the organization has no direct control over the implementation of the required controls or the assessment of control effectiveness. Organizations establish relationships with external service providers in a variety of ways, including through business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, joint ventures, and supply chain exchanges. The responsibility for managing risks from the use of external system services remains with authorizing officials. For services external to organizations, a chain of trust requires that organizations establish and retain a certain level of confidence that each provider in the consumer-provider relationship provides adequate protection for the services rendered. The extent and nature of this chain of trust vary based on relationships between organizations and the external providers. Organizations document the basis for the trust relationships so that the relationships can be monitored. External system services documentation includes government, service providers, end user security roles and responsibilities, and service-level agreements. Service-level agreements define the expectations of performance for implemented controls, describe measurable outcomes, and identify remedies and response requirements for identified instances of noncompliance.
+
+Parameters:
+- sa-09_odp.01 | label: "controls"
+  guideline: controls to be employed by external system service providers are defined;
+- sa-09_odp.02 | label: "processes, methods, and techniques"
+  guideline: processes, methods, and techniques employed to monitor control compliance by external service providers are defined;
+
+References:
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Grance T, Hash J, Stevens M, O'Neal K, Bartol N (2003) Guide to Information Technology Security Services. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-35.
+- Ross RS, Oren JC, McEvilley M (2016) Systems Security Engineering: Considerations for a Multidisciplinary Approach in the Engineering of Trustworthy Secure Systems. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-160, Vol. 1, Includes updates as of March 21, 2018.
+- Boyens JM, Paulsen C, Moorthy R, Bartol N (2015) Supply Chain Risk Management Practices for Federal Information Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-161.
+- Ross RS, Pillitteri VY, Dempsey KL, Riddle M, Guissanie G (2020) Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-171, Rev. 2.
+
+========================================================================
+Enhancement SA-9(1) (sa-9.1) - Risk Assessments and Organizational Approvals
+
+Statement:
+  (a) Conduct an organizational assessment of risk prior to the acquisition or outsourcing of information security services; and
+  (b) Verify that the acquisition or outsourcing of dedicated information security services is approved by [personnel or roles].
+
+Guidance:
+Information security services include the operation of security devices, such as firewalls or key management services as well as incident monitoring, analysis, and response. Risks assessed can include system, mission or business, security, privacy, or supply chain risks.
+
+Parameters:
+- sa-09.01_odp | label: "personnel or roles"
+  guideline: personnel or roles that approve the acquisition or outsourcing of dedicated information security services is/are defined;
+
+========================================================================
+Enhancement SA-9(2) (sa-9.2) - Identification of Functions, Ports, Protocols, and Services
+
+Statement:
+Require providers of the following external system services to identify the functions, ports, protocols, and other services required for the use of such services: [external system services].
+
+Guidance:
+Information from external service providers regarding the specific functions, ports, protocols, and services used in the provision of such services can be useful when the need arises to understand the trade-offs involved in restricting certain functions and services or blocking certain ports and protocols.
+
+Parameters:
+- sa-09.02_odp | label: "external system services"
+  guideline: external system services that require the identification of functions, ports, protocols, and other services are defined;
+
+========================================================================
+Enhancement SA-9(3) (sa-9.3) - Establish and Maintain Trust Relationship with Providers
+
+Statement:
+Establish, document, and maintain trust relationships with external service providers based on the following requirements, properties, factors, or conditions: [organization-defined security and privacy requirements, properties, factors, or conditions defining acceptable trust relationships].
+
+Guidance:
+Trust relationships between organizations and external service providers reflect the degree of confidence that the risk from using external services is at an acceptable level. Trust relationships can help organizations gain increased levels of confidence that service providers are providing adequate protection for the services rendered and can also be useful when conducting incident response or when planning for upgrades or obsolescence. Trust relationships can be complicated due to the potentially large number of entities participating in the consumer-provider interactions, subordinate relationships and levels of trust, and types of interactions between the parties. In some cases, the degree of trust is based on the level of control that organizations can exert on external service providers regarding the controls necessary for the protection of the service, information, or individual privacy and the evidence brought forth as to the effectiveness of the implemented controls. The level of control is established by the terms and conditions of the contracts or service-level agreements.
+
+Parameters:
+- sa-9.3_prm_1 | label: "organization-defined security and privacy requirements, properties, factors, or conditions defining acceptable trust relationships"
+- sa-09.03_odp.01 | label: "security requirements, properties, factors, or conditions"
+  guideline: security requirements, properties, factors, or conditions defining acceptable trust relationships on which a trust relationship is maintained are defined;
+- sa-09.03_odp.02 | label: "privacy requirements, properties, factors, or conditions"
+  guideline: privacy requirements, properties, factors, or conditions defining acceptable trust relationships on which a trust relationship is maintained are defined;
+
+========================================================================
+Enhancement SA-9(4) (sa-9.4) - Consistent Interests of Consumers and Providers
+
+Statement:
+Take the following actions to verify that the interests of [external service providers] are consistent with and reflect organizational interests: [actions].
+
+Guidance:
+As organizations increasingly use external service providers, it is possible that the interests of the service providers may diverge from organizational interests. In such situations, simply having the required technical, management, or operational controls in place may not be sufficient if the providers that implement and manage those controls are not operating in a manner consistent with the interests of the consuming organizations. Actions that organizations take to address such concerns include requiring background checks for selected service provider personnel; examining ownership records; employing only trustworthy service providers, such as providers with which organizations have had successful trust relationships; and conducting routine, periodic, unscheduled visits to service provider facilities.
+
+Parameters:
+- sa-09.04_odp.01 | label: "external service providers"
+  guideline: external service providers are defined;
+- sa-09.04_odp.02 | label: "actions"
+  guideline: actions to be taken to verify that the interests of external service providers are consistent with and reflect organizational interests are defined;
+
+========================================================================
+Enhancement SA-9(5) (sa-9.5) - Processing, Storage, and Service Location
+
+Statement:
+Restrict the location of [Selection (one-or-more): information processing; information or data; system services] to [locations] based on [requirements].
+
+Guidance:
+The location of information processing, information and data storage, or system services can have a direct impact on the ability of organizations to successfully execute their mission and business functions. The impact occurs when external providers control the location of processing, storage, or services. The criteria that external providers use for the selection of processing, storage, or service locations may be different from the criteria that organizations use. For example, organizations may desire that data or information storage locations be restricted to certain locations to help facilitate incident response activities in case of information security incidents or breaches. Incident response activities, including forensic analyses and after-the-fact investigations, may be adversely affected by the governing laws, policies, or protocols in the locations where processing and storage occur and/or the locations from which system services emanate.
+
+Parameters:
+- sa-09.05_odp.01 | selection (one-or-more): information processing; information or data; system services
+- sa-09.05_odp.02 | label: "locations"
+  guideline: locations where [Selection (one-or-more): information processing; information or data; system services] is/are to be restricted are defined;
+- sa-09.05_odp.03 | label: "requirements"
+  guideline: requirements or conditions for restricting the location of [Selection (one-or-more): information processing; information or data; system services] are defined;
+
+========================================================================
+Enhancement SA-9(6) (sa-9.6) - Organization-controlled Cryptographic Keys
+
+Statement:
+Maintain exclusive control of cryptographic keys for encrypted material stored or transmitted through an external system.
+
+Guidance:
+Maintaining exclusive control of cryptographic keys in an external system prevents decryption of organizational data by external system staff. Organizational control of cryptographic keys can be implemented by encrypting and decrypting data inside the organization as data is sent to and received from the external system or by employing a component that permits encryption and decryption functions to be local to the external system but allows exclusive organizational access to the encryption keys.
+
+========================================================================
+Enhancement SA-9(7) (sa-9.7) - Organization-controlled Integrity Checking
+
+Statement:
+Provide the capability to check the integrity of information while it resides in the external system.
+
+Guidance:
+Storage of organizational information in an external system could limit visibility into the security status of its data. The ability of the organization to verify and validate the integrity of its stored data without transferring it out of the external system provides such visibility.
+
+========================================================================
+Enhancement SA-9(8) (sa-9.8) - Processing and Storage Location — U.S. Jurisdiction
+
+Statement:
+Restrict the geographic location of information processing and data storage to facilities located within in the legal jurisdictional boundary of the United States.
+
+Guidance:
+The geographic location of information processing and data storage can have a direct impact on the ability of organizations to successfully execute their mission and business functions. A compromise or breach of high impact information and systems can have severe or catastrophic adverse impacts on organizational assets and operations, individuals, other organizations, and the Nation. Restricting the processing and storage of high-impact information to facilities within the legal jurisdictional boundary of the United States provides greater control over such processing and storage.

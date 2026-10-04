@@ -1,0 +1,36 @@
+id: SP_800_171_03.15.01
+title: Policy and Procedures
+family: Planning (SP_800_171_03.15)
+class: requirement
+
+Statement:
+  SR-03.15.01.a Develop, document, and disseminate to organizational personnel or roles the policies and procedures needed to satisfy the security requirements for the protection of CUI.
+  SR-03.15.01.b Review and update policies and procedures [frequency].
+
+Guidance:
+This requirement addresses policies and procedures for the protection of CUI. Policies and procedures contribute to security assurance and should address each family of the CUI security requirements. Policies can be included as part of the organizational security policy or be represented by separate policies that address each family of security requirements. Procedures describe how policies are implemented and can be directed at the individual or role that is the object of the procedure. Procedures can be documented in system security plans or in one or more separate documents.
+
+Parameters:
+- A.03.15.01.ODP.01 | label: "frequency"
+  guideline: the frequency at which the policies and procedures for satisfying security requirements are reviewed and updated is defined.
+
+References:
+- AC-01
+- AT-01
+- AU-01
+- CA-01
+- CM-01
+- IA-01
+- IR-01
+- MA-01
+- MP-01
+- PE-01
+- PL-01
+- PS-01
+- RA-01
+- SA-01
+- SC-01
+- SI-01
+- SR-01
+- Bowen P, Hash J, Wilson M (2006) Information Security Handbook: A Guide for Managers. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-100, Includes updates as of March 7, 2007.
+- Nieles M, Pillitteri VY, Dempsey KL (2017) An Introduction to Information Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-12, Rev. 1.

@@ -1,0 +1,230 @@
+id: GV.SC
+title: Cybersecurity Supply Chain Risk Management
+family: GOVERN (GV)
+class: category
+family-overview: The organization's cybersecurity risk management strategy, expectations, and policy are established, communicated, and monitored
+
+Statement:
+Cyber supply chain risk management processes are identified, established, managed, monitored, and improved by organizational stakeholders
+
+========================================================================
+Child control GV.SC-01 - GV.SC-01
+
+Statement:
+A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders
+
+Example:
+Establish a strategy that expresses the objectives of the cybersecurity supply chain risk management program
+
+Example:
+Develop the cybersecurity supply chain risk management program, including a plan (with milestones), policies, and procedures that guide implementation and improvement of the program, and share the policies and procedures with the organizational stakeholders
+
+Example:
+Develop and implement program processes based on the strategy, objectives, policies, and procedures that are agreed upon and performed by the organizational stakeholders
+
+Example:
+Establish a cross-organizational mechanism that ensures alignment between functions that contribute to cybersecurity supply chain risk management, such as cybersecurity, IT, operations, legal, human resources, and engineering
+
+========================================================================
+Child control GV.SC-02 - GV.SC-02
+
+Statement:
+Cybersecurity roles and responsibilities for suppliers, customers, and partners are established, communicated, and coordinated internally and externally
+
+Example:
+Identify one or more specific roles or positions that will be responsible and accountable for planning, resourcing, and executing cybersecurity supply chain risk management activities
+
+Example:
+Document cybersecurity supply chain risk management roles and responsibilities in policy
+
+Example:
+Create responsibility matrixes to document who will be responsible and accountable for cybersecurity supply chain risk management activities and how those teams and individuals will be consulted and informed
+
+Example:
+Include cybersecurity supply chain risk management responsibilities and performance requirements in personnel descriptions to ensure clarity and improve accountability
+
+Example:
+Document performance goals for personnel with cybersecurity risk management-specific responsibilities, and periodically measure them to demonstrate and improve performance
+
+Example:
+Develop roles and responsibilities for suppliers, customers, and business partners to address shared responsibilities for applicable cybersecurity risks, and integrate them into organizational policies and applicable third-party agreements
+
+Example:
+Internally communicate cybersecurity supply chain risk management roles and responsibilities for third parties
+
+Example:
+Establish rules and protocols for information sharing and reporting processes between the organization and its suppliers
+
+========================================================================
+Child control GV.SC-03 - GV.SC-03
+
+Statement:
+Cybersecurity supply chain risk management is integrated into cybersecurity and enterprise risk management, risk assessment, and improvement processes
+
+Example:
+Identify areas of alignment and overlap with cybersecurity and enterprise risk management
+
+Example:
+Establish integrated control sets for cybersecurity risk management and cybersecurity supply chain risk management
+
+Example:
+Integrate cybersecurity supply chain risk management into improvement processes
+
+Example:
+Escalate material cybersecurity risks in supply chains to senior management, and address them at the enterprise risk management level
+
+========================================================================
+Child control GV.SC-04 - GV.SC-04
+
+Statement:
+Suppliers are known and prioritized by criticality
+
+Example:
+Develop criteria for supplier criticality based on, for example, the sensitivity of data processed or possessed by suppliers, the degree of access to the organization's systems, and the importance of the products or services to the organization's mission
+
+Example:
+Keep a record of all suppliers, and prioritize suppliers based on the criticality criteria
+
+========================================================================
+Child control GV.SC-05 - GV.SC-05
+
+Statement:
+Requirements to address cybersecurity risks in supply chains are established, prioritized, and integrated into contracts and other types of agreements with suppliers and other relevant third parties
+
+Example:
+Establish security requirements for suppliers, products, and services commensurate with their criticality level and potential impact if compromised
+
+Example:
+Include all cybersecurity and supply chain requirements that third parties must follow and how compliance with the requirements may be verified in default contractual language
+
+Example:
+Define the rules and protocols for information sharing between the organization and its suppliers and sub-tier suppliers in agreements
+
+Example:
+Manage risk by including security requirements in agreements based on their criticality and potential impact if compromised
+
+Example:
+Define security requirements in service-level agreements (SLAs) for monitoring suppliers for acceptable security performance throughout the supplier relationship lifecycle
+
+Example:
+Contractually require suppliers to disclose cybersecurity features, functions, and vulnerabilities of their products and services for the life of the product or the term of service
+
+Example:
+Contractually require suppliers to provide and maintain a current component inventory (e.g., software or hardware bill of materials) for critical products
+
+Example:
+Contractually require suppliers to vet their employees and guard against insider threats
+
+Example:
+Contractually require suppliers to provide evidence of performing acceptable security practices through, for example, self-attestation, conformance to known standards, certifications, or inspections
+
+Example:
+Specify in contracts and other agreements the rights and responsibilities of the organization, its suppliers, and their supply chains, with respect to potential cybersecurity risks
+
+========================================================================
+Child control GV.SC-06 - GV.SC-06
+
+Statement:
+Planning and due diligence are performed to reduce risks before entering into formal supplier or other third-party relationships
+
+Example:
+Perform thorough due diligence on prospective suppliers that is consistent with procurement planning and commensurate with the level of risk, criticality, and complexity of each supplier relationship
+
+Example:
+Assess the suitability of the technology and cybersecurity capabilities and the risk management practices of prospective suppliers
+
+Example:
+Conduct supplier risk assessments against business and applicable cybersecurity requirements
+
+Example:
+Assess the authenticity, integrity, and security of critical products prior to acquisition and use
+
+========================================================================
+Child control GV.SC-07 - GV.SC-07
+
+Statement:
+The risks posed by a supplier, their products and services, and other third parties are understood, recorded, prioritized, assessed, responded to, and monitored over the course of the relationship
+
+Example:
+Adjust assessment formats and frequencies based on the third party's reputation and the criticality of the products or services they provide
+
+Example:
+Evaluate third parties' evidence of compliance with contractual cybersecurity requirements, such as self-attestations, warranties, certifications, and other artifacts
+
+Example:
+Monitor critical suppliers to ensure that they are fulfilling their security obligations throughout the supplier relationship lifecycle using a variety of methods and techniques, such as inspections, audits, tests, or other forms of evaluation
+
+Example:
+Monitor critical suppliers, services, and products for changes to their risk profiles, and reevaluate supplier criticality and risk impact accordingly
+
+Example:
+Plan for unexpected supplier and supply chain-related interruptions to ensure business continuity
+
+========================================================================
+Child control GV.SC-08 - GV.SC-08
+
+Statement:
+Relevant suppliers and other third parties are included in incident planning, response, and recovery activities
+
+Example:
+Define and use rules and protocols for reporting incident response and recovery activities and the status between the organization and its suppliers
+
+Example:
+Identify and document the roles and responsibilities of the organization and its suppliers for incident response
+
+Example:
+Include critical suppliers in incident response exercises and simulations
+
+Example:
+Define and coordinate crisis communication methods and protocols between the organization and its critical suppliers
+
+Example:
+Conduct collaborative lessons learned sessions with critical suppliers
+
+========================================================================
+Child control GV.SC-09 - GV.SC-09
+
+Statement:
+Supply chain security practices are integrated into cybersecurity and enterprise risk management programs, and their performance is monitored throughout the technology product and service life cycle
+
+Example:
+Policies and procedures require provenance records for all acquired technology products and services
+
+Example:
+Periodically provide risk reporting to leaders about how acquired components are proven to be untampered and authentic
+
+Example:
+Communicate regularly among cybersecurity risk managers and operations personnel about the need to acquire software patches, updates, and upgrades only from authenticated and trustworthy software providers
+
+Example:
+Review policies to ensure that they require approved supplier personnel to perform maintenance on supplier products
+
+Example:
+Policies and procedure require checking upgrades to critical hardware for unauthorized changes
+
+========================================================================
+Child control GV.SC-10 - GV.SC-10
+
+Statement:
+Cybersecurity supply chain risk management plans include provisions for activities that occur after the conclusion of a partnership or service agreement
+
+Example:
+Establish processes for terminating critical relationships under both normal and adverse circumstances
+
+Example:
+Define and implement plans for component end-of-life maintenance support and obsolescence
+
+Example:
+Verify that supplier access to organization resources is deactivated promptly when it is no longer needed
+
+Example:
+Verify that assets containing the organization's data are returned or properly disposed of in a timely, controlled, and safe manner
+
+Example:
+Develop and execute a plan for terminating or transitioning supplier relationships that takes supply chain security risk and resiliency into account
+
+Example:
+Mitigate risks to data and systems created by supplier termination
+
+Example:
+Manage data leakage risks associated with supplier termination

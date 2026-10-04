@@ -1,0 +1,14 @@
+id: sc-25
+title: Thin Nodes
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Employ minimal functionality and information storage on the following system components: [system components].
+
+Guidance:
+The deployment of system components with minimal functionality reduces the need to secure every endpoint and may reduce the exposure of information, systems, and services to attacks. Reduced or minimal functionality includes diskless nodes and thin client technologies.
+
+Parameters:
+- sc-25_odp | label: "system components"
+  guideline: system components to be employed with minimal functionality and information storage are defined;

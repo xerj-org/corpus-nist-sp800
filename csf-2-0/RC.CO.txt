@@ -1,0 +1,50 @@
+id: RC.CO
+title: Incident Recovery Communication
+family: RECOVER (RC)
+class: category
+family-overview: Assets and operations affected by a cybersecurity incident are restored
+
+Statement:
+Restoration activities are coordinated with internal and external parties
+
+========================================================================
+Child control RC.CO-01 - RC.CO-01
+
+Statement:
+Public relations are managed
+
+========================================================================
+Child control RC.CO-02 - RC.CO-02
+
+Statement:
+Reputation is repaired after an incident
+
+========================================================================
+Child control RC.CO-03 - RC.CO-03
+
+Statement:
+Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders
+
+Example:
+Securely share recovery information, including restoration progress, consistent with response plans and information sharing agreements
+
+Example:
+Regularly update senior leadership on recovery status and restoration progress for major incidents
+
+Example:
+Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers
+
+Example:
+Coordinate crisis communication between the organization and its critical suppliers
+
+========================================================================
+Child control RC.CO-04 - RC.CO-04
+
+Statement:
+Public updates on incident recovery are shared using approved methods and messaging
+
+Example:
+Follow the organization's breach notification procedures for recovering from a data breach incident
+
+Example:
+Explain the steps being taken to recover from the incident and to prevent a recurrence

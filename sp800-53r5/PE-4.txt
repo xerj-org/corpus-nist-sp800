@@ -1,0 +1,16 @@
+id: pe-4
+title: Access Control for Transmission
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+Control physical access to [system distribution and transmission lines] within organizational facilities using [security controls].
+
+Guidance:
+Security controls applied to system distribution and transmission lines prevent accidental damage, disruption, and physical tampering. Such controls may also be necessary to prevent eavesdropping or modification of unencrypted transmissions. Security controls used to control physical access to system distribution and transmission lines include disconnected or locked spare jacks, locked wiring closets, protection of cabling by conduit or cable trays, and wiretapping sensors.
+
+Parameters:
+- pe-04_odp.01 | label: "system distribution and transmission lines"
+  guideline: system distribution and transmission lines requiring physical access controls are defined;
+- pe-04_odp.02 | label: "security controls"
+  guideline: security controls to be implemented to control physical access to system distribution and transmission lines within the organizational facility are defined;

@@ -1,0 +1,17 @@
+id: si-17
+title: Fail-safe Procedures
+family: System and Information Integrity (si)
+class: SP800-53
+
+Statement:
+Implement the indicated fail-safe procedures when the indicated failures occur: [organization-defined list of failure conditions and associated fail-safe procedures].
+
+Guidance:
+Failure conditions include the loss of communications among critical system components or between system components and operational facilities. Fail-safe procedures include alerting operator personnel and providing specific instructions on subsequent steps to take. Subsequent steps may include doing nothing, reestablishing system settings, shutting down processes, restarting the system, or contacting designated organizational personnel.
+
+Parameters:
+- si-17_prm_1 | label: "organization-defined list of failure conditions and associated fail-safe procedures"
+- si-17_odp.01 | label: "fail-safe procedures"
+  guideline: fail-safe procedures associated with failure conditions are defined;
+- si-17_odp.02 | label: "list of failure conditions"
+  guideline: a list of failure conditions requiring fail-safe procedures is defined;

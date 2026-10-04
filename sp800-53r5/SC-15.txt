@@ -1,0 +1,58 @@
+id: sc-15
+title: Collaborative Computing Devices and Applications
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+  a. Prohibit remote activation of collaborative computing devices and applications with the following exceptions: [exceptions where remote activation is to be allowed] ; and
+  b. Provide an explicit indication of use to users physically present at the devices.
+
+Guidance:
+Collaborative computing devices and applications include remote meeting devices and applications, networked white boards, cameras, and microphones. The explicit indication of use includes signals to users when collaborative computing devices and applications are activated.
+
+Parameters:
+- sc-15_odp | label: "exceptions where remote activation is to be allowed"
+  guideline: exceptions where remote activation is to be allowed are defined;
+
+========================================================================
+Enhancement SC-15(1) (sc-15.1) - Physical or Logical Disconnect
+
+Statement:
+Provide [Selection (one-or-more): physical; logical] disconnect of collaborative computing devices in a manner that supports ease of use.
+
+Guidance:
+Failing to disconnect from collaborative computing devices can result in subsequent compromises of organizational information. Providing easy methods to disconnect from such devices after a collaborative computing session ensures that participants carry out the disconnect activity without having to go through complex and tedious procedures. Disconnect from collaborative computing devices can be manual or automatic.
+
+Parameters:
+- sc-15.01_odp | selection (one-or-more): physical; logical
+
+========================================================================
+Enhancement SC-15(2) (sc-15.2) - Blocking Inbound and Outbound Communications Traffic
+
+========================================================================
+Enhancement SC-15(3) (sc-15.3) - Disabling and Removal in Secure Work Areas
+
+Statement:
+Disable or remove collaborative computing devices and applications from [systems or system components] in [secure work areas].
+
+Guidance:
+Failing to disable or remove collaborative computing devices and applications from systems or system components can result in compromises of information, including eavesdropping on conversations. A Sensitive Compartmented Information Facility (SCIF) is an example of a secure work area.
+
+Parameters:
+- sc-15.03_odp.01 | label: "systems or system components"
+  guideline: systems or system components from which collaborative computing devices are to be disabled or removed are defined;
+- sc-15.03_odp.02 | label: "secure work areas"
+  guideline: secure work areas where collaborative computing devices are to be disabled or removed from systems or system components are defined;
+
+========================================================================
+Enhancement SC-15(4) (sc-15.4) - Explicitly Indicate Current Participants
+
+Statement:
+Provide an explicit indication of current participants in [online meetings and teleconferences].
+
+Guidance:
+Explicitly indicating current participants prevents unauthorized individuals from participating in collaborative computing sessions without the explicit knowledge of other participants.
+
+Parameters:
+- sc-15.04_odp | label: "online meetings and teleconferences"
+  guideline: online meetings and teleconferences for which an explicit indication of current participants is to be provided are defined;

@@ -1,0 +1,4 @@
+id: sc-33
+title: Transmission Preparation Integrity
+family: System and Communications Protection (sc)
+class: SP800-53

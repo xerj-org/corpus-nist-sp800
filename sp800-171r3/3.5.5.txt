@@ -1,0 +1,24 @@
+id: SP_800_171_03.05.05
+title: Identifier Management
+family: Identification and Authentication (SP_800_171_03.05)
+class: requirement
+
+Statement:
+  SR-03.05.05.a Receive authorization from organizational personnel or roles to assign an individual, group, role, service, or device identifier.
+  SR-03.05.05.b Select and assign an identifier that identifies an individual, group, role, service, or device.
+  SR-03.05.05.c Prevent the reuse of identifiers for [time period].
+  SR-03.05.05.d Manage individual identifiers by uniquely identifying each individual as [characteristic].
+
+Guidance:
+Identifiers are provided for users, processes acting on behalf of users, and devices. Prohibiting the reuse of identifiers prevents the assignment of previously used individual, group, role, service, or device identifiers to different individuals, groups, roles, services, or devices. Characteristics that identify the status of individuals include contractors, foreign nationals, and non-organizational users. Identifying the status of individuals by these characteristics provides information about the people with whom organizational personnel are communicating. For example, it is useful for an employee to know that one of the individuals on an email message is a contractor.
+
+Parameters:
+- A.03.05.05.ODP.01 | label: "time period"
+  guideline: the time period for preventing the reuse of identifiers is defined.
+- A.03.05.05.ODP.02 | label: "characteristic"
+  guideline: characteristic used to identify individual status are defined.
+
+References:
+- IA-04
+- IA-04(04)
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.

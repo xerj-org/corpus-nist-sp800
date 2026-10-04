@@ -1,0 +1,24 @@
+id: SP_800_172_3_0_0_03.11.10E
+title: Criticality Analysis
+family: Risk Assessment (SP_800_172_3_0_0_3.11)
+class: security_requirement
+
+Statement:
+Identify critical system components and functions by performing a criticality analysis for [systems, system components, or system services] at [decision points]. 
+
+Guidance:
+Organizations conduct a functional decomposition of a system to identify mission-critical functions and system components. The functional decomposition includes the identification of organizational missions supported by the system, the specific functions to perform those missions, and traceability to the hardware, software, and firmware components that implement those functions, including when the functions are shared by components within and external to the system. The operational environment of a system or a system component may impact its criticality, including the connections to and dependencies on other systems, devices, system-of-systems, and outsourced IT services. System components that allow unmediated access to critical system components or functions are considered critical due to the inherent vulnerabilities that such components create. Criticality analysis is performed when an architecture or design is being developed, modified, or upgraded. If such analysis is performed early and throughout the system development life cycle, organizations may be able to modify the system design to reduce the critical nature of these functions and components, such as by adding redundancy or alternate paths into the system design. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+
+Parameters:
+- A.03.11.10E.ODP.01 | label: "systems, system components, or system services"
+  guideline: systems, system components, or system services to be analyzed for criticality are defined.
+- A.03.11.10E.ODP.02 | label: "decision points"
+  guideline: decision points in the system development life cycle when a criticality analysis is to be performed are defined.
+
+References:
+- RA-09

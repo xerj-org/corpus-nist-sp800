@@ -1,0 +1,27 @@
+id: SP_800_172_3_0_0_03.14.04E
+title: Refresh From Trusted Sources
+family: System and Information Integrity (SP_800_172_3_0_0_3.14)
+class: security_requirement
+
+Statement:
+Obtain software and data employed during system component and service refreshes from the following trusted sources: [trusted sources]. 
+
+Guidance:
+Trusted sources include software and data from write-once, read-only media or from selected offline secure storage facilities. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.14.04E.ODP.01 | label: "trusted sources"
+  guideline: trusted sources to obtain software and data for system component and service refreshes are defined.
+
+References:
+- SI-14(01)

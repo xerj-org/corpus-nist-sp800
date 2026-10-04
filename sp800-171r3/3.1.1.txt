@@ -1,0 +1,63 @@
+id: SP_800_171_03.01.01
+title: Account Management
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.01.a Define the types of system accounts allowed and prohibited.
+  SR-03.01.01.b Create, enable, modify, disable, and remove system accounts in accordance with policy, procedures, prerequisites, and criteria.
+  SR-03.01.01.c Specify:
+    SR-03.01.01.c.01 Authorized users of the system,
+    SR-03.01.01.c.02 Group and role membership, and
+    SR-03.01.01.c.03 Access authorizations (i.e., privileges) for each account.
+  SR-03.01.01.d Authorize access to the system based on:
+    SR-03.01.01.d.01 A valid access authorization and
+    SR-03.01.01.d.02 Intended system usage.
+  SR-03.01.01.e Monitor the use of system accounts.
+  SR-03.01.01.f Disable system accounts when:
+    SR-03.01.01.f.01 The accounts have expired,
+    SR-03.01.01.f.02 The accounts have been inactive for [time period],
+    SR-03.01.01.f.03 The accounts are no longer associated with a user or individual,
+    SR-03.01.01.f.04 The accounts are in violation of organizational policy, or
+    SR-03.01.01.f.05 Significant risks associated with individuals are discovered.
+  SR-03.01.01.g Notify account managers and designated personnel or roles within:
+    SR-03.01.01.g.01 [time period] when accounts are no longer required.
+    SR-03.01.01.g.02 [time period] when users are terminated or transferred.
+    SR-03.01.01.g.03 [time period] when system usage or the need-to-know changes for an individual.
+  SR-03.01.01.h Require that users log out of the system after [time period] of expected inactivity or when [circumstances].
+
+Guidance:
+This requirement focuses on account management for systems and applications. The definition and enforcement of access authorizations other than those determined by account type (e.g., privileged access, non-privileged access) are addressed in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.01.02)03.01.02. System account types include individual, group, temporary, system, guest, anonymous, emergency, developer, and service. Users who require administrative privileges on system accounts receive additional scrutiny by personnel responsible for approving such accounts and privileged access. Types of accounts that organizations may prohibit due to increased risk include group, emergency, guest, anonymous, and temporary. Organizations may choose to define access privileges or other attributes by account, type of account, or a combination of both. Other attributes required for authorizing access include restrictions on the time of day, day of the week, and point of origin. When defining other system account attributes, organizations consider system requirements (e.g., system upgrades, scheduled maintenance) and mission and business requirements (e.g., time zone differences, remote access to facilitate travel requirements). Users who pose a significant security risk include individuals for whom reliable evidence indicates either the intention to use authorized access to the system to cause harm or that adversaries will cause harm through them. Close coordination among mission and business owners, system administrators, human resource managers, and legal staff is essential when disabling system accounts for high-risk individuals. Time periods for the notification of organizational personnel or roles may vary. Inactivity logout is behavior- or policy-based and requires users to take physical action to log out when they are expecting inactivity longer than the defined period. Automatic enforcement of inactivity logout is addressed by [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.01.10) 03.01.10.
+
+Parameters:
+- A.03.01.01.ODP.01 | label: "time period"
+  guideline: the time period for account inactivity before disabling is defined.
+- A.03.01.01.ODP.02 | label: "time period"
+  guideline: the time period within which to notify account managers and designated personnel or roles when accounts are no longer required is defined.
+- A.03.01.01.ODP.03 | label: "time period"
+  guideline: the time period within which to notify account managers and designated personnel or roles when users are terminated or transferred is defined.
+- A.03.01.01.ODP.04 | label: "time period"
+  guideline: the time period within which to notify account managers and designated personnel or roles when system usage or the need-to-know changes for an individual is defined.
+- A.03.01.01.ODP.05 | label: "time period"
+  guideline: the time period of expected inactivity requiring users to log out of the system is defined.
+- A.03.01.01.ODP.06 | label: "circumstances"
+  guideline: circumstances requiring users to log out of the system are defined.
+
+References:
+- AC-02
+- AC-02(03)
+- AC-02(05)
+- AC-02(13)
+- Hu VC, Scarfone KA (2012) Guidelines for Access Control System Evaluation Metrics. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7874.
+- Ylonen T, Turner P, Scarfone KA, Souppaya MP (2015) Security of Interactive and Automated Access Management Using Secure Shell (SSH). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 7966.
+- Frankel SE, Hoffman P, Orebaugh AD, Park R (2008) Guide to SSL VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-113.
+- Souppaya MP, Scarfone KA (2016) User’s Guide to Telework and Bring Your Own Device (BYOD) Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-114, Rev. 1.
+- Padgette J, Bahr J, Holtmann M, Batra M, Chen L, Smithbey R, Scarfone KA (2017) Guide to Bluetooth Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-121, Rev. 2, Includes updates as of January 19, 2022.
+- Hu VC, Ferraiolo DF, Kuhn R, Schnitzer A, Sandlin K, Miller R, Scarfone KA (2014) Guide to Attribute Based Access Control (ABAC) Definition and Considerations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-162, Includes updates as of August 2, 2019.
+- Ferraiolo DF, Hu VC, Kuhn R, Chandramouli R (2016) A Comparison of Attribute Based Access Control (ABAC) Standards for Data Service Applications: Extensible Access Control Markup Language (XACML) and
+- Yaga DJ, Kuhn R, Hu VC (2017) Verification and Test Methods for Access Control Policies/Models. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-192.
+- Souppaya MP, Scarfone KA (2016) Guide to Enterprise Telework, Remote Access, and Bring Your Own Device (BYOD) Security. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-46, Rev. 2.
+- Barker EB (2020) Recommendation for Key Management: Part 1 – General. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 1, Rev. 5.
+- Barker EB, Barker WC (2019) Recommendation for Key Management: Part 2 – Best Practices for Key Management Organizations. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 2, Rev. 1.
+- Barker EB, Dang QH (2015) Recommendation for Key Management, Part 3: ApplicationSpecific Key Management Guidance. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-57 Part 3, Rev. 1.
+- Barker EB, Dang QH, Frankel SE, Scarfone KA, Wouters P (2020) Guide to IPsec VPNs. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-77, Rev. 1.

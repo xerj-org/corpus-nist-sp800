@@ -1,0 +1,22 @@
+id: SP_800_172_3_0_0_03.11.11E
+title: Discoverable Information
+family: Risk Assessment (SP_800_172_3_0_0_3.11)
+class: security_requirement
+
+Statement:
+Determine information about the system that is discoverable and take [corrective actions]. 
+
+Guidance:
+Discoverable information includes information that adversaries could obtain without compromising or breaching the system, such as by collecting information that the system is exposing or by conducting extensive web searches. Corrective actions include notifying organizational personnel, removing designated information, or changing the system to make the designated information less relevant or attractive to adversaries. This requirement excludes intentionally discoverable information that may be part of a decoy capability (e.g., honeypots, honeynets, or deception nets) implemented by the organization. This requirement enhances SP 800-171 requirement 03.11.02.
+  - (includes reveal)
+  
+  Reduce risk due to ignorance of threat events and possible replicated or similar threat events in the same or similar environments.
+    - Reduce likelihood of impact.
+    - The adversary loses the advantage of stealth as defenders are better prepared by developing and sharing threat intelligence.
+
+Parameters:
+- A.03.11.11E.ODP.01 | label: "corrective actions"
+  guideline: corrective actions to be taken if information about the system is discoverable are defined.
+
+References:
+- RA-05(04)

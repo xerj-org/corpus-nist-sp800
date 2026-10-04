@@ -1,0 +1,33 @@
+id: SP_800_172_3_0_0_03.13.15E
+title: Separate Subnets to Isolate System Components and Functions
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Implement [Selection (one): physically; logically] separate subnetworks to isolate the following critical system components and functions: [critical system components and functions]. 
+
+Guidance:
+Separating critical system components and functions from other noncritical system components and functions through separate subnetworks may be necessary to reduce susceptibility to a catastrophic or debilitating breach or compromise that results in system failure. For example, physically separating the command-and-control function from the in-flight entertainment function through separate subnetworks in a commercial aircraft provides an increased level of assurance in the trustworthiness of critical system functions. This requirement enhances SP 800-171 requirement 03.13.01.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.13.15E.ODP.01 | label: "SELECTED PARAMETER VALUE" | selection (one): physically; logically
+- A.03.13.15E.ODP.02 | label: "critical system components and functions"
+  guideline: critical system components and functions to be isolated are defined.
+
+References:
+- SC-07(29)

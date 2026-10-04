@@ -1,0 +1,16 @@
+id: SP_800_171_03.03.03
+title: Audit Record Generation
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.03.a Generate audit records for the selected event types and audit record content specified in 03.03.01 and 03.03.02.
+  SR-03.03.03.b Retain audit records for a time period consistent with the records retention policy.
+
+Guidance:
+Audit records can be generated at various levels of abstraction, including at the packet level as information traverses the network. Selecting the appropriate level of abstraction is a critical aspect of an audit logging capability and can facilitate the identification of root causes to problems. The ability to add information generated in audit records is dependent on system functionality to configure the audit record content. Organizations may consider additional information in audit records, including the access control or flow control rules invoked and the individual identities of group account users. Organizations may also consider limiting additional audit record information to only information that is explicitly needed for audit requirements.
+
+References:
+- AU-11
+- AU-12
+- Kent K, Souppaya MP (2006) Guide to Computer Security Log Management. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-92.

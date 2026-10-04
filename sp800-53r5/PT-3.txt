@@ -1,0 +1,60 @@
+id: pt-3
+title: Personally Identifiable Information Processing Purposes
+family: Personally Identifiable Information Processing and Transparency (pt)
+class: SP800-53
+
+Statement:
+  a. Identify and document the [purpose(s)] for processing personally identifiable information;
+  b. Describe the purpose(s) in the public privacy notices and policies of the organization;
+  c. Restrict the [processing] of personally identifiable information to only that which is compatible with the identified purpose(s); and
+  d. Monitor changes in processing personally identifiable information and implement [mechanisms] to ensure that any changes are made in accordance with [requirements].
+
+Guidance:
+Identifying and documenting the purpose for processing provides organizations with a basis for understanding why personally identifiable information may be processed. The term "process" includes every step of the information life cycle, including creation, collection, use, processing, storage, maintenance, dissemination, disclosure, and disposal. Identifying and documenting the purpose of processing is a prerequisite to enabling owners and operators of the system and individuals whose information is processed by the system to understand how the information will be processed. This enables individuals to make informed decisions about their engagement with information systems and organizations and to manage their privacy interests. Once the specific processing purpose has been identified, the purpose is described in the organization’s privacy notices, policies, and any related privacy compliance documentation, including privacy impact assessments, system of records notices, [PRIVACT](#18e71fec-c6fd-475a-925a-5d8495cf8455) statements, computer matching notices, and other applicable Federal Register notices.
+
+Organizations take steps to help ensure that personally identifiable information is processed only for identified purposes, including training organizational personnel and monitoring and auditing organizational processing of personally identifiable information.
+
+Organizations monitor for changes in personally identifiable information processing. Organizational personnel consult with the senior agency official for privacy and legal counsel to ensure that any new purposes that arise from changes in processing are compatible with the purpose for which the information was collected, or if the new purpose is not compatible, implement mechanisms in accordance with defined requirements to allow for the new processing, if appropriate. Mechanisms may include obtaining consent from individuals, revising privacy policies, or other measures to manage privacy risks that arise from changes in personally identifiable information processing purposes.
+
+Parameters:
+- pt-03_odp.01 | label: "purpose(s)"
+  guideline: the purpose(s) for processing personally identifiable information is/are defined;
+- pt-03_odp.02 | label: "processing"
+  guideline: the processing of personally identifiable information to be restricted is defined;
+- pt-03_odp.03 | label: "mechanisms"
+  guideline: mechanisms to be implemented for ensuring any changes in the processing of personally identifiable information are made in accordance with requirements are defined;
+- pt-03_odp.04 | label: "requirements"
+  guideline: requirements for changing the processing of personally identifiable information are defined;
+
+References:
+- Privacy Act (P.L. 93-579), December 1974.
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Grassi P, Lefkovitz N, Nadeau E, Galluzzo R, Dinh, A (2018) Attribute Metadata: A Proposed Schema for Evaluating Federated Attributes. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Interagency or Internal Report (IR) 8112.
+
+========================================================================
+Enhancement PT-3(1) (pt-3.1) - Data Tagging
+
+Statement:
+Attach data tags containing the following purposes to [elements of personally identifiable information]: [processing purposes].
+
+Guidance:
+Data tags support the tracking of processing purposes by conveying the purposes along with the relevant elements of personally identifiable information throughout the system. By conveying the processing purposes in a data tag along with the personally identifiable information as the information transits a system, a system owner or operator can identify whether a change in processing would be compatible with the identified and documented purposes. Data tags may also support the use of automated tools.
+
+Parameters:
+- pt-03.01_odp.01 | label: "processing purposes"
+  guideline: processing purposes to be contained in data tags are defined;
+- pt-03.01_odp.02 | label: "elements of personally identifiable information"
+  guideline: elements of personally identifiable information to be tagged are defined;
+
+========================================================================
+Enhancement PT-3(2) (pt-3.2) - Automation
+
+Statement:
+Track processing purposes of personally identifiable information using [automated mechanisms].
+
+Guidance:
+Automated mechanisms augment tracking of the processing purposes.
+
+Parameters:
+- pt-03.02_odp | label: "automated mechanisms"
+  guideline: automated mechanisms for tracking the processing purposes of personally identifiable information are defined;

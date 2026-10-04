@@ -1,0 +1,4 @@
+id: SP_800_171_03.08.06
+title: 03.08.06
+family: Media Protection (SP_800_171_03.08)
+class: requirement

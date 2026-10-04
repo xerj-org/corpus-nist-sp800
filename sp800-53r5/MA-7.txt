@@ -1,0 +1,16 @@
+id: ma-7
+title: Field Maintenance
+family: Maintenance (ma)
+class: SP800-53
+
+Statement:
+Restrict or prohibit field maintenance on [systems or system components] to [trusted maintenance facilities].
+
+Guidance:
+Field maintenance is the type of maintenance conducted on a system or system component after the system or component has been deployed to a specific site (i.e., operational environment). In certain instances, field maintenance (i.e., local maintenance at the site) may not be executed with the same degree of rigor or with the same quality control checks as depot maintenance. For critical systems designated as such by the organization, it may be necessary to restrict or prohibit field maintenance at the local site and require that such maintenance be conducted in trusted facilities with additional controls.
+
+Parameters:
+- ma-07_odp.01 | label: "systems or system components"
+  guideline: systems or system components on which field maintenance is restricted or prohibited to trusted maintenance facilities are defined;
+- ma-07_odp.02 | label: "trusted maintenance facilities"
+  guideline: trusted maintenance facilities that are not restricted or prohibited from conducting field maintenance are defined;

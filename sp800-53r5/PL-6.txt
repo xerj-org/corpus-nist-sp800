@@ -1,0 +1,4 @@
+id: pl-6
+title: Security-related Activity Planning
+family: Planning (pl)
+class: SP800-53

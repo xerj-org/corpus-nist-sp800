@@ -1,0 +1,21 @@
+id: SP_800_171_03.01.10
+title: Device Lock
+family: Access Control (SP_800_171_03.01)
+class: requirement
+
+Statement:
+  SR-03.01.10.a Prevent access to the system by [Selection (one-or-more): initiating a device lock after {{ insert: param, A.03.01.10.ODP.02 }} of inactivity; requiring the user to initiate a device lock before leaving the system unattended].
+  SR-03.01.10.b Retain the device lock until the user reestablishes access using established identification and authentication procedures.
+  SR-03.01.10.c Conceal, via the device lock, information previously visible on the display with a publicly viewable image.
+
+Guidance:
+Device locks are temporary actions taken to prevent access to the system when users depart from the immediate vicinity of the system but do not want to log out due to the temporary nature of their absences. Device locks can be implemented at the operating system level or application level. User-initiated device locking is behavior- or policy-based and requires users to take physical action to initiate the device lock. Device locks are not an acceptable substitute for logging out of the system (e.g., when organizations require users to log out at the end of workdays). Publicly viewable images can include static or dynamic images, such as patterns used with screen savers, solid colors, photographic images, a clock, a battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.
+
+Parameters:
+- A.03.01.10.ODP.01 | label: "SELECTED PARAMETER VALUES" | selection (one-or-more): initiating a device lock after {{ insert: param, A.03.01.10.ODP.02 }} of inactivity; requiring the user to initiate a device lock before leaving the system unattended
+- A.03.01.10.ODP.02 | label: "time period"
+  guideline: the time period of inactivity after which a device lock is initiated is defined (if selected).
+
+References:
+- AC-11
+- AC-11(01)

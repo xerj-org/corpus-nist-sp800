@@ -1,0 +1,20 @@
+id: SP_800_171_03.03.04
+title: Response to Audit Logging Process Failures
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.04.a Alert organizational personnel or roles within [time period] in the event of an audit logging process failure.
+  SR-03.03.04.b Take the following additional actions: [additional actions].
+
+Guidance:
+Audit logging process failures include software and hardware errors, failures in audit log capturing mechanisms, and reaching or exceeding audit log storage capacity. Response actions include overwriting the oldest audit records, shutting down the system, and stopping the generation of audit records. Organizations may choose to define additional actions for audit logging process failures based on the type of failure, the location of the failure, the severity of the failure, or a combination of such factors. When the audit logging process failure is related to storage, the response is carried out for the audit log storage repository (i.e., the distinct system component where the audit logs are stored), the system on which the audit logs reside, the total audit log storage capacity of the organization (i.e., all audit log storage repositories combined), or all three. Organizations may decide to take no additional actions after alerting designated roles or personnel.
+
+Parameters:
+- A.03.03.04.ODP.01 | label: "time period"
+  guideline: the time period for organizational personnel or roles receiving audit logging process failure alerts is defined.
+- A.03.03.04.ODP.02 | label: "additional actions"
+  guideline: additional actions to be taken in the event of an audit logging process failure are defined.
+
+References:
+- AU-05

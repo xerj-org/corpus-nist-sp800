@@ -1,0 +1,52 @@
+id: pe-8
+title: Visitor Access Records
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+  a. Maintain visitor access records to the facility where the system resides for [time period];
+  b. Review visitor access records [frequency] ; and
+  c. Report anomalies in visitor access records to [personnel].
+
+Guidance:
+Visitor access records include the names and organizations of individuals visiting, visitor signatures, forms of identification, dates of access, entry and departure times, purpose of visits, and the names and organizations of individuals visited. Access record reviews determine if access authorizations are current and are still required to support organizational mission and business functions. Access records are not required for publicly accessible areas.
+
+Parameters:
+- pe-08_odp.01 | label: "time period"
+  guideline: time period for which to maintain visitor access records for the facility where the system resides is defined;
+- pe-08_odp.02 | label: "frequency"
+  guideline: the frequency at which to review visitor access records is defined;
+- pe-08_odp.03 | label: "personnel"
+  guideline: personnel to whom visitor access records anomalies are reported to is/are defined;
+
+========================================================================
+Enhancement PE-8(1) (pe-8.1) - Automated Records Maintenance and Review
+
+Statement:
+Maintain and review visitor access records using [organization-defined automated mechanisms].
+
+Guidance:
+Visitor access records may be stored and maintained in a database management system that is accessible by organizational personnel. Automated access to such records facilitates record reviews on a regular basis to determine if access authorizations are current and still required to support organizational mission and business functions.
+
+Parameters:
+- pe-8.1_prm_1 | label: "organization-defined automated mechanisms"
+- pe-08.01_odp.01 | label: "automated mechanisms"
+  guideline: automated mechanisms used to maintain visitor access records are defined;
+- pe-08.01_odp.02 | label: "automated mechanisms"
+  guideline: automated mechanisms used to review visitor access records are defined;
+
+========================================================================
+Enhancement PE-8(2) (pe-8.2) - Physical Access Records
+
+========================================================================
+Enhancement PE-8(3) (pe-8.3) - Limit Personally Identifiable Information Elements
+
+Statement:
+Limit personally identifiable information contained in visitor access records to the following elements identified in the privacy risk assessment: [elements].
+
+Guidance:
+Organizations may have requirements that specify the contents of visitor access records. Limiting personally identifiable information in visitor access records when such information is not needed for operational purposes helps reduce the level of privacy risk created by a system.
+
+Parameters:
+- pe-08.03_odp | label: "elements"
+  guideline: elements identified in the privacy risk assessment to limit personally identifiable information contained in visitor access logs are defined;

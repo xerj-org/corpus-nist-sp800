@@ -1,0 +1,4 @@
+id: sa-13
+title: Trustworthiness
+family: System and Services Acquisition (sa)
+class: SP800-53

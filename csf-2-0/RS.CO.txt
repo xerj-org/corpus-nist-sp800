@@ -1,0 +1,65 @@
+id: RS.CO
+title: Incident Response Reporting and Communication
+family: RESPOND (RS)
+class: category
+family-overview: Actions regarding a detected cybersecurity incident are taken
+
+Statement:
+Response activities are coordinated with internal and external stakeholders as required by laws, regulations, or policies
+
+========================================================================
+Child control RS.CO-01 - RS.CO-01
+
+Statement:
+Personnel know their roles and order of operations when a response is needed
+
+========================================================================
+Child control RS.CO-02 - RS.CO-02
+
+Statement:
+Internal and external stakeholders are notified of incidents
+
+Example:
+Follow the organization's breach notification procedures after discovering a data breach incident, including notifying affected customers
+
+Example:
+Notify business partners and customers of incidents in accordance with contractual requirements
+
+Example:
+Notify law enforcement agencies and regulatory bodies of incidents based on criteria in the incident response plan and management approval
+
+========================================================================
+Child control RS.CO-03 - RS.CO-03
+
+Statement:
+Information is shared with designated internal and external stakeholders
+
+Example:
+Securely share information consistent with response plans and information sharing agreements
+
+Example:
+Voluntarily share information about an attacker's observed TTPs, with all sensitive data removed, with an Information Sharing and Analysis Center (ISAC)
+
+Example:
+Notify HR when malicious insider activity occurs
+
+Example:
+Regularly update senior leadership on the status of major incidents
+
+Example:
+Follow the rules and protocols defined in contracts for incident information sharing between the organization and its suppliers
+
+Example:
+Coordinate crisis communication methods between the organization and its critical suppliers
+
+========================================================================
+Child control RS.CO-04 - RS.CO-04
+
+Statement:
+Coordination with stakeholders occurs consistent with response plans
+
+========================================================================
+Child control RS.CO-05 - RS.CO-05
+
+Statement:
+Voluntary information sharing occurs with external stakeholders to achieve broader cybersecurity situational awareness

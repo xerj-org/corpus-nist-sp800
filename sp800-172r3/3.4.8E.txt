@@ -1,0 +1,23 @@
+id: SP_800_172_3_0_0_03.04.08E
+title: Centralized Repository
+family: Configuration Management (SP_800_172_3_0_0_3.4)
+class: security_requirement
+
+Statement:
+Provide a centralized repository for the inventory of system components.
+
+Guidance:
+Organizations may implement centralized system component inventories that include components from all organizational systems. Centralized repositories of component inventories provide opportunities for efficiencies in accounting for organizational hardware, software, and firmware assets. Such repositories can help organizations rapidly identify the location and responsible individuals of system components that have been compromised, breached, or are otherwise in need of mitigation actions. This requirement enhances SP 800-171 requirement 03.04.10.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+References:
+- CM-08(07)

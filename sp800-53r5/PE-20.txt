@@ -1,0 +1,18 @@
+id: pe-20
+title: Asset Monitoring and Tracking
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+Employ [asset location technologies] to track and monitor the location and movement of [assets] within [controlled areas].
+
+Guidance:
+Asset location technologies can help ensure that critical assets—including vehicles, equipment, and system components—remain in authorized locations. Organizations consult with the Office of the General Counsel and senior agency official for privacy regarding the deployment and use of asset location technologies to address potential privacy concerns.
+
+Parameters:
+- pe-20_odp.01 | label: "asset location technologies"
+  guideline: asset location technologies to be employed to track and monitor the location and movement of assets is defined;
+- pe-20_odp.02 | label: "assets"
+  guideline: assets whose location and movement are to be tracked and monitored are defined;
+- pe-20_odp.03 | label: "controlled areas"
+  guideline: controlled areas within which asset location and movement are to be tracked and monitored are defined;

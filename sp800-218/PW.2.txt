@@ -1,0 +1,43 @@
+id: PW.2
+title: Review the Software Design to Verify Compliance with Security Requirements and Risk Information
+family: Produce Well-Secured Software (PW)
+class: practice
+family-overview: Organizations should produce well-secured software with minimal security vulnerabilities in its releases.
+
+Statement:
+Help ensure that the software will meet the security requirements and satisfactorily address the identified risk information.
+
+========================================================================
+Child control PW.2.1 - PW.2.1
+
+Statement:
+Have 1) a qualified person (or people) who were not involved with the design and/or 2) automated processes instantiated in the toolchain review the software design to confirm and enforce that it meets all of the security requirements and satisfactorily addresses the identified risk information.
+
+Example:
+Review the software design to confirm that it addresses applicable security requirements.
+
+Example:
+Review the risk models created during software design to determine if they appear to adequately identify the risks.
+
+Example:
+Review the software design to confirm that it satisfactorily addresses the risks identified by the risk models.
+
+Example:
+Have the software’s designer correct failures to meet the requirements.
+
+Example:
+Change the design and/or the risk response strategy if the security requirements cannot be met.
+
+Example:
+Record the findings of design reviews to serve as artifacts (e.g., in the software specification, in the issue tracking system, in the threat model).
+
+References:
+- BSA (2020) The BSA Framework for Secure Software: A New Approach to Securing the Software Lifecycle, Version 1.1.
+- Migues S, Erlikhman E, Ewers J, Nassery K (2021) BSIMM12 2021 Foundations Report.
+- Executive Order 14028 (2021) Improving the Nation’s Cybersecurity. (The White House, Washington, DC), DCPD-202100401, May 12, 2021.
+- International Electrotechnical Commission (IEC), Security for industrial automation and control systems – Part 4-1: Secure product development lifecycle requirements, IEC 62443-4-1, 2018.
+- International Organization for Standardization (ISO)/International Electrotechnical Commission (IEC), Information technology – Security techniques – Application security – Part 1: Overview and concepts, ISO/IEC 27034-1:2011, 2011.
+- Open Web Application Security Project (2021) OWASP Application Security Verification Standard 4.0.3.
+- Open Web Application Security Project (2017) Software Assurance Maturity Model Version 1.5.
+- Payment Card Industry (PCI) Security Standards Council (2021) Secure Software Lifecycle (Secure SLC) Requirements and Assessment Procedures Version 1.1.
+- "Newhouse W, Keith S, Scribner B, Witte G (2017) National Initiative for Cybersecurity Education (NICE) Cybersecurity Workforce Framework. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-181."

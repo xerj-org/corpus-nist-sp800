@@ -1,0 +1,14 @@
+id: SP_800_171_03.03.06
+title: Audit Record Reduction and Report Generation
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.06.a Implement an audit record reduction and report generation capability that supports audit record review, analysis, reporting requirements, and after-the-fact investigations of incidents.
+  SR-03.03.06.b Preserve the original content and time ordering of audit records.
+
+Guidance:
+Audit records are generated in [](#/cprt/framework/version/SP_800_171_3_0_0/home?element=03.03.03)03.03.03. Audit record reduction and report generation occur after audit record generation. Audit record reduction is a process that manipulates collected audit information and organizes it in a summary format that is more meaningful to analysts. Audit record reduction and report generation capabilities do not always come from the same system or organizational entities that conduct auditing activities. An audit record reduction capability can include, for example, modern data mining techniques with advanced data filters to identify anomalous behavior in audit records. The report generation capability provided by the system can help generate customizable reports. The time ordering of audit records can be a significant issue if the granularity of the time stamp in the record is insufficient.
+
+References:
+- AU-07

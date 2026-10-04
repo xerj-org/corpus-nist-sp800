@@ -1,0 +1,34 @@
+id: SP_800_172_3_0_0_03.15.01E
+title: Security Architecture
+family: Planning (SP_800_172_3_0_0_3.15)
+class: security_requirement
+
+Statement:
+  ES-03.15.01E-a Develop a security architecture for the system that:
+    ES-03.15.01E-a-1 Describes the security requirements and approach to be taken for protecting the confidentiality, integrity, and availability of CUI,
+    ES-03.15.01E-a-2 Describes how the architecture is integrated into and supports the enterprise architecture, and
+    ES-03.15.01E-a-3 Describes any assumptions about, and dependencies on, external systems and services.
+  ES-03.15.01E-b Review and update the security architecture [frequency] to reflect changes in the enterprise architecture. 
+  ES-03.15.01E-c Reflect planned security architecture changes in system security plans, concept of operations, criticality analysis, organizational procedures, and procurements and acquisitions.
+
+Guidance:
+The security architecture at the system level is consistent with the organization-wide security architecture, which is integral to and developed as part of the enterprise architecture. The security architecture includes an architectural description, the allocation of security functionality (i.e., safeguards and countermeasures), security-related information for external interfaces, information being exchanged across the interfaces, and the protection mechanisms associated with each interface. The architectures can also include other information, such as user roles and the access privileges assigned to each role; security requirements; types of information processed, stored, and transmitted by the system; cybersecurity supply chain risk management (CSCRM) requirements; restoration priorities of information and system services; and other protection needs.
+
+With the use of modern computing technologies, it is becoming less common for organizations to control all information resources. There may be key dependencies on external services and service providers. Describing such dependencies as part of the security architecture is necessary for developing a comprehensive CUI protection strategy. Establishing, documenting, and maintaining a baseline configuration for organizational systems under configuration control is critical to implementing and maintaining an effective security architecture. Guidance on developing trustworthy, secure, and cyber-resilient systems using systems security engineering practices and security design concepts is provided in SP 800-160v2 .23. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.15.01E.ODP.01 | label: "frequency"
+  guideline: the frequency for reviewing and updating the security architecture to reflect changes in the enterprise architecture is defined.
+
+References:
+- PL-08

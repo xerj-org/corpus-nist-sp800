@@ -1,0 +1,20 @@
+id: SP_800_171_03.10.01
+title: Physical Access Authorizations
+family: Physical Protection (SP_800_171_03.10)
+class: requirement
+
+Statement:
+  SR-03.10.01.a Develop, approve, and maintain a list of individuals with authorized access to the facility where the system resides.
+  SR-03.10.01.b Issue authorization credentials for facility access.
+  SR-03.10.01.c Review the facility access list [frequency].
+  SR-03.10.01.d Remove individuals from the facility access list when access is no longer required.
+
+Guidance:
+A facility can include one or more physical locations containing systems or system components that process, store, or transmit CUI. Physical access authorizations apply to employees and visitors. Individuals with permanent physical access authorization credentials are not considered visitors. Authorization credentials include identification badges, identification cards, and smart cards. Organizations determine the strength of the authorization credentials consistent with applicable laws, Executive Orders, directives, regulations, policies, standards, and guidelines. Physical access authorizations may not be necessary to access certain areas within facilities that are designated as publicly accessible.
+
+Parameters:
+- A.03.10.01.ODP.01 | label: "frequency"
+  guideline: the frequency at which to review the access list detailing authorized facility access by individuals is defined.
+
+References:
+- PE-02

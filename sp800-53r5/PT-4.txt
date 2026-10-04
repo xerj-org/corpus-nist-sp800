@@ -1,0 +1,62 @@
+id: pt-4
+title: Consent
+family: Personally Identifiable Information Processing and Transparency (pt)
+class: SP800-53
+
+Statement:
+Implement [tools or mechanisms] for individuals to consent to the processing of their personally identifiable information prior to its collection that facilitate individuals’ informed decision-making.
+
+Guidance:
+Consent allows individuals to participate in making decisions about the processing of their information and transfers some of the risk that arises from the processing of personally identifiable information from the organization to an individual. Consent may be required by applicable laws, executive orders, directives, regulations, policies, standards, or guidelines. Otherwise, when selecting consent as a control, organizations consider whether individuals can be reasonably expected to understand and accept the privacy risks that arise from their authorization. Organizations consider whether other controls may more effectively mitigate privacy risk either alone or in conjunction with consent. Organizations also consider any demographic or contextual factors that may influence the understanding or behavior of individuals with respect to the processing carried out by the system or organization. When soliciting consent from individuals, organizations consider the appropriate mechanism for obtaining consent, including the type of consent (e.g., opt-in, opt-out), how to properly authenticate and identity proof individuals and how to obtain consent through electronic means. In addition, organizations consider providing a mechanism for individuals to revoke consent once it has been provided, as appropriate. Finally, organizations consider usability factors to help individuals understand the risks being accepted when providing consent, including the use of plain language and avoiding technical jargon.
+
+Parameters:
+- pt-04_odp | label: "tools or mechanisms"
+  guideline: the tools or mechanisms to be implemented for individuals to consent to the processing of their personally identifiable information are defined;
+
+References:
+- Privacy Act (P.L. 93-579), December 1974.
+- Office of Management and Budget Memorandum Circular A-130, *Managing Information as a Strategic Resource* , July 2016.
+- Grassi PA, Garcia ME, Fenton JL (2017) Digital Identity Guidelines. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-63-3, Includes updates as of March 2, 2020.
+
+========================================================================
+Enhancement PT-4(1) (pt-4.1) - Tailored Consent
+
+Statement:
+Provide [mechanisms] to allow individuals to tailor processing permissions to selected elements of personally identifiable information.
+
+Guidance:
+While some processing may be necessary for the basic functionality of the product or service, other processing may not. In these circumstances, organizations allow individuals to select how specific personally identifiable information elements may be processed. More tailored consent may help reduce privacy risk, increase individual satisfaction, and avoid adverse behaviors, such as abandonment of the product or service.
+
+Parameters:
+- pt-04.01_odp | label: "mechanisms"
+  guideline: tailoring mechanisms for processing selected elements of personally identifiable information permissions are defined;
+
+========================================================================
+Enhancement PT-4(2) (pt-4.2) - Just-in-time Consent
+
+Statement:
+Present [consent mechanisms] to individuals at [frequency] and in conjunction with [personally identifiable information processing].
+
+Guidance:
+Just-in-time consent enables individuals to participate in how their personally identifiable information is being processed at the time or in conjunction with specific types of data processing when such participation may be most useful to the individual. Individual assumptions about how personally identifiable information is being processed might not be accurate or reliable if time has passed since the individual last gave consent or the type of processing creates significant privacy risk. Organizations use discretion to determine when to use just-in-time consent and may use supporting information on demographics, focus groups, or surveys to learn more about individuals’ privacy interests and concerns.
+
+Parameters:
+- pt-04.02_odp.01 | label: "consent mechanisms"
+  guideline: consent mechanisms to be presented to individuals are defined;
+- pt-04.02_odp.02 | label: "frequency"
+  guideline: the frequency at which to present consent mechanisms to individuals is defined;
+- pt-04.02_odp.03 | label: "personally identifiable information processing"
+  guideline: personally identifiable information processing to be presented in conjunction with organization-defined consent mechanisms is defined;
+
+========================================================================
+Enhancement PT-4(3) (pt-4.3) - Revocation
+
+Statement:
+Implement [tools or mechanisms] for individuals to revoke consent to the processing of their personally identifiable information.
+
+Guidance:
+Revocation of consent enables individuals to exercise control over their initial consent decision when circumstances change. Organizations consider usability factors in enabling easy-to-use revocation capabilities.
+
+Parameters:
+- pt-04.03_odp | label: "tools or mechanisms"
+  guideline: the tools or mechanisms to be implemented for revoking consent to the processing of personally identifiable information are defined;

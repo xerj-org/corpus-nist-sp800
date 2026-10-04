@@ -1,0 +1,37 @@
+id: ID.BE
+title: Business Environment
+family: IDENTIFY (ID)
+class: category
+family-overview: The organization's current cybersecurity risks are understood
+
+Statement:
+
+========================================================================
+Child control ID.BE-01 - ID.BE-01
+
+Statement:
+The organization’s role in the supply chain is identified and communicated
+
+========================================================================
+Child control ID.BE-02 - ID.BE-02
+
+Statement:
+The organization’s place in critical infrastructure and its industry sector is identified and communicated
+
+========================================================================
+Child control ID.BE-03 - ID.BE-03
+
+Statement:
+Priorities for organizational mission, objectives, and activities are established and communicated
+
+========================================================================
+Child control ID.BE-04 - ID.BE-04
+
+Statement:
+Dependencies and critical functions for delivery of critical services are established
+
+========================================================================
+Child control ID.BE-05 - ID.BE-05
+
+Statement:
+Resilience requirements to support delivery of critical services are established for all operating states (e.g. under duress/attack, during recovery, normal operations)

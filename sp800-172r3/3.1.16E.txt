@@ -1,0 +1,27 @@
+id: SP_800_172_3_0_0_03.01.16E
+title: Decomposition Into Policy-Relevant Subcomponents
+family: Access Control (SP_800_172_3_0_0_3.1)
+class: security_requirement
+
+Statement:
+Decompose CUI into [policy-relevant subcomponents] for submission to policy enforcement mechanisms when transferring CUI between different security domains. 
+
+Guidance:
+Decomposing CUI into policy-relevant subcomponents prior to information transfer facilitates policy decisions on source, destination, certificates, and other security-related component differentiators. Policy enforcement mechanisms apply filtering, inspection, and/or sanitization rules to the policy-relevant subcomponents of information to facilitate flow enforcement prior to transferring such information to different security domains. This requirement enhances SP 800-171 requirement 03.01.03.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+
+Parameters:
+- A.03.01.16E.ODP.01 | label: "policy-relevant subcomponents"
+  guideline: policy-relevant subcomponents into which to decompose information for submission to policy enforcement mechanisms are defined.
+
+References:
+- AC-04(13)

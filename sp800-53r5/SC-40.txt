@@ -1,0 +1,70 @@
+id: sc-40
+title: Wireless Link Protection
+family: System and Communications Protection (sc)
+class: SP800-53
+
+Statement:
+Protect external and internal [organization-defined wireless links] from the following signal parameter attacks: [organization-defined types of signal parameter attacks or references to sources for such attacks].
+
+Guidance:
+Wireless link protection applies to internal and external wireless communication links that may be visible to individuals who are not authorized system users. Adversaries can exploit the signal parameters of wireless links if such links are not adequately protected. There are many ways to exploit the signal parameters of wireless links to gain intelligence, deny service, or spoof system users. Protection of wireless links reduces the impact of attacks that are unique to wireless systems. If organizations rely on commercial service providers for transmission services as commodity items rather than as fully dedicated services, it may not be possible to implement wireless link protections to the extent necessary to meet organizational security requirements.
+
+Parameters:
+- sc-40_prm_1 | label: "organization-defined wireless links"
+- sc-40_prm_2 | label: "organization-defined types of signal parameter attacks or references to sources for such attacks"
+- sc-40_odp.01 | label: "wireless links"
+  guideline: external wireless links to be protected from particular types of signal parameter attacks are defined;
+- sc-40_odp.02 | label: "types of signal parameter attacks or references to sources for such attacks"
+  guideline: types of signal parameter attacks or references to sources for such attacks from which to protect external wireless links are defined;
+- sc-40_odp.03 | label: "wireless links"
+  guideline: internal wireless links to be protected from particular types of signal parameter attacks are defined;
+- sc-40_odp.04 | label: "types of signal parameter attacks or references to sources for such attacks"
+  guideline: types of signal parameter attacks or references to sources for such attacks from which to protect internal wireless links are defined;
+
+========================================================================
+Enhancement SC-40(1) (sc-40.1) - Electromagnetic Interference
+
+Statement:
+Implement cryptographic mechanisms that achieve [level of protection] against the effects of intentional electromagnetic interference.
+
+Guidance:
+The implementation of cryptographic mechanisms for electromagnetic interference protects systems against intentional jamming that might deny or impair communications by ensuring that wireless spread spectrum waveforms used to provide anti-jam protection are not predictable by unauthorized individuals. The implementation of cryptographic mechanisms may also coincidentally mitigate the effects of unintentional jamming due to interference from legitimate transmitters that share the same spectrum. Mission requirements, projected threats, concept of operations, and laws, executive orders, directives, regulations, policies, and standards determine levels of wireless link availability, cryptography needed, and performance.
+
+Parameters:
+- sc-40.01_odp | label: "level of protection"
+  guideline: level of protection to be employed against the effects of intentional electromagnetic interference is defined;
+
+========================================================================
+Enhancement SC-40(2) (sc-40.2) - Reduce Detection Potential
+
+Statement:
+Implement cryptographic mechanisms to reduce the detection potential of wireless links to [level of reduction].
+
+Guidance:
+The implementation of cryptographic mechanisms to reduce detection potential is used for covert communications and to protect wireless transmitters from geo-location. It also ensures that the spread spectrum waveforms used to achieve a low probability of detection are not predictable by unauthorized individuals. Mission requirements, projected threats, concept of operations, and applicable laws, executive orders, directives, regulations, policies, and standards determine the levels to which wireless links are undetectable.
+
+Parameters:
+- sc-40.02_odp | label: "level of reduction"
+  guideline: the level of reduction to be achieved to reduce the detection potential of wireless links is defined;
+
+========================================================================
+Enhancement SC-40(3) (sc-40.3) - Imitative or Manipulative Communications Deception
+
+Statement:
+Implement cryptographic mechanisms to identify and reject wireless transmissions that are deliberate attempts to achieve imitative or manipulative communications deception based on signal parameters.
+
+Guidance:
+The implementation of cryptographic mechanisms to identify and reject imitative or manipulative communications ensures that the signal parameters of wireless transmissions are not predictable by unauthorized individuals. Such unpredictability reduces the probability of imitative or manipulative communications deception based on signal parameters alone.
+
+========================================================================
+Enhancement SC-40(4) (sc-40.4) - Signal Parameter Identification
+
+Statement:
+Implement cryptographic mechanisms to prevent the identification of [wireless transmitters] by using the transmitter signal parameters.
+
+Guidance:
+The implementation of cryptographic mechanisms to prevent the identification of wireless transmitters protects against the unique identification of wireless transmitters for the purposes of intelligence exploitation by ensuring that anti-fingerprinting alterations to signal parameters are not predictable by unauthorized individuals. It also provides anonymity when required. Radio fingerprinting techniques identify the unique signal parameters of transmitters to fingerprint such transmitters for purposes of tracking and mission or user identification.
+
+Parameters:
+- sc-40.04_odp | label: "wireless transmitters"
+  guideline: wireless transmitters for which cryptographic mechanisms are to be implemented are defined;

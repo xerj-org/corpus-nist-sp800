@@ -1,0 +1,140 @@
+id: ac-6
+title: Least Privilege
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+Employ the principle of least privilege, allowing only authorized accesses for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
+
+Guidance:
+Organizations employ least privilege for specific duties and systems. The principle of least privilege is also applied to system processes, ensuring that the processes have access to systems and operate at privilege levels no higher than necessary to accomplish organizational missions or business functions. Organizations consider the creation of additional processes, roles, and accounts as necessary to achieve least privilege. Organizations apply least privilege to the development, implementation, and operation of organizational systems.
+
+========================================================================
+Enhancement AC-6(1) (ac-6.1) - Authorize Access to Security Functions
+
+Statement:
+Authorize access for [individuals and roles] to:
+  (a) [organization-defined security functions (deployed in hardware, software, and firmware)] ; and
+  (b) [security-relevant information].
+
+Guidance:
+Security functions include establishing system accounts, configuring access authorizations (i.e., permissions, privileges), configuring settings for events to be audited, and establishing intrusion detection parameters. Security-relevant information includes filtering rules for routers or firewalls, configuration parameters for security services, cryptographic key management information, and access control lists. Authorized personnel include security administrators, system administrators, system security officers, system programmers, and other privileged users.
+
+Parameters:
+- ac-6.1_prm_2 | label: "organization-defined security functions (deployed in hardware, software, and firmware)"
+- ac-06.01_odp.01 | label: "individuals and roles"
+  guideline: individuals and roles with authorized access to security functions and security-relevant information are defined;
+- ac-06.01_odp.02 | label: "security functions (deployed in hardware)"
+  guideline: security functions (deployed in hardware) for authorized access are defined;
+- ac-06.01_odp.03 | label: "security functions (deployed in software)"
+  guideline: security functions (deployed in software) for authorized access are defined;
+- ac-06.01_odp.04 | label: "security functions (deployed in firmware)"
+  guideline: security functions (deployed in firmware) for authorized access are defined;
+- ac-06.01_odp.05 | label: "security-relevant information"
+  guideline: security-relevant information for authorized access is defined;
+
+========================================================================
+Enhancement AC-6(2) (ac-6.2) - Non-privileged Access for Nonsecurity Functions
+
+Statement:
+Require that users of system accounts (or roles) with access to [security functions or security-relevant information] use non-privileged accounts or roles, when accessing nonsecurity functions.
+
+Guidance:
+Requiring the use of non-privileged accounts when accessing nonsecurity functions limits exposure when operating from within privileged accounts or roles. The inclusion of roles addresses situations where organizations implement access control policies, such as role-based access control, and where a change of role provides the same degree of assurance in the change of access authorizations for the user and the processes acting on behalf of the user as would be provided by a change between a privileged and non-privileged account.
+
+Parameters:
+- ac-06.02_odp | label: "security functions or security-relevant information"
+  guideline: security functions or security-relevant information, the access to which requires users to use non-privileged accounts to access non-security functions, are defined;
+
+========================================================================
+Enhancement AC-6(3) (ac-6.3) - Network Access to Privileged Commands
+
+Statement:
+Authorize network access to [privileged commands] only for [compelling operational needs] and document the rationale for such access in the security plan for the system.
+
+Guidance:
+Network access is any access across a network connection in lieu of local access (i.e., user being physically present at the device).
+
+Parameters:
+- ac-06.03_odp.01 | label: "privileged commands"
+  guideline: privileged commands to which network access is to be authorized only for compelling operational needs are defined;
+- ac-06.03_odp.02 | label: "compelling operational needs"
+  guideline: compelling operational needs necessitating network access to privileged commands are defined;
+
+========================================================================
+Enhancement AC-6(4) (ac-6.4) - Separate Processing Domains
+
+Statement:
+Provide separate processing domains to enable finer-grained allocation of user privileges.
+
+Guidance:
+Providing separate processing domains for finer-grained allocation of user privileges includes using virtualization techniques to permit additional user privileges within a virtual machine while restricting privileges to other virtual machines or to the underlying physical machine, implementing separate physical domains, and employing hardware or software domain separation mechanisms.
+
+========================================================================
+Enhancement AC-6(5) (ac-6.5) - Privileged Accounts
+
+Statement:
+Restrict privileged accounts on the system to [personnel or roles].
+
+Guidance:
+Privileged accounts, including super user accounts, are typically described as system administrator for various types of commercial off-the-shelf operating systems. Restricting privileged accounts to specific personnel or roles prevents day-to-day users from accessing privileged information or privileged functions. Organizations may differentiate in the application of restricting privileged accounts between allowed privileges for local accounts and for domain accounts provided that they retain the ability to control system configurations for key parameters and as otherwise necessary to sufficiently mitigate risk.
+
+Parameters:
+- ac-06.05_odp | label: "personnel or roles"
+  guideline: personnel or roles to which privileged accounts on the system are to be restricted is/are defined;
+
+========================================================================
+Enhancement AC-6(6) (ac-6.6) - Privileged Access by Non-organizational Users
+
+Statement:
+Prohibit privileged access to the system by non-organizational users.
+
+Guidance:
+An organizational user is an employee or an individual considered by the organization to have the equivalent status of an employee. Organizational users include contractors, guest researchers, or individuals detailed from other organizations. A non-organizational user is a user who is not an organizational user. Policies and procedures for granting equivalent status of employees to individuals include a need-to-know, citizenship, and the relationship to the organization.
+
+========================================================================
+Enhancement AC-6(7) (ac-6.7) - Review of User Privileges
+
+Statement:
+  (a) Review [frequency] the privileges assigned to [roles and classes] to validate the need for such privileges; and
+  (b) Reassign or remove privileges, if necessary, to correctly reflect organizational mission and business needs.
+
+Guidance:
+The need for certain assigned user privileges may change over time to reflect changes in organizational mission and business functions, environments of operation, technologies, or threats. A periodic review of assigned user privileges is necessary to determine if the rationale for assigning such privileges remains valid. If the need cannot be revalidated, organizations take appropriate corrective actions.
+
+Parameters:
+- ac-06.07_odp.01 | label: "frequency"
+  guideline: the frequency at which to review the privileges assigned to roles or classes of users is defined;
+- ac-06.07_odp.02 | label: "roles and classes"
+  guideline: roles or classes of users to which privileges are assigned are defined;
+
+========================================================================
+Enhancement AC-6(8) (ac-6.8) - Privilege Levels for Code Execution
+
+Statement:
+Prevent the following software from executing at higher privilege levels than users executing the software: [software].
+
+Guidance:
+In certain situations, software applications or programs need to execute with elevated privileges to perform required functions. However, depending on the software functionality and configuration, if the privileges required for execution are at a higher level than the privileges assigned to organizational users invoking such applications or programs, those users may indirectly be provided with greater privileges than assigned.
+
+Parameters:
+- ac-06.08_odp | label: "software"
+  guideline: software to be prevented from executing at higher privilege levels than users executing the software is defined;
+
+========================================================================
+Enhancement AC-6(9) (ac-6.9) - Log Use of Privileged Functions
+
+Statement:
+Log the execution of privileged functions.
+
+Guidance:
+The misuse of privileged functions, either intentionally or unintentionally by authorized users or by unauthorized external entities that have compromised system accounts, is a serious and ongoing concern and can have significant adverse impacts on organizations. Logging and analyzing the use of privileged functions is one way to detect such misuse and, in doing so, help mitigate the risk from insider threats and the advanced persistent threat.
+
+========================================================================
+Enhancement AC-6(10) (ac-6.10) - Prohibit Non-privileged Users from Executing Privileged Functions
+
+Statement:
+Prevent non-privileged users from executing privileged functions.
+
+Guidance:
+Privileged functions include disabling, circumventing, or altering implemented security or privacy controls, establishing system accounts, performing system integrity checks, and administering cryptographic key management activities. Non-privileged users are individuals who do not possess appropriate authorizations. Privileged functions that require protection from non-privileged users include circumventing intrusion detection and prevention mechanisms or malicious code protection mechanisms. Preventing non-privileged users from executing privileged functions is enforced by [AC-3](#ac-3).

@@ -1,0 +1,57 @@
+id: ac-18
+title: Wireless Access
+family: Access Control (ac)
+class: SP800-53
+
+Statement:
+  a. Establish configuration requirements, connection requirements, and implementation guidance for each type of wireless access; and
+  b. Authorize each type of wireless access to the system prior to allowing such connections.
+
+Guidance:
+Wireless technologies include microwave, packet radio (ultra-high frequency or very high frequency), 802.11x, and Bluetooth. Wireless networks use authentication protocols that provide authenticator protection and mutual authentication.
+
+References:
+- Scarfone KA, Mell PM (2007) Guide to Intrusion Detection and Prevention Systems (IDPS). (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-94.
+- Frankel SE, Eydt B, Owens L, Scarfone KA (2007) Establishing Wireless Robust Security Networks: A Guide to IEEE 802.11i. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-97.
+
+========================================================================
+Enhancement AC-18(1) (ac-18.1) - Authentication and Encryption
+
+Statement:
+Protect wireless access to the system using authentication of [Selection (one-or-more): users; devices] and encryption.
+
+Guidance:
+Wireless networking capabilities represent a significant potential vulnerability that can be exploited by adversaries. To protect systems with wireless access points, strong authentication of users and devices along with strong encryption can reduce susceptibility to threats by adversaries involving wireless technologies.
+
+Parameters:
+- ac-18.01_odp | selection (one-or-more): users; devices
+
+========================================================================
+Enhancement AC-18(2) (ac-18.2) - Monitoring Unauthorized Connections
+
+========================================================================
+Enhancement AC-18(3) (ac-18.3) - Disable Wireless Networking
+
+Statement:
+Disable, when not intended for use, wireless networking capabilities embedded within system components prior to issuance and deployment.
+
+Guidance:
+Wireless networking capabilities that are embedded within system components represent a significant potential vulnerability that can be exploited by adversaries. Disabling wireless capabilities when not needed for essential organizational missions or functions can reduce susceptibility to threats by adversaries involving wireless technologies.
+
+========================================================================
+Enhancement AC-18(4) (ac-18.4) - Restrict Configurations by Users
+
+Statement:
+Identify and explicitly authorize users allowed to independently configure wireless networking capabilities.
+
+Guidance:
+Organizational authorizations to allow selected users to configure wireless networking capabilities are enforced, in part, by the access enforcement mechanisms employed within organizational systems.
+
+========================================================================
+Enhancement AC-18(5) (ac-18.5) - Antennas and Transmission Power Levels
+
+Statement:
+Select radio antennas and calibrate transmission power levels to reduce the probability that signals from wireless access points can be received outside of organization-controlled boundaries.
+
+Guidance:
+Actions that may be taken to limit unauthorized use of wireless communications outside of organization-controlled boundaries include reducing the power of wireless transmissions so that the transmissions are less likely to emit a signal that can be captured outside of the physical perimeters of the organization, employing measures such as emissions security to control wireless emanations, and using directional or beamforming antennas that reduce the likelihood that unintended receivers will be able to intercept signals. Prior to taking such mitigating actions, organizations can conduct periodic wireless surveys to understand the radio frequency profile of organizational systems as well as other systems that may be operating in the area.

@@ -1,0 +1,21 @@
+id: SP_800_171_03.03.01
+title: Event Logging
+family: Audit and Accountability (SP_800_171_03.03)
+class: requirement
+
+Statement:
+  SR-03.03.01.a Specify the following event types selected for logging within the system: [event types].
+  SR-03.03.01.b Review and update the event types selected for logging [frequency].
+
+Guidance:
+An event is any observable occurrence in a system, including unlawful or unauthorized system activity. Organizations identify event types for which a logging functionality is needed. This includes events that are relevant to the security of systems and the environments in which those systems operate to meet specific and ongoing auditing needs. Event types can include password changes, the execution of privileged functions, failed logons or accesses related to systems, administrative privilege usage, or third-party credential usage. In determining event types that require logging, organizations consider the system monitoring and auditing that are appropriate for each of the security requirements. When defining event types, organizations consider the logging necessary to cover related events, such as the steps in distributed, transaction-based processes (e.g., processes that are distributed across multiple organizations) and actions that occur in service-oriented or cloud-based architectures. Monitoring and auditing requirements can be balanced with other system needs. For example, organizations may determine that systems must have the capability to log every file access — both successful and unsuccessful — but only activate that capability under specific circumstances due to the potential burden on system performance. The event types that are logged by organizations may change over time. Reviewing and updating the set of logged event types are necessary to ensure that the current set of event types remains relevant.
+
+Parameters:
+- A.03.03.01.ODP.01 | label: "event types"
+  guideline: event types selected for logging within the system are defined.
+- A.03.03.01.ODP.02 | label: "frequency"
+  guideline: the frequency of event types selected for logging are reviewed and updated.
+
+References:
+- AU-02
+- Kent K, Souppaya MP (2006) Guide to Computer Security Log Management. (National Institute of Standards and Technology, Gaithersburg, MD), NIST Special Publication (SP) 800-92.

@@ -1,0 +1,18 @@
+id: pe-16
+title: Delivery and Removal
+family: Physical and Environmental Protection (pe)
+class: SP800-53
+
+Statement:
+  a. Authorize and control [organization-defined types of system components] entering and exiting the facility; and
+  b. Maintain records of the system components.
+
+Guidance:
+Enforcing authorizations for entry and exit of system components may require restricting access to delivery areas and isolating the areas from the system and media libraries.
+
+Parameters:
+- pe-16_prm_1 | label: "organization-defined types of system components"
+- pe-16_odp.01 | label: "types of system components"
+  guideline: types of system components to be authorized and controlled when entering the facility are defined;
+- pe-16_odp.02 | label: "types of system components"
+  guideline: types of system components to be authorized and controlled when exiting the facility are defined;

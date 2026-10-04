@@ -1,0 +1,35 @@
+id: SP_800_172_3_0_0_03.13.16E
+title: System Partitioning
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+Partition the system into [Selection (one): physical; logical] residing in separate [system components] domains or environments based on [circumstances]. 
+
+Guidance:
+System partitioning is part of a defense-in-depth protection strategy. Organizations determine the degree of physical separation of system components. Physical separation options include physically distinct components in separate racks in the same room, critical components in separate rooms, and geographical separation of critical components. Managed interfaces restrict or prohibit network access and information flow among partitioned system components. This requirement does not enhance a specific requirement in SP 800-171 but can be used to strengthen the protection of CUI associated with critical programs or high value assets.
+  - (includes preempt)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.13.16E.ODP.01 | label: "system components"
+  guideline: system components to reside in separate physical or logical domains or environments based on circumstances for the physical or logical separation of components are defined.
+- A.03.13.16E.ODP.02 | label: "SELECTED PARAMETER VALUE" | selection (one): physical; logical
+- A.03.13.16E.ODP.03 | label: "circumstances"
+  guideline: circumstances for the physical or logical separation of components are defined.
+
+References:
+- SC-32

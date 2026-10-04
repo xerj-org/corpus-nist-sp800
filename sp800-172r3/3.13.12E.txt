@@ -1,0 +1,36 @@
+id: SP_800_172_3_0_0_03.13.12E
+title: Denial-of-Service Protection
+family: System and Communications Protection (SP_800_172_3_0_0_3.13)
+class: security_requirement
+
+Statement:
+  ES-03.13.12E-a  [types of denial-of-service events] the effects of the following types of denial-of-service events: [Selection (one): Protect against; Limit]. 
+  ES-03.13.12E-b Employ the following safeguards to prevent the denial-of-service events [safeguards]. 
+
+Guidance:
+Denial-of-service events may occur due to a variety of internal and external causes, such as an attack by an adversary or a lack of planning to support organizational needs with respect to capacity and bandwidth. Such attacks can occur across a wide range of network protocols (e.g., IPv4, IPv6). A variety of technologies are available to limit or eliminate the origination and effects of denial-of-service events. For example, boundary protection devices can filter certain types of packets to protect system components on internal networks from being directly affected by or the source of denial-of-service attacks. Employing increased network capacity and bandwidth combined with service redundancy also reduces the susceptibility to denial-of-service events. This requirement is sourced to a control tailored out of the SP 800-53B .13 moderate baseline in SP 800-171.
+  - (includes preempt and negate)
+  
+  Ensure that the threat event does not have an impact.
+    - Reduce likelihood of occurrence and/or reduce likelihood of impact.
+    - The adversary’s efforts or resources cannot be applied or are wasted.
+  - (includes exert)
+  
+  Make it more difficult for threat events to cause adverse impacts or consequences.
+    - Reduce likelihood of impact and reduce level of impact.
+    - Adversary activities are restricted in scope, fail to achieve full effect, do not take place in accordance with adversary timeline, or require greater resources than adversary had planned.
+  - (includes reduce)
+  
+  Restrict the consequences of realized threat events by limiting the damage or effects they cause in terms of time, system resources, and/or mission or business impacts.
+    - Reduce level of impact and reduce likelihood of impact of subsequent events in the same threat scenario.
+    - The adversary’s effectiveness is restricted.
+
+Parameters:
+- A.03.13.12E.ODP.01 | label: "types of denial-of-service events"
+  guideline: the types of denial-of-service events to be protected against or limited are defined.
+- A.03.13.12E.ODP.02 | label: "SELECTED PARAMETER VALUE" | selection (one): Protect against; Limit
+- A.03.13.12E.ODP.03 | label: "safeguards"
+  guideline: the safeguards to prevent the denial-of-service objective by type of denial-of-service event are defined.
+
+References:
+- SC-05
